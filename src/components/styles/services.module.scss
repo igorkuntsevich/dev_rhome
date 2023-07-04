@@ -1,0 +1,310 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+.services_intro {
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  height: 41.7vw;
+  padding: 3.3vw 2.5vw;
+  margin-bottom: 4.1vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 62px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 9.7vw 5.1vw;
+    height: 119.3vw;
+    margin-bottom: 8.45vw;
+  }
+}
+.services_intro_facade {
+  background-image: url(../../images/services/fasad/intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (max-width: $mobile) {
+    background-position: right -9vw center;
+  }
+}
+.services_intro_title {
+  font-size: 3.5vw;
+  line-height: 4.2vw;
+  color: #FFFFFF;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    // font-size: 53px;
+    // line-height: 64px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 10.1vw;
+    line-height: 11.1vw;
+  }
+}
+.services_breadcrumbs {
+  display: flex;
+  position: relative;
+  padding-left: 4.6vw;
+  margin-bottom: 1.25vw;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3.5vw;
+    height: 1px;
+    left: 0;
+    // top: 0.65vw;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #E8E8E8;
+  }
+  @media screen and (min-width: $fullscreen) {
+    padding-left: 70px;
+    // margin-bottom: 19px;
+    &::before {
+      width: 53px;
+      // top: 10px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    padding-left: 12.6vw;
+    margin-bottom: 5.1vw;
+    &::before {
+      width: 9.6vw;
+      top: 1.7vw;
+    }
+  }
+}
+.services_breadcrumbs_li {
+  font-size: 1.25vw;
+  line-height: 1.5vw;
+  color: #FFFFFF;
+  position: relative;
+  &:not(:first-child) {
+    padding-left: 2.4vw;
+  }
+  &:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    width: 1.1vw;
+    height: 1px;
+    left: 0.6vw;
+    // top: 0.65vw;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #E8E8E8;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 23px;
+    &:not(:first-child) {
+      padding-left: 36px;
+    }
+    &:not(:first-child)::before {
+      width: 17px;
+      left: 9px;
+      // top: 10px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.1vw;
+    &:not(:first-child) {
+      padding-left: 6.3vw;
+    }
+    &:not(:first-child)::before {
+      width: 2.9vw;
+      left: 1.6vw;
+      top: 1.7vw;
+    }
+  }
+}
+.services_intro_text {
+  margin-bottom: 2.9vw;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 44px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 8.45vw;
+  }
+}
+.services_intro_apart_text {
+  br {
+    display: none;
+  }
+  @media screen and (max-width: $mobile) {
+    br {
+      display: block;
+    }
+    .services_intro_text_p {
+      padding-bottom: 22.5vw;
+    }
+  }
+}
+.services_intro_house_text {
+  br {
+    display: block;
+  }
+  @media screen and (max-width: $mobile) {
+    br {
+      display: none;
+    }
+    .services_intro_text_p {
+      padding-bottom: 38.5vw;
+    }
+  }
+}
+.services_intro_office_text {
+  @media screen and (max-width: $mobile) {
+    .services_intro_text_p {
+      max-width: 78%;
+      padding-bottom: 32.5vw;
+    }
+  }
+}
+.services_intro_facade_text {
+  @media screen and (max-width: $mobile) {
+    .services_intro_text_p {
+      max-width: 78%;
+      padding-bottom: 41vw;
+    }
+  }
+}
+.services_intro_text_p {
+  font-size: 3.1vw;
+  line-height: 3.5vw;
+  margin-bottom: 1.1vw;
+  width: 78.8vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 47px;
+    line-height: 53px;
+    margin-bottom: 17px;
+    max-width: 1700px;
+  }
+  // @media screen and (min-width: $bigfullscreen) {
+  //   max-width: 1700px;
+  // }
+  @media screen and (max-width: $mobile) {
+    br {
+      display: block;
+    }
+    font-size: 5.8vw;
+    line-height: 7.7vw;
+    margin-bottom: 0;
+    max-width: 95%;
+  }
+}
+.services_intro_text_span {
+  display: inline-block;
+  font-size: 1.5vw;
+  line-height: 2.1vw;
+  max-width: 47.7vw;
+  margin-left: 36.4vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 23px;
+    line-height: 32px;
+    max-width: 725px;
+    margin-left: 553px;
+  }
+  @media screen and (max-width: $mobile) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 3.4vw;
+    line-height: 5.3vw;
+    max-width: 47.7vw;
+    margin-left: 0;
+  }
+}
+
+
+
+.services_zndp {
+  margin-bottom: 3.8vw;
+  background-color: #F5F5F5;
+  border-radius: 30px;
+  padding: 4.2vw 4.2vw 3.3vw 1.9vw;
+  background-image: url(../../images/zndp_catalog.png);
+  background-size: 38.8vw;
+  background-repeat: no-repeat;
+  background-position: bottom right 3.5vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 58px;
+    padding: 64px 64px 50px 29px;
+    background-size: 580px;
+    // background-position: bottom right 53px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 9.2vw;
+    padding: 8.7vw 7.5vw 12.1vw 4.1vw;
+    background-image: url(../../images/zndp_catalog_mob.png);
+    background-size: 37.9vw;
+    background-position: bottom 8.2vw right;
+  }
+}
+.services_zndp_title {
+  font-size: 2.8vw;
+  line-height: 3.8vw;
+  margin-bottom: 1.4vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 43px;
+    line-height: 58px;
+    margin-bottom: 21px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.7vw;
+    line-height: 7.7vw;
+    margin-bottom: 3.4vw;
+    max-width: 70%;
+  }
+}
+.services_zndp_text {
+  max-width: 45.8vw;
+  @media screen and (min-width: $fullscreen) {
+    max-width: 700px;
+  }
+  @media screen and (min-width: $bigfullscreen) {
+    max-width: 870px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 100%;
+  }
+}
+.services_zndp_text_p {
+  font-size: 1.25vw;
+  line-height: 1.8vw;
+  margin-bottom: 1.2vw;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 27px;
+    margin-bottom: 18px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+    margin-bottom: 4.3vw;
+    &:last-child {
+      max-width: 48.8vw;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+// . {
+
+
+//   @media screen and (min-width: $fullscreen) {
+
+//   }
+//   @media screen and (max-width: $mobile) {
+//   }
+// }
+

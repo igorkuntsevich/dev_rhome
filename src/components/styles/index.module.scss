@@ -1,0 +1,296 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+.index_intro {
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  height: 41.7vw;
+  padding: 3.3vw 2.5vw;
+  margin-bottom: 4.1vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 62px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 9.7vw 5.1vw;
+    height: 119.3vw;
+    margin-bottom: 8.45vw;
+  }
+}
+.index_intro_title {
+  display: flex;
+  gap: 2.5vw;
+  position: relative;
+  span {
+    font-size: 2.6vw;
+    line-height: 3.2vw;
+    color: #FFFFFF;
+  }
+
+  @media screen and (min-width: $fullscreen) {
+    gap: 38px;
+    span {
+      font-size: 40px;
+      line-height: 49px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    span {
+      font-size: 8.2vw;
+      line-height: 9.7vw;
+    }
+  }
+}
+.index_intro_text {
+  margin-bottom: 4.2vw;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 64px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 7.7vw;
+  }
+}
+.index_intro_text_p {
+  font-size: 3.1vw;
+  line-height: 3.5vw;
+  margin-bottom: 1.1vw;
+  width: 78.8vw;
+  br {
+    display: none;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 47px;
+    line-height: 53px;
+    margin-bottom: 17px;
+    max-width: 1250px;
+  }
+  @media screen and (max-width: $mobile) {
+    br {
+      display: block;
+    }
+    font-size: 5.8vw;
+    line-height: 7.7vw;
+    margin-bottom: 7.7vw;
+    width: 100%;
+  }
+}
+.index_services_grid {
+  display: grid;
+  grid-template-columns: 50% 49%;
+  grid-template-rows: 20.8vw 21.9vw;
+  grid-gap: 1.3vw 1%;
+  margin-bottom: 5.3vw;
+  @media screen and (min-width: $fullscreen) {
+    grid-template-rows: 350px 350px;
+    grid-gap: 20px 1%;
+    margin-bottom: 80px;
+  }
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 33.8vw);
+    margin-bottom: 11.8vw;
+    grid-gap: 2.2vw;
+  }
+}
+.index_services__item {
+  display: flex;
+  align-items: center;
+  background-color: #F3F3F3;
+  border-radius: 30px;
+  padding-left: 2vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+  @media screen and (min-width: $fullscreen) {
+    padding-left: 30px;
+    background-position: center right -106px;
+
+    
+  }
+  @media screen and (min-width: 1790px) {
+    background-size: contain;
+    background-position: center right;
+  }
+  @media screen and (max-width: $mobile) {
+    padding-left: 4.6vw;
+
+    background-position: center right -4vw;
+  }
+}
+.index_services__item1 {
+  background-image: url(../../images/services_1.jpg);
+  @media screen and (min-width: $fullscreen) {
+    background-image: url(../../images/services_mob_1.jpg);
+  }
+  @media screen and (max-width: $mobile) {
+    background-image: url(../../images/services_mob_1.jpg);
+  }
+}
+.index_services__item2 {
+  background-image: url(../../images/services_2.jpg);
+  @media screen and (min-width: $fullscreen) {
+    background-image: url(../../images/services_mob_2.jpg);
+  }
+  @media screen and (max-width: $mobile) {
+    background-image: url(../../images/services_mob_2.jpg);
+  }
+}
+.index_services__item3 {
+  background-image: url(../../images/services_3.jpg);
+  @media screen and (min-width: $fullscreen) {
+    background-image: url(../../images/services_mob_3.jpg);
+  }
+  @media screen and (max-width: $mobile) {
+    background-image: url(../../images/services_mob_3.jpg);
+  }
+}
+.index_services__item4 {
+  background-image: url(../../images/services_4.jpg);
+  @media screen and (min-width: $fullscreen) {
+    background-image: url(../../images/services_mob_4.jpg);
+  }
+  @media screen and (max-width: $mobile) {
+    background-image: url(../../images/services_mob_4.jpg);
+  }
+}
+.index_services__item_p {
+  font-size: 2.15vw;
+  line-height: 2.6vw;
+  width: 15.1vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 33px;
+    line-height: 40px;
+    max-width: 280px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 5.1vw;
+    line-height: 5.8vw;
+    max-width: 35.7vw;
+    width: 100%;
+    &.index_services__item_p2 {
+      max-width: 33vw;
+    }
+  }
+}
+
+
+
+.index_offer {
+  display: flex;
+  margin-bottom: 5.3vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 81px;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    margin-bottom: 8.7vw;
+  }
+}
+.index_offer_title {
+  font-size: 2.8vw;
+  line-height: 3.1vw;
+  width: 36%;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 42px;
+    line-height: 47px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.7vw;
+    line-height: 7.7vw;
+    margin-bottom: 7vw;
+    width: 100%;
+  }
+}
+.index_offer_simplbar {
+  width: 64%;
+  @media screen and (min-width: $fullscreen) {
+  }
+  @media screen and (max-width: $mobile) {
+    width: auto;
+  }
+}
+.index_offer_items {
+  margin-top: 2.6vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-top: 40px;
+  }
+  @media screen and (max-width: $mobile) {
+    display: grid;
+    grid-template-columns: repeat(4, 48.8vw);
+    grid-template-rows: 1fr;
+    grid-gap: 4.3vw;
+  }
+}
+.index_offer_item {
+  padding-left: 9.8vw;
+  margin-bottom: 2.9vw;
+  background-repeat: no-repeat;
+  background-size: 5.8vw;
+  background-position: top 0.4vw left;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $fullscreen) {
+    padding-left: 149px;
+    margin-bottom: 44px;
+    background-size: 88px;
+    background-position: top 6.1px left;
+  }
+  @media screen and (max-width: $mobile) {
+    border-radius: 30px;
+    border: 1px solid #EAEAEA;
+    background-size: 20.3vw;
+    background-position: top 7vw left 5.3vw;
+    padding: 34.8vw 2.9vw 7.5vw;
+    // width: 48.8vw;
+  }
+}
+.index_offer_item1 {
+  background-image: url(../../images/offer1.svg);
+}
+.index_offer_item2 {
+  background-image: url(../../images/offer2.svg);
+}
+.index_offer_item3 {
+  background-image: url(../../images/offer3.svg);
+}
+.index_offer_item4 {
+  background-image: url(../../images/offer4.svg);
+}
+.index_offer_item_title {
+  font-size: 2.15vw;
+  line-height: 2.5vw;
+  margin-bottom: 0.8vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 33px;
+    line-height: 38px;
+    margin-bottom: 12px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.8vw;
+    line-height: 4.8vw;
+    font-weight: 500;
+    margin-bottom: 2.9vw;
+  }
+}
+.index_offer_item_p {
+  font-size: 1.25vw;
+  line-height: 1.5vw;
+  max-width: 45.8vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 23px;
+    max-width: 930px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+  }
+}
+
+
+
+
+

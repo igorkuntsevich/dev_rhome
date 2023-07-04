@@ -1,0 +1,591 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+.about_intro {
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  height: 41.7vw;
+  padding: 3.3vw 2.5vw;
+  margin-bottom: 4.1vw;
+  background-image: url(../../../images/about/about_intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (min-width: $fullscreen) {
+    background-position: right -9vw center;
+    margin-bottom: 62px;
+  }
+  @media screen and (max-width: $mobile) {
+    background-image: url(../../../images/about/about_intro_mob.jpg);
+    padding: 9.7vw 5.1vw;
+    height: 119.3vw;
+    margin-bottom: 8.45vw;
+  }
+}
+.about_intro_title {
+  font-size: 3.5vw;
+  line-height: 4.2vw;
+  color: #FFFFFF;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    // font-size: 53px;
+    // line-height: 64px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 10.1vw;
+    line-height: 11.1vw;
+  }
+}
+.about_intro_text {
+  margin-bottom: 4.5vw;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 68px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 9.7vw;
+  }
+}
+.about_intro_index_text {
+  br {
+    display: block;
+  }
+  .about_intro_text_span {
+    max-width: 55.7vw;
+  }
+  @media screen and (max-width: $mobile) {
+    .about_intro_text_p {
+      max-width: 100%;
+      padding-bottom: 34vw;
+      width: 100%;
+    }
+    .about_intro_text_span {
+      max-width: 58.7vw;
+    }
+  }
+}
+.about_intro_text_p {
+  font-size: 3.1vw;
+  line-height: 3.5vw;
+  margin-bottom: 1.1vw;
+  width: 78.8vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 47px;
+    line-height: 53px;
+    margin-bottom: 17px;
+    max-width: 1700px;
+  }
+  @media screen and (max-width: $mobile) {
+    br {
+      display: block;
+    }
+    font-size: 5.8vw;
+    line-height: 7.7vw;
+    margin-bottom: 0;
+    max-width: 95%;
+  }
+}
+.about_intro_text_span {
+  display: inline-block;
+  font-size: 1.5vw;
+  line-height: 2.1vw;
+  max-width: 47.7vw;
+  margin-left: 36.4vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 23px;
+    line-height: 32px;
+    max-width: 725px;
+    margin-left: 553px;
+  }
+  @media screen and (max-width: $mobile) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 3.4vw;
+    line-height: 5.3vw;
+    max-width: 47.7vw;
+    margin-left: 0;
+  }
+}
+.about_intro_numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1vw;
+  margin-bottom: 3.5vw;
+  @media screen and (min-width: $fullscreen) {
+    grid-gap: 15px;
+    margin-bottom: 53px;
+  }
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 38.6vw);
+    grid-gap: 3.4vw;
+    margin-bottom: 8.2vw;
+  }
+}
+
+.about_intro_number_item {
+  background-color: #F0F0F0;
+  border-radius: 30px;
+  padding: 2.9vw 2.2vw 3.1vw 1.9vw;
+  @media screen and (min-width: $fullscreen) {
+    padding: 44px 33px 47px 29px;
+  }
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 4.3vw 5vw 5.3vw;
+  }
+}
+.about_intro_number_item_span {
+  display: block;
+  font-size: 13.3vw;
+  line-height: 13.3vw;
+  font-weight: 300;
+  text-align: right;
+  margin-bottom: 1.875vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 202px;
+    line-height: 202px;
+    margin-bottom: 28.5px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 25.6vw;
+    line-height: 25.6vw;
+    margin-bottom: 0;
+  }
+}
+.about_intro_number_item_p {
+  font-size: 1.45vw;
+  line-height: 1.5vw;
+  max-width: 20vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 22px;
+    line-height: 23px;
+    max-width: 304px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 5.1vw;
+    line-height: 5.3vw;
+    max-width: 40vw;
+  }
+}
+.about_philosophy {
+  display: flex;
+  margin-bottom: 5.3vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 81px;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    margin-bottom: 8.7vw;
+  }
+}
+.about_philosophy_title {
+  font-size: 2.8vw;
+  line-height: 3.1vw;
+  width: 43%;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 42px;
+    line-height: 47px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.7vw;
+    line-height: 7.7vw;
+    margin-bottom: 7vw;
+    width: 100%;
+  }
+}
+.about_philosophy_simplbar {
+  width: 57%;
+  @media screen and (min-width: $fullscreen) {
+  }
+  @media screen and (max-width: $mobile) {
+    width: auto;
+  }
+}
+.about_philosophy_items {
+  @media screen and (min-width: $fullscreen) {
+  }
+  @media screen and (max-width: $mobile) {
+    display: grid;
+    grid-template-columns: repeat(4, 48.8vw);
+    grid-template-rows: 1fr;
+    grid-gap: 4.3vw;
+  }
+}
+.about_philosophy_item {
+  margin-bottom: 3vw;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 46px;
+  }
+  @media screen and (max-width: $mobile) {
+    border-radius: 30px;
+    border: 1px solid #EAEAEA;
+    padding: 7.8vw 2.9vw 6.5vw;
+  }
+}
+.about_philosophy_item_title {
+  font-size: 1.6vw;
+  line-height: 2.1vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.8vw;
+    line-height: 4.8vw;
+    margin-bottom: 2.9vw;
+  }
+}
+.about_philosophy_item_p {
+  font-size: 1.25vw;
+  line-height: 1.5vw;
+  max-width: 54.6vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 23px;
+    max-width: 930px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+  }
+}
+.about_schedule {
+  display: flex;
+  flex-direction: column;
+  padding: 4.2vw 2.6vw 5vw 1.9vw;
+  border-radius: 0px 30px 30px 0px;
+  background: linear-gradient(180deg, #3E393B 0%, #231F20 100%);
+  margin-bottom: 4.7vw;
+  @media screen and (min-width: $fullscreen) {
+    padding: 64px 40px 76px 29px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 12.6vw 5.1vw 15.4vw;
+    margin-bottom: 10vw;
+  }
+}
+.about_schedule_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.2vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 64px;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 9.6vw;
+  }
+}
+.about_schedule_text_title {
+  font-size: 2.8vw;
+  line-height: 3.1vw;
+  color: #FFFFFF;
+  width: 24vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 43px;
+    line-height: 47px;
+    width: 365px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.7vw;
+    line-height: 7.7vw;
+    width: 100%;
+    margin-bottom: 6vw;
+  }
+}
+.about_schedule_text_p {
+  font-size: 1.25vw;
+  line-height: 1.8vw;
+  color: #FFFFFF;
+  margin-right: 2.1vw;
+  width: 50.8vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 27px;
+    margin-right: 32px;
+    max-width: 950px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.9vw;
+    line-height: 5.1vw;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+.about_schedule_links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1.1vw;
+  @media screen and (min-width: $fullscreen) {
+    grid-gap: 17px;
+  }
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 4.3vw;
+  }
+}
+.about_schedule_link {
+  font-size: 1.9vw;
+  line-height: 2vw;
+  padding: 4.1vw 1vw;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 30px;
+  border: 1px solid #6D6D6D;
+  transition: all 0.5s ease;
+  &:hover {
+    border: 1px solid #A5A5A5;
+    background: rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 29px;
+    line-height: 30px;
+    padding: 62px 15px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 5.8vw;
+    line-height: 7vw;
+    padding: 8.7vw 7vw;
+    &:hover {
+      border: 1px solid #6D6D6D;
+      background: none;
+      transition: all 0.5s ease;
+    }
+  }
+}
+.about_personal {
+  margin-bottom: 4.7vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 71px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 7vw;
+  }
+}
+.about_personal_title {
+  font-size: 3vw;
+  line-height: 3.5vw;
+  margin-bottom: 2.6vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 46px;
+    line-height: 52px;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.7vw;
+    line-height: 7.7vw;
+    margin-bottom: 5vw;
+  }
+}
+.about_personal_flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1.1vw;
+  @media screen and (min-width: $fullscreen) {
+    grid-gap: 17px;
+  }
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+}
+.about_personal_item {
+  display: flex;
+  background-color: #232323;
+  border-radius: 0 30px 30px 0;
+  min-height: 31.6vw;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    min-height: 480px;
+  }
+  @media screen and (max-width: $mobile) {
+    &.about_personal_item1 {
+      min-height: 105.3vw;
+    }
+    &.about_personal_item2 { 
+      min-height: 117.4vw;
+    }
+  }
+}
+// .about_personal_item1 {
+//   @media screen and (max-width: $mobile) {
+
+//   }
+// }
+// .about_personal_item2 {
+//   @media screen and (max-width: $mobile) {
+
+//   }
+// }
+.about_personal_image {
+  width: 35%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+    width: 36%;
+  }
+}
+.about_personal_image_sergey {
+  background-image: url(../../../images/about/personal_1.jpg);
+  @media screen and (max-width: $mobile) {
+    background-image: url(../../../images/about/personal_1_mob.jpg);
+  }
+}
+.about_personal_image_dmitry {
+  background-image: url(../../../images/about/personal_2.jpg);
+  @media screen and (max-width: $mobile) {
+    background-image: url(../../../images/about/personal_2_mob.jpg);
+  }
+}
+.about_personal_text {
+  padding: 3.6vw 1.5vw 3vw 1.6vw;
+  width: 63%;
+  @media screen and (min-width: $fullscreen) {
+    padding: 55px 23px 46px 24px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 6.8vw 4.8vw 3vw 5.5vw;
+    width: 64%;
+  }
+}
+.about_personal_text_head_p {
+  font-size: 1.6vw;
+  line-height: 1.8vw;
+  color: #FFFFFF;
+  margin-bottom: 0.5vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 8px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 6.3vw;
+    margin-bottom: 2.6vw;
+  }
+}
+.about_personal_text_p {
+  font-size: 1.1vw;
+  line-height: 1.45vw;
+  color: #FFFFFF;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 17px;
+    line-height: 22px;
+    max-width: 450px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+  }
+}
+.about_personal_quote {
+  position: absolute;
+  border-radius: 0 30px 30px 30px;
+  border: 1px solid #6B6B6B;
+  background-color: rgba(0, 0, 0, 0.7);
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+    
+  }
+}
+.about_personal_quote1 {
+  bottom: 3.2vw;
+  left: 13.4vw;
+  padding: 2.3vw 2.5vw;
+  .about_personal_quote_p {
+    max-width: 27vw;
+  }
+  @media screen and (min-width: $bigfullscreen) {
+    left: 255px;
+  }
+  @media screen and (min-width: $fullscreen) {
+    bottom: 71px;
+    padding: 35px 38px;
+    .about_personal_quote_p {
+      max-width: 410px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    bottom: 9.9vw;
+    left: auto;
+    right: 3.6vw;
+    padding: 6.5vw 4.6vw;
+    .about_personal_quote_p {
+      max-width: 60.6vw;
+    }
+  }
+}
+.about_personal_quote2 {
+  bottom: 2.1vw;
+  left: 10.7vw;
+  padding: 1.8vw 2.5vw;
+  .about_personal_quote_p {
+    max-width: 30.5vw;
+  }
+  @media screen and (min-width: $bigfullscreen) {
+    left: 203px;
+  }
+  @media screen and (min-width: $fullscreen) {
+    bottom: 32px;
+    // left: 162px;
+    padding: 27px 38px;
+    .about_personal_quote_p {
+      max-width: 464px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    bottom: 9.9vw;
+    left: auto;
+    right: 3.6vw;
+    padding: 5.8vw 5vw;
+    .about_personal_quote_p {
+      max-width: 65.9vw;
+    }
+  }
+}
+.about_personal_quote_p {
+  font-size: 1.1vw;
+  line-height: 1.45vw;
+  color: #FFFFFF;
+  margin-bottom: 0.7vw;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 11px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+    margin-bottom: 1.2vw;
+  }
+}
+
+
+

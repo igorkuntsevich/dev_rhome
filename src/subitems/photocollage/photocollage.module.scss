@@ -1,0 +1,89 @@
+$fullscreen: 1520px;
+$mobile: 768px;
+.photocollage_images_bcg {
+  @media screen and (max-width: $mobile) {
+    padding: 0;
+  }
+}
+.photocollage_images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8.4vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 128px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 10.6vw;
+  }
+}
+.photocollage_four_images {
+  gap: 3.3vw;
+  @media screen and (min-width: $fullscreen) {
+    gap: 50px;
+  }
+  @media screen and (max-width: $mobile) {
+    gap: 3.7vw;
+  }
+}
+.photocollage_five_images {
+  gap: 1.7vw;
+  @media screen and (min-width: $fullscreen) {
+    gap: 26px;
+  }
+  @media screen and (max-width: $mobile) {
+    gap: 3.7vw;
+  }
+}
+.photocollage_img {
+  height: 100%;
+}
+.photocollage_apart_img1 {
+  margin-top: 9.7vw;
+  @media screen and (max-width: $mobile) {
+    margin-top: 10.9vw;
+  }
+}
+.photocollage_apart_img2 {
+  margin-top: 1.8vw;
+  @media screen and (max-width: $mobile) {
+    margin-top: 2.2vw;
+  }
+}
+.photocollage_apart_img3 {
+  margin-top: 7.3vw;
+  @media screen and (max-width: $mobile) {
+    margin-top: 8vw;
+  }
+}
+.photocollage_apart_img5 {
+  margin-top: 8.125vw;
+  @media screen and (max-width: $mobile) {
+    margin-top: 8.9vw;
+  }
+}
+.photocollage_house_img1 {
+  
+  @media screen and (max-width: $mobile) {
+
+  }
+}
+.photocollage_house_img2 {
+  @media screen and (max-width: $mobile) {
+    
+  }
+}
+.photocollage_house_img3 {
+  @media screen and (max-width: $mobile) {
+    
+  }
+}
+.photocollage_house_img4 {
+  @media screen and (max-width: $mobile) {
+    
+  }
+}
+.photocollage_house_img5 {
+  @media screen and (max-width: $mobile) {
+    
+  }
+}

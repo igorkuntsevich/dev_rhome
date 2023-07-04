@@ -1,0 +1,175 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+.services_stages {
+  margin-bottom: 4.6vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 70px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 10vw;
+  }
+}
+.services_stages_text {
+  margin-bottom: 4.4vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 67px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 6vw;
+  }
+}
+.services_stages_text_title {
+  font-size: 2.8vw;
+  line-height: 3.3vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.7vw;
+    line-height: 7.7vw;
+    max-width: 65vw;
+    margin-bottom: 4vw;
+  }
+}
+.services_stages_text_p {
+  font-size: 1.5vw;
+  line-height: 1.7vw;
+  sup {
+    font-size: 1vw;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 23px;
+    line-height: 26px;
+    sup {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+    max-width: 65vw;
+    sup {
+      font-size: 2.4vw;
+    }
+  }
+}
+.services_stages_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 0 1.1vw;
+  @media screen and (min-width: $fullscreen) {
+    grid-gap: 0 17px;
+  }
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: repeat(3, 80.4vw);
+    grid-gap: 0 2.7vw;
+  }
+}
+.services_stages_facade_grid {
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: repeat(2, 80.4vw);
+  }
+}
+.services_stages_item {
+  @media screen and (min-width: $fullscreen) {
+  }
+  @media screen and (max-width: $mobile) {
+  }
+}
+.services_stages_item_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #3E393B 0%, #231F20 100%);
+  border-radius: 30px 30px 0px 0px;
+  padding: 2.4vw 1.6vw;
+  @media screen and (min-width: $fullscreen) {
+    padding: 36px 24px;
+  }
+  @media screen and (max-width: $mobile) {
+    align-items: center;
+    flex-direction: row;
+    padding: 5.7vw 5.4vw 5vw 4.1vw;
+  }
+}
+.services_stages_item_title_p {
+  font-size: 2.4vw;
+  line-height: 2.9vw;
+  color: #FFFFFF;
+  margin-bottom: 0.5vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 8px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.7vw;
+    line-height: 7.7vw;
+    margin-bottom: 0;
+  }
+}
+.services_stages_item_title_span {
+  font-size: 1.25vw;
+  line-height: 1.5vw;
+  color: #D8D8D8;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 23px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 4.3vw;
+  }
+}
+.services_stages_item_content {
+  padding: 3.1vw 3.1vw 3.4vw 1.7vw;
+  border: 1px solid #DBDBDB;
+  border-top: none;
+  border-radius: 0 0 30px 30px;
+  @media screen and (min-width: $fullscreen) {
+    padding: 47px 47px 52px 26px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 6vw 3.4vw 12.1vw 4.1vw;
+  }
+}
+.services_stages_item__li {
+  font-size: 1.6vw;
+  line-height: 2vw;
+  font-weight: 500;
+  margin-bottom: 1.2vw;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 18px;
+    max-width: 450px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 5.3vw;
+    margin-bottom: 3.6vw;
+  }
+}
+.services_stages_item__span {
+  display: inline-block;
+  font-size: 1.25vw;
+  line-height: 1.5vw;
+  margin-top: 0.9vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: 1px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+    margin-top: 2vw;
+  }
+}
