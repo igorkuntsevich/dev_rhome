@@ -29,6 +29,11 @@ import { Faq } from "../../subitems/faq"
 
 const ServicesApart = () => (
   <Layout>
+    <Seo 
+      title={""} description={""}
+      location={"https://rhome.by/services/apartment"}
+      image={""}
+    />
     <div className="wrapper">
       {/* <StaticImage
         src="../images/example.png"
@@ -108,7 +113,5 @@ const ServicesApart = () => (
     </div>
   </Layout>
 )
-
-export const Head = () => <Seo title="Rhome apartment" />
 
 export default ServicesApart

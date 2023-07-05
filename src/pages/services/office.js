@@ -23,6 +23,11 @@ import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmi
 
 const ServicesOffice = () => (
   <Layout>
+    <Seo 
+      title={""} description={""}
+      location={"https://rhome.by/services/office"}
+      image={""}
+    />
     <div className="wrapper">
       {/* <StaticImage
         src="../images/example.png"
@@ -100,7 +105,5 @@ const ServicesOffice = () => (
     </div>
   </Layout>
 )
-
-export const Head = () => <Seo title="Rhome office" />
 
 export default ServicesOffice

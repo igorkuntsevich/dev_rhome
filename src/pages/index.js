@@ -19,6 +19,11 @@ import { FooterConsultationDmitry } from "../subitems/footer-consultation-dmitry
 
 const IndexPage = () => (
   <Layout>
+    <Seo 
+      title={""} description={""}
+      location={"https://rhome.by/"}
+      image={""}
+    />
     <div className="wrapper">
       <div className={styles.index_intro}>
         <Video mobileSrc={mainVideoMobile} desktopSrc={mainVideo} />
@@ -74,7 +79,5 @@ const IndexPage = () => (
     </div>
   </Layout>
 )
-
-export const Head = () => <Seo title="Rhome" />
 
 export default IndexPage

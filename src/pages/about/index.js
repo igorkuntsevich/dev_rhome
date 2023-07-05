@@ -12,6 +12,11 @@ import * as styles from "../../components/styles/about/about.module.scss"
 
 const About = () => (
   <Layout>
+    <Seo 
+      title={""} description={""}
+      location={"https://rhome.by/about"}
+      image={""}
+    />
     <div className="wrapper">
       {/* <StaticImage
         src="../images/example.png"
@@ -111,7 +116,5 @@ const About = () => (
     </div>
   </Layout>
 )
-
-export const Head = () => <Seo title="Rhome about" />
 
 export default About

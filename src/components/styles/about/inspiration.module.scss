@@ -1,0 +1,115 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+.inspiration_photos_intro {
+  border-radius: 30px 30px 0px 0px;
+  background: linear-gradient(180deg, #3E393B 0%, #231F20 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 3.3vw 2.5vw 1.4vw;
+  margin-bottom: 1.2vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 18px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 9.7vw 5.1vw 6.7vw;
+    // height: 119.3vw;
+    margin-bottom: 3.4vw;
+  }
+}
+.inspiration_photos_intro_title {
+  font-size: 3.5vw;
+  line-height: 4.2vw;
+  color: #FFFFFF;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 53px;
+    line-height: 64px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 7.2vw;
+    line-height: 8.7vw;
+  }
+}
+.inspiration_photos_content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vw;
+  margin-bottom: 4.8vw;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+
+  }
+}
+.inspiration_photos_1 {
+  display: grid;
+  grid-gap: 1.3vw;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+
+  }
+}
+.inspiration_photos_2 {
+  display: grid;
+  grid-gap: 1.3vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+
+  }
+}
+.inspiration_photos_3 {
+  display: grid;
+  grid-gap: 1.3vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+
+  }
+}
+.inspiration_photos_4 {
+  display: grid;
+  grid-gap: 1.3vw;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+
+  }
+}
+.inspiration_photos_5 {
+  display: grid;
+  grid-gap: 1.3vw;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+
+  }
+}
+.inspiration_photos_img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+// .inspitation {
+
+
+// }

@@ -19,6 +19,11 @@ import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmi
 
 const ServicesFasad = () => (
   <Layout>
+    <Seo 
+      title={""} description={""}
+      location={"https://rhome.by/services/facade"}
+      image={""}
+    />
     <div className="wrapper">
       {/* <StaticImage
         src="../images/example.png"
@@ -90,7 +95,5 @@ const ServicesFasad = () => (
     </div>
   </Layout>
 )
-
-export const Head = () => <Seo title="Rhome facade" />
 
 export default ServicesFasad
