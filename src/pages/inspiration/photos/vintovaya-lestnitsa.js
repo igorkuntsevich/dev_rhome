@@ -3,7 +3,7 @@ import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
-import { InspirationPhotos } from "../../../subitems/breadcrumbs/inspiration_photos"
+import { BreadcrumbsInspirationPhotos } from "../../../subitems/breadcrumbs/inspiration_photos"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
 
@@ -17,9 +17,9 @@ const VintovayaLestnitsa = () => (
       image={"https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.inspiration_photos_intro}>
-        <InspirationPhotos />
-        <h1 className={styles.inspiration_photos_intro_title}>Резиденция площадью 157&nbsp;кв.м.&nbsp;в&nbsp;Москве</h1>
+      <div className={styles.inspiration_intro}>
+        <BreadcrumbsInspirationPhotos />
+        <h1 className={styles.inspiration_intro_title}>Резиденция площадью 157&nbsp;кв.м.&nbsp;в&nbsp;Москве</h1>
       </div>
       <Fancybox>
         <div className={styles.inspiration_photos_content}>

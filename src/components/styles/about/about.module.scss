@@ -12,7 +12,6 @@ $mobile: 768px;
   background-size: cover;
   background-repeat: no-repeat;
   @media screen and (min-width: $fullscreen) {
-    background-position: right -9vw center;
     margin-bottom: 62px;
   }
   @media screen and (max-width: $mobile) {

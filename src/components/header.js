@@ -24,44 +24,129 @@ const Header = () => {
           <Link to="/" className="header_logo_link_mob_open">
             <img src={logo_mob} alt="rhome logotype" class="header_logo_img_mob_open" />
           </Link>
-          <ul className="header_nav">
-            <li>
-              <Link
-                // to="/"
-                to="/services/apartment"
-                className="header_nav_li"
-                activeClassName="header_nav_li_active"
-              >Услуги</Link>
-            </li>
-            <li>
-              <Link
-                to="/2"
-                className="header_nav_li"
-                activeClassName="header_nav_li_active"
-              >Портфолио</Link>
-            </li>
-            <li>
-              <Link
-                to="/3"
-                className="header_nav_li"
-                activeClassName="header_nav_li_active"
-              >Стоимость</Link>
-            </li>
-            <li>
-              <Link
-                to="/about"
-                className="header_nav_li"
-                activeClassName="header_nav_li_active"
-              >О&nbsp;студии</Link>
-            </li>
-            <li>
-              <Link
-                to="/5"
-                className="header_nav_li"
-                activeClassName="header_nav_li_active"
-              >Контакты</Link>
-            </li>
-          </ul>
+          <div className="header_desktop_items">
+            <ul className="header_nav">
+              {/* <li>
+                <Link
+                  // to="/"
+                  to="/services/apartment"
+                  className="header_nav_li"
+                  activeClassName="header_nav_li_active"
+                >Услуги</Link>
+              </li> */}
+              <p className="header_nav_li header_subnav_p header_nav_li_arrow">Услуги</p>
+              <li>
+                <Link
+                  to="/2"
+                  className="header_nav_li"
+                  activeClassName="header_nav_li_active"
+                >Портфолио</Link>
+              </li>
+              <li>
+                <Link
+                  to="/3"
+                  className="header_nav_li"
+                  activeClassName="header_nav_li_active"
+                >Стоимость</Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="header_nav_li header_nav_li_arrow"
+                  activeClassName="header_nav_li_active"
+                >О&nbsp;студии</Link>
+              </li>
+              <li>
+                <Link
+                  to="/5"
+                  className="header_nav_li"
+                  activeClassName="header_nav_li_active"
+                >Контакты</Link>
+              </li>
+            </ul>
+            <div className="header_subnav_hidden">
+              <div className="header_subnav_services">
+                <ul className="header_subnav_ul">
+                  <li>
+                    <Link 
+                      to="/services/apartment" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Дизайн проект квартиры</Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/services/house" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Дизайн проект дома</Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/services/office" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Дизайн проект офисы</Link>
+                  </li>
+                </ul>
+                <ul className="header_subnav_ul">
+                  <li>
+                    <Link 
+                      to="/3" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Строительные работы</Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/3" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Авторский надзор</Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/services/facade" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Оформление фасадов</Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/3" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Согласование препланировки</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="header_subnav_about">
+                <ul className="header_subnav_ul">
+                  <li>
+                    <Link 
+                      to="/3" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Вакансии</Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/3" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Отзывы</Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/inspiration" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Вдохновение</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div 
             onClick={()=>  {
               setNavOpen(!navOpen)}} className="header_burger">

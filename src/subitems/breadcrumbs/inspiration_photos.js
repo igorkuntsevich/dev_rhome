@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from "./breadcrumbs.module.scss"
 
 
-export const InspirationPhotos = () => {
+export const BreadcrumbsInspirationPhotos = () => {
   return (
     <ul className={styles.breadcrumbs}>
       <li className={styles.breadcrumbs_li}>Вдохновение</li>

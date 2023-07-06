@@ -131,6 +131,8 @@ header {
   display: inline-block;
   width: 13.2vw;
   height: 5vw;
+  position: relative;
+  z-index: 2;
   @media screen and (min-width: $fullscreen) {
     width: 182px;
     height: 76px;
@@ -175,10 +177,104 @@ header {
     margin-left: 23px;
     padding-right: 15px;
   }
-  @media screen and (max-width: $mobile) {
-    
+}
+.header_nav_li_arrow {
+  &::after {
+    content: "";
+    position: absolute;
+    right: -0.2vw;
+    top: 1.2vw;
+    display: inline-block;
+    padding: 0.25vw;
+    border: solid #9c9c9c;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+  }
+  @media screen and (min-width: $fullscreen) {
+    &::after {
+      top: 18px;
+      right: -3px;
+      padding: 3.8px;
+    }
   }
 }
+.header_subnav_hidden {
+  display: flex;
+  gap: 10.4vw;
+  justify-content: flex-end;
+  position: absolute;
+  top: 4vw;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  padding: 1.4vw 0 1.9vw;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-2vw);
+  transition: 0.2s ease;
+  @media screen and (min-width: $fullscreen) {
+    gap: 158px;
+    top: 61px;
+    padding: 21px 0 29px;
+    transform: translateY(-30px);
+  }
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+.header_desktop_items:hover .header_subnav_hidden {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.header_subnav_services {
+  width: 17.4vw;
+  @media screen and (min-width: $fullscreen) {
+    width: 264px;
+  }
+}
+.header_subnav_about {
+  width: 15.3vw;
+  @media screen and (min-width: $fullscreen) {
+    width: 232px;
+  }
+}
+.header_subnav_p {
+  cursor: default;
+  &:hover {
+    color: #373435;
+  }
+}
+.header_subnav_ul {
+  margin-bottom: 0.8vw;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 12px;
+  }
+}
+.header_subnav_a {
+  font-size: 1.1vw;
+  line-height: 1.7vw;
+  // transition: all 0.5s ease;
+  // &:hover {
+  //   color: #665f61;
+  //   transition: all 0.5s ease;
+  // }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  @media screen and (max-width: $mobile) {
+  }
+}
+.header_subnav_a_active {
+  color: #858585;
+}
+
+
 .header_desktop {
   display: flex;
   justify-content: space-between;
