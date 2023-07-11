@@ -18,8 +18,8 @@ import { ServicesCost } from "../../subitems/services-cost"
 
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 
-import { Faq } from "../../subitems/faq"
-// import { Faq } from "../../subitems/faq/apartment"
+import { Faq } from "../../subitems/faq/apartment"
+import * as faqStyles from "../../subitems/faq/faq.module.scss"
 
 
 
@@ -105,7 +105,12 @@ const ServicesApart = () => (
       />
       <StagesApart />
       <div className="line"></div>
-      <Faq/>
+      <div className={faqStyles.faq}>
+        <h2 className={faqStyles.faq_title}>Часто задаваемые<br />вопросы</h2>
+        <div className={faqStyles.faq_items}>
+          <Faq/>
+        </div>
+      </div>
 
 
       

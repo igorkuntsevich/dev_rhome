@@ -1,9 +1,10 @@
 import * as React from "react"
 import { useState } from "react"
+import * as styles from "./faq.module.scss"
 
 
 export const Accordion = ({config}) => {
- 
+
   return (
     <>
 
@@ -18,15 +19,19 @@ export const Accordion = ({config}) => {
   )
 }
 
-const Item = ({title , text  })=>{
-  const [ open , setOpen] =useState(false)
+const Item = ({ title , text })=>{
+  const [ open , setOpen ] =useState(false)
 
-  return   <div className="faq_item">
-    <div onClick={ ()=> setOpen(!open)} className="faq_item_block">
-      <h4    dangerouslySetInnerHTML={{__html:title}}/>
+  return <div className={"faq_item" + ( open? " open" : "")}>
+    <div onClick={ ()=> setOpen(!open)} className="faq_item_head">
+      <h2
+        className={styles.faq_item_title}
+        dangerouslySetInnerHTML={{__html:title}}
+      />
     </div>
-    <div style={open?{display:'block'}:{}} className="faq_item_block_hidden">
-      <div   dangerouslySetInnerHTML={{__html:text}} />
+    <div
+      className="faq_item_text"
+      dangerouslySetInnerHTML={{__html:text}}>
     </div>
   </div>
 }

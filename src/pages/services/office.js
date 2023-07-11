@@ -19,6 +19,9 @@ import { ServicesCost } from "../../subitems/services-cost"
 
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 
+import { Faq } from "../../subitems/faq/office"
+import * as faqStyles from "../../subitems/faq/faq.module.scss"
+
 
 
 const ServicesOffice = () => (
@@ -101,6 +104,12 @@ const ServicesOffice = () => (
         </div>
       </div> */}
       <div className="line"></div>
+      <div className={faqStyles.faq}>
+        <h2 className={faqStyles.faq_title}>Часто задаваемые<br />вопросы</h2>
+        <div className={faqStyles.faq_items}>
+          <Faq/>
+        </div>
+      </div>
       <FooterConsultationDmitry />
     </div>
   </Layout>
