@@ -9,61 +9,70 @@ import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-
 
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
-const VintovayaLestnitsa = () => (
+const DomOzero = () => (
   <Layout>
     <Seo 
-      title={"Винтовая лестница от норвежского архитектора - RHOME"} description={"Винтовая лестница от норвежского архитектора - RHOME"}
-      location={"https://rhome.by/inspiration/photos/vintovaya-lestnitsa"}
-      image={"https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"}
+      title={"Дом с видом на озеро в Новой Зеландии - RHOME"} description={""}
+      location={"https://rhome.by/inspiration/photos/dom-ozero"}
+      image={"https://rhome.by/images/inspiration/photos/dom-ozero/01_dom-ozero.jpg"}
     />
     <div className="wrapper">
       <div className={styles.inspiration_intro}>
         <BreadcrumbsInspirationPhotos />
-        <h1 className={styles.inspiration_intro_title}>Резиденция площадью 157&nbsp;кв.м.&nbsp;в&nbsp;Москве</h1>
+        <h1 className={styles.inspiration_intro_title}>Дом с видом на озеро в Новой Зеландии</h1>
       </div>
       <Fancybox>
         <div className={styles.inspiration_photos_content}>
-          <div className={styles.inspiration_photos_1}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+
+          <div className={styles.inspiration_photos_2}>
+            <a href="https://rhome.by/images/inspiration/photos/dom-ozero/01_dom-ozero.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/dom-ozero/01_dom-ozero.jpg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+            <a href="https://rhome.by/images/inspiration/photos/dom-ozero/03_dom-ozero.jpg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/dom-ozero/03_dom-ozero.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/02_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-ozero/02_dom-ozero.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/02_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/dom-ozero/02_dom-ozero.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-ozero/04_dom-ozero.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/dom-ozero/04_dom-ozero.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/04_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-ozero/05_dom-ozero.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/04_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/dom-ozero/05_dom-ozero.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-ozero/06_dom-ozero.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/dom-ozero/06_dom-ozero.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
@@ -77,4 +86,4 @@ const VintovayaLestnitsa = () => (
   </Layout>
 )
 
-export default VintovayaLestnitsa
+export default DomOzero

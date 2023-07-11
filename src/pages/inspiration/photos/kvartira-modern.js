@@ -9,61 +9,70 @@ import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-
 
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
-const VintovayaLestnitsa = () => (
+const KvartiraModern = () => (
   <Layout>
     <Seo 
-      title={"Винтовая лестница от норвежского архитектора - RHOME"} description={"Винтовая лестница от норвежского архитектора - RHOME"}
-      location={"https://rhome.by/inspiration/photos/vintovaya-lestnitsa"}
-      image={"https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"}
+      title={"Квартира в стиле mid-century modern - RHOME"} description={""}
+      location={"https://rhome.by/inspiration/photos/kvartira-modern"}
+      image={"https://rhome.by/images/inspiration/photos/kvartira-modern/01_kvartira-modern.jpg"}
     />
     <div className="wrapper">
       <div className={styles.inspiration_intro}>
         <BreadcrumbsInspirationPhotos />
-        <h1 className={styles.inspiration_intro_title}>Резиденция площадью 157&nbsp;кв.м.&nbsp;в&nbsp;Москве</h1>
+        <h1 className={styles.inspiration_intro_title}>Квартира в стиле mid-century modern</h1>
       </div>
       <Fancybox>
         <div className={styles.inspiration_photos_content}>
-          <div className={styles.inspiration_photos_1}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+
+          <div className={styles.inspiration_photos_2}>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-modern/01_kvartira-modern.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-modern/01_kvartira-modern.jpg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-modern/03_kvartira-modern.jpg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/kvartira-modern/03_kvartira-modern.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/02_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-modern/02_kvartira-modern.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/02_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-modern/02_kvartira-modern.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-modern/04_kvartira-modern.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-modern/04_kvartira-modern.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/04_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-modern/05_kvartira-modern.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/04_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-modern/05_kvartira-modern.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-modern/06_kvartira-modern.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-modern/06_kvartira-modern.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
@@ -77,4 +86,4 @@ const VintovayaLestnitsa = () => (
   </Layout>
 )
 
-export default VintovayaLestnitsa
+export default KvartiraModern

@@ -9,67 +9,66 @@ import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-
 
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
-const VintovayaLestnitsa = () => (
+const DesignAward2018 = () => (
   <Layout>
     <Seo 
-      title={"Винтовая лестница от норвежского архитектора - RHOME"} description={"Винтовая лестница от норвежского архитектора - RHOME"}
-      location={"https://rhome.by/inspiration/photos/vintovaya-lestnitsa"}
-      image={"https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"}
+      title={"Дом-победитель German Design Award 2018 - RHOME"} description={""}
+      location={"https://rhome.by/inspiration/photos/design-award-2018"}
+      image={"https://rhome.by/images/inspiration/photos/design-award-2018/01_design-award-2018.jpg"}
     />
     <div className="wrapper">
       <div className={styles.inspiration_intro}>
         <BreadcrumbsInspirationPhotos />
-        <h1 className={styles.inspiration_intro_title}>Резиденция площадью 157&nbsp;кв.м.&nbsp;в&nbsp;Москве</h1>
+        <h1 className={styles.inspiration_intro_title}>Дом-победитель German Design Award 2018</h1>
       </div>
       <Fancybox>
         <div className={styles.inspiration_photos_content}>
           <div className={styles.inspiration_photos_1}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/design-award-2018/01_design-award-2018.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/design-award-2018/01_design-award-2018.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/02_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/design-award-2018/02_design-award-2018.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/02_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/design-award-2018/02_design-award-2018.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/design-award-2018/03_design-award-2018.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/design-award-2018/03_design-award-2018.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/04_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/design-award-2018/04_design-award-2018.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/04_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/design-award-2018/04_design-award-2018.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/design-award-2018/05_design-award-2018.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/design-award-2018/05_design-award-2018.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
-
         </div>
       </Fancybox>
       <FooterConsultationDmitry />
@@ -77,4 +76,4 @@ const VintovayaLestnitsa = () => (
   </Layout>
 )
 
-export default VintovayaLestnitsa
+export default DesignAward2018
