@@ -56,7 +56,7 @@ const OldmillBelgrade = () => (
             <a href="https://rhome.by/images/inspiration/photos/old-mill-belgrade/03_old-mill-belgrade.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/old-mill-belgrade/03old-mill-belgrade.jpg"
+                src="../../../images/inspiration/photos/old-mill-belgrade/03_old-mill-belgrade.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />

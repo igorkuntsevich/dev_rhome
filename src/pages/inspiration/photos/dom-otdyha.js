@@ -9,119 +9,112 @@ import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-
 
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
-const VillaWhite = () => (
+const DomOtdyha = () => (
   <Layout>
     <Seo 
-      title={"Вилла V3 - RHOME"} description={""}
-      location={"https://rhome.by/inspiration/photos/villa-white"}
-      image={"https://rhome.by/images/inspiration/photos/villa-white/01_villa-white.jpg"}
+      title={"Дом отдыха в Нью-Йорке - RHOME"} description={""}
+      location={"https://rhome.by/inspiration/photos/dom-otdyha"}
+      image={"https://rhome.by/images/inspiration/photos/dom-otdyha/01_dom-otdyha.jpg"}
     />
     <div className="wrapper">
       <div className={styles.inspiration_intro}>
         <BreadcrumbsInspirationPhotos />
-        <h1 className={styles.inspiration_intro_title}>Вилла V3</h1>
+        <h1 className={styles.inspiration_intro_title}>Дом отдыха в Нью-Йорке</h1>
       </div>
       <Fancybox>
         <div className={styles.inspiration_photos_content}>
+
+          <div className={styles.inspiration_photos_2}>
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/01_dom-otdyha.jpg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/dom-otdyha/01_dom-otdyha.jpg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/02_dom-otdyha.jpg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/dom-otdyha/02_dom-otdyha.jpg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+          </div>
           <div className={styles.inspiration_photos_3}>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/01_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/04_dom-otdyha.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/01_villa-white.jpg"
+                src="../../../images/inspiration/photos/dom-otdyha/04_dom-otdyha.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/02_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/07_dom-otdyha.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/02_villa-white.jpg"
+                src="../../../images/inspiration/photos/dom-otdyha/07_dom-otdyha.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/03_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/09_dom-otdyha.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/03_villa-white.jpg"
+                src="../../../images/inspiration/photos/dom-otdyha/09_dom-otdyha.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/04_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/11_dom-otdyha.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/04_villa-white.jpg"
+                src="../../../images/inspiration/photos/dom-otdyha/11_dom-otdyha.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/05_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/10_dom-otdyha.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/05_villa-white.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-          </div>
-          <div className={styles.inspiration_photos_3}>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/06_villa-white.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/villa-white/06_villa-white.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/07_villa-white.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/villa-white/07_villa-white.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/08_villa-white.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/villa-white/08_villa-white.jpg"
+                src="../../../images/inspiration/photos/dom-otdyha/10_dom-otdyha.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_4}>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/09_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/03_dom-otdyha.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/09_villa-white.jpg"
+                src="../../../images/inspiration/photos/dom-otdyha/03_dom-otdyha.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/10_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/05_dom-otdyha.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/10_villa-white.jpg"
+                src="../../../images/inspiration/photos/dom-otdyha/05_dom-otdyha.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/11_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/06_dom-otdyha.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/11_villa-white.jpg"
+                src="../../../images/inspiration/photos/dom-otdyha/06_dom-otdyha.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/12_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/dom-otdyha/08_dom-otdyha.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/12_villa-white.jpg"
+                src="../../../images/inspiration/photos/dom-otdyha/08_dom-otdyha.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
@@ -134,4 +127,4 @@ const VillaWhite = () => (
   </Layout>
 )
 
-export default VillaWhite
+export default DomOtdyha

@@ -23,131 +23,97 @@ const KvartiraOdesskaya = () => (
       </div>
       <Fancybox>
         <div className={styles.inspiration_photos_content}>
-          <div className={styles.inspiration_photos_1}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+        <div className={styles.inspiration_photos_3}>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/01_kvartira-odesskaya.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-odesskaya/01_kvartira-odesskaya.jpg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/02_kvartira-odesskaya.jpg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/kvartira-odesskaya/02_kvartira-odesskaya.jpg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/03_kvartira-odesskaya.jpg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/kvartira-odesskaya/03_kvartira-odesskaya.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/02_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/04_kvartira-odesskaya.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-odesskaya/04_kvartira-odesskaya.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/08_kvartira-odesskaya.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/02_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-odesskaya/08_kvartira-odesskaya.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_3}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/05_kvartira-odesskaya.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-odesskaya/05_kvartira-odesskaya.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/06_kvartira-odesskaya.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-odesskaya/06_kvartira-odesskaya.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/07_kvartira-odesskaya.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-          </div>
-          <div className={styles.inspiration_photos_4}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-odesskaya/07_kvartira-odesskaya.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
-          <div className={styles.inspiration_photos_5}>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+          <div className={styles.inspiration_photos_3}>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/09_kvartira-odesskaya.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-odesskaya/09_kvartira-odesskaya.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/10_kvartira-odesskaya.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-odesskaya/10_kvartira-odesskaya.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-odesskaya/11_kvartira-odesskaya.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/05_vintovaya-lestnitsa.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+                src="../../../images/inspiration/photos/kvartira-odesskaya/11_kvartira-odesskaya.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />

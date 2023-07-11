@@ -13,7 +13,7 @@ const PereoborudovannayaPivovarnya = () => (
   <Layout>
     <Seo 
       title={"Переоборудованная пивоварня - RHOME"} description={"E"}
-      location={"https://rhome.by/inspiration/photos/vintovaya-lestnitsa"}
+      location={"https://rhome.by/inspiration/photos/pereoborudovannaya-pivovarnya"}
       image={"https://rhome.by/images/inspiration/photos/pereoborudovannaya-pivovarnya/01_pereoborudovannaya-pivovarnya.jpg"}
     />
     <div className="wrapper">

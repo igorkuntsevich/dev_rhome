@@ -14,7 +14,7 @@ const KvartiraTelaviv = () => (
     <Seo 
       title={"Графичная квартира в Тель-Авиве - RHOME"} description={""}
       location={"https://rhome.by/inspiration/photos/kvartira-tel-aviv"}
-      image={"https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/01_kvartira-tel-aviv.jpg"}
+      image={"https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/01_kvartira-tel-aviv.jpeg"}
     />
     <div className="wrapper">
       <div className={styles.inspiration_intro}>
@@ -24,70 +24,70 @@ const KvartiraTelaviv = () => (
       <Fancybox>
         <div className={styles.inspiration_photos_content}>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/01_kvartira-tel-aviv.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/01_kvartira-tel-aviv.jpeg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-tel-aviv/01_kvartira-tel-aviv.jpg"
+                src="../../../images/inspiration/photos/kvartira-tel-aviv/01_kvartira-tel-aviv.jpeg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/02_kvartira-tel-aviv.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/02_kvartira-tel-aviv.jpeg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-tel-aviv/02_kvartira-tel-aviv.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-          </div>
-          <div className={styles.inspiration_photos_3}>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/03_kvartira-tel-aviv.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/kvartira-tel-aviv/03_kvartira-tel-aviv.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/04_kvartira-tel-aviv.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/kvartira-tel-aviv/04_kvartira-tel-aviv.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/05_kvartira-tel-aviv.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/kvartira-tel-aviv/05_kvartira-tel-aviv.jpg"
+                src="../../../images/inspiration/photos/kvartira-tel-aviv/02_kvartira-tel-aviv.jpeg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_3}>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/06_kvartira-tel-aviv.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/03_kvartira-tel-aviv.jpeg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-tel-aviv/06_kvartira-tel-aviv.jpg"
+                src="../../../images/inspiration/photos/kvartira-tel-aviv/03_kvartira-tel-aviv.jpeg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/07_kvartira-tel-aviv.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/04_kvartira-tel-aviv.jpeg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-tel-aviv/07_kvartira-tel-aviv.jpg"
+                src="../../../images/inspiration/photos/kvartira-tel-aviv/04_kvartira-tel-aviv.jpeg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/08_kvartira-tel-aviv.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/05_kvartira-tel-aviv.jpeg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-tel-aviv/08_kvartira-tel-aviv.jpg"
+                src="../../../images/inspiration/photos/kvartira-tel-aviv/05_kvartira-tel-aviv.jpeg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+          </div>
+          <div className={styles.inspiration_photos_3}>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/06_kvartira-tel-aviv.jpeg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/kvartira-tel-aviv/06_kvartira-tel-aviv.jpeg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/07_kvartira-tel-aviv.jpeg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/kvartira-tel-aviv/07_kvartira-tel-aviv.jpeg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-tel-aviv/08_kvartira-tel-aviv.jpeg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/kvartira-tel-aviv/08_kvartira-tel-aviv.jpeg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />

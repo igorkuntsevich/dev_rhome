@@ -9,124 +9,127 @@ import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-
 
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
-const VillaWhite = () => (
+const KvartiraKaunas = () => (
   <Layout>
     <Seo 
-      title={"Вилла V3 - RHOME"} description={""}
-      location={"https://rhome.by/inspiration/photos/villa-white"}
-      image={"https://rhome.by/images/inspiration/photos/villa-white/01_villa-white.jpg"}
+      title={"Бетонная квартира в Каунасе - RHOME"} description={""}
+      location={"https://rhome.by/inspiration/photos/kvartira-kaunas"}
+      image={"https://rhome.by/images/inspiration/photos/kvartira-kaunas/01_kvartira-kaunas.jpg"}
     />
     <div className="wrapper">
       <div className={styles.inspiration_intro}>
         <BreadcrumbsInspirationPhotos />
-        <h1 className={styles.inspiration_intro_title}>Вилла V3</h1>
+        <h1 className={styles.inspiration_intro_title}>Бетонная квартира в Каунасе</h1>
       </div>
       <Fancybox>
         <div className={styles.inspiration_photos_content}>
-          <div className={styles.inspiration_photos_3}>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/01_villa-white.jpg"
+          <div className={styles.inspiration_photos_1}>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/01_kvartira-kaunas.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/01_villa-white.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/02_villa-white.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/villa-white/02_villa-white.jpg"
-                alt=""
-                className={styles.inspiration_photos_img}
-              />
-            </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/03_villa-white.jpg"
-              data-fancybox="gallery">
-              <StaticImage
-                src="../../../images/inspiration/photos/villa-white/03_villa-white.jpg"
+                src="../../../images/inspiration/photos/kvartira-kaunas/01_kvartira-kaunas.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/04_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/02_kvartira-kaunas.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/04_villa-white.jpg"
+                src="../../../images/inspiration/photos/kvartira-kaunas/02_kvartira-kaunas.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/05_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/03_kvartira-kaunas.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/05_villa-white.jpg"
+                src="../../../images/inspiration/photos/kvartira-kaunas/03_kvartira-kaunas.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_3}>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/06_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/04_kvartira-kaunas.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/06_villa-white.jpg"
+                src="../../../images/inspiration/photos/kvartira-kaunas/04_kvartira-kaunas.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/07_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/05_kvartira-kaunas.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/07_villa-white.jpg"
+                src="../../../images/inspiration/photos/kvartira-kaunas/05_kvartira-kaunas.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/08_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/06_kvartira-kaunas.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/08_villa-white.jpg"
+                src="../../../images/inspiration/photos/kvartira-kaunas/06_kvartira-kaunas.jpg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+          </div>
+          <div className={styles.inspiration_photos_2}>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/07_kvartira-kaunas.jpg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/kvartira-kaunas/07_kvartira-kaunas.jpg"
+                alt=""
+                className={styles.inspiration_photos_img}
+              />
+            </a>
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/08_kvartira-kaunas.jpg"
+              data-fancybox="gallery">
+              <StaticImage
+                src="../../../images/inspiration/photos/kvartira-kaunas/08_kvartira-kaunas.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_4}>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/09_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/09_kvartira-kaunas.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/09_villa-white.jpg"
+                src="../../../images/inspiration/photos/kvartira-kaunas/09_kvartira-kaunas.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/10_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/10_kvartira-kaunas.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/10_villa-white.jpg"
+                src="../../../images/inspiration/photos/kvartira-kaunas/10_kvartira-kaunas.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/11_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/11_kvartira-kaunas.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/11_villa-white.jpg"
+                src="../../../images/inspiration/photos/kvartira-kaunas/11_kvartira-kaunas.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/villa-white/12_villa-white.jpg"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-kaunas/12_kvartira-kaunas.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/villa-white/12_villa-white.jpg"
+                src="../../../images/inspiration/photos/kvartira-kaunas/12_kvartira-kaunas.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
+
         </div>
       </Fancybox>
       <FooterConsultationDmitry />
@@ -134,4 +137,4 @@ const VillaWhite = () => (
   </Layout>
 )
 
-export default VillaWhite
+export default KvartiraKaunas
