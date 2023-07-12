@@ -25,62 +25,62 @@ const KvartiraStokgolm = () => (
         <div className={styles.inspiration_photos_content}>
 
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/01_kvartira-stokgolm.jp"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/01_kvartira-stokgolm.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-stokgolm/01_kvartira-stokgolm.jp"
+                src="../../../images/inspiration/photos/kvartira-stokgolm/01_kvartira-stokgolm.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/02_kvartira-stokgolm.jp"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/02_kvartira-stokgolm.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-stokgolm/02_kvartira-stokgolm.jp"
+                src="../../../images/inspiration/photos/kvartira-stokgolm/02_kvartira-stokgolm.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_3}>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/03_kvartira-stokgolm.jp"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/03_kvartira-stokgolm.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-stokgolm/03_kvartira-stokgolm.jp"
+                src="../../../images/inspiration/photos/kvartira-stokgolm/03_kvartira-stokgolm.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/04_kvartira-stokgolm.jp"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/04_kvartira-stokgolm.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-stokgolm/04_kvartira-stokgolm.jp"
+                src="../../../images/inspiration/photos/kvartira-stokgolm/04_kvartira-stokgolm.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/05_kvartira-stokgolm.jp"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/05_kvartira-stokgolm.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-stokgolm/05_kvartira-stokgolm.jp"
+                src="../../../images/inspiration/photos/kvartira-stokgolm/05_kvartira-stokgolm.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
           </div>
           <div className={styles.inspiration_photos_2}>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/06_kvartira-stokgolm.jp"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/06_kvartira-stokgolm.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-stokgolm/06_kvartira-stokgolm.jp"
+                src="../../../images/inspiration/photos/kvartira-stokgolm/06_kvartira-stokgolm.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />
             </a>
-            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/07_kvartira-stokgolm.jp"
+            <a href="https://rhome.by/images/inspiration/photos/kvartira-stokgolm/07_kvartira-stokgolm.jpg"
               data-fancybox="gallery">
               <StaticImage
-                src="../../../images/inspiration/photos/kvartira-stokgolm/07_kvartira-stokgolm.jp"
+                src="../../../images/inspiration/photos/kvartira-stokgolm/07_kvartira-stokgolm.jpg"
                 alt=""
                 className={styles.inspiration_photos_img}
               />

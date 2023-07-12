@@ -10,7 +10,7 @@ import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmi
 
 import * as styles from "../../components/styles/about/inspiration.module.scss"
 
-const Articles = () => (
+const Inspiration = () => (
   <Layout>
     <Seo 
       title={""} description={""}
@@ -19,8 +19,15 @@ const Articles = () => (
     />
     <div className="wrapper">
       <div className={styles.inspiration_intro}>
-        <BreadcrumbsAbout />
-        <h1 className={styles.inspiration_intro_title}>Вдохновение</h1>
+        <div>
+          <BreadcrumbsAbout />
+          <h1 className={styles.inspiration_intro_title}>Вдохновение</h1>
+        </div>
+        <div className={styles.inspiration_intro_list}>
+          <Link to="/inspiration" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Все сразу</Link>
+          <Link to="/inspiration/articles" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Статьи</Link>
+          <Link to="/inspiration/photos" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Фотографии</Link>
+        </div>
       </div>
       <div className={styles.inspiration_content}>
         <InspirationArticle
@@ -31,7 +38,7 @@ const Articles = () => (
         />
         <InspirationPhoto
           url="/1"
-          backgroundImageUrl="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/03_vintovaya-lestnitsa.jpg"
+          backgroundImageUrl="https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/00_vintovaya-lestnitsa.jpg"
           title="Резиденция площадью 157 кв.м.&nbsp;в&nbsp;Москве"
         />
         {/* <Link to="/1" className={styles.inspiration_item + " " + styles.inspiration_item_article} style={{"backgroundColor" : "#B1C8DD"}}>
@@ -57,4 +64,4 @@ const Articles = () => (
   </Layout>
 )
 
-export default Articles
+export default Inspiration
