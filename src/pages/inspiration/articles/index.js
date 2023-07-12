@@ -17,7 +17,7 @@ const Articles = () => (
       image={"https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.inspiration_intro}>
+      <div className={styles.inspiration_intro + " " + styles.inspiration_intro_index}>
         <div>
           <BreadcrumbsAbout />
           <h1 className={styles.inspiration_intro_title}>Вдохновение</h1>
@@ -77,7 +77,7 @@ const Articles = () => (
           title="Крупноформатная плитка в интерьере"
           chapter="Тенденции"
         />
-       <InspirationArticle
+        <InspirationArticle
           url="/inspiration/articles/arhitektura-helsinki/"
           backgroundColor="#B1C8DD"
           title="Современная архитектура: 5 важных зданий Хельсинки"

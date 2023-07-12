@@ -18,9 +18,16 @@ const Inspiration = () => (
       image={"https://rhome.by/images/inspiration/photos/vintovaya-lestnitsa/01_vintovaya-lestnitsa.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.inspiration_intro}>
-        <BreadcrumbsAbout />
-        <h1 className={styles.inspiration_intro_title}>Вдохновение</h1>
+      <div className={styles.inspiration_intro + " " + styles.inspiration_intro_index}>
+        <div>
+          <BreadcrumbsAbout />
+          <h1 className={styles.inspiration_intro_title}>Вдохновение</h1>
+        </div>
+        <div className={styles.inspiration_intro_list}>
+          <Link to="/inspiration" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Все сразу</Link>
+          <Link to="/inspiration/articles" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Статьи</Link>
+          <Link to="/inspiration/photos" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Фотографии</Link>
+        </div>
       </div>
       <div className={styles.inspiration_content}>
       <InspirationArticle

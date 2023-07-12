@@ -1,13 +1,17 @@
 import * as React from "react"
 import * as styles from "./footer-consultation.module.scss"
+import { useInView } from "react-intersection-observer"
 
 export const FooterConsultationDmitry = () => {
+  const { ref, inView  } = useInView({
+    triggerOnce: true,
+  });
   return (
     <div className={styles.consultation_block}>
       <div className={styles.consultation_image}>
         <div className={styles.consultation_text}>
-          <p className={styles.consultation_image_text}>&mdash;&nbsp;Подробно расскажу, как строится работа по&nbsp;дизайн-проекту.</p>
-          <p className={styles.consultation_image_status}>Дмитрий, руководитель проектов RHome</p>
+          <p className={"consultation_image_text" + (inView? " active" : "")}>&mdash;&nbsp;Подробно расскажу, как строится работа по&nbsp;дизайн-проекту.</p>
+          <p ref={ref} className={"consultation_image_status" + (inView? " active" : "")}>Дмитрий, руководитель проектов RHome</p>
         </div>
       </div>
       <div className={styles.consultation_right}>

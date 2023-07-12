@@ -48,50 +48,53 @@ $mobile: 768px;
     bottom: 4.3vw;
   }
 }
-.consultation_image_text {
-  font-size: 1.25vw;
-  line-height: 1.5vw;
-  font-style: italic;
-  color: #FFFFFF;
-  background: rgba(0, 0, 0, 0.7);
-  border: 1px solid #6B6B6B;
-  max-width: 20.6vw;
-  padding: 2.1vw 1.7vw;
-  border-radius: 0 34px 34px 34px;
-  margin-bottom: 1vw;
-  @media screen and (min-width: $fullscreen) {
-    font-size: 19px;
-    line-height: 23px;
-    max-width: 313px;
-    padding: 32px 26px;
-    margin-bottom: 15px;
-  }
-  @media screen and (max-width: $mobile) {
-    font-size: 3.4vw;
-    line-height: 3.9vw;
-    max-width: 43.7vw;
-    padding: 4.6vw 2.1vw;
-    margin-bottom: 2.2vw;
-  }
-}
-.consultation_image_status {
-  font-size: 1.25vw;
-  line-height: 1.8vw;
-  text-align: right;
-  color: #FFFFFF;
-  max-width: 14vw;
-  margin-left: auto;
-  @media screen and (min-width: $fullscreen) {
-    font-size: 19px;
-    line-height: 27px;
-    max-width: 213px;
-  }
-  @media screen and (max-width: $mobile) {
-    font-size: 3.4vw;
-    line-height: 3.9vw;
-    max-width: 38vw;
-  }
-}
+// .consultation_image_text {
+//   font-size: 1.25vw;
+//   line-height: 1.5vw;
+//   font-style: italic;
+//   color: #FFFFFF;
+//   background: rgba(0, 0, 0, 0.7);
+//   border: 1px solid #6B6B6B;
+//   max-width: 20.6vw;
+//   padding: 2.1vw 1.7vw;
+//   border-radius: 0 34px 34px 34px;
+//   margin-bottom: 1vw;
+//   &.active {
+//     border: 1px solid red;
+//   }
+//   @media screen and (min-width: $fullscreen) {
+//     font-size: 19px;
+//     line-height: 23px;
+//     max-width: 313px;
+//     padding: 32px 26px;
+//     margin-bottom: 15px;
+//   }
+//   @media screen and (max-width: $mobile) {
+//     font-size: 3.4vw;
+//     line-height: 3.9vw;
+//     max-width: 43.7vw;
+//     padding: 4.6vw 2.1vw;
+//     margin-bottom: 2.2vw;
+//   }
+// }
+// .consultation_image_status {
+//   font-size: 1.25vw;
+//   line-height: 1.8vw;
+//   text-align: right;
+//   color: #FFFFFF;
+//   max-width: 14vw;
+//   margin-left: auto;
+//   @media screen and (min-width: $fullscreen) {
+//     font-size: 19px;
+//     line-height: 27px;
+//     max-width: 213px;
+//   }
+//   @media screen and (max-width: $mobile) {
+//     font-size: 3.4vw;
+//     line-height: 3.9vw;
+//     max-width: 38vw;
+//   }
+// }
 .consultation_right {
   width: 49.6%;
   padding: 2.6vw 2.15vw 3vw 2.4vw;

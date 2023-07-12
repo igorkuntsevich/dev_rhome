@@ -18,10 +18,10 @@ $mobile: 768px;
   }
   @media screen and (min-width: $fullscreen) {
     padding-left: 70px;
-    // margin-bottom: 19px;
+    margin-bottom: 19px;
     &::before {
       width: 53px;
-      // top: 10px;
+      top: 10px;
     }
   }
   @media screen and (max-width: $mobile) {
