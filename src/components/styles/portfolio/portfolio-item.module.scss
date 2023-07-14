@@ -1,0 +1,86 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+.project_intro {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px 0 0 30px;
+  height: 41.6vw;
+  margin-bottom: 7vw;
+  position: relative;
+  overflow: hidden;
+  @media screen and (min-width: $fullscreen) {
+    height: 632px;
+    margin-bottom: 106px;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: column-reverse;
+    border-radius: 30px;
+    height: auto;
+    margin-bottom: 10vw;
+  }
+}
+.project_intro_image {
+  display: block;
+  width: 55.5vw;
+  @media screen and (min-width: $fullscreen) {
+    width: 844px;
+  }
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+.project_intro_image_mob {
+  display: none;
+  @media screen and (max-width: $mobile) {
+    display: block;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 71.2vw;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.00) 100%);
+    }
+  }
+}
+.project_intro_item_cost1 {
+  background-image: url(../../../svg/icon_coin1.svg);
+  width: 1.3vw;
+  height: 1.3vw;
+  @media screen and (min-width: $fullscreen) {
+    width: 20px;
+    height: 20px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 4.6vw;
+    height: 4.6vw;
+  }
+}
+.project_intro_item_cost2 {
+  background-image: url(../../../svg/icon_coin2.svg);
+  width: 2.3vw;
+  height: 1.3vw;
+  @media screen and (min-width: $fullscreen) {
+    width: 35px;
+    height: 20px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 11.7vw;
+    height: 4.6vw;
+  }
+}
+.project_intro_item_cost3 {
+  background-image: url(../../../svg/icon_coin3.svg);
+  width: 3.4vw;
+  height: 1.3vw;
+  @media screen and (min-width: $fullscreen) {
+    width: 52px;
+    height: 20px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 11.7vw;
+    height: 4.6vw;
+  }
+}
