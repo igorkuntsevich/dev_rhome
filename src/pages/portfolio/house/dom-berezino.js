@@ -5,11 +5,11 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
-import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
+import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
 const HouseBerezino = () => (
   <Layout>
