@@ -14,8 +14,8 @@ import * as styles from "../../../components/styles/portfolio/portfolio-item.mod
 const HouseBerezino = () => (
   <Layout>
     <Seo 
-      title={"170 кв. метров для молодой семьи - RHOME"} description={""}
-      location={"https://rhome.by/inspiration/photos/170-kv-metrov"}
+      title={""} description={""}
+      location={"https://rhome.by/portfolio/house/dom-berezino"}
       image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
     />
     <div className="wrapper">
