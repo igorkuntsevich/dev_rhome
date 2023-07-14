@@ -7,6 +7,8 @@ import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
+import { PhotoCollage } from "../../../subitems/photocollage"
+import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 
 const HouseBerezino = () => (
@@ -35,11 +37,40 @@ const HouseBerezino = () => (
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/berezino/001_dom-berezeno.jpg"
+          src="../../../images/portfolio/berezino/00_dom-berezeno.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
       </div>
+      <PhotoCollage
+        amount={collageStyles.photocollage_five_images}
+      >
+        <StaticImage
+          src="../../../images/portfolio/berezino/01_cut_dom-berezeno.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
+        />
+        <StaticImage
+          src="../../../images/portfolio/berezino/02_cut_dom-berezeno.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
+        />
+        <StaticImage
+          src="../../../images/portfolio/berezino/03_cut_dom-berezeno.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
+        />
+        <StaticImage
+          src="../../../images/portfolio/berezino/04_cut_dom-berezeno.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
+        />
+        <StaticImage
+          src="../../../images/portfolio/berezino/05_cut_dom-berezeno.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
+        />
+      </PhotoCollage>
       {/* <Fancybox>
         <div className={styles.project}>
 
