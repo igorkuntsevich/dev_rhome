@@ -32,12 +32,12 @@ const HouseBerezino = () => (
           budget={styles.project_intro_item_cost3}
         />
         <StaticImage
-          src="../../../images/portfolio/berezino/01_dom-berezeno.jpg"
+          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/berezino/00_dom-berezeno.jpg"
+          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
@@ -46,27 +46,27 @@ const HouseBerezino = () => (
         amount={collageStyles.photocollage_five_images}
       >
         <StaticImage
-          src="../../../images/portfolio/berezino/01_cut_dom-berezeno.jpg"
+          src="../../../images/portfolio/dom-berezino/01_cut_dom-berezino.jpg"
           alt=""
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
         />
         <StaticImage
-          src="../../../images/portfolio/berezino/02_cut_dom-berezeno.jpg"
+          src="../../../images/portfolio/dom-berezino/02_cut_dom-berezino.jpg"
           alt=""
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
         />
         <StaticImage
-          src="../../../images/portfolio/berezino/03_cut_dom-berezeno.jpg"
+          src="../../../images/portfolio/dom-berezino/03_cut_dom-berezino.jpg"
           alt=""
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
         />
         <StaticImage
-          src="../../../images/portfolio/berezino/04_cut_dom-berezeno.jpg"
+          src="../../../images/portfolio/dom-berezino/04_cut_dom-berezino.jpg"
           alt=""
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
         />
         <StaticImage
-          src="../../../images/portfolio/berezino/05_cut_dom-berezeno.jpg"
+          src="../../../images/portfolio/dom-berezino/05_cut_dom-berezino.jpg"
           alt=""
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
         />
