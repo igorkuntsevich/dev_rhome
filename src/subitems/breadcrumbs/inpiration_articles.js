@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import * as styles from "./breadcrumbs.module.scss"
 
 
-export const BreadcrumbsInspirationPhotos = () => {
+export const BreadcrumbsInspirationArticles = () => {
   return (
     <ul className={styles.breadcrumbs}>
       <li className={styles.breadcrumbs_li}>

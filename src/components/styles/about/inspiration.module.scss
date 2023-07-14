@@ -7,14 +7,14 @@ $mobile: 768px;
   position: relative;
   overflow: hidden;
   padding: 3.3vw 2.5vw 1.4vw;
-  margin-bottom: 0.9vw;
+  margin-bottom: 2.1vw;
   @media screen and (min-width: $fullscreen) {
     padding: 50px 38px 21px;
-    margin-bottom: 14px;
+    margin-bottom: 32px;
   }
   @media screen and (max-width: $mobile) {
     padding: 9.7vw 5.1vw 6.7vw;
-    margin-bottom: 2.4vw;
+    margin-bottom: 4.4vw;
   }
 }
 .inspiration_intro_index {
@@ -46,7 +46,7 @@ $mobile: 768px;
     gap: 52px;
   }
   @media screen and (max-width: $mobile) {
-    gap: 7.5vw;
+    gap: 7.4vw;
   }
 }
 .inspiration_intro_link {

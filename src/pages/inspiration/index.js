@@ -30,7 +30,7 @@ const Inspiration = () => (
         </div>
       </div>
       <div className={styles.inspiration_content}>
-      <InspirationArticle
+        <InspirationArticle
           url="/inspiration/articles/trend-kuhni/"
           backgroundColor="#FAF0BC"
           title="Новый тренд в интерьере кухни-гостиной"
