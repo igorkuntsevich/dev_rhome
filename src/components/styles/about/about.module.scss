@@ -5,34 +5,54 @@ $mobile: 768px;
   border-radius: 30px;
   position: relative;
   overflow: hidden;
-  height: 41.7vw;
-  padding: 3.3vw 2.5vw;
+  // height: 41.7vw;
+  // padding: 6.1vw 2.5vw 3.3vw;
   margin-bottom: 4.1vw;
-  background-image: url(../../../images/about/about_intro.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-image: url(../../../images/about/about_intro.jpg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
   @media screen and (min-width: $fullscreen) {
+    // padding: 93px 38px 50px;
     margin-bottom: 62px;
   }
   @media screen and (max-width: $mobile) {
-    background-image: url(../../../images/about/about_intro_mob.jpg);
-    padding: 9.7vw 5.1vw;
-    height: 119.3vw;
+    // background-image: url(../../../images/about/about_intro_mob.jpg);
+    // padding: 9.7vw 5.1vw;
+    // height: 119.3vw;
     margin-bottom: 8.45vw;
+  }
+}
+.about_intro_img {
+  display: block;
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+.about_intro_img_mob {
+  display: none;
+  @media screen and (max-width: $mobile) {
+    display: block;
   }
 }
 .about_intro_title {
   font-size: 3.5vw;
   line-height: 4.2vw;
   color: #FFFFFF;
-  position: relative;
+  position: absolute;
+  top: 6.1vw;
+  left: 2.5vw;
+  z-index: 1;
   @media screen and (min-width: $fullscreen) {
-    // font-size: 53px;
-    // line-height: 64px;
+    font-size: 53px;
+    line-height: 64px;
+    top: 93px;
+    left: 38px;
   }
   @media screen and (max-width: $mobile) {
-    font-size: 10.1vw;
-    line-height: 11.1vw;
+    font-size: 7.2vw;
+    line-height: 8.7vw;
+    top: 16vw;
+    left: 5.1vw;
   }
 }
 .about_intro_text {

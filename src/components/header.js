@@ -37,7 +37,7 @@ const Header = () => {
               <p className="header_nav_li header_subnav_p header_nav_li_arrow">Услуги</p>
               <li>
                 <Link
-                  to="/2"
+                  to="/portfolio"
                   className="header_nav_li"
                   activeClassName="header_nav_li_active"
                 >Портфолио</Link>
@@ -157,27 +157,33 @@ const Header = () => {
           <div className="header_mobile_grid">
             <div className="header_mobile_flex">
               <Link
-                to="/1"
+                to="/portfolio"
                 className="header_mobile_nav_title"
               >Портфолио</Link>
               <ul className="header_mobile_nav">
                 <li>
                   <Link
-                    to="/2"
+                    to="/portfolio/apartment"
                     className="header_mobile_nav_li"
                   >Квартиры</Link>
                 </li>
                 <li>
                   <Link
-                    to="/3"
+                    to="/portfolio/house"
                     className="header_mobile_nav_li"
                   >Дома</Link>
                 </li>
                 <li>
                   <Link
-                    to="/4"
+                    to="/portfolio/commercial"
                     className="header_mobile_nav_li"
                   >Коммерческие объекты</Link>
+                </li>
+                <li>
+                  <Link
+                    to="/portfolio/facade"
+                    className="header_mobile_nav_li"
+                  >Фасады</Link>
                 </li>
               </ul>
             </div>

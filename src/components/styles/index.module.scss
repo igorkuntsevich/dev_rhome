@@ -6,13 +6,15 @@ $mobile: 768px;
   position: relative;
   overflow: hidden;
   height: 41.7vw;
-  padding: 3.3vw 2.5vw;
+  padding: 6.3vw 2.5vw 1.4vw;
   margin-bottom: 4.1vw;
+  max-height: 793px;
   @media screen and (min-width: $fullscreen) {
+    padding: 92px 38px 21px;
     margin-bottom: 62px;
   }
   @media screen and (max-width: $mobile) {
-    padding: 9.7vw 5.1vw;
+    padding: 16vw 5.1vw 6.7vw;
     height: 119.3vw;
     margin-bottom: 8.45vw;
   }

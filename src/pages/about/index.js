@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 
@@ -18,17 +18,28 @@ const About = () => (
       image={""}
     />
     <div className="wrapper">
-      {/* <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      /> */}
       <div className={styles.about_intro}>
         <h1 className={styles.about_intro_title}>О студии</h1>
+        <StaticImage
+          src="../../images/about/about_intro.jpg"
+          loading="eager"
+          // width={64}
+          // quality={95}
+          // formats={["auto", "webp", "avif"]}
+          alt=""
+          // style={{ marginBottom: `var(--space-3)` }}
+          className={styles.about_intro_img}
+        />
+        <StaticImage
+          src="../../images/about/about_intro_mob.jpg"
+          loading="eager"
+          // width={64}
+          // quality={95}
+          // formats={["auto", "webp", "avif"]}
+          alt=""
+          // style={{ marginBottom: `var(--space-3)` }}
+          className={styles.about_intro_img_mob}
+        />
       </div>
       <div className={styles.about_intro_text + " " + styles.about_intro_index_text}>
         <p className={styles.about_intro_text_p}>RHome&nbsp;&mdash; это архитектурное проектирование, дизайн интерьера жилых и&nbsp;коммерческих объектов, дизайн ландшафта и&nbsp;реконструкция<br />объектов.</p>

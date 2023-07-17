@@ -78,7 +78,6 @@ const Inspiration = () => (
           backgroundImageUrl="https://rhome.by/images/inspiration/photos/kvartira-piterskaya/00_kvartira-piterskaya.jpg"
           title="Питерская квартира"
         />
-
         <InspirationArticle
           url="/inspiration/articles/zhk-mayak-minska/"
           backgroundColor="#FFD7C8"
@@ -159,13 +158,13 @@ const Inspiration = () => (
           backgroundImageUrl="https://rhome.by/images/inspiration/photos/ofis-netrivialnyj/00_ofis-netrivialnyj.jpg"
           title="Нетривиальный офис"
         />
-       <InspirationArticle
+        <InspirationArticle
           url="/inspiration/articles/arhitektura-helsinki/"
           backgroundColor="#B1C8DD"
           title="Современная архитектура: 5 важных зданий Хельсинки"
           chapter="Интересное"
         />
-       <InspirationPhoto
+        <InspirationPhoto
           url="/inspiration/photos/villa-italyansky/"
           backgroundImageUrl="https://rhome.by/images/inspiration/photos/villa-italyansky/00_villa-italyansky.jpg"
           title="Современное переосмысление итальянской виллы"
@@ -531,7 +530,7 @@ const Inspiration = () => (
           title="Что актуально в дизайне интерьера в 2018"
           chapter="Тенденции"
         />
-         <InspirationPhoto
+          <InspirationPhoto
           url="/inspiration/photos/design-award-2018/"
           backgroundImageUrl="https://rhome.by/images/inspiration/photos/design-award-2018/00_design-award-2018.jpg"
           title="Дом-победитель German Design Award 2018"
@@ -613,7 +612,6 @@ const Inspiration = () => (
           backgroundImageUrl="https://rhome.by/images/inspiration/photos/mebel-magazina/00_mebel-magazina.jpg"
           title="Мебель для магазина"
         />
-
         <InspirationArticle
           url="/inspiration/articles/clever-house/"
           backgroundColor="#CDDBC7"
