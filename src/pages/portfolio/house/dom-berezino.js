@@ -46,27 +46,27 @@ const HouseBerezino = () => (
         amount={collageStyles.photocollage_five_images}
       >
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_cut_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
           alt=""
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/02_cut_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
           alt=""
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/03_cut_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
           alt=""
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/04_cut_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
           alt=""
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/05_cut_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
           alt=""
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
         />
