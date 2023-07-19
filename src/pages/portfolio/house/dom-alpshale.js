@@ -11,33 +11,33 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const DomAlpshale = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Интерьер дома с мотивами шале - RHOME"} description={"Интерьер дома с мотивами шале в Минске. Надежность и простота в исполнении дизайн студии Rhome."}
+      location={"https://rhome.by/portfolio/house/dom-alpshale"}
+      image={"https://rhome.by/images/portfolio/dom-alpshale/01_dom-alpshale.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
+      <div className={styles.project_intro} style={{"backgroundColor" : "#ECE9E5"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Интерьер дома с мотивами шале"
           leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          architector="Алексей Сергеев"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          data="июнь 2015"
+          metr="401"
+          building=""
+          budget={styles.project_intro_item_cost2}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-alpshale/01_dom-alpshale.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-alpshale/00_dom-alpshale.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default DomAlpshale

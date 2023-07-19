@@ -4,40 +4,40 @@ import Seo from "../../../components/seo"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
-import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
+import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const IntererBryusselsovremennyj = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={" Разработка дизайн-проекта современного интерьера квартиры в Брюсселе. Студия RНome"} description={"Современный стиль отличается утонченным минимализмом, осознанным использовании интересных фактур и четких линий. В таких интерьерах главным становится само пространство, а не вещи в нем."}
+      location={"https://rhome.by/portfolio/apartment/interer-bryussel-sovremennyj"}
+      image={"https://rhome.by/images/portfolio/interer-bryussel-sovremennyj/01_interer-bryussel-sovremennyj.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
+      <div className={styles.project_intro} style={{"backgroundColor" : "#ECE9E5"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Современный интерьер в Брюсселе"
           leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          architector="Ян Пашковский"
           manager="Дмитрий Разумейчик"
           data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          metr="98"
+          building="6 месяцев"
+          budget={styles.project_intro_item_cost2}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/interer-bryussel-sovremennyj/01_interer-bryussel-sovremennyj.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/interer-bryussel-sovremennyj/00_interer-bryussel-sovremennyj.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
@@ -73,7 +73,7 @@ const HouseBerezino = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
-      <FooterConsultationDmitry />
+        <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>
         <div className={styles.project}>
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default IntererBryusselsovremennyj

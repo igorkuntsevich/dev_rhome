@@ -11,37 +11,37 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const DomProvans = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Современный дом с элементами прованса - RHOME"} description={"Современный дом с элементами прованса дизайн от студии RHome"}
+      location={"https://rhome.by/portfolio/house/dom-provans"}
+      image={"https://rhome.by/images/portfolio/dom-provans/01_dom-provans.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
+      <div className={styles.project_intro} style={{"backgroundColor" : "#ECE9E5"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Современный дом с элементами прованса"
           leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          architector="Светлана Рожкова"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          data="декабрь 2018"
+          metr="130"
+          building="1"
+          budget={styles.project_intro_item_cost1}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-provans/01_dom-provans.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-provans/00_dom-provans.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
-      </div>
+      </div>    
       </div>
       <PhotoCollage
         amount={collageStyles.photocollage_five_images}
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default DomProvans

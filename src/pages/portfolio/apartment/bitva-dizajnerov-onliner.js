@@ -4,40 +4,40 @@ import Seo from "../../../components/seo"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
-import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
+import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const BitvaDizajnerovonliner = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Дизайн интерьера в рестро стиле 50х - RHOME"} description={"Дизайн интерьера в рестро стиле 50х для «Битвы дизайнеров onliner.by» от студии Rhome. 200+ работ в портфолио"}
+      location={"https://rhome.by/portfolio/apartment/bitva-dizajnerov-onliner"}
+      image={"https://rhome.by/images/portfolio/bitva-dizajnerov-onliner/01_bitva-dizajnerov-onliner.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
+      <div className={styles.project_intro} style={{"backgroundColor" : "#ECE9E5"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="«Битва дизайнеров» для Onliner"
           leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          architector="Алексей Сергеев"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          data="март 2016"
+          metr="52"
+          building=""
+          budget=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/bitva-dizajnerov-onliner/01_bitva-dizajnerov-onliner.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/bitva-dizajnerov-onliner/00_bitva-dizajnerov-onliner.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
@@ -73,7 +73,7 @@ const HouseBerezino = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
-      <FooterConsultationDmitry />
+        <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>
         <div className={styles.project}>
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default BitvaDizajnerovonliner

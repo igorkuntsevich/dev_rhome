@@ -11,37 +11,37 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const SelskijDom = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Сельский дом - RHOME"} description={"Сельский дом дизайн от студии RHome"}
+      location={"https://rhome.by/portfolio/house/selskij-dom"}
+      image={"https://rhome.by/images/portfolio/selskij-dom/01_selskij-dom.jpg"}
     />
     <div className="wrapper">
       <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Сельский дом"
           leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          architector="Алексей Сергеев"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          data="ноябрь 2019"
+          metr="500"
+          building=""
+          budget=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/selskij-dom/01_selskij-dom.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
-      </div>
+      </div>    
       </div>
       <PhotoCollage
         amount={collageStyles.photocollage_five_images}
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default SelskijDom

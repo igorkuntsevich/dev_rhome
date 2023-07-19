@@ -11,33 +11,33 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const DomZhdanovichi = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Элегантный дом в Ждановичах - RHOME"} description={"Элегантный дом в Ждановичах дизайн от студии RHome"}
+      location={"https://rhome.by/portfolio/house/dom-zhdanovichi"}
+      image={"https://rhome.by/images/portfolio/dom-zhdanovichi/01_dom-zhdanovichi.jpg"}
     />
     <div className="wrapper">
       <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Элегантный дом в Ждановичах"
           leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          architector="Алексей Сергеев"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          data="2021"
+          metr="310"
+          building=""
+          budget=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-zhdanovichi/01_dom-zhdanovichi.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-zhdanovichi/00_dom-zhdanovichi.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
@@ -81,6 +81,7 @@ const HouseBerezino = () => (
         </div>
       </Fancybox> */}
       
+
   </Layout>
 )
-export default HouseBerezino
+export default DomZhdanovichi

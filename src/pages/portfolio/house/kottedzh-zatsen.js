@@ -11,37 +11,37 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const KottedzhZatsen = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Коттедж в Зацени - RHOME"} description={"Коттедж в Зацени дизайн от студии RHome"}
+      location={"https://rhome.by/portfolio/house/kottedzh-zatsen"}
+      image={"https://rhome.by/images/portfolio/kottedzh-zatsen/01_kottedzh-zatsen.jpg"}
     />
     <div className="wrapper">
       <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Коттедж в Зацени"
           leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          architector="Алексей Сергеев, Вячеслав Сосин"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          data="июль 2016"
+          metr="180"
+          building=""
+          budget=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/kottedzh-zatsen/01_kottedzh-zatsen.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/ikottedzh-zatsen/00_kottedzh-zatsen.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
-      </div>
+      </div>    
       </div>
       <PhotoCollage
         amount={collageStyles.photocollage_five_images}
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default KottedzhZatsen

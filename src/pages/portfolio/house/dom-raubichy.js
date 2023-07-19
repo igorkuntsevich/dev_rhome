@@ -11,33 +11,33 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const DomRaubichy = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Дизайн интерьера дома в Раубичах - RHOME"} description={"Мы купили дом, в котором хотим сделать хороший ремонт и современный дизайн. Также нам нужен проект бассейна и ландшафтный дизайн."}
+      location={"https://rhome.by/portfolio/house/dom-raubichy"}
+      image={"https://rhome.by/images/portfolio/dom-raubichy/01_dom-raubichy.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
+      <div className={styles.project_intro} style={{"backgroundColor" : "#ECE9E5"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Дом в Раубичах"
           leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          architector="Тимур Саракуца"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
+          data="август 2017"
+          metr="500"
           building="18 месяцев"
           budget={styles.project_intro_item_cost3}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-raubichy/01_dom-raubichy.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-raubichy/00_dom-raubichy.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
@@ -81,6 +81,7 @@ const HouseBerezino = () => (
         </div>
       </Fancybox> */}
       
+
   </Layout>
 )
-export default HouseBerezino
+export default DomRaubichy

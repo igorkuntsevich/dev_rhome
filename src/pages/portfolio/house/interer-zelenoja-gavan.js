@@ -11,37 +11,37 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const IntererZelenojagavan = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Интерьер дома в Зеленой Гавани - RHOME"} description={"Дизайн-проект интерьера дома в Зеленой Гавани от дизайн-студии RHome. "}
+      location={"https://rhome.by/portfolio/house/interer-zelenoja-gavan"}
+      image={"https://rhome.by/images/portfolio/interer-zelenoja-gavan/01_interer-zelenoja-gavan.jpg"}
     />
     <div className="wrapper">
       <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Интерьер дома в Зеленой Гавани"
           leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          architector="Алексей Сергеев"
           manager="Дмитрий Разумейчик"
           data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          metr="189"
+          building=""
+          budget=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/interer-zelenoja-gavan/01_interer-zelenoja-gavan.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/interer-zelenoja-gavan/00_interer-zelenoja-gavan.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
-      </div>
+      </div>    
       </div>
       <PhotoCollage
         amount={collageStyles.photocollage_five_images}
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default IntererZelenojagavan

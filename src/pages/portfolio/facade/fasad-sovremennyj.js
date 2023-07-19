@@ -4,44 +4,44 @@ import Seo from "../../../components/seo"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
-import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
+import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const FasadSovremennyj = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Современный фасад дома | Дизайн студия – Rhome.by"} description={"Современный фасад дома от студии Rhome. Было/стало, чертежи, 3D проекты."}
+      location={"https://rhome.by/portfolio/facade/fasad-sovremennyj"}
+      image={"https://rhome.by/images/portfolio/fasad-sovremennyj/01_fasad-sovremennyj.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
+      <div className={styles.project_intro} style={{"backgroundColor" : "#ECE9E5"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
-          leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          title="Современный фасад дома"
+          leader="Алексей Сергеев"
+          architector="Алексей Сергеев"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          data="май 2016"
+          metr="250"
+          building=""
+          budget=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/fasad-sovremennyj/01_fasad-sovremennyj.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/fasad-sovremennyj/00_fasad-sovremennyj.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
-      </div>
+      </div>    
       </div>
       <PhotoCollage
         amount={collageStyles.photocollage_five_images}
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default FasadSovremennyj

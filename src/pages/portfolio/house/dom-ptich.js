@@ -11,33 +11,33 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const DomPtich = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Дом в поселке Птичь - RHOME"} description={"Дом в поселке Птичь дизайн от студии RHome"}
+      location={"https://rhome.by/portfolio/house/dom-ptich"}
+      image={"https://rhome.by/images/portfolio/dom-ptich/01_dom-ptich.jpg"}
     />
     <div className="wrapper">
       <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Дом в поселке Птичь"
           leader="Сергей Рассеко"
           architector="Алексей Сергеев, Светлана Рожкова"
           manager="Дмитрий Разумейчик"
-          data="2020"
+          data="ноябрь 2022"
           metr="260"
           building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          budget={styles.project_intro_item_cost2}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-ptich/01_dom-ptich.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-ptich/00_dom-ptich.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
@@ -81,6 +81,7 @@ const HouseBerezino = () => (
         </div>
       </Fancybox> */}
       
+
   </Layout>
 )
-export default HouseBerezino
+export default DomPtich

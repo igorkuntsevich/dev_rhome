@@ -11,38 +11,38 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const MonohromZelenayagavan = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Горани Барнхаус - RHOME"} description={"Горани Барнхаус дизайн от студии RHome"}
+      location={"https://rhome.by/portfolio/house/monohrom-zelenaya-gavan"}
+      image={"https://rhome.by/images/portfolio/monohrom-zelenaya-gavan/01_monohrom-zelenaya-gavan.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
+      <div className={styles.project_intro} style={{"backgroundColor" : "#ECE9E5"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
-          leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          title="Монохромный интерьер дома в Зеленой Гавани"
+          leader="Алексей Сергеев"
+          architector="Алексей Сергеев"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          data="2021"
+          metr="182"
+          building=""
+          budget={styles.project_intro_item_cost2}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/monohrom-zelenaya-gavan/01_monohrom-zelenaya-gavan.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/monohrom-zelenaya-gavan/00_monohrom-zelenaya-gavan.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
       </div>
-      </div>
+    </div>
       <PhotoCollage
         amount={collageStyles.photocollage_five_images}
       >
@@ -72,9 +72,9 @@ const HouseBerezino = () => (
           className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
         />
       </PhotoCollage>
-      <div className="wrapper">
-      <FooterConsultationDmitry />
-      </div>
+    <div className="wrapper">
+    <FooterConsultationDmitry />
+    </div>
       {/* <Fancybox>
         <div className={styles.project}>
 
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default MonohromZelenayagavan

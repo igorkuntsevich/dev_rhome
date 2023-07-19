@@ -11,37 +11,37 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const InteriorBorovlyany = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Проекта дизайна интерьера дома в Боровлянах - RHOME"} description={"Студия RHome создала стильный дизайн-проект интерьера для дома в Боровлянах. При разработке концепции наши дизайнеры вдохновлялись стилем 60х: плавностью линий архитектуры и характерной для той эпохи мебелью."}
+      location={"https://rhome.by/portfolio/house/interior-borovlyany"}
+      image={"https://rhome.by/images/portfolio/interior-borovlyany/01_interior-borovlyany.jpg"}
     />
     <div className="wrapper">
       <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Интерьер дома в Боровлянах"
           leader="Сергей Рассеко"
           architector="Алексей Сергеев, Светлана Рожкова"
           manager="Дмитрий Разумейчик"
           data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          metr="225"
+          building="16 месяцев"
+          budget={styles.project_intro_item_cost2}
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/interior-borovlyany/01_interior-borovlyany.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/interior-borovlyany/00_interior-borovlyany.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
-      </div>
+      </div>    
       </div>
       <PhotoCollage
         amount={collageStyles.photocollage_five_images}
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default InteriorBorovlyany

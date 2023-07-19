@@ -11,33 +11,33 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const DomSkandinavskshale = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Загородный дом по мотивам скандинавских шале - RHOME"} description={"Загородный дом по мотивам скандинавских шале дизайн от студии RHome"}
+      location={"https://rhome.by/portfolio/house/dom-skandinavsk-shale"}
+      image={"https://rhome.by/images/portfolio/dom-skandinavsk-shale/01_dom-skandinavsk-shale.jpg"}
     />
     <div className="wrapper">
       <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
+          title="Загородный дом по мотивам скандинавских шале"
           leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          architector="Антон Захаров, Алексей Сергеев, Светлана Рожкова"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          data="ноябрь 2018"
+          metr="180"
+          building=""
+          budget=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-skandinavsk-shale/01_dom-skandinavsk-shale.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/dom-skandinavsk-shale/00_dom-skandinavsk-shale.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
@@ -81,6 +81,7 @@ const HouseBerezino = () => (
         </div>
       </Fancybox> */}
       
+
   </Layout>
 )
-export default HouseBerezino
+export default DomSkandinavskshale

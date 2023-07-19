@@ -4,44 +4,44 @@ import Seo from "../../../components/seo"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
-import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
+import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const FasadMogilev = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
-      location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      title={"Дизайн фасада дома в Могилеве | Студия – Rhome.by"} description={"Сейчас коробка дома напоминает шале, а мне хочется чтобы дом имел современный вид. Возможно комбинировать в отделке дерево и штукатурку."}
+      location={"https://rhome.by/portfolio/facade/fasad-mogilev"}
+      image={"https://rhome.by/images/portfolio/fasad-mogilev/01_fasad-mogilev.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
+      <div className={styles.project_intro} style={{"backgroundColor" : "#ECE9E5"}}>
         <ProjectIntro
           breadcrumbs={<BreadcrumbsProject />}
-          title="Дом на&nbsp;Березине"
-          leader="Сергей Рассеко"
-          architector="Алексей Сергеев, Светлана Рожкова"
+          title="Фасад дома в Могилеве"
+          leader="Алексей Сергеев"
+          architector="Алексей Сергеев"
           manager="Дмитрий Разумейчик"
-          data="2020"
-          metr="260"
-          building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          data="июль 2017"
+          metr="300"
+          building=""
+          budget=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
+          src="../../../images/portfolio/fasad-mogilev/01_fasad-mogilev.jpg"
           className={styles.project_intro_image}
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+          src="../../../images/portfolio/fasad-mogilev/00_fasad-mogilev.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
-      </div>
+      </div>    
       </div>
       <PhotoCollage
         amount={collageStyles.photocollage_five_images}
@@ -83,4 +83,4 @@ const HouseBerezino = () => (
       
   </Layout>
 )
-export default HouseBerezino
+export default FasadMogilev
