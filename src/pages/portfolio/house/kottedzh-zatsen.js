@@ -37,7 +37,7 @@ const KottedzhZatsen = () => (
           alt=""
         />
         <StaticImage
-          src="../../../images/portfolio/ikottedzh-zatsen/00_kottedzh-zatsen.jpg"
+          src="../../../images/portfolio/kottedzh-zatsen/00_kottedzh-zatsen.jpg"
           className={styles.project_intro_image_mob}
           alt=""
         />
