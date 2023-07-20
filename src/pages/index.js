@@ -2,12 +2,14 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import { Video } from "../subitems/video-intro/index"
 import mainVideo from "../video/index.mp4"
 import mainVideoMobile from "../video/index_1.mp4"
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
+import { PortfolioItem } from "../subitems/portfolio"
+import * as PortfolioItemStyles from "../components/styles/portfolio/portfolio.module.scss"
 
 import * as styles from "../components/styles/index.module.scss"
 // import { PortfolioItems } from "../subitems/portfolio/portfolioItems"
@@ -48,6 +50,115 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="wrapper">
+      <div className={styles.index_portfolio}>
+        <h2 className={styles.index_portfolio_title}>Последние проекты</h2>
+        <div className={PortfolioItemStyles.portfolio_content}>
+          <PortfolioItem
+            url="/portfolio/house/dom-ptich"
+            title="Дом в&nbsp;поселке Птичь"
+            metr=""
+            building="18 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../images/portfolio/dom-ptich/00_dom-ptich.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/shale-gorani"
+            title="Шале в&nbsp;Горани"
+            metr="260"
+            building=""
+            budget={PortfolioItemStyles.portfolio_item_cost3}
+            image={
+              <StaticImage
+                src="../images/portfolio/shale-gorani/00_shale-gorani.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/apartment/zhk-farforovyj"
+            title="ЖК&nbsp;Фарфоровый"
+            metr="85"
+            building="6 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost1}
+            image={
+              <StaticImage
+                src="../images/portfolio/zhk-farforovyj/00_zhk-farforovyj.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/facade/dom-podmoskove"
+            title="Дом в&nbsp;Подмосковье"
+            metr="350"
+            building=""
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../images/portfolio/dom-podmoskove/00_dom-podmoskove.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/barnhaus-gorani"
+            title="Горани Барнхаус"
+            metr="250"
+            building=""
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../images/portfolio/barnhaus-gorani/00_barnhaus-gorani.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/selskij-dom"
+            title="Сельский дом"
+            metr="500"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../images/portfolio/selskij-dom/00_selskij-dom.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/dom-leskovka"
+            title="Дом в Лесковке"
+            metr="220"
+            building="18 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../images/portfolio/dom-leskovka/00_dom-leskovka.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/interior-borovlyany"
+            title="Интерьер дома в Боровлянах"
+            metr="255"
+            building="16 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../images/portfolio/interior-borovlyany/00_interior-borovlyany.jpg"
+                alt=""
+              />
+            }
+          />
+        </div>
+      </div>
       <div className="line"></div>
       <div className={styles.index_offer}>
         <h2 className={styles.index_offer_title}>Мы&nbsp;предлагаем</h2>

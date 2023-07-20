@@ -122,7 +122,7 @@ $mobile: 768px;
   @media screen and (max-width: $mobile) {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-    grid-gap: 2.2vw 1.4vw;
+    grid-gap: 1.4vw;
     margin-bottom: 7.2vw;
   }
 }

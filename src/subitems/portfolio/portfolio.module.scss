@@ -64,7 +64,7 @@ $mobile: 768px;
     font-size: 3.4vw;
     line-height: 3.9vw;
     margin-bottom: 0.5vw;
-    max-width: 100%;
+    max-width: 92%;
   }
 }
 .portfolio_item_caption {
@@ -92,22 +92,22 @@ $mobile: 768px;
     font-size: 65%;
     position: absolute;
     top: -0.4vw;
-    right: 2vw;
+    right: -0.3vw;
   }
   &.portfolio_item_p_sup {
-    &:not(:last-child)::before {
-      right: 0.8vw;
+    &:not(:first-child)::before {
+      left: 0.8vw;
     }
   }
-  &:not(:last-child) {
-    padding-right: 2.4vw;
+  &:not(:first-child) {
+    padding-left: 2.4vw;
   }
-  &:not(:last-child)::before {
+  &:not(:first-child)::before {
     content: "";
     position: absolute;
     width: 0.6vw;
     height: 1px;
-    right: 0.92vw;
+    left: 0.92vw;
     top: 50%;
     transform: translate(0, -50%);
     background-color: #9F9F9F;
@@ -117,19 +117,19 @@ $mobile: 768px;
     line-height: 24px;
     sup {
       top: -6px;
-      right: 30px;
+      right: -4.6px;
     }
     &.portfolio_item_p_sup {
-      &:not(:last-child)::before {
-        right: 12px;
+      &:not(:first-child)::before {
+        left: 12px;
       }
     }
-    &:not(:last-child) {
-      padding-right: 36px;
+    &:not(:first-child) {
+      padding-left: 36px;
     }
-    &:not(:last-child)::before {
+    &:not(:first-child)::before {
       width: 9px;
-      right: 14px;
+      left: 14px;
     }
   }
   @media screen and (max-width: $mobile) {
@@ -137,19 +137,19 @@ $mobile: 768px;
     line-height: 3.4vw;
     sup {
       top: -0.7vw;
-      right: 4.1vw;
+      right: -1vw;
     }
     &.portfolio_item_p_sup {
-      &:not(:last-child)::before {
-        right: 1.6vw;
+      &:not(:first-child)::before {
+        left: 1.6vw;
       }
     }
-    &:not(:last-child) {
-      padding-right: 5.1vw;
+    &:not(:first-child) {
+      padding-left: 5.1vw;
     }
-    &:not(:last-child)::before {
+    &:not(:first-child)::before {
       width: 1.2vw;
-      right: 1.9vw;
+      left: 1.9vw;
       top: 1.6vw;
     }
   }

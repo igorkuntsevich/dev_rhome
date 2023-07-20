@@ -16,7 +16,7 @@ const PortfolioFacade = () => (
       image={"https://rhome.by/images/portfolio/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.portfolio_intro + " " + styles.portfolio_intro_index}>
+      <div className={styles.portfolio_intro}>
         <div>
           <h1 className={styles.portfolio_intro_title}>Портфолио</h1>
         </div>
@@ -30,20 +30,6 @@ const PortfolioFacade = () => (
       </div>
       <div className={styles.portfolio_content}>
         <PortfolioItem
-          url="/portfolio/facade/dom-podmoskove"
-          title="Дом в&nbsp;Подмосковье"
-          metr="350"
-          building=""
-          budget={styles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../../../images/portfolio/dom-podmoskove/00_dom-podmoskove.jpg"
-              alt=""
-            />
-          }
-        />
-
-        <PortfolioItem
           url="/portfolio/facade/dom-barnhaus"
           title="Дом в стиле Барнхаус"
           metr="200"
@@ -56,7 +42,19 @@ const PortfolioFacade = () => (
             />
           }
         />
-
+        <PortfolioItem
+          url="/portfolio/facade/dom-podmoskove"
+          title="Дом в&nbsp;Подмосковье"
+          metr="350"
+          building=""
+          budget={styles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../../images/portfolio/dom-podmoskove/00_dom-podmoskove.jpg"
+              alt=""
+            />
+          }
+        />
         <PortfolioItem
           url="/portfolio/facade/dom-staroeselo"
           title="Дом в Старом селе"
@@ -70,7 +68,6 @@ const PortfolioFacade = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/facade/dom-avtonomnyj"
           title="Автономный дом в Литве"
@@ -84,7 +81,6 @@ const PortfolioFacade = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/facade/dom-terassa"
           title="Автономный дом в Литве"
@@ -98,7 +94,6 @@ const PortfolioFacade = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/facade/fasad-borovlyany"
           title="Фасад дома в Боровлянах"
@@ -125,7 +120,6 @@ const PortfolioFacade = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/facade/dom-provintsialnyj"
           title="Провинциальный дом"
@@ -152,8 +146,7 @@ const PortfolioFacade = () => (
             />
           }
         />
-
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/facade/fasad-sovremennyj"
           title="Современный фасад дома"
           metr="250"

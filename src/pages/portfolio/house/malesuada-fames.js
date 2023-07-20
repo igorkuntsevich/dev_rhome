@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Fancybox from "../../../components/fancybox.js";
+// import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
@@ -29,7 +29,7 @@ const MalesuadaFames = () => (
           data="март 2014"
           metr="600"
           building="24 месяцев"
-          budget={styles.portfolio_item_cost3}
+          budget={styles.project_intro_item_cost3}
         />
         <StaticImage
           src="../../../images/portfolio/malesuada-fames/01_malesuada-fames.jpg"

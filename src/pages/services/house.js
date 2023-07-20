@@ -9,7 +9,8 @@ import mainVideoMobile from "../../video/village_1.mp4"
 
 import { DecisionHouse } from "../../subitems/decision/decisionHouse"
 import { StagesHouse } from "../../subitems/services-stages/stagesHouse"
-
+import { PortfolioItem } from "../../subitems/portfolio"
+import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 import * as styles from "../../components/styles/services.module.scss"
 
 
@@ -86,8 +87,115 @@ const ServicesHouse = () => (
     <div className="wrapper">
       <div className="line"></div>
       <DecisionHouse />
-    </div>
-    <div className="wrapper">
+      <div className={styles.services_portfolio}>
+        <h2 className={styles.services_portfolio_title}>Наши работы</h2>
+        <div className={PortfolioItemStyles.portfolio_content}>
+          <PortfolioItem
+            url="/portfolio/house/dom-ptich"
+            title="Дом в&nbsp;поселке Птичь"
+            metr=""
+            building="18 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../../images/portfolio/dom-ptich/00_dom-ptich.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/shale-gorani"
+            title="Шале в&nbsp;Горани"
+            metr="260"
+            building=""
+            budget={PortfolioItemStyles.portfolio_item_cost3}
+            image={
+              <StaticImage
+                src="../../images/portfolio/shale-gorani/00_shale-gorani.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/barnhaus-gorani"
+            title="Горани Барнхаус"
+            metr="250"
+            building=""
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../../images/portfolio/barnhaus-gorani/00_barnhaus-gorani.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/selskij-dom"
+            title="Сельский дом"
+            metr="500"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/dom-leskovka"
+            title="Дом в Лесковке"
+            metr="220"
+            building="18 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../../images/portfolio/dom-leskovka/00_dom-leskovka.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/interior-borovlyany"
+            title="Интерьер дома в Боровлянах"
+            metr="255"
+            building="16 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../../images/portfolio/interior-borovlyany/00_interior-borovlyany.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/dom-berezino"
+            title="Дом на Березине"
+            metr="260"
+            building="18 месяцев"
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/house/monohrom-zelenaya-gavan"
+            title="Монохромный интерьер дома в Зеленой Гавани"
+            metr="182"
+            building=""
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../../images/portfolio/monohrom-zelenaya-gavan/00_monohrom-zelenaya-gavan.jpg"
+                alt=""
+              />
+            }
+          />
+        </div>
+      </div>
       <ServicesCost
         title="Сколько стоит дизайн-проект интерьера дома?"
       />

@@ -16,7 +16,7 @@ const PortfolioCommercial = () => (
       image={"https://rhome.by/images/portfolio/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
     />
     <div className="wrapper">
-      <div className={styles.portfolio_intro + " " + styles.portfolio_intro_index}>
+      <div className={styles.portfolio_intro}>
         <div>
           <h1 className={styles.portfolio_intro_title}>Портфолио</h1>
         </div>
@@ -29,7 +29,7 @@ const PortfolioCommercial = () => (
         </div>
       </div>
       <div className={styles.portfolio_content}>
-       <PortfolioItem
+        <PortfolioItem
           url="/portfolio/commercial/ofis-bryussel"
           title="Офис в Брюсселе"
           metr="100"

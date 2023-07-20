@@ -6,7 +6,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import { DecisionFacade } from "../../subitems/decision/decisionFacade"
 import { StagesFacade } from "../../subitems/services-stages/stagesFacade"
-
+import { PortfolioItem } from "../../subitems/portfolio"
+import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 
 import * as styles from "../../components/styles/services.module.scss"
 import { PhotoCollage } from "../../subitems/photocollage"
@@ -76,8 +77,116 @@ const ServicesFasad = () => (
     <div className="wrapper">
       <div className="line"></div>
       <DecisionFacade />
-    </div>
-    <div className="wrapper">
+      <div className={styles.services_portfolio}>
+        <h2 className={styles.services_portfolio_title}>Наши работы</h2>
+        <div className={PortfolioItemStyles.portfolio_content}>
+          <PortfolioItem
+            url="/portfolio/facade/dom-barnhaus"
+            title="Дом в стиле Барнхаус"
+            metr="200"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/dom-barnhaus/00_dom-barnhaus.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/facade/dom-podmoskove"
+            title="Дом в&nbsp;Подмосковье"
+            metr="350"
+            building=""
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../../images/portfolio/dom-podmoskove/00_dom-podmoskove.jpg"
+                alt=""
+              />
+            }
+          />
+
+          <PortfolioItem
+            url="/portfolio/facade/dom-staroeselo"
+            title="Дом в Старом селе"
+            metr="350"
+            building=""
+            budget={PortfolioItemStyles.portfolio_item_cost1}
+            image={
+              <StaticImage
+                src="../../images/portfolio/dom-staroeselo/00_dom-staroeselo.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/facade/dom-avtonomnyj"
+            title="Автономный дом в Литве"
+            metr="206"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/dom-avtonomnyj/00_dom-avtonomnyj.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/facade/dom-terassa"
+            title="Автономный дом в Литве"
+            metr="450"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/dom-terassa/00_dom-terassa.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/facade/fasad-borovlyany"
+            title="Фасад дома в Боровлянах"
+            metr="450"
+            building="3 месяца"
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/fasad-borovlyany/00_fasad-borovlyany.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/facade/polskij-proekt"
+            title="Польский проект"
+            metr="280"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/polskij-proekt/00_polskij-proekt.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/facade/dom-provintsialnyj"
+            title="Провинциальный дом"
+            metr="160"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/dom-provintsialnyj/00_dom-provintsialnyj.jpg"
+                alt=""
+              />
+            }
+          />
+        </div>
+      </div>
       <ServicesFacadeCost
         title="Стоимость оформления фасада обычно составляет:"
       />

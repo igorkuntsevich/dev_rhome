@@ -10,7 +10,7 @@ export const BreadcrumbsProject = () => {
         <Link to="/portfolio" className={styles.breadcrumbs_link}>Портфолио</Link>
       </li>
       <li className={styles.breadcrumbs_li}>
-        <Link to="/portfolio" className={styles.breadcrumbs_link}>Дома</Link>
+        <Link to="/portfolio/house" className={styles.breadcrumbs_link}>Дома</Link>
       </li>
     </ul>
   )

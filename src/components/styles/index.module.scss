@@ -176,7 +176,29 @@ $mobile: 768px;
     }
   }
 }
+.index_portfolio {
+  @media screen and (min-width: $fullscreen) {
 
+  }
+  @media screen and (max-width: $mobile) {
+
+  }
+}
+.index_portfolio_title {
+  font-size: 2.8vw;
+  line-height: 3.3vw;
+  margin-bottom: 2.5vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 38px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.8vw;
+    line-height: 7.7vw;
+    margin-bottom: 7vw;
+  }
+}
 
 
 .index_offer {

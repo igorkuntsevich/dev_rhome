@@ -34,19 +34,13 @@ $mobile: 768px;
   }
 }
 .project_intro_image {
-  display: block;
   width: 55.5vw;
   @media screen and (min-width: $fullscreen) {
     width: 844px;
   }
-  @media screen and (max-width: $mobile) {
-    display: none;
-  }
 }
 .project_intro_image_mob {
-  display: none;
   @media screen and (max-width: $mobile) {
-    display: block;
     position: relative;
     &::after {
       content: "";
@@ -55,6 +49,22 @@ $mobile: 768px;
       width: 100%;
       height: 71.2vw;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.00) 100%);
+    }
+  }
+}
+.project_intro {
+  .project_intro_image {
+    display: block;
+  }
+  .project_intro_image_mob {
+    display: none;
+  }
+  @media screen and (max-width: $mobile) {
+    .project_intro_image {
+      display: none;
+    }
+    .project_intro_image_mob {
+      display: block;
     }
   }
 }
@@ -98,8 +108,8 @@ $mobile: 768px;
   }
 }
 .project_task {
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   border-radius: 30px 0 0 30px;
   overflow: hidden;
   position: relative;
@@ -108,7 +118,15 @@ $mobile: 768px;
 
   }
   @media screen and (max-width: $mobile) {
+    flex-direction: column-reverse;
     border-radius: 30px 30px 0 0;
+  }
+}
+.project_task_bcg {
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
     background-color: #262626;
     background-color: transparent;
   }
@@ -188,6 +206,7 @@ $mobile: 768px;
   display: flex;
   flex-direction: column;
   gap: 0.8vw;
+  z-index: 1;
   @media screen and (min-width: $fullscreen) {
     top: 49px;
     left: 29px;

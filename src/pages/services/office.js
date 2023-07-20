@@ -9,7 +9,8 @@ import mainVideoMobile from "../../video/office_1.mp4"
 
 import { DecisionOffice } from "../../subitems/decision/decisionOffice"
 import { StagesOffice } from "../../subitems/services-stages/stagesOffice"
-
+import { PortfolioItem } from "../../subitems/portfolio"
+import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 import * as styles from "../../components/styles/services.module.scss"
 
 
@@ -86,8 +87,115 @@ const ServicesOffice = () => (
     <div className="wrapper">
       <div className="line"></div>
       <DecisionOffice />
-    </div>
-    <div className="wrapper">
+      <div className={styles.services_portfolio}>
+        <h2 className={styles.services_portfolio_title}>Наши работы</h2>
+        <div className={PortfolioItemStyles.portfolio_content}>
+          <PortfolioItem
+            url="/portfolio/commercial/ofis-bryussel"
+            title="Офис в Брюсселе"
+            metr="100"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/ofis-bryussel/00_ofis-bryussel.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/commercial/ofis-pobediteley"
+            title="Офис на Победителей"
+            metr="194"
+            building=""
+            budget={PortfolioItemStyles.portfolio_item_cost1}
+            image={
+              <StaticImage
+                src="../../images/portfolio/ofis-pobediteley/00_ofis-pobediteley.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/commercial/azs-gute"
+            title="Дизайн интерьера АЗС в Гуте"
+            metr="150"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/azs-gute/00_azs-gute.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/commercial/ofis-logisticheskoj-kompanii"
+            title="Офис логистической компании"
+            metr="152"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/ofis-logisticheskoj-kompanii/00_ofis-logisticheskoj-kompanii.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/commercial/spa-krym"
+            title="SPA в Крыму"
+            metr="94"
+            building="4 месяца"
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../../images/portfolio/spa-krym/00_spa-krym.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/commercial/azs-rechitsa"
+            title="Дизайн интерьера АЗС в Речице"
+            metr="80"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/azs-rechitsa/00_azs-rechitsa.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/commercial/launzh-bar"
+            title="Лаунж-бар"
+            metr="200"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/launzh-bar/00_launzh-bar.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/commercial/interer-gostinitsy"
+            title="Интерьер гостиницы"
+            metr="450"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/interer-gostinitsy/00_interer-gostinitsy.jpg"
+                alt=""
+              />
+            }
+          />
+        </div>
+      </div>
       <ServicesCost
         title="Сколько стоит дизайн-проект интерьера офиса?"
       />
