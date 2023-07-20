@@ -22,9 +22,9 @@ const HouseBerezino = () => {
   return (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Дом на Березине - RHOME"} description={"Дом на Березине дизайн от студии RHome"}
       location={"https://rhome.by/portfolio/house/dom-berezino"}
-      image={"https://rhome.by/images/inspiration/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      image={"https://rhome.by/images/portfolio/dom-berezino/01_dom-berezino.jpg"}
     />
     <div className="wrapper">
       <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>

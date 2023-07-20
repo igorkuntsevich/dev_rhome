@@ -11,7 +11,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const Portfolio = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Портфолио проектов студии RHome"} description={"Примеры реализованных проектов квартир, домов и коммерческой недвижимости, фото интерьеров до и после, чертежи, 3D визуализация проектов."}
       location={"https://rhome.by/portfolio/"}
       image={"https://rhome.by/images/portfolio/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
     />
