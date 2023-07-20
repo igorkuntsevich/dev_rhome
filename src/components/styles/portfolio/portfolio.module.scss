@@ -117,7 +117,7 @@ $mobile: 768px;
     margin-bottom: 58px;
   }
   @media screen and (min-width: $bigfullscreen) {
-    grid-auto-rows: 585px;
+    grid-auto-rows: 592px;
   }
   @media screen and (max-width: $mobile) {
     grid-template-columns: repeat(2, 1fr);

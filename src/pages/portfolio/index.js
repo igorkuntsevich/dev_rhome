@@ -107,7 +107,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-leskovka"
           title="Дом в Лесковке"
           metr="220"
@@ -129,6 +129,19 @@ const Portfolio = () => (
           image={
             <StaticImage
               src="../../images/portfolio/interior-borovlyany/00_interior-borovlyany.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/house/dom-berezino"
+          title="Дом на Березине"
+          metr="260"
+          building="18 месяцев"
+          budget=""
+          image={
+            <StaticImage
+              src="../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
               alt=""
             />
           }
@@ -198,7 +211,7 @@ const Portfolio = () => (
             />
           }
         />
-       <PortfolioItem
+        <PortfolioItem
           url="/portfolio/commercial/ofis-bryussel"
           title="Офис в Брюсселе"
           metr="100"
@@ -211,7 +224,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/apartamenty-bryussel"
           title="Неоклассика в Брюсселе"
           metr="96"
@@ -276,7 +289,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/commercial/ofis-logisticheskoj-kompanii"
           title="Офис логистической компании"
           metr="152"
@@ -302,7 +315,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-maryalivo"
           title="Дом в Марьяливо"
           metr="450"
@@ -328,7 +341,7 @@ const Portfolio = () => (
             />
           }
         />
-          <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-novojaborovoja"
           title="Современная квартира в ЖК «Новая Боровая»"
           metr="75"
@@ -367,7 +380,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-mozyr"
           title="Современный интерьер дома в Мозыре"
           metr="250"
@@ -393,7 +406,7 @@ const Portfolio = () => (
             />
           }
         />
-          <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-prestigino"
           title="Квартира в ЖК «Престижино»"
           metr="96"
@@ -406,7 +419,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/commercial/launzh-bar"
           title="Лаунж-бар"
           metr="200"
@@ -445,7 +458,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-parus"
           title="Квартира на ул. Сторожевская"
           metr="116"
@@ -471,7 +484,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-berezovaya-roshha"
           title="Дом в Березовой роще"
           metr="250"
@@ -484,7 +497,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/interer-zelenoja-gavan"
           title="Интерьер дома в Зеленой Гавани"
           metr="189"
@@ -497,7 +510,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-zhdanovichi"
           title="Элегантный дом в Ждановичах"
           metr="310"
@@ -510,7 +523,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-promenad"
           title="Квартира в ЖК “Променад”"
           metr="122"
@@ -523,7 +536,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-mstislavtsa"
           title="Монохромная квартира на ул. Мстиславца"
           metr="48"
@@ -549,7 +562,7 @@ const Portfolio = () => (
             />
           }
         />
-       <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-skandinavsk"
           title="Современная квартира с нотками скандинавского стиля"
           metr="113"
@@ -588,7 +601,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-timiryazeva"
           title="Квартира с камином на Тимирязева"
           metr="89"
@@ -601,7 +614,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-storozhevskaya"
           title="Квартира на ул. Сторожевская"
           metr="270"
@@ -731,7 +744,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-traditsionnaya"
           title="Квартира в традиционном стиле"
           metr="70"
@@ -744,7 +757,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-minsk-mira"
           title="Трехкомнатная квартира в ЖК Минск Мир"
           metr="90"
@@ -757,7 +770,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/bitva-dizajnerov-onliner"
           title="«Битва дизайнеров» для Onliner"
           metr="52"
@@ -770,7 +783,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-marina4"
           title="Квартира в жилом доме Марина-4"
           metr="68"
@@ -783,7 +796,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-svetlyd3"
           title="Светлый интерьер квартиры в ЖК D3"
           metr="86"
@@ -809,7 +822,7 @@ const Portfolio = () => (
             />
           }
         />
-          <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-belinskogo"
           title="Квартира на ул. Белинского"
           metr="72"
@@ -822,7 +835,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-trehkomnatnaya-d3"
           title="Трехкомнатная квартира в ЖК D3"
           metr="87"
@@ -848,7 +861,7 @@ const Portfolio = () => (
             />
           }
         />
-          <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-chajkovskij"
           title="Квартира с контрастными элементами в ЖК «Чайковский»"
           metr="70"
@@ -874,7 +887,7 @@ const Portfolio = () => (
             />
           }
         />
-          <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-uyutnaya"
           title="Квартира в стиле «уютный минимализм»"
           metr="114"
@@ -900,7 +913,7 @@ const Portfolio = () => (
             />
           }
         />
-       <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-borovlyani"
           title="Квартира в Боровлянах"
           metr="70"
@@ -913,7 +926,7 @@ const Portfolio = () => (
             />
           }
         />
-               <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-studiya"
           title="Квартира-студия на Аэродромной"
           metr="58"
@@ -965,7 +978,7 @@ const Portfolio = () => (
             />
           }
         />
-          <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-natural"
           title="Квартира на проспекте Дзержинского"
           metr="108"
@@ -978,7 +991,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/apartment/kvartira-borisov"
           title="Квартира в Борисове в темных тонах"
           metr="146"
@@ -1017,7 +1030,7 @@ const Portfolio = () => (
             />
           }
         />
-          <PortfolioItem
+        <PortfolioItem
           url="/portfolio/facade/fasad-mogilev"
           title="Фасад дома в Могилеве"
           metr="300"
@@ -1043,7 +1056,7 @@ const Portfolio = () => (
             />
           }
         />
-          <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/kottedzh-zatsen"
           title="Коттедж в Зацени"
           metr="180"
@@ -1056,7 +1069,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-alpshale"
           title="Интерьер дома с мотивами шале"
           metr="401"
@@ -1082,7 +1095,7 @@ const Portfolio = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/facade/fasad-sovremennyj"
           title="Современный фасад дома"
           metr="250"

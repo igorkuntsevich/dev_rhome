@@ -4,6 +4,7 @@ import Seo from "../../../components/seo"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
+import { useInView } from "react-intersection-observer"
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
@@ -11,7 +12,14 @@ import * as collageStyles from "../../../subitems/photocollage/photocollage.modu
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
-const HouseBerezino = () => (
+const HouseBerezino = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: true,
+  });
+  return (
   <Layout>
     <Seo 
       title={""} description={""}
@@ -29,7 +37,7 @@ const HouseBerezino = () => (
           data="2020"
           metr="260"
           building="18 месяцев"
-          budget={styles.project_intro_item_cost3}
+          budget=""
         />
         <StaticImage
           src="../../../images/portfolio/dom-berezino/01_dom-berezino.jpg"
@@ -73,14 +81,39 @@ const HouseBerezino = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
-      <FooterConsultationDmitry />
+      <div className={styles.project_task}>
+        {/* <div className={styles.project_task_bcg}></div> */}
+        <div className={styles.project_task_person}>
+          <StaticImage
+            src="../../../images/personal/project_svetlana.jpg"
+            alt=""
+            className={styles.project_task_person_img}
+          />
+          <p className={styles.project_task_person_status}>Светлана, архитектор</p>
+        </div>
+        <p ref={ref} className={styles.project_task_ref1}></p>
+        <p ref={ref2} className={styles.project_task_ref2}></p>
+        <div className={styles.project_task_text}>
+          <div className={styles.project_task_text1 + " " + (inView? `${styles.active}` : "")}>
+            <p className={styles.project_task_text_title}>Задача:</p>
+            <p className={styles.project_task_text_p}>Спроектировать дом и&nbsp;баню. Разработать дизайн интерьера загородного дома в&nbsp;современном стиле.</p>
+          </div>
+          <div className={styles.project_task_text2 + " " + (inView2? `${styles.active}` : "")}>
+            <p className={styles.project_task_text_title}>Пожелания клиента</p>
+            <p className={styles.project_task_text_p}>&mdash;&nbsp;Мы&nbsp;решили обзавестись загородным домом, куда можно было&nbsp;бы приезжать не&nbsp;просто на&nbsp;выходные, а&nbsp;жить с&nbsp;комфортом продолжительное время. Очень важно сохранить комфорт городской жизни.</p>
+          </div>
+        </div>
       </div>
+      <div className="line"></div>
       {/* <Fancybox>
         <div className={styles.project}>
 
         </div>
       </Fancybox> */}
+      <FooterConsultationDmitry />
+    </div>
       
   </Layout>
-)
+  )
+}
 export default HouseBerezino

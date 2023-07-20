@@ -10,8 +10,8 @@ export const FooterConsultationDmitry = () => {
     <div className={styles.consultation_block}>
       <div className={styles.consultation_image}>
         <div className={styles.consultation_text}>
-          <p className={"consultation_image_text" + (inView? " active" : "")}>&mdash;&nbsp;Подробно расскажу, как строится работа по&nbsp;дизайн-проекту.</p>
-          <p ref={ref} className={"consultation_image_status" + (inView? " active" : "")}>Дмитрий, руководитель проектов RHome</p>
+          <p className={styles.consultation_image_text + " " + (inView? `${styles.active}` : "")}>&mdash;&nbsp;Подробно расскажу, как строится работа по&nbsp;дизайн-проекту.</p>
+          <p ref={ref} className={styles.consultation_image_status + " " + (inView? `${styles.active}` : "")}>Дмитрий, руководитель проектов RHome</p>
         </div>
       </div>
       <div className={styles.consultation_right}>
