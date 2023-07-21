@@ -1,0 +1,187 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+.project_task {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px 0 0 30px;
+  position: relative;
+  @media screen and (max-width: $mobile) {
+    flex-direction: column-reverse;
+    border-radius: 0 30px 30px 0;
+    background-color: transparent;
+    overflow: hidden;
+  }
+}
+.project_task_svetlana {
+  background-color: #958F7C;
+  @media screen and (max-width: $mobile) {
+    background-color: transparent;
+  }
+}
+.project_task_bcg {
+  @media screen and (max-width: $mobile) {
+    background-color: #262626;
+  }
+}
+.project_task_person {
+  width: 47.9vw;
+  margin-left: auto;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    width: 780px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
+}
+.project_task_person_status {
+  font-size: 1.6vw;
+  line-height: 1.9vw;
+  color: #FFFFFF;
+  position: absolute;
+  top: 2.8vw;
+  right: 1.9vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 24px;
+    line-height: 29px;
+    top: 42px;
+    right: 29px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.1vw;
+    top: auto;
+    bottom: 15vw;
+    right: 3.9vw;
+    max-width: 28vw;
+    text-align: right;
+  }
+}
+.project_task_ref1 {
+  position: absolute;
+  top: 15vw;
+  @media screen and (min-width: $fullscreen) {
+    top: 228px;
+  }
+  @media screen and (max-width: $mobile) {
+    top: auto;
+    bottom: 60vw;
+  }
+}
+.project_task_ref2 {
+  position: absolute;
+  top: 28vw;
+  @media screen and (min-width: $fullscreen) {
+    top: 425px;
+  }
+  @media screen and (max-width: $mobile) {
+    top: auto;
+    bottom: 30vw;
+  }
+}
+.project_task_text {
+  position: absolute;
+  top: 3.2vw;
+  left: 1.9vw;
+  width: 55vw;
+  max-width: 1130px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vw;
+  z-index: 1;
+  @media screen and (min-width: $fullscreen) {
+    top: 49px;
+    left: 29px;
+    gap: 12px;
+  }
+  @media screen and (max-width: $mobile) {
+    position: relative;
+    top: -10.4vw;
+    left: 4.3vw;
+    right: 4.3vw;
+    width: calc(100% - 8.6vw);
+    gap: 3.9vw;
+  }
+}
+.project_task_text_svetlana {
+  .project_task_text1,
+  .project_task_text2 {
+    background-color: #F3E8D6;
+  }
+}
+.project_task_text1 {
+  padding: 2.9vw 4.1vw 2.2vw 2.5vw;
+  border-radius: 30px 30px 0 30px;
+  opacity: 0;
+  position: relative;
+  &.active {
+    animation: popupMessage 0.7s;
+    opacity: 1;
+  }
+  .project_task_text_title {
+    margin-bottom: 0.5vw;
+  }
+  @media screen and (min-width: $fullscreen) {
+    padding: 44px 62px 33px 38px;
+    .project_task_text_title {
+      margin-bottom: 8px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 5.8vw 6.3vw 6.8vw 4.8vw;
+    border-radius: 0 30px 30px 30px;
+    .project_task_text_title {
+      margin-bottom: 1.7vw;
+    }
+  }
+}
+.project_task_text2 {
+  padding: 2.6vw 4.1vw 2.2vw 2.5vw;
+  border-radius: 30px 30px 0 30px;
+  opacity: 0;
+  position: relative;
+  &.active {
+    animation: popupMessage 0.7s;
+    opacity: 1;
+  }
+  .project_task_text_p {
+    font-style: italic;
+  }
+  @media screen and (min-width: $fullscreen) {
+    padding: 40px 62px 33px 38px;
+
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 5.8vw 6.3vw 6.8vw 4.8vw;
+    border-radius: 0 30px 30px 30px;
+  }
+}
+.project_task_text_title {
+  font-size: 2.1vw;
+  line-height: 2.6vw;
+  margin-bottom: 1vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 5.3vw;
+    margin-bottom: 2vw;
+  }
+}
+.project_task_text_p {
+  font-size: 1.45vw;
+  line-height: 2.1vw;
+  max-width: 862px;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+  }
+}

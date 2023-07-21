@@ -10,10 +10,10 @@ import { Helmet } from 'react-helmet';
 
 const Seo = ({title, description,   image, location}) => {
 
-  title=         title||" Дизайн интерьера квартир, домов и офисов в Минске"
-  description=   description||" Студия дизайна и архитектуры i-project.by разрабатывает индивидуальный дизайн интерьера ✦ более 15 лет опыта ✦ портфолио более 100 проектов ✦ под ключ"
-  image=         image||" https://i-project.by/wp-content/uploads/2020/10/main_services_1.png "
-  location=      location||"https://www.i-project.by"
+  title=         title||" Студия дизайна интерьера rhome"
+  description=   description||" Студия дизайна интерьера rhome"
+  image=         image||" https://rhome.by/images/default_image.jpg "
+  location=      location||"https://www.rhome.by"
 
 
   return (

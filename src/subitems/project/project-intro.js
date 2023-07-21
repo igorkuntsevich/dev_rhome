@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as styles from "./project.module.scss"
 
-export const ProjectIntro = ( { title, breadcrumbs , leader , architector , manager , data , metr , building , budget }) => {
+export const ProjectIntro = ({ title, breadcrumbs , leader , architector , manager , data , metr , building , budget }) => {
   return (
     <div className={styles.project_intro_left}>
       <div className={styles.project_intro_left_top}>
