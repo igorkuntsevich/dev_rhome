@@ -1,8 +1,9 @@
 import * as React from "react"
 import * as styles from "./project-task.module.scss"
+import { StaticImage } from "gatsby-plugin-image"
 import { useInView } from "react-intersection-observer"
 
-export const ProjectTaskSvetlana = ({ taskText , wishText , image }) => {
+export const ProjectTaskSergey = ({ taskText , wishText }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -24,8 +25,11 @@ export const ProjectTaskSvetlana = ({ taskText , wishText , image }) => {
         </div>
       </div>
       <div className={styles.project_task_person}>
-        {image}
-        <p className={styles.project_task_person_status}>Сергей, архитектор</p>
+        <StaticImage
+          src="../../../images/personal/project_svetlana.jpg"
+          alt="Сергей, руководитель студии"
+        />
+        <p className={styles.project_task_person_status}>Сергей, руководитель студии</p>
       </div>
       <p ref={ref} className={styles.project_task_ref1}></p>
       <p ref={ref2} className={styles.project_task_ref2}></p>

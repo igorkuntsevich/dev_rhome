@@ -81,12 +81,6 @@ const HouseBerezino = () => {
       <ProjectTaskSvetlana
         taskText="Спроектировать дом и&nbsp;баню. Разработать дизайн интерьера загородного дома в&nbsp;современном стиле."
         wishText="Мы&nbsp;решили обзавестись загородным домом, куда можно было&nbsp;бы приезжать не&nbsp;просто на&nbsp;выходные, а&nbsp;жить с&nbsp;комфортом продолжительное время. Очень важно сохранить комфорт городской жизни."
-        image={
-          <StaticImage
-            src="../../../images/personal/project_svetlana.jpg"
-            alt=""
-          />
-        }
       />
       <div className="line"></div>
       {/* <Fancybox>
