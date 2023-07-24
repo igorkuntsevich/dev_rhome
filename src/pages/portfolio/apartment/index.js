@@ -347,7 +347,7 @@ const PortfolioApartment = () => (
           }
         />
          <PortfolioItem
-          url="/portfolio/apartment/kvartira-minsk-mira"
+          url="/portfolio/apartment/kvartira-minsk-mir"
           title="Трехкомнатная квартира в ЖК Минск Мир"
           metr="90"
           building=""

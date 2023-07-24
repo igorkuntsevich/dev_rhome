@@ -8,6 +8,9 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +76,61 @@ const KvartiraTraditsionnaya = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать дизайн проект двухкомнатной квартиры в традиционном стиле."
+        wishText="Мне нравятся интерьеры в спокойных пастельных тонах. Хочется уюта и атмосферы загородного дома. Очень люблю читать, предусмотрите, пожалуйста, место для хранения книг. Жить планирую одна, поэтому сделайте большой совмещенный санузел. И еще мебель обязательно должна быть из натурального дерева."
+      />
+            <ProjectPartner
+        items={
+        <>
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/openini.jpg"
+              alt=""
+              />
+            }
+            text="Салон напольных покрытий и дверей" 
+          />
+         <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/oikos.jpg"
+              alt=""
+              />
+            }
+            text="Декоративная штукатурка и краска" 
+          />
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/terra.jpg"
+              alt=""
+              />
+            }
+            text="Салон плитки и сантехники" 
+          />
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/atrium.jpg"
+              alt=""
+              />
+            }
+            text="Салон плитки и сантехники" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/austrialight.jpg"
+              alt=""
+              />
+            }
+            text="Салон светильников" 
+          />
+        </>
+      }
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

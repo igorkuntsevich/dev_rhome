@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const DomAvtonomnyj = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Оформить фасад дома в современном стиле."
+        wishText="Мы купили дом на берегу небольшого озера, планируем использовать его исключительно в качестве загородного. Место очень живописное, поэтому не хочется глухих стен, сделайте панорамные окна везде, где это возможно. А еще нам очень нравятся идеи автономного дома. Продумайте, как это можно воплотить в жизнь в наших реалиях."
+      /> 
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

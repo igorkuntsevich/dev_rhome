@@ -8,8 +8,11 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
+import { ProjectTaskSvetlana } from '../../../subitems/project/task/project-task-svetlana'
 
 const DomSkandinavskshale = () => (
   <Layout>
@@ -73,6 +76,72 @@ const DomSkandinavskshale = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSvetlana
+        taskText="Разработать дизайн интерьера дома в стиле скандинавского шале."
+        wishText="Мы часто путешествуем и зачастую отелям предпочитаем апартаменты, которые сдают местные жители. Поэтому в нашем доме у озера мы планируем сделать качественный ремонт, чтобы в дальнейшем сдавать его в аренду.
+        Очень хочется по максимуму сохранить аутентичность постройки и дерево внутри, но в то же время интерьер должен выглядеть солидно и уютно."
+      />
+      <ProjectPartner
+        items={
+        <>
+
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/skvirel.jpg"
+              alt=""
+              />
+            }
+            text="Салон интерьеров" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/stonetech.jpg"
+              alt=""
+              />
+            }
+            text="Мастерская камня"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/caparol.jpg"
+              alt=""
+              />
+            }
+            text="Отделочные материалы" 
+          />
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/cosmorelax.jpg"
+              alt=""
+              />
+            }
+            text="Магазин дизайнерских предметов" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/antrano.jpg"
+              alt=""
+              />
+            }
+            text="Фабрика эксклюзивной мебели" 
+          />
+                    <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/viridian.jpg"
+              alt=""
+              />
+            }
+            text="Студия интерьеров" 
+          />
+        </>
+      }
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

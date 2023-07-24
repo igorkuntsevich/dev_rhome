@@ -32,7 +32,7 @@ const Portfolio = () => (
         <PortfolioItem
           url="/portfolio/house/dom-ptich"
           title="Дом в&nbsp;поселке Птичь"
-          metr=""
+          metr="260"
           building="18 месяцев"
           budget={styles.portfolio_item_cost2}
           image={

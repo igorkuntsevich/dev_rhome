@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const IntererBryusselsovremennyj = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Создать современный дизайн квартиры для сдачи в аренду."
+        wishText="Мне нужен дизайн интерьера для двух квартир в Брюсселе. В этом районе живет творческая интеллигенция. Дизайн должен быть интересным и хорошо продуманным – будущие арендаторы наверняка будут с отличным вкусом. Обе квартиры должны быть с похожим функционалом, но разные по стилю. Одну хотелось бы видеть в стиле contemporary, вторую – в неоклассическом. "
+      />
         <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

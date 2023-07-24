@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-commer
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const IntererGostinitsy = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Оформить интерьер гостиницы в современном стиле."
+        wishText="Нужно комплексное, проработанное решение по оформлению интерьера гостиницы. Что касается цвета, то здесь не должно быть чрезмерно ярких, кричащих оттенков, раздражающих восприятие, в приоритете сдержанные цвета: черный, серый, белый, песочный."
+      />
         <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

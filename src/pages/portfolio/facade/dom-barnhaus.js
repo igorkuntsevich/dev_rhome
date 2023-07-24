@@ -8,6 +8,9 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +76,44 @@ const DomBarnhaus = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Оформить фасад дома в стиле барнхаус."
+        wishText="Мы купили дом в городе и хотим, чтобы он выглядел современно как внутри, так и снаружи. Так как участок небольшой, нужно максимально рационально использовать имеющуюся площадь. Обязательно спроектируйте гараж и предусмотрите место для небольшой зоны барбекю."
+      />
+      <ProjectPartner
+        items={
+        <>
+
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/skvirel.jpg"
+              alt=""
+              />
+            }
+            text="Салон интерьеров" 
+          />
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/caparol.jpg"
+              alt=""
+              />
+            }
+            text="Отделочные материалы" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/alutex.jpg"
+              alt=""
+              />
+            }
+            text="Алюминиевые профильные системы" 
+          />
+        </>
+      }
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

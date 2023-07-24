@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const DomAlpshale = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать уютный дизайн интерьера."
+        wishText="Хочется, чтобы интерьер был похож на простой деревенский домик в альпийских горах, в котором мы отдыхали прошлой зимой. Он должен быть теплый и комфортный, с мягкими фактурами и натуральным деревом. Мы хотим только натуральные материалы без ярких синтетических красок и броских цветных пятен. Возможно древесина, камень и натуральный мех."
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

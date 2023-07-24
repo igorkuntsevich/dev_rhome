@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const BitvaDizajnerovonliner = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать дизайн интерьера в ретро стиле 50-x."
+        wishText="Хочется побольше красного, можно немного бархата, паттернов и контрастных цветов. И чтобы вместе с мебелью получилось не больше 25 000$. А то я вас, дизайнеров, знаю!"
+      />
         <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

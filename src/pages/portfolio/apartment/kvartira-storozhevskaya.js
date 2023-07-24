@@ -8,6 +8,9 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +76,71 @@ const KvartiraStorozhevskaya = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать дизайн интерьера в современном стиле."
+        wishText="Хочется увидеть в итоге современную городскую квартиру, стильную и элегантную, но не перегруженную деталями. По цветовой гамме предпочитаю благородные коньячные оттенки. Пространство оставьте максимально просторным, но не забудьте про системы хранения, в том числе организацию хозблока и нескольких гардеробных."
+      />
+            <ProjectPartner
+        items={
+        <>
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/gira.jpg"
+              alt=""
+              />
+            }
+            text="Розетки и выключатели"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/domani.jpg"
+              alt=""
+              />
+            }
+            text="Центр интерьерных решений" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/mega.jpg"
+              alt=""
+              />
+            }
+            text="Салон интерьерных решений"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/openini.jpg"
+              alt=""
+              />
+            }
+            text="Салон напольных покрытий и дверей" 
+          />
+         <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/atrium.jpg"
+              alt=""
+              />
+            }
+            text="Салон плитки и сантехники" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/daskitchen.jpg"
+              alt=""
+              />
+            }
+            text="Салон немецкой мебели"
+          />
+
+        </>
+      }
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

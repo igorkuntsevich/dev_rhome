@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskDmitry } from '../../../subitems/project/task/project-task-dmitry'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const KvartiraSvetlyd3 = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskDmitry
+        taskText="Разработать дизайн-проект квартиры для двух мужчин."
+        wishText="В этой квартире мы будем жить с взрослым сыном. Нам важно иметь просторную гостиную с интересным дизайном интерьера, где бы мы могли проводить время вместе и принимать гостей. Но также важно иметь автономное пространство для каждого из нас. Нам нравятся светлые оттенки и необычные текстуры."
+      />  
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-commer
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const OfisBryussel = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать креативный дизайн офиса для бельгийской компании."
+        wishText="Наш запрос – дизайн интерьера офиса для компании, которая занимается созданием продукта. Мы хотели бы, чтобы в дизайн-проекте офисного пространства предусмотрели места для переговоров и сосредоточенной работы, работы и отдыха. Сотрудники проводят здесь бо́льшую часть дня, мы хотим быть уверены, что им будет комфортно, а дизайн интерьера офиса станет вдохновением для работы."
+      />
         <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

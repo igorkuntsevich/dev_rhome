@@ -8,6 +8,9 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +76,34 @@ const KvartiraBraslavskij = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать типовой интерьер квартиры в современном стиле."
+        wishText="Нужно комплексное, проработанное решение по оформлению интерьера квартиры в современном стиле. Гостиную, кухню и столовую зону можно объединить в единое пространство, а вот спальню и детскую хочется видеть изолированными. Предусмотрите побольше мест для хранения и организуйте отдельную гардеробную, так как вещей у нас много."
+      />
+            <ProjectPartner
+        items={
+        <>
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/domani.jpg"
+              alt=""
+              />
+            }
+            text="Центр интерьерных решений"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/lazio.jpg"
+              alt=""
+              />
+            }
+            text="Салон дверей"
+          />
+        </>
+      }
+      />
         <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

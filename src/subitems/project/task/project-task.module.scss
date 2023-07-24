@@ -20,7 +20,19 @@ $mobile: 768px;
   }
 }
 .project_task_sergey {
-  background-color: #958F7C;
+  background-color: #B9A584;
+  @media screen and (max-width: $mobile) {
+    background-color: transparent;
+  }
+}
+.project_task_sergey2 {
+  background-color: #414134;
+  @media screen and (max-width: $mobile) {
+    background-color: transparent;
+  }
+}
+.project_task_dmitry {
+  background-color: #a18e79;
   @media screen and (max-width: $mobile) {
     background-color: transparent;
   }
@@ -117,6 +129,18 @@ $mobile: 768px;
   }
 }
 .project_task_text_sergey {
+  .project_task_text1,
+  .project_task_text2 {
+    background-color: #F7F0E6;
+  }
+}
+.project_task_text_sergey2 {
+  .project_task_text1,
+  .project_task_text2 {
+    background-color: #EEEBE4;
+  }
+}
+.project_task_text_dmitry {
   .project_task_text1,
   .project_task_text2 {
     background-color: #F3E8D6;

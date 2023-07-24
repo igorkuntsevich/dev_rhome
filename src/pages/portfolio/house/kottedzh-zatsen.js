@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const KottedzhZatsen = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать интерьер частного дома в традиционном стиле."
+        wishText="Нам нравятся интерьеры в традиционном стиле, мебель с классическими силуэтами и кованые элементы. Что касается отделки, то тут предпочитаем дерево естественных оттенков, камень, металл и другие натуральные материалы. Цветовая гамма должна быть светлая, спокойная. И как отдельное пожелание: постарайтесь найти место для барной стойки или кухонного острова."
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

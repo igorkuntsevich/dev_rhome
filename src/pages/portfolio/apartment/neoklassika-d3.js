@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const NeoklassikaD3 = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Создать дизайн-проект квартиры в неоклассическом стиле."
+        wishText="Я хочу стильную и эффектную квартиру, но в то же время, чтобы она не была требовательной в быту. Мне нравятся яркие дизайнерские светильники, а от мелкого декора хотелось бы уйти – в моем доме не должно быть пылесборников. В гостиной обязательно должно быть место для Рождественской елки."
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

@@ -8,6 +8,9 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +76,44 @@ const FasadBorovlyany = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Оформить фасад недостроенного дома."
+        wishText="Я несколько лет самостоятельно занимался строительством этого дома, но застрял на этапе “коробки”. Я понимаю, что проект неплохой и из него можно выжать максимум. Но сейчас я пришел к выводу, что сам не смогу сделать из него дом своей мечты, поэтому обращаюсь к вам. Мне нравятся неброские фасады, которые сочетаются с интерьером дома и приусадебным участком."
+      />
+      <ProjectPartner
+        items={
+        <>
+
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/skvirel.jpg"
+              alt=""
+              />
+            }
+            text="Салон интерьеров" 
+          />
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/caparol.jpg"
+              alt=""
+              />
+            }
+            text="Отделочные материалы" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/alutex.jpg"
+              alt=""
+              />
+            }
+            text="Алюминиевые профильные системы" 
+          />
+        </>
+      }
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

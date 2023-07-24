@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const DomPodmoskove = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Оформить фасад дома, подобрать отделочные материалы, посчитать бюджет."
+        wishText="У меня есть архитектурный проект, сейчас по нему возводят коробку. В процессе строительства я понял, что решение по фасаду совсем сырое, не разработаны узлы и элементы фасада, нет проекта для лицевой части забора и ворот, не подобраны отделочные материалы. Все это требует решений уже сегодня, плюс примерный бюджет хотелось бы понять."
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

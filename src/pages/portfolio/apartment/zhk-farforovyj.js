@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey2 } from '../../../subitems/project/task/project-task-sergey2'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const ZhkFarforovyj = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey2
+        taskText="Разработать дизайн интерьера в современном стиле."
+        wishText="Очень понравился проект коттеджа в стиле Giovanni Sforza, который делала ваша студия, хотелось бы увидеть в нашей новой квартире нечто подобное. Мы предпочитаем темные интерьеры с мягкой подсветкой, итальянскую мебель и качественные натуральные материалы. По планировке основное пожелание: большая гостиная для посиделок и просторная хозяйская спальня с отдельным санузлом."
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const DomStaroeselo = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Создать современный жилой дом для двух семей в традиционном европейском стиле."
+        wishText="Мы хотим удобный для жизни загородный дом, в котором могли бы расположиться две семьи и не мешать друг другу. Нам нравится традиционная европейская архитектура и минимализм."
+      /> 
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

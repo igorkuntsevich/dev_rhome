@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-commer
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const AzsGute = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать новый дизайн магазинов сети АЗС Белоруснефть."
+        wishText="Необходимо развить и доработать в соответствии с современными тенденциями уже имеющуюся дизайн-концепцию магазинов сети АЗС. Одни из основных условий – тиражируемость, доступность материалов, простота возведения объекта в любой точке Беларуси."
+      />
         <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

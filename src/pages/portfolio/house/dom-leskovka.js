@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const DomLeskovka = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Спроектировать интерьер дома для семьи из 4 человек."
+        wishText="Изучили несколько проектов у вас на сайте. Понравилась концепция проекта «дом в Песках»: цветовая гамма, стены под бетон, сочетание с деревом, душевая в черных тонах с белой сантехникой (такой вариант можно использовать для блока мастер), душевые с деревянным трапом, кабинет (в нашем случае гостевая спальня) в тёмных тонах..."
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

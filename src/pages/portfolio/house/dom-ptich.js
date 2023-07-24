@@ -8,6 +8,9 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,15 +76,105 @@ const DomPtich = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
-      <FooterConsultationDmitry />
-      </div>
+      <ProjectTaskSergey
+        taskText="Спроектировать интерьер жилого дома"
+        wishText="Светлый, современный, уютный."
+      />
       {/* <Fancybox>
         <div className={styles.project}>
 
         </div>
       </Fancybox> */}
-      
+            <ProjectPartner
+        items={
+        <>
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/domani.jpg"
+              alt=""
+              />
+            }
+            text="Центр интерьерных решений"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/skvirel.jpg"
+              alt=""
+              />
+            }
+            text="Салон интерьеров" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/lazio.jpg"
+              alt=""
+              />
+            }
+            text="Салон дверей"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/mega.jpg"
+              alt=""
+              />
+            }
+            text="Салон интерьерных решений" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/oikos.jpg"
+              alt=""
+              />
+            }
+            text="Декоративная штукатурка и краска"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/asteya.jpg"
+              alt=""
+              />
+            }
+            text="Современные электроустановочные изделия" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/austrialight.jpg"
+              alt=""
+              />
+            }
+            text="Салон светильников" 
+          />
+            <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/alutex.jpg"
+              alt=""
+              />
+            }
+            text="Алюминиевые профильные системы" 
+          />
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/brunner.jpg"
+              alt=""
+              />
+            }
+            text="Немецкие камины" 
+          />
+        </>
+      }
+      />
 
+      <FooterConsultationDmitry />
+      </div>
   </Layout>
 )
 export default DomPtich

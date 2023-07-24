@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const ApartamentyBryussel = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать дизайн интерьера в неоклассическом стиле."
+        wishText="Это одна из двух квартир для сдачи в аренду. Я бы хотел, чтобы ее интерьер был оформлен в неоклассическом стиле. Вторую квартиру сделаем в современном стиле. Апартаменты находятся в районе Брюсселя, где обитают успешные люди из мира искусства. Портрет потенциальных арендаторов – семейная пара с ребенком-подростком."
+      />
         <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

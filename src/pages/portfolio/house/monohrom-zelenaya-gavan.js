@@ -8,6 +8,9 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +76,124 @@ const MonohromZelenayagavan = () => (
         />
       </PhotoCollage>
     <div className="wrapper">
+    <ProjectTaskSergey
+        taskText="Создать дизайн интерьера дома для зрелой пары."
+        wishText="Главное, чтобы в интерьере нашлось место для нашей коллекции картин и рояля. Предпочтение отдаем светлым интерьерам, но не против цветовых пятен. Исключение – все оттенки фиолетового и зеленого. Еще одно пожелание – не использовать дерево в оформлении кухни."
+      />
+      <ProjectPartner
+        items={
+        <>
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/domani.jpg"
+              alt=""
+              />
+            }
+            text="Центр интерьерных решений"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/skvirel.jpg"
+              alt=""
+              />
+            }
+            text="Салон интерьеров" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/lazio.jpg"
+              alt=""
+              />
+            }
+            text="Салон дверей"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/mega.jpg"
+              alt=""
+              />
+            }
+            text="Салон интерьерных решений" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/asteya.jpg"
+              alt=""
+              />
+            }
+            text="Современные электроустановочные изделия"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/artmadestyle.jpg"
+              alt=""
+              />
+            }
+            text="Салон текстиля"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/viridian.jpg"
+              alt=""
+              />
+            }
+            text="Студия интерьеров"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/alutex.jpg"
+              alt=""
+              />
+            }
+            text="Алюминиевые профильные системы" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/hormann.jpg"
+              alt=""
+              />
+            }
+            text="Двери и ворота"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/rimadesio.jpg"
+              alt=""
+              />
+            }
+            text="Межкомнатные перегородки" 
+          />
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/daskitchen.jpg"
+              alt=""
+              />
+            }
+            text="Салон немецкой мебели" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/imola.jpg"
+              alt=""
+              />
+            }
+            text="Итальянская плитка" 
+          />
+        </>
+      }
+      />
     <FooterConsultationDmitry />
     </div>
       {/* <Fancybox>

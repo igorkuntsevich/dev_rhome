@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-commer
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const AzsRechitsa = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать интерьер торгового помещения АЗС."
+        wishText="Конкуренция среди заправок колоссальна. Соревнование в этой отрасли идет не только между собой, но и с кофейнями. Особенно в небольших городах, где выбор общественных заведений ограничен.Мы хотим, чтобы дизайн торгового помещения нравился молодежи, которая часто заходит сюда выпить кофе, купить снэки и просто провести время."
+      />
         <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

@@ -8,6 +8,9 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskDmitry } from '../../../subitems/project/task/project-task-dmitry'
+import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +76,71 @@ const IntererGomel = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskDmitry
+        taskText="Разработать интерьер частного дома в современном стиле."
+        wishText="Нам бы хотелось получить современный дом в темных тонах. Материалы подберите натуральные: дерево, камень, стекло, кирпич. Кухней пользуемся не так уж часто, поэтому сделайте ее небольшой. Только обязательно спрячьте всю технику, кастрюли и прочие черпаки в шкафы. Декор — по минимуму."
+      />
+      <ProjectPartner
+        items={
+        <>
+
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/gira.jpg"
+              alt=""
+              />
+            }
+            text="Розетки и выключатели"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/lazio.jpg"
+              alt=""
+              />
+            }
+            text="Салон дверей"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/mega.jpg"
+              alt=""
+              />
+            }
+            text="Салон интерьерных решений" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/oikos.jpg"
+              alt=""
+              />
+            }
+            text="Декоративная штукатурка и краска"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/krea.jpg"
+              alt=""
+              />
+            }
+            text="Салон обоев"
+          />
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/orac.jpg"
+              alt=""
+              />
+            }
+            text="Лепной декор"
+          />
+        </>
+      }
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

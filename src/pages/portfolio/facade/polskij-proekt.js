@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const PolskijProekt = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Доработать внешний вид дома, подобрать отделочные материалы, разработать техническую документацию для строителей."
+        wishText="Первоначальный проект мне в принципе нравится, но есть моменты которые можно улучшить. Так же в проекте нет ни слова о материалах, которые использовали польские архитекторы в отделке фасада, их необходимо подобрать."
+      />
       <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

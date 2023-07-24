@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-commer
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskDmitry } from '../../../subitems/project/task/project-task-dmitry'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const SpaKrym = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskDmitry
+        taskText="Создать дизайн-проект SPA при гостинице."
+        wishText="Мы планируем открыть SPA-зону для гостей в нашем отеле на морском побережье. Поскольку это не отдельное заведение, а часть уже существующего комплекса, важно, чтобы интерьер перекликался по стилю с остальными помещениями. Главное пожелание – никакой классики, все должно быть строго и современно!"
+      />
         <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>

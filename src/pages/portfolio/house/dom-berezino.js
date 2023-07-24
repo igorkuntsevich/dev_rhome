@@ -6,12 +6,11 @@ import { StaticImage } from "gatsby-plugin-image"
 // import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { ProjectTaskSvetlana } from '../../../subitems/project/task/project-task-svetlana'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSvetlana } from '../../../subitems/project/task/project-task-svetlana'
 import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
-import { ProjectPartnerItemEmpty } from "../../../subitems/project/project-partner-empty"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -98,58 +97,21 @@ const HouseBerezino = () => {
               alt=""
               />
             }
-            text="Салон дверей"
+            text="Розетки и выключатели"
           />
           <ProjectPartnerItem
             image={
               <StaticImage
-              src="../../../images/partners/gira.jpg"
+              src="../../../images/partners/skvirel.jpg"
               alt=""
               />
             }
-            text="Салон дверей" 
+            text="Салон интерьеров" 
           />
           <ProjectPartnerItem
             image={
               <StaticImage
-              src="../../../images/partners/gira.jpg"
-              alt=""
-              />
-            }
-            text="Салон дверей"
-          />
-          <ProjectPartnerItem
-            image={
-              <StaticImage
-              src="../../../images/partners/gira.jpg"
-              alt=""
-              />
-            }
-            text="Салон дверей" 
-          />
-          <ProjectPartnerItem
-            image={
-              <StaticImage
-              src="../../../images/partners/gira.jpg"
-              alt=""
-              />
-            }
-            text="Салон дверей"
-          />
-          <ProjectPartnerItemEmpty />
-          <ProjectPartnerItem
-            image={
-              <StaticImage
-              src="../../../images/partners/gira.jpg"
-              alt=""
-              />
-            }
-            text="Салон дверей" 
-          />
-          <ProjectPartnerItem
-            image={
-              <StaticImage
-              src="../../../images/partners/gira.jpg"
+              src="../../../images/partners/lazio.jpg"
               alt=""
               />
             }
@@ -158,11 +120,83 @@ const HouseBerezino = () => {
           <ProjectPartnerItem
             image={
               <StaticImage
-              src="../../../images/partners/gira.jpg"
+              src="../../../images/partners/mega.jpg"
               alt=""
               />
             }
-            text="Салон дверей" 
+            text="Салон интерьерных решений" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/openini.jpg"
+              alt=""
+              />
+            }
+            text="Салон напольных покрытий и дверей"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/atrium.jpg"
+              alt=""
+              />
+            }
+            text="Салон плитки и сантехники" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/stonetech.jpg"
+              alt=""
+              />
+            }
+            text="Мастерская камня"
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/austrialight.jpg"
+              alt=""
+              />
+            }
+            text="Салон светильников" 
+          />
+            <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/caparol.jpg"
+              alt=""
+              />
+            }
+            text="Отделочные материалы" 
+          />
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/daskitchen.jpg"
+              alt=""
+              />
+            }
+            text="Салон немецкой мебели" 
+          />
+          <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/cosmorelax.jpg"
+              alt=""
+              />
+            }
+            text="Магазин дизайнерских предметов" 
+          />
+           <ProjectPartnerItem
+            image={
+              <StaticImage
+              src="../../../images/partners/antrano.jpg"
+              alt=""
+              />
+            }
+            text="Фабрика эксклюзивной мебели" 
           />
         </>
       }

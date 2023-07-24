@@ -8,6 +8,7 @@ import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-commer
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
@@ -73,6 +74,10 @@ const OfisSilvano = () => (
         />
       </PhotoCollage>
       <div className="wrapper">
+      <ProjectTaskSergey
+        taskText="Разработать концепцию офиса для компании, работающей в сфере моды."
+        wishText="Офис должен быть удобным для сотрудников и достаточно презентабельным для проведения переговоров с компаньонами и заказчиками. Нам нужен офис, в котором могли бы расположиться бухгалтерия, отдел кадров, дирекция и конференц-зал."
+      />
         <FooterConsultationDmitry />
       </div>
       {/* <Fancybox>
