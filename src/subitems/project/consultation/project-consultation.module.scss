@@ -48,6 +48,12 @@ $mobile: 768px;
     background-color: transparent;
   }
 }
+.project_cons_alexey {
+  background-color: #0C0F0C;
+  @media screen and (max-width: $mobile) {
+    background-color: transparent;
+  }
+}
 .project_cons_sergey {
   background-color: #B9A584;
   @media screen and (max-width: $mobile) {
@@ -169,6 +175,11 @@ $mobile: 768px;
   }
 }
 .project_cons_text_svetlana {
+  &.project_cons_text {
+    background-color: #2D2C25;
+  }
+}
+.project_cons_text_alexey {
   &.project_cons_text {
     background-color: #2D2C25;
   }

@@ -7,6 +7,7 @@ import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
+import { ProjectConsultationAlexey } from '../../../subitems/project/consultation/project-consultation-alexey'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import { ProjectPartner } from "../../../subitems/project/project-partner"
@@ -267,6 +268,11 @@ const HouseBerezino = () => {
                 text="Продумывая планировку, отталкивайтесь от&nbsp;возможностей, которые предлагает архитектура дома. Например, этом проекте на&nbsp;первом этаже все основные функциональные зоны расположены в&nbsp;одном пространстве. Такой ход помогает рационально использовать большую площадь помещения и&nbsp;сделать так, чтобы свет из&nbsp;огромных окон с&nbsp;видом на&nbsp;сад рассеивался свободно."
               />
             </div>
+            <div className={styles.project__bigmargin}>
+              <ProjectConsultationAlexey
+                text="Продумывая планировку, отталкивайтесь от&nbsp;возможностей, которые предлагает архитектура дома. Например, этом проекте на&nbsp;первом этаже все основные функциональные зоны расположены в&nbsp;одном пространстве. Такой ход помогает рационально использовать большую площадь помещения и&nbsp;сделать так, чтобы свет из&nbsp;огромных окон с&nbsp;видом на&nbsp;сад рассеивался свободно."
+              />
+            </div>
             <div className={styles.project__two_inline_bigrightimg}>
               <div className={styles.project__two_inline_bigrightimg_left}>
                 <div>
@@ -407,7 +413,7 @@ const HouseBerezino = () => {
                 />
               </a>
             </div>
-            <div className={styles.project__three_inline}>
+            <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
               <a href="https://rhome.by/images/portfolio/dom-berezino/34_dom-berezino.webp"
                 data-fancybox="gallery"
                 >
@@ -429,6 +435,30 @@ const HouseBerezino = () => {
                 >
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/36_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Ванная с&nbsp;окном в&nbsp;пол</h2>
+              <div>
+                <p className={styles.project__p}>В&nbsp;этом проекте оба санузла выполнены в&nbsp;темных цветах. Дизайн-проект загородного дома разрабатывался с&nbsp;учетом пожеланий заказчиков, поэтому окна в&nbsp;ванных комнатах изначально планировались большие. Хотя мы&nbsp;выбрали черную плитку X-Rock Imola Ceramica и&nbsp;темную краску для потолка, помещение не&nbsp;кажется слишком мрачным за&nbsp;счет попадания солнечного света. А&nbsp;лежа в&nbsp;отдельностоящей ванне Antoniolupi Reflexmood можно смотреть на&nbsp;сад.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/37_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-berezino/37_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/38_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-berezino/38_dom-berezino.jpg"
                   alt=""
                 />
               </a>
