@@ -10,7 +10,7 @@ export const ProjectConsultationAlexey = ({ text }) => {
   return (
     <div className={styles.project_cons + " " + styles.project_cons_alexey}>
       <div className={styles.project_cons_bcg}>
-        <div className={styles.project_cons_text + " " + styles.project_cons_text_alexey + " " + (inView? `${styles.active}` : "")}>
+        <div className={styles.project_cons_text + " " + (inView? `${styles.active}` : "")}>
           <div className={styles.project_cons_text1}>
             <p className={styles.project_cons_text_p}>&mdash;&nbsp;{text}</p>
           </div>
@@ -20,15 +20,15 @@ export const ProjectConsultationAlexey = ({ text }) => {
       <div className={styles.project_cons_person}>
         <StaticImage
           src="../../../images/personal/project_cons_alexey.jpg"
-          alt="Алексей, архитектор"
+          alt="Алексей, главный архитектор"
           className={styles.project_cons_img}
         />
         <StaticImage
           src="../../../images/personal/project_cons_mob_alexey.jpg"
-          alt="Алексей, архитектор"
+          alt="Алексей, главный архитектор"
           className={styles.project_cons_img_mob}
         />
-        <p className={styles.project_cons_person_status}>Алексей, архитектор</p>
+        <p className={styles.project_cons_person_status}>Алексей, главный архитектор</p>
       </div>
       <p ref={ref} className={styles.project_cons_ref}></p>
     </div>

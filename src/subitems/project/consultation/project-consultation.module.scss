@@ -49,7 +49,7 @@ $mobile: 768px;
   }
 }
 .project_cons_alexey {
-  background-color: #0C0F0C;
+  background-color: #414852;
   @media screen and (max-width: $mobile) {
     background-color: transparent;
   }
@@ -154,6 +154,7 @@ $mobile: 768px;
   padding: 2.6vw 4.1vw 2.2vw 2.3vw;
   border-radius: 30px 30px 0 30px;
   border: 1px solid #6B6B6B;
+  background-color: #2D2C25;
   opacity: 0;
   &.active {
     animation: popupMessage 0.7s;
@@ -172,16 +173,6 @@ $mobile: 768px;
     left: 4.3vw;
     right: 4.3vw;
     width: calc(100% - 8.6vw);
-  }
-}
-.project_cons_text_svetlana {
-  &.project_cons_text {
-    background-color: #2D2C25;
-  }
-}
-.project_cons_text_alexey {
-  &.project_cons_text {
-    background-color: #2D2C25;
   }
 }
 .project_cons_text1 {

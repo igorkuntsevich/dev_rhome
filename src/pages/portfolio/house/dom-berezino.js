@@ -123,6 +123,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/04_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <div className={styles.project__leftimage_righttext_text}>
@@ -158,6 +159,7 @@ const HouseBerezino = () => {
                   <StaticImage
                     src="../../../images/portfolio/dom-berezino/07_dom-berezino.jpg"
                     alt=""
+                    className={styles.project__one_image}
                   />
                 </a>
                 <a href="https://rhome.by/images/portfolio/dom-berezino/08_dom-berezino.webp"
@@ -166,6 +168,7 @@ const HouseBerezino = () => {
                   <StaticImage
                     src="../../../images/portfolio/dom-berezino/08_dom-berezino.jpg"
                     alt=""
+                    className={styles.project__one_image}
                   />
                 </a>
               </div>
@@ -176,6 +179,7 @@ const HouseBerezino = () => {
                   <StaticImage
                     src="../../../images/portfolio/dom-berezino/09_dom-berezino.jpg"
                     alt=""
+                    className={styles.project__one_image}
                   />
                 </a>
                 <a href="https://rhome.by/images/portfolio/dom-berezino/10_dom-berezino.webp"
@@ -184,6 +188,7 @@ const HouseBerezino = () => {
                   <StaticImage
                     src="../../../images/portfolio/dom-berezino/10_dom-berezino.jpg"
                     alt=""
+                    className={styles.project__one_image}
                   />
                 </a>
               </div>
@@ -207,6 +212,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/16_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <a href="https://rhome.by/images/portfolio/dom-berezino/17_dom-berezino.webp"
@@ -215,6 +221,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/17_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <a href="https://rhome.by/images/portfolio/dom-berezino/18_dom-berezino.webp"
@@ -223,6 +230,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/18_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
             </div>
@@ -252,6 +260,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <a href="https://rhome.by/images/portfolio/dom-berezino/21_dom-berezino.webp"
@@ -260,6 +269,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
             </div>
@@ -284,6 +294,7 @@ const HouseBerezino = () => {
                   <StaticImage
                     src="../../../images/portfolio/dom-berezino/22_dom-berezino.jpg"
                     alt=""
+                    className={styles.project__one_image}
                   />
                 </a>
               </div>
@@ -293,6 +304,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/23_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
             </div>
@@ -310,6 +322,7 @@ const HouseBerezino = () => {
                   <StaticImage
                     src="../../../images/portfolio/dom-berezino/24_dom-berezino.jpg"
                     alt=""
+                    className={styles.project__one_image}
                   />
                 </a>
               </div>
@@ -319,6 +332,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/25_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
             </div>
@@ -336,6 +350,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/26_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <a href="https://rhome.by/images/portfolio/dom-berezino/27_dom-berezino.webp"
@@ -344,6 +359,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/27_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
             </div>
@@ -374,6 +390,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/29_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <a href="https://rhome.by/images/portfolio/dom-berezino/30_dom-berezino.webp"
@@ -382,6 +399,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/30_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <a href="https://rhome.by/images/portfolio/dom-berezino/31_dom-berezino.webp"
@@ -390,6 +408,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/31_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
             </div>
@@ -402,6 +421,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/32_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <a href="https://rhome.by/images/portfolio/dom-berezino/33_dom-berezino.webp"
@@ -410,6 +430,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/33_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
             </div>
@@ -420,6 +441,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/34_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <a href="https://rhome.by/images/portfolio/dom-berezino/35_dom-berezino.webp"
@@ -428,6 +450,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/35_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <a href="https://rhome.by/images/portfolio/dom-berezino/36_dom-berezino.webp"
@@ -436,6 +459,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/36_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
             </div>
@@ -452,6 +476,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/37_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
               <a href="https://rhome.by/images/portfolio/dom-berezino/38_dom-berezino.webp"
@@ -460,6 +485,7 @@ const HouseBerezino = () => {
                 <StaticImage
                   src="../../../images/portfolio/dom-berezino/38_dom-berezino.jpg"
                   alt=""
+                  className={styles.project__one_image}
                 />
               </a>
             </div>

@@ -10,7 +10,7 @@ export const ProjectConsultationSvetlana = ({ text }) => {
   return (
     <div className={styles.project_cons + " " + styles.project_cons_svetlana}>
       <div className={styles.project_cons_bcg}>
-        <div className={styles.project_cons_text + " " + styles.project_cons_text_svetlana + " " + (inView? `${styles.active}` : "")}>
+        <div className={styles.project_cons_text + " " + (inView? `${styles.active}` : "")}>
           <div className={styles.project_cons_text1}>
             <p className={styles.project_cons_text_p}>&mdash;&nbsp;{text}</p>
           </div>

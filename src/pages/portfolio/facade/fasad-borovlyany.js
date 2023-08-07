@@ -101,20 +101,22 @@ const FasadBorovlyany = () => {
             />
             </a>
             <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/11_fasad-borovlyany.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-borovlyany/11_fasad-borovlyany.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
               <a href="https://rhome.by/images/portfolio/fasad-borovlyany/12_fasad-borovlyany.webp"
                 data-fancybox="gallery"
                 >
                 <StaticImage
                   src="../../../images/portfolio/fasad-borovlyany/12_fasad-borovlyany.jpg"
                   alt=""
-                />
-              </a>
-              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/09_fasad-borovlyany.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../../images/portfolio/fasad-borovlyany/09_fasad-borovlyany.jpg"
-                  alt=""
+                  className={styles.project__one_image}
                 />
               </a>
             </div>
