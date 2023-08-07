@@ -136,15 +136,6 @@ $mobile: 768px;
     margin-bottom: 2.4vw;
   }
 }
-.project__bigmargin {
-  margin-bottom: 5vw;
-  @media screen and (min-width: $fullscreen) {
-    margin-bottom: 76px;
-  }
-  @media screen and (max-width: $mobile) {
-    margin-bottom: 7vw;
-  }
-}
 .project__lefttitle_righttext {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -251,7 +242,8 @@ $mobile: 768px;
   margin-right: 3.6vw;
   margin-top: 8.4vw;
   @media screen and (min-width: $fullscreen) {
-    width: 476px;
+    width: 31.3vw;
+    max-width: 700px;
     margin-top: 128px;
     margin-right: 0;
   }
@@ -397,5 +389,14 @@ $mobile: 768px;
   }
   @media screen and (max-width: $mobile) {
     gap: 7vw;
+  }
+}
+.project__bigmargin {
+  margin-bottom: 5vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 76px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 7vw;
   }
 }
