@@ -24,48 +24,9 @@ const Header = () => {
           <Link to="/" className="header_logo_link_mob_open">
             <img src={logo_mob} alt="rhome logotype" class="header_logo_img_mob_open" />
           </Link>
-          <div className="header_desktop_items">
-            <ul className="header_nav">
-              {/* <li>
-                <Link
-                  // to="/"
-                  to="/services/apartment"
-                  className="header_nav_li"
-                  activeClassName="header_nav_li_active"
-                >Услуги</Link>
-              </li> */}
+          <ul className="header_nav">
+            <li className="header_subnav_services">
               <p className="header_nav_li header_subnav_p header_nav_li_arrow">Услуги</p>
-              <li>
-                <Link
-                  to="/portfolio"
-                  className="header_nav_li"
-                  activeClassName="header_nav_li_active"
-                >Портфолио</Link>
-              </li>
-              <li>
-                <Link
-                  to="/3"
-                  className="header_nav_li"
-                  activeClassName="header_nav_li_active"
-                >Стоимость</Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="header_nav_li header_nav_li_arrow"
-                  activeClassName="header_nav_li_active"
-                >О&nbsp;студии</Link>
-              </li>
-              <li>
-                <Link
-                  to="/5"
-                  className="header_nav_li"
-                  activeClassName="header_nav_li_active"
-                >Контакты</Link>
-              </li>
-            </ul>
-            <div className="header_subnav_hidden">
-            <div className="header_subnav_services">
               <ul className="header_subnav_ul">
                 <li>
                   <Link 
@@ -88,18 +49,17 @@ const Header = () => {
                     activeClassName="header_subnav_a_active"
                   >Дизайн проект офисы</Link>
                 </li>
-              </ul>
-              <ul className="header_subnav_ul">
+                <p className="header_subnav_mb"></p>
                 <li>
                   <Link 
-                    to="/3" 
+                    to="/services/building" 
                     className="header_subnav_a"
                     activeClassName="header_subnav_a_active"
                   >Строительные работы</Link>
                 </li>
                 <li>
                   <Link 
-                    to="/3" 
+                    to="/services/supervision" 
                     className="header_subnav_a"
                     activeClassName="header_subnav_a_active"
                   >Авторский надзор</Link>
@@ -113,40 +73,65 @@ const Header = () => {
                 </li>
                 <li>
                   <Link 
-                    to="/3" 
+                    to="/services/approval" 
                     className="header_subnav_a"
                     activeClassName="header_subnav_a_active"
-                  >Согласование препланировки</Link>
+                  >Согласование перепланировки</Link>
                 </li>
               </ul>
-            </div>
-            <div className="header_subnav_about">
-              <ul className="header_subnav_ul">
-                <li>
-                  <Link 
-                    to="/3" 
-                    className="header_subnav_a"
-                    activeClassName="header_subnav_a_active"
-                  >Вакансии</Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/3" 
-                    className="header_subnav_a"
-                    activeClassName="header_subnav_a_active"
-                  >Отзывы</Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/inspiration" 
-                    className="header_subnav_a"
-                    activeClassName="header_subnav_a_active"
-                  >Вдохновение</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          </div>
+            </li>
+            <li>
+              <Link
+                to="/portfolio"
+                className="header_nav_li"
+                activeClassName="header_nav_li_active"
+              >Портфолио</Link>
+            </li>
+            <li>
+              <Link
+                to="/3"
+                className="header_nav_li"
+                activeClassName="header_nav_li_active"
+              >Стоимость</Link>
+            </li>
+            <li className="header_subnav_about">
+              <Link
+                to="/about"
+                className="header_nav_li header_nav_li_arrow"
+                activeClassName="header_nav_li_active"
+              >О&nbsp;студии</Link>
+                <ul className="header_subnav_ul">
+                  <li>
+                    <Link 
+                      to="/3" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Вакансии</Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/3" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Отзывы</Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/inspiration" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Вдохновение</Link>
+                  </li>
+                </ul>
+            </li>
+            <li>
+              <Link
+                to="/5"
+                className="header_nav_li"
+                activeClassName="header_nav_li_active"
+              >Контакты</Link>
+            </li>
+          </ul>
           <div 
             onClick={()=>  {
               setNavOpen(!navOpen)}} className="header_burger">
@@ -194,10 +179,9 @@ const Header = () => {
               >Стоимость</Link>
             </div>
             <div className="header_mobile_flex">
-              <Link
-                to="/services/apartment"
+              <p
                 className="header_mobile_nav_title"
-              >Услуги</Link>
+              >Услуги</p>
               <ul className="header_mobile_nav">
                 <li>
                   <Link
@@ -207,13 +191,13 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/6"
+                    to="/services/house"
                     className="header_mobile_nav_li"
                   >Дизайн проект дома</Link>
                 </li>
                 <li>
                   <Link
-                    to="/7"
+                    to="/services/office"
                     className="header_mobile_nav_li"
                   >Дизайн проект офиса</Link>
                 </li>
@@ -255,36 +239,30 @@ const Header = () => {
               <ul className="header_mobile_nav">
                 <li>
                   <Link
-                    to="/"
+                    to="/services/building"
                     className="header_mobile_nav_li"
                   >Строительные работы</Link>
                 </li>
                 <li>
                   <Link
-                    to="/"
+                    to="/services/supervision"
                     className="header_mobile_nav_li"
                   >Авторский надзор</Link>
                 </li>
                 <li>
                   <Link
-                    to="/"
+                    to="/services/facade"
                     className="header_mobile_nav_li"
                   >Оформление фасадов</Link>
                 </li>
                 <li>
                   <Link
-                    to="/"
+                    to="/services/approval"
                     className="header_mobile_nav_li"
-                  >Согласование препланировки</Link>
+                  >Согласование перепланировки</Link>
                 </li>
               </ul>
             </div>
-            {/* <div className="header_mobile_flex">
-              <Link
-                to="/"
-                className="header_mobile_nav_title"
-              >Контакты</Link>
-            </div> */}
           </div>
         </div>
       </div>

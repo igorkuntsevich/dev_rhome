@@ -41,9 +41,9 @@ const IndexPage = () => (
         <Link to="/services/house" className={styles.index_services__item + " " + styles.index_services__item2}>
           <p className={styles.index_services__item_p + " " + styles.index_services__item_p2}>Дизайн домов</p>
         </Link>
-        <div className={styles.index_services__item + " " + styles.index_services__item3}>
+        <Link to="/services/building" className={styles.index_services__item + " " + styles.index_services__item3}>
           <p className={styles.index_services__item_p}>Строительные работы</p>
-        </div>
+        </Link>
         <Link to="/services/office" className={styles.index_services__item + " " + styles.index_services__item4}>
           <p className={styles.index_services__item_p}>Дизайн коммерческих объектов</p>
         </Link>

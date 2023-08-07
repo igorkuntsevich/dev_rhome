@@ -26,7 +26,7 @@ export const ProjectTaskDmitry = ({ taskText , wishText }) => {
       </div>
       <div className={styles.project_task_person}>
         <StaticImage
-          src="../../../images/personal/project_dmitry.jpg"
+          src="../../../images/personal/project_task_dmitry.jpg"
           alt="Сергей, руководитель студии"
         />
         <p className={styles.project_task_person_status}>Дмитрий, руководитель проектов</p>

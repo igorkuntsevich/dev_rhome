@@ -72,6 +72,10 @@ $mobile: 768px;
   @media screen and (max-width: $mobile) {
     font-size: 3.4vw;
     line-height: 5.3vw;
+    sup {
+      position: absolute;
+      top: -0.9vw;
+    }
   }
 }
 .project_intro_item_cost {
@@ -99,13 +103,13 @@ $mobile: 768px;
   }
 }
 .project_partners_title {
-  font-size: 3vw;
-  line-height: 3.9vw;
+  font-size: 2.8vw;
+  line-height: 3.1vw;
   margin-bottom: 5.4vw;
   text-align: center;
   @media screen and (min-width: $fullscreen) {
-    font-size: 46px;
-    line-height: 59px;
+    font-size: 43px;
+    line-height: 47px;
     margin-bottom: 82px;
   }
   @media screen and (max-width: $mobile) {
@@ -140,28 +144,16 @@ $mobile: 768px;
     justify-content: space-between;
   }
 }
-.project_partner_logo {
-  @media screen and (min-width: $fullscreen) {
-  }
-  @media screen and (max-width: $mobile) {
-  }
-}
 .project_partner_text {
   font-size: 1.25vw;
-  line-height: 1.9vw;
+  line-height: 1.45vw;
   text-align: center;
   @media screen and (min-width: $fullscreen) {
     font-size: 19px;
-    line-height: 29px;
+    line-height: 22px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 3.4vw;
     line-height: 5.3vw;
-  }
-}
-.project_partner_empty {
-  display: block;
-  @media screen and (max-width: $mobile) {
-    display: none;
   }
 }

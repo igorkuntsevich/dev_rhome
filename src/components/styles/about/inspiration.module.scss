@@ -1,16 +1,44 @@
 $bigfullscreen: 1900px;
 $fullscreen: 1520px;
 $mobile: 768px;
+@keyframes animline {
+  0% {
+    width: 1px;
+  }
+  100% {
+    width: 2.1vw;
+  }
+}
+@media screen and (min-width: $fullscreen) {
+  @keyframes animline {
+    0% {
+      width: 1px;
+    }
+    100% {
+      width: 32px;
+    }
+  }
+}
+@media screen and (max-width: $mobile) {
+  @keyframes animline {
+    0% {
+      width: 1px;
+    }
+    100% {
+      width: 7.2vw;
+    }
+  }
+}
 .inspiration_intro {
   border-radius: 30px 30px 0px 0px;
   background: linear-gradient(180deg, #3E393B 0%, #231F20 100%);
   position: relative;
   overflow: hidden;
   padding: 3.3vw 2.5vw 1.4vw;
-  margin-bottom: 2.1vw;
+  margin-bottom: 1.7vw;
   @media screen and (min-width: $fullscreen) {
     padding: 50px 38px 21px;
-    margin-bottom: 32px;
+    margin-bottom: 26px;
   }
   @media screen and (max-width: $mobile) {
     padding: 9.7vw 5.1vw 6.7vw;
@@ -76,25 +104,25 @@ $mobile: 768px;
 }
 .inspiration_intro_active_link {
   position: relative;
-  &::before {
-    content: "";
+  .animline {
     position: absolute;
     width: 2.1vw;
     height: 2px;
     left: 1px;
     bottom: 0.5vw;
     background-color: #F8D7A4;
+    animation: animline 0.5s;
   }
   @media screen and (min-width: $fullscreen) {
-    &::before {
+    .animline {
       width: 32px;
       bottom: 8px;
     }
   }
   @media screen and (max-width: $mobile) {
-    &::before {
+    .animline {
       width: 7.2vw;
-      bottom: -0.3vw;
+      bottom: 0;
     }
   }
 }
@@ -121,10 +149,10 @@ $mobile: 768px;
 .inspiration_photos_content {
   display: flex;
   flex-direction: column;
-  gap: 2.1vw;
+  gap: 1.7vw;
   margin-bottom: 4.8vw;
   @media screen and (min-width: $fullscreen) {
-    gap: 32px;
+    gap: 26px;
   }
   @media screen and (max-width: $mobile) {
     gap: 3.4vw;
@@ -132,11 +160,11 @@ $mobile: 768px;
 }
 .inspiration_photos_1 {
   display: grid;
-  grid-gap: 2.1vw;
+  grid-gap: 1.7vw;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   @media screen and (min-width: $fullscreen) {
-    grid-gap: 32px;
+    grid-gap: 26px;
   }
   @media screen and (max-width: $mobile) {
     grid-gap: 3.4vw;
@@ -144,11 +172,11 @@ $mobile: 768px;
 }
 .inspiration_photos_2 {
   display: grid;
-  grid-gap: 2.1vw;
+  grid-gap: 1.7vw;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   @media screen and (min-width: $fullscreen) {
-    grid-gap: 32px;
+    grid-gap: 26px;
   }
   @media screen and (max-width: $mobile) {
     grid-gap: 3.4vw;
@@ -156,11 +184,11 @@ $mobile: 768px;
 }
 .inspiration_photos_3 {
   display: grid;
-  grid-gap: 2.1vw;
+  grid-gap: 1.7vw;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   @media screen and (min-width: $fullscreen) {
-    grid-gap: 32px;
+    grid-gap: 26px;
   }
   @media screen and (max-width: $mobile) {
     grid-gap: 3.4vw;
@@ -168,11 +196,11 @@ $mobile: 768px;
 }
 .inspiration_photos_4 {
   display: grid;
-  grid-gap: 2.1vw;
+  grid-gap: 1.7vw;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   @media screen and (min-width: $fullscreen) {
-    grid-gap: 32px;
+    grid-gap: 26px;
   }
   @media screen and (max-width: $mobile) {
     grid-gap: 3.4vw;
@@ -180,11 +208,11 @@ $mobile: 768px;
 }
 .inspiration_photos_5 {
   display: grid;
-  grid-gap: 2.1vw;
+  grid-gap: 1.7vw;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   @media screen and (min-width: $fullscreen) {
-    grid-gap: 32px;
+    grid-gap: 26px;
   }
   @media screen and (max-width: $mobile) {
     grid-gap: 3.4vw;

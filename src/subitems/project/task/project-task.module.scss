@@ -1,6 +1,19 @@
 $bigfullscreen: 1900px;
 $fullscreen: 1520px;
 $mobile: 768px;
+@keyframes popupMessage {
+  0% {
+    opacity: 0;
+    bottom: -5vw;
+  }
+  80% {
+    opacity: 1;
+    bottom: 0.3vw;
+  }
+  100% {
+    bottom: 0;
+  }
+}
 .project_task {
   display: flex;
   justify-content: space-between;

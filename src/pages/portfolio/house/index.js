@@ -22,14 +22,16 @@ const PortfolioHouse = () => (
         </div>
         <div className={styles.portfolio_intro_list}>
           <Link to="/portfolio" className={styles.portfolio_intro_link}>Все проекты</Link>
-          <Link to="/portfolio/house" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Дома</Link>
+          <Link to="/portfolio/house" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Дома
+          <div className={styles.animline}></div>
+          </Link>
           <Link to="/portfolio/apartment" className={styles.portfolio_intro_link}>Квартиры</Link>
           <Link to="/portfolio/commercial" className={styles.portfolio_intro_link}>Коммерческие объекты</Link>
           <Link to="/portfolio/facade" className={styles.portfolio_intro_link}>Фасады</Link>
         </div>
       </div>
       <div className={styles.portfolio_content}>
-      <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-ptich"
           title="Дом в&nbsp;поселке Птичь"
           metr="260"
@@ -56,20 +58,6 @@ const PortfolioHouse = () => (
           }
         />
         <PortfolioItem
-          url="/portfolio/apartment/zhk-farforovyj"
-          title="ЖК&nbsp;Фарфоровый"
-          metr="85"
-          building="6 месяцев"
-          budget={styles.portfolio_item_cost1}
-          image={
-            <StaticImage
-              src="../../../images/portfolio/zhk-farforovyj/00_zhk-farforovyj.jpg"
-              alt=""
-            />
-          }
-        />
-
-        <PortfolioItem
           url="/portfolio/house/barnhaus-gorani"
           title="Горани Барнхаус"
           metr="250"
@@ -95,7 +83,7 @@ const PortfolioHouse = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-leskovka"
           title="Дом в Лесковке"
           metr="220"
@@ -122,6 +110,19 @@ const PortfolioHouse = () => (
           }
         />
         <PortfolioItem
+          url="/portfolio/house/dom-berezino"
+          title="Дом на Березине"
+          metr="260"
+          building="18 месяцев"
+          budget=""
+          image={
+            <StaticImage
+              src="../../../images/portfolio/dom-berezino/00_dom-berezino.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
           url="/portfolio/house/monohrom-zelenaya-gavan"
           title="Монохромный интерьер дома в Зеленой Гавани"
           metr="182"
@@ -134,7 +135,7 @@ const PortfolioHouse = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-maryalivo"
           title="Дом в Марьяливо"
           metr="450"
@@ -147,7 +148,7 @@ const PortfolioHouse = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-mozyr"
           title="Современный интерьер дома в Мозыре"
           metr="250"
@@ -160,7 +161,7 @@ const PortfolioHouse = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-berezovaya-roshha"
           title="Дом в Березовой роще"
           metr="250"
@@ -173,7 +174,7 @@ const PortfolioHouse = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/interer-zelenoja-gavan"
           title="Интерьер дома в Зеленой Гавани"
           metr="189"
@@ -186,7 +187,7 @@ const PortfolioHouse = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-zhdanovichi"
           title="Элегантный дом в Ждановичах"
           metr="310"
@@ -199,7 +200,6 @@ const PortfolioHouse = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/house/dom-raubichy"
           title="Дом в Раубичах"
@@ -213,7 +213,6 @@ const PortfolioHouse = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/house/dom-skandinavsk-shale"
           title="Загородный дом по мотивам скандинавских шале"
@@ -253,7 +252,6 @@ const PortfolioHouse = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/house/interer-gomel"
           title="Интерьер дома в Гомеле"
@@ -267,7 +265,6 @@ const PortfolioHouse = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/house/dom-provans"
           title="Современный дом с элементами прованса"
@@ -281,8 +278,7 @@ const PortfolioHouse = () => (
             />
           }
         />
-
-          <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/kottedzh-zatsen"
           title="Коттедж в Зацени"
           metr="180"
@@ -295,7 +291,7 @@ const PortfolioHouse = () => (
             />
           }
         />
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/house/dom-alpshale"
           title="Интерьер дома с мотивами шале"
           metr="401"
@@ -308,7 +304,6 @@ const PortfolioHouse = () => (
             />
           }
         />
-
       </div>
       <FooterConsultationDmitry />
     </div>

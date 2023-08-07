@@ -6,12 +6,16 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Video } from "../../subitems/video-intro/index"
 import mainVideo from "../../video/office.mp4"
 import mainVideoMobile from "../../video/office_1.mp4"
+import * as styles from "../../components/styles/services.module.scss"
+
+
 
 import { DecisionOffice } from "../../subitems/decision/decisionOffice"
 import { StagesOffice } from "../../subitems/services-stages/stagesOffice"
 import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
-import * as styles from "../../components/styles/services.module.scss"
+
+import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
 
 
 import { PhotoCollage } from "../../subitems/photocollage"
@@ -44,10 +48,7 @@ const ServicesOffice = () => (
       /> */}
       <div className={styles.services_intro}>
         <Video mobileSrc={mainVideoMobile} desktopSrc={mainVideo} />
-        <ul className={styles.services_breadcrumbs}>
-          <li className={styles.services_breadcrumbs_li}>Услуги</li>
-          {/* <li className={styles.services_breadcrumbs_li}>Дизайн интерьера офисов</li> */}
-        </ul>
+        <BreadcrumbsServices />
         <h1 className={styles.services_intro_title}>Дизайн интерьера офисов</h1>
       </div>
       <div className={styles.services_intro_text + " " + styles.services_intro_office_text}>

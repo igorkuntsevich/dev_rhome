@@ -5,33 +5,28 @@ $mobile: 768px;
   border-radius: 30px;
   position: relative;
   overflow: hidden;
-  // height: 41.7vw;
-  // padding: 6.1vw 2.5vw 3.3vw;
   margin-bottom: 4.1vw;
-  // background-image: url(../../../images/about/about_intro.jpg);
-  // background-size: cover;
-  // background-repeat: no-repeat;
   @media screen and (min-width: $fullscreen) {
-    // padding: 93px 38px 50px;
     margin-bottom: 62px;
   }
   @media screen and (max-width: $mobile) {
-    // background-image: url(../../../images/about/about_intro_mob.jpg);
-    // padding: 9.7vw 5.1vw;
-    // height: 119.3vw;
     margin-bottom: 8.45vw;
   }
 }
-.about_intro_img {
-  display: block;
-  @media screen and (max-width: $mobile) {
+.about_intro {
+  .about_intro_img {
+    display: block;
+  }
+  .about_intro_img_mob {
     display: none;
   }
-}
-.about_intro_img_mob {
-  display: none;
   @media screen and (max-width: $mobile) {
-    display: block;
+    .about_intro_img {
+      display: none;
+    }
+    .about_intro_img_mob {
+      display: block;
+    }
   }
 }
 .about_intro_title {

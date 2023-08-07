@@ -24,9 +24,11 @@ const Inspiration = () => (
           <h1 className={styles.inspiration_intro_title}>Вдохновение</h1>
         </div>
         <div className={styles.inspiration_intro_list}>
-          <Link to="/inspiration" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Все сразу</Link>
-          <Link to="/inspiration/articles" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Статьи</Link>
-          <Link to="/inspiration/photos" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Фотографии</Link>
+          <Link to="/inspiration" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Все сразу
+          <div className={styles.animline}></div>
+          </Link>
+          <Link to="/inspiration/articles" className={styles.inspiration_intro_link}>Статьи</Link>
+          <Link to="/inspiration/photos" className={styles.inspiration_intro_link}>Фотографии</Link>
         </div>
       </div>
       <div className={styles.inspiration_content}>

@@ -4,12 +4,18 @@ import Seo from "../../components/seo"
 // import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+
+
+import * as styles from "../../components/styles/services.module.scss"
+
+
 import { DecisionFacade } from "../../subitems/decision/decisionFacade"
 import { StagesFacade } from "../../subitems/services-stages/stagesFacade"
 import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 
-import * as styles from "../../components/styles/services.module.scss"
+
+import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
 import { PhotoCollage } from "../../subitems/photocollage"
 import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
 import { ServicesFacadeCost } from "../../subitems/services-cost/services-facade-cost"
@@ -39,10 +45,7 @@ const ServicesFasad = () => (
         style={{ marginBottom: `var(--space-3)` }}
       /> */}
       <div className={styles.services_intro + " " + styles.services_intro_facade}>
-        <ul className={styles.services_breadcrumbs}>
-          <li className={styles.services_breadcrumbs_li}>Услуги</li>
-          {/* <li className={styles.services_breadcrumbs_li}>Оформление фасадов</li> */}
-        </ul>
+        <BreadcrumbsServices />
         <h1 className={styles.services_intro_title}>Оформление фасадов</h1>
       </div>
       <div className={styles.services_intro_text + " " + styles.services_intro_facade_text}>

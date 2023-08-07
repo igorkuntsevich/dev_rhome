@@ -24,7 +24,9 @@ const PortfolioCommercial = () => (
           <Link to="/portfolio" className={styles.portfolio_intro_link}>Все проекты</Link>
           <Link to="/portfolio/house" className={styles.portfolio_intro_link}>Дома</Link>
           <Link to="/portfolio/apartment" className={styles.portfolio_intro_link}>Квартиры</Link>
-          <Link to="/portfolio/commercial" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Коммерческие объекты</Link>
+          <Link to="/portfolio/commercial" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Коммерческие объекты
+          <div className={styles.animline}></div>
+          </Link>
           <Link to="/portfolio/facade" className={styles.portfolio_intro_link}>Фасады</Link>
         </div>
       </div>
@@ -42,7 +44,6 @@ const PortfolioCommercial = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/commercial/ofis-pobediteley"
           title="Офис на Победителей"
@@ -69,8 +70,7 @@ const PortfolioCommercial = () => (
             />
           }
         />
-
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/commercial/ofis-logisticheskoj-kompanii"
           title="Офис логистической компании"
           metr="152"
@@ -109,8 +109,7 @@ const PortfolioCommercial = () => (
             />
           }
         />
-
-         <PortfolioItem
+        <PortfolioItem
           url="/portfolio/commercial/launzh-bar"
           title="Лаунж-бар"
           metr="200"
@@ -123,7 +122,6 @@ const PortfolioCommercial = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/commercial/interer-gostinitsy"
           title="Интерьер гостиницы"
@@ -137,7 +135,6 @@ const PortfolioCommercial = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/commercial/ofis-sovremenni"
           title="Интерьер офисов в современном стиле"
@@ -151,7 +148,6 @@ const PortfolioCommercial = () => (
             />
           }
         />
-
         <PortfolioItem
           url="/portfolio/commercial/ofis-silvano"
           title="Офис Silvano Fashion"
@@ -165,7 +161,6 @@ const PortfolioCommercial = () => (
             />
           }
         />
-
       </div>
       <FooterConsultationDmitry />
     </div>

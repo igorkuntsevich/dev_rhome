@@ -1,0 +1,221 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+@keyframes popupMessage {
+  0% {
+    opacity: 0;
+    top: 7.6vw;
+  }
+  80% {
+    opacity: 1;
+    top: 2.6vw;
+  }
+  100% {
+    top: 3.6vw;
+  }
+}
+@media screen and (max-width: $mobile) {
+  @keyframes popupMessage {
+    0% {
+      opacity: 0;
+      top: 0;
+    }
+    80% {
+      opacity: 1;
+      top: -14vw;
+    }
+    100% {
+      top: -10.4vw;
+    }
+  }
+}
+.project_cons {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px 0 0 30px;
+  position: relative;
+  @media screen and (max-width: $mobile) {
+    flex-direction: column-reverse;
+    border-radius: 0 30px 30px 0;
+    background-color: transparent;
+    overflow: hidden;
+    padding-top: 60.7vw;
+  }
+}
+.project_cons_svetlana {
+  background-color: #0C0F0C;
+  @media screen and (max-width: $mobile) {
+    background-color: transparent;
+  }
+}
+.project_cons_sergey {
+  background-color: #B9A584;
+  @media screen and (max-width: $mobile) {
+    background-color: transparent;
+  }
+}
+.project_cons_sergey2 {
+  background-color: #414134;
+  @media screen and (max-width: $mobile) {
+    background-color: transparent;
+  }
+}
+.project_cons_dmitry {
+  background-color: #a18e79;
+  @media screen and (max-width: $mobile) {
+    background-color: transparent;
+  }
+}
+.project_cons_bcg {
+  @media screen and (max-width: $mobile) {
+    background-color: #262626;
+  }
+}
+.project_cons_person {
+  width: 47.9vw;
+  margin-left: auto;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    width: 780px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+  }
+}
+.project_cons_person {
+  .project_cons_img {
+    display: block;
+  }
+  .project_cons_img_mob {
+    display: none;
+  }
+  @media screen and (max-width: $mobile) {
+    .project_cons_img {
+      display: none;
+    }
+    .project_cons_img_mob {
+      display: block;
+    }
+  }
+}
+.project_cons_person_status {
+  font-size: 1.6vw;
+  line-height: 1.9vw;
+  color: #FFFFFF;
+  position: absolute;
+  top: 2.8vw;
+  right: 1.9vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 24px;
+    line-height: 29px;
+    top: 42px;
+    right: 29px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.1vw;
+    top: auto;
+    bottom: 35vw;
+    right: 3.9vw;
+    max-width: 40vw;
+    text-align: right;
+  }
+}
+.project_cons_ref {
+  position: absolute;
+  top: 19vw;
+  @media screen and (min-width: $fullscreen) {
+    top: 289px;
+  }
+  @media screen and (max-width: $mobile) {
+    top: auto;
+    bottom: 40vw;
+  }
+}
+.project_cons_text {
+  position: absolute;
+  top: 3.6vw;
+  left: 2.2vw;
+  width: 52.1vw;
+  max-width: 1130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  padding: 2.6vw 4.1vw 2.2vw 2.3vw;
+  border-radius: 30px 30px 0 30px;
+  border: 1px solid #6B6B6B;
+  opacity: 0;
+  &.active {
+    animation: popupMessage 0.7s;
+    opacity: 1;
+  }
+  @media screen and (min-width: $fullscreen) {
+    padding: 44px 62px 33px 38px;
+    top: 55px;
+    left: 33px;
+  }
+  @media screen and (max-width: $mobile) {
+    border-radius: 0 30px 30px 30px;
+    padding: 5.8vw 6.3vw 6.8vw 4.8vw;
+    position: relative;
+    top: -10.4vw;
+    left: 4.3vw;
+    right: 4.3vw;
+    width: calc(100% - 8.6vw);
+  }
+}
+.project_cons_text_svetlana {
+  &.project_cons_text {
+    background-color: #2D2C25;
+  }
+}
+.project_cons_text1 {
+  position: relative;
+  margin-bottom: 3.3vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 4.8vw;
+  }
+}
+.project_cons_text_p {
+  font-size: 1.45vw;
+  line-height: 2.1vw;
+  font-style: italic;
+  color: #FFFFFF;
+  max-width: 862px;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+  }
+}
+.project_cons_button {
+  display: inline-block;
+  font-size: 1.45vw;
+  line-height: 1.7vw;
+  border: none;
+  outline: none;
+  border-radius: 8px; 
+  background-color: #3C3B37;
+  color: #FFFFFF;
+  padding: 1.2vw 3vw;
+  cursor: pointer;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 5.3vw;
+    width: 100%;
+    padding: 4.6vw 5vw;
+  }
+}

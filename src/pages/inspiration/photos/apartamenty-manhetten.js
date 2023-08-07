@@ -23,7 +23,6 @@ const ApartamentyManhetten = () => (
       </div>
       <Fancybox>
         <div className={styles.inspiration_photos_content}>
-
           <div className={styles.inspiration_photos_3}>
             <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
               data-fancybox="gallery">
@@ -84,7 +83,6 @@ const ApartamentyManhetten = () => (
               />
             </a>
           </div>
-
         </div>
       </Fancybox>
       <FooterConsultationDmitry />

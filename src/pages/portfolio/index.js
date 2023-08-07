@@ -4,6 +4,7 @@ import Seo from "../../components/seo"
 import { Link } from "gatsby"
 import { PortfolioItem } from "../../subitems/portfolio"
 
+
 import * as styles from "../../components/styles/portfolio/portfolio.module.scss"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 import { StaticImage } from 'gatsby-plugin-image'
@@ -21,7 +22,9 @@ const Portfolio = () => (
           <h1 className={styles.portfolio_intro_title}>Портфолио</h1>
         </div>
         <div className={styles.portfolio_intro_list}>
-          <Link to="/portfolio" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Все проекты</Link>
+          <Link to="/portfolio" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Все проекты
+          <div className={styles.animline}></div>
+          </Link>
           <Link to="/portfolio/house" className={styles.portfolio_intro_link}>Дома</Link>
           <Link to="/portfolio/apartment" className={styles.portfolio_intro_link}>Квартиры</Link>
           <Link to="/portfolio/commercial" className={styles.portfolio_intro_link}>Коммерческие объекты</Link>

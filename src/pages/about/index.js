@@ -23,21 +23,13 @@ const About = () => (
         <StaticImage
           src="../../images/about/about_intro.jpg"
           loading="eager"
-          // width={64}
-          // quality={95}
-          // formats={["auto", "webp", "avif"]}
           alt=""
-          // style={{ marginBottom: `var(--space-3)` }}
           className={styles.about_intro_img}
         />
         <StaticImage
           src="../../images/about/about_intro_mob.jpg"
           loading="eager"
-          // width={64}
-          // quality={95}
-          // formats={["auto", "webp", "avif"]}
           alt=""
-          // style={{ marginBottom: `var(--space-3)` }}
           className={styles.about_intro_img_mob}
         />
       </div>

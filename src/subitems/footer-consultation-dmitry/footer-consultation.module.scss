@@ -42,12 +42,6 @@ $mobile: 768px;
     background-image: url(../../images/footer-consultation-dmitry-mob.jpg);
   }
 }
-// . {
-//   @media screen and (min-width: $fullscreen) {
-//   }
-//   @media screen and (max-width: $mobile) {
-//   }
-// }
 .consultation_text {
   position: absolute;
   right: 2.2vw;
@@ -75,7 +69,7 @@ $mobile: 768px;
   position: relative;
   opacity: 0;
   &.active {
-    animation: footerDmitryMessage 0.7s;
+    animation: footerDmitryMessage 0.5s;
     opacity: 1;
   }
   @media screen and (min-width: $fullscreen) {
@@ -102,7 +96,7 @@ $mobile: 768px;
   margin-left: auto;
   opacity: 0;
   &.active {
-    animation: footerDmitryMessage 0.7s;
+    animation: footerDmitryMessage 0.5s;
     opacity: 1;
   }
   @media screen and (min-width: $fullscreen) {

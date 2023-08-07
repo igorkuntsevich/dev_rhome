@@ -1,6 +1,19 @@
 $bigfullscreen: 1900px;
 $fullscreen: 1520px;
 $mobile: 768px;
+@keyframes popupMessage {
+  0% {
+    opacity: 0;
+    bottom: -5vw;
+  }
+  80% {
+    opacity: 1;
+    bottom: 0.3vw;
+  }
+  100% {
+    bottom: 0;
+  }
+}
 .services_decision {
   display: grid;
   grid-template-columns: 49% 38%;
@@ -78,6 +91,8 @@ $mobile: 768px;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2.8vw 1.5vw 1.8vw 2vw;
+  position: relative;
+  overflow: hidden;
   @media screen and (min-width: $fullscreen) {
     padding: 42px 23px 27px 30px;
   }
@@ -87,6 +102,7 @@ $mobile: 768px;
     flex-direction: column-reverse;
     position: relative;
     margin-bottom: 27.8vw;
+    overflow: initial;
   }
 }
 .services_decision_cons_status {
@@ -118,16 +134,46 @@ $mobile: 768px;
   padding: 1.8vw 1.8vw 2.1vw;
   margin-left: auto;
   max-width: 23.6vw;
+  position: relative;
+  opacity: 0;
+  &.active {
+    animation: popupMessage 0.7s;
+    opacity: 1;
+  }
   @media screen and (min-width: $fullscreen) {
     padding: 27px 27px 32px;
     max-width: 360px;
   }
   @media screen and (max-width: $mobile) {
-    padding: 5.1vw 3.1vw 3.6vw 3.6vw;
+    background: none;
+    border: none;
+    padding: 0;
     max-width: 43vw;
+    position: static;
+    &.active {
+      animation: none;
+    }
   }
 }
 .services_decision_cons_text {
+
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #6B6B6B;
+    border-radius: 30px 30px 30px 0px;
+    padding: 5.1vw 3.1vw 3.6vw 3.6vw;
+    position: relative;
+    opacity: 0;
+    &.active {
+      animation: popupMessage 0.7s;
+      opacity: 1;
+    }
+  }
+}
+.services_decision_cons_p {
   font-size: 1.25vw;
   line-height: 1.5vw;
   font-style: italic;
@@ -167,6 +213,16 @@ $mobile: 768px;
     font-size: 4.3vw;
     line-height: 5.3vw;
     padding: 4.6vw;
+  }
+}
+.services_decision_cons_ref {
+  position: absolute;
+  top: 19vw;
+  @media screen and (min-width: $fullscreen) {
+    top: 289px;
+  }
+  @media screen and (max-width: $mobile) {
+    top: 35vw;
   }
 }
 .services_decision_simplebar {

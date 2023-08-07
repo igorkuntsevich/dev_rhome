@@ -25,7 +25,9 @@ const PortfolioFacade = () => (
           <Link to="/portfolio/house" className={styles.portfolio_intro_link}>Дома</Link>
           <Link to="/portfolio/apartment" className={styles.portfolio_intro_link}>Квартиры</Link>
           <Link to="/portfolio/commercial" className={styles.portfolio_intro_link}>Коммерческие объекты</Link>
-          <Link to="/portfolio/facade" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Фасады</Link>
+          <Link to="/portfolio/facade" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Фасады
+          <div className={styles.animline}></div>
+          </Link>
         </div>
       </div>
       <div className={styles.portfolio_content}>

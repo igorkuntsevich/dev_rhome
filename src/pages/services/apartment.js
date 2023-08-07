@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Video } from "../../subitems/video-intro/index"
 import mainVideo from "../../video/apart.mp4"
 import mainVideoMobile from "../../video/apart_1.mp4"
+import * as styles from "../../components/styles/services.module.scss"
 
 import { DecisionApart } from "../../subitems/decision/decisionApart"
 import { StagesApart } from "../../subitems/services-stages/stagesApart"
@@ -13,7 +14,7 @@ import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 
 
-import * as styles from "../../components/styles/services.module.scss"
+import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
 import { PhotoCollage } from "../../subitems/photocollage"
 import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
 import { ServicesCost } from "../../subitems/services-cost"
@@ -48,10 +49,7 @@ const ServicesApart = () => (
       /> */}
       <div className={styles.services_intro}>
         <Video mobileSrc={mainVideoMobile} desktopSrc={mainVideo} />
-        <ul className={styles.services_breadcrumbs}>
-          <li className={styles.services_breadcrumbs_li}>Услуги</li>
-          {/* <li className={styles.services_breadcrumbs_li}>Дизайн интерьера квартиры</li> */}
-        </ul>
+        <BreadcrumbsServices />
         <h1 className={styles.services_intro_title}>Дизайн интерьера квартир</h1>
       </div>
       <div className={styles.services_intro_text + " " + styles.services_intro_apart_text}>
