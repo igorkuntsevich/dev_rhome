@@ -26,7 +26,7 @@ const Template = () => {
               className={styles.project__one_image_link}
               >
               <StaticImage
-                src="../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
+                src="../../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
                 alt=""
                 className={styles.project__one_image}
               />
@@ -40,7 +40,7 @@ const Template = () => {
               className={styles.project__one_image_link}
               >
               <StaticImage
-                src="../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
+                src="../../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
                 alt=""
                 className={styles.project__one_image}
               />
@@ -50,7 +50,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -58,7 +58,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -72,7 +72,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -80,7 +80,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -94,7 +94,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/29_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/29_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -102,7 +102,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/30_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/30_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -110,7 +110,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/31_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/31_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -124,7 +124,7 @@ const Template = () => {
               className={styles.project__one_image_link + " " + styles.project__bigmargin}
               >
               <StaticImage
-                src="../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
+                src="../../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
                 alt=""
                 className={styles.project__one_image}
               />
@@ -138,7 +138,7 @@ const Template = () => {
               className={styles.project__one_image_link}
               >
               <StaticImage
-                src="../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
+                src="../../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
                 alt=""
                 className={styles.project__one_image}
               />
@@ -148,7 +148,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -156,7 +156,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -169,7 +169,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -177,7 +177,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -191,7 +191,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/29_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/29_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -199,7 +199,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/30_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/30_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -207,7 +207,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/31_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/31_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -233,7 +233,7 @@ const Template = () => {
               className={styles.project__one_image_link + " " + styles.project__bigmargin + " " + styles.project__narrow_block}
               >
               <StaticImage
-                src="../../images/portfolio/dom-berezino/02_dom-berezino.jpg"
+                src="../../../images/portfolio/dom-berezino/02_dom-berezino.jpg"
                 alt=""
                 className={styles.project__one_image}
               />
@@ -253,7 +253,7 @@ const Template = () => {
                 className={styles.project__leftimage_righttext_link}
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/04_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/04_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -269,7 +269,7 @@ const Template = () => {
                   data-fancybox="gallery"
                   >
                   <StaticImage
-                    src="../../images/portfolio/dom-berezino/07_dom-berezino.jpg"
+                    src="../../../images/portfolio/dom-berezino/07_dom-berezino.jpg"
                     alt=""
                   />
                 </a>
@@ -277,7 +277,7 @@ const Template = () => {
                   data-fancybox="gallery"
                   >
                   <StaticImage
-                    src="../../images/portfolio/dom-berezino/08_dom-berezino.jpg"
+                    src="../../../images/portfolio/dom-berezino/08_dom-berezino.jpg"
                     alt=""
                   />
                 </a>
@@ -287,7 +287,7 @@ const Template = () => {
                   data-fancybox="gallery"
                   >
                   <StaticImage
-                    src="../../images/portfolio/dom-berezino/09_dom-berezino.jpg"
+                    src="../../../images/portfolio/dom-berezino/09_dom-berezino.jpg"
                     alt=""
                   />
                 </a>
@@ -295,7 +295,7 @@ const Template = () => {
                   data-fancybox="gallery"
                   >
                   <StaticImage
-                    src="../../images/portfolio/dom-berezino/10_dom-berezino.jpg"
+                    src="../../../images/portfolio/dom-berezino/10_dom-berezino.jpg"
                     alt=""
                   />
                 </a>
@@ -308,7 +308,7 @@ const Template = () => {
                 className={styles.project__three_with_padding_fimg}
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/16_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/16_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -316,7 +316,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/17_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/17_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -324,7 +324,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/18_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/18_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -335,7 +335,7 @@ const Template = () => {
             className={styles.project__one_image_link}
             >
             <StaticImage
-              src="../../images/portfolio/dom-berezino/15_dom-berezino.jpg"
+              src="../../../images/portfolio/dom-berezino/15_dom-berezino.jpg"
               alt=""
               className={styles.project__one_image}
             />
@@ -357,7 +357,7 @@ const Template = () => {
                   data-fancybox="gallery"
                   >
                   <StaticImage
-                    src="../../images/portfolio/dom-berezino/22_dom-berezino.jpg"
+                    src="../../../images/portfolio/dom-berezino/22_dom-berezino.jpg"
                     alt=""
                   />
                 </a>
@@ -366,7 +366,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/23_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/23_dom-berezino.jpg"
                   alt=""
                 />
               </a>
@@ -382,7 +382,7 @@ const Template = () => {
                   data-fancybox="gallery"
                   >
                   <StaticImage
-                    src="../../images/portfolio/dom-berezino/24_dom-berezino.jpg"
+                    src="../../../images/portfolio/dom-berezino/24_dom-berezino.jpg"
                     alt=""
                   />
                 </a>
@@ -391,7 +391,7 @@ const Template = () => {
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../images/portfolio/dom-berezino/25_dom-berezino.jpg"
+                  src="../../../images/portfolio/dom-berezino/25_dom-berezino.jpg"
                   alt=""
                 />
               </a>

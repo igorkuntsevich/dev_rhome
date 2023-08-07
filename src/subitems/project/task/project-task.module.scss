@@ -50,6 +50,12 @@ $mobile: 768px;
     background-color: transparent;
   }
 }
+.project_task_alexey {
+  background-color: #7A7A7A;
+  @media screen and (max-width: $mobile) {
+    background-color: transparent;
+  }
+}
 .project_task_bcg {
   @media screen and (max-width: $mobile) {
     background-color: #262626;
@@ -157,6 +163,12 @@ $mobile: 768px;
   .project_task_text1,
   .project_task_text2 {
     background-color: #F3E8D6;
+  }
+}
+.project_task_text_alexey {
+  .project_task_text1,
+  .project_task_text2 {
+    background-color: #FFFFFF;
   }
 }
 .project_task_text1 {

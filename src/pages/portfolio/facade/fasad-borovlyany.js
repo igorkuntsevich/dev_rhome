@@ -12,7 +12,7 @@ import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
-import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey'
 
 const FasadBorovlyany = () => {
   return (
@@ -79,11 +79,47 @@ const FasadBorovlyany = () => {
             />
           </PhotoCollage>
           <div className="wrapper">
-            <ProjectTaskSergey
+            <ProjectTaskAlexey
               taskText="Оформить фасад недостроенного дома."
               wishText="Я несколько лет самостоятельно занимался строительством этого дома, но застрял на этапе “коробки”. Я понимаю, что проект неплохой и из него можно выжать максимум. Но сейчас я пришел к выводу, что сам не смогу сделать из него дом своей мечты, поэтому обращаюсь к вам. Мне нравятся неброские фасады, которые сочетаются с интерьером дома и приусадебным участком."
             />
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Концепция</h2>
+                <div>
+                <p className={styles.project__p}>Владелец дома построил неплохую "коробку", но оставалось самое сложное – красиво оформить экстерьер здания и грамотно вписать его в существующую коттеджную застройку. Фасад – это не просто отделка стен – здесь важно продумать оформление входной группы, въезд в гараж, разработать конструктивные узлы и подобрать финишные материалы. Кроме этого мы сделали и дизайн-проект интерьера для этого дома.</p>
+              </div>
+            </div>
+            <a href="https://rhome.by/images/portfolio/fasad-borovlyany/11_fasad-borovlyany.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+            >
+              <StaticImage
+                src="../../../images/portfolio/fasad-borovlyany/11_fasad-borovlyany.jpg"
+                alt=""
+                className={styles.project__one_image}
+            />
+            </a>
+            <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/12_fasad-borovlyany.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-borovlyany/12_fasad-borovlyany.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/09_fasad-borovlyany.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-borovlyany/09_fasad-borovlyany.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
           </div>
+          
         </div>
         <div className="wrapper">
           <ProjectPartner
