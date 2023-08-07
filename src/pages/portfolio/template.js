@@ -18,6 +18,204 @@ const Template = () => {
       <Fancybox>
         <div className={styles.project}>
           <div className="wrapper">
+
+
+
+            <a href="https://rhome.by/images/portfolio/dom-berezino/06_dom-berezino.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+              >
+              <StaticImage
+                src="../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+
+
+
+
+            <a href="https://rhome.by/images/portfolio/dom-berezino/06_dom-berezino.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+              >
+              <StaticImage
+                src="../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/20_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/21_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+
+
+
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/20_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/21_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+
+
+
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/29_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/29_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/30_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/30_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/31_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/31_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+
+
+
+            <a href="https://rhome.by/images/portfolio/dom-berezino/06_dom-berezino.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link + " " + styles.project__bigmargin}
+              >
+              <StaticImage
+                src="../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+
+
+
+
+            <a href="https://rhome.by/images/portfolio/dom-berezino/06_dom-berezino.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+              >
+              <StaticImage
+                src="../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/20_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/21_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+
+
+            <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/20_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/21_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+
+
+
+            <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/29_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/29_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/30_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/30_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-berezino/31_dom-berezino.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../images/portfolio/dom-berezino/31_dom-berezino.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+
+
+
             <div className="line"></div>
             <div className={styles.project__lefttitle_righttext}>
               <h2 className={styles.project__lefttitle_righttext__title}>Концепция</h2>
@@ -25,6 +223,11 @@ const Template = () => {
                 <p className={styles.project__p}>Этот проект&nbsp;&mdash; сочетание лучшего, что есть в&nbsp;городской и&nbsp;загородной жизни. Мы&nbsp;спроектировали дом для семьи, где комфорт и&nbsp;утонченная эстетика современного интерьера соседствует с&nbsp;природой.</p>
               </div>
             </div>
+
+
+
+
+
             <a href="https://rhome.by/images/portfolio/dom-berezino/02_dom-berezino.webp"
               data-fancybox="gallery"
               className={styles.project__one_image_link + " " + styles.project__bigmargin + " " + styles.project__narrow_block}
@@ -35,19 +238,15 @@ const Template = () => {
                 className={styles.project__one_image}
               />
             </a>
+
             <div className={styles.project__text_center700}>
               <p className={styles.project__p}>Строгость линий, присущая современной стилистике, сочетается с&nbsp;натуральными материалами и&nbsp;приглушенными оттенками дерева и&nbsp;камня.</p>
             </div>
-            <a href="https://rhome.by/images/portfolio/dom-berezino/03_dom-berezino.webp"
-              data-fancybox="gallery"
-              className={styles.project__one_image_link + " " + styles.project__bigmargin + " " + styles.project__narrow_block}
-            >
-              <StaticImage
-                src="../../images/portfolio/dom-berezino/03_dom-berezino.jpg"
-                alt=""
-                className={styles.project__one_image}
-              />
-            </a>
+
+            <div className={styles.project__text_center900 + " " + styles.project__bigmargin}>
+              <p className={styles.project__p}>В&nbsp;спальне много света, ведь здесь целых два французских окна. У&nbsp;каждого стоит по&nbsp;кожаному креслу Knoll Hardoy Chair и&nbsp;журнальному столику Menu Androgyne Side Table Black, чтобы можно было почитать при естественном освещении. Напротив двуспальной кровати&nbsp;&mdash; широкий комод Minotti Easel.</p>
+            </div>
+
             <div className={styles.project__leftimage_righttext}>
               <a href="https://rhome.by/images/portfolio/dom-berezino/04_dom-berezino.webp"
                 data-fancybox="gallery"
@@ -62,27 +261,8 @@ const Template = () => {
                 <p className={styles.project__leftimage_righttext_text_p}>Здесь можно жить и&nbsp;работать, наслаждаясь природой. Дом спланирован так, чтобы в&nbsp;любой его части ощущалась близость природы. По&nbsp;задумке архитектора, окна в&nbsp;пол в&nbsp;гостиной на&nbsp;первом этаже объединяют интерьер с&nbsp;садом, а&nbsp;со&nbsp;второго этажа есть выход на&nbsp;террасу, с&nbsp;которой открывается прекрасный вид.</p>
               </div>
             </div>
-            <a href="https://rhome.by/images/portfolio/dom-berezino/05_dom-berezino.webp"
-              data-fancybox="gallery"
-              className={styles.project__one_image_link + " " + styles.project__bigmargin}
-              >
-              <StaticImage
-                src="../../images/portfolio/dom-berezino/05_dom-berezino.jpg"
-                alt=""
-                className={styles.project__one_image}
-              />
-            </a>
+            
             <h2 className={styles.project__title}>Реализация</h2>
-            <a href="https://rhome.by/images/portfolio/dom-berezino/06_dom-berezino.webp"
-              data-fancybox="gallery"
-              className={styles.project__one_image_link}
-              >
-              <StaticImage
-                src="../../images/portfolio/dom-berezino/06_dom-berezino.jpg"
-                alt=""
-                className={styles.project__one_image}
-              />
-            </a>
             <div className={styles.project__grid_2flex + " " + styles.project__bigmargin}>
               <div className={styles.project__grid_flex}>
                 <a href="https://rhome.by/images/portfolio/dom-berezino/07_dom-berezino.webp"
@@ -121,17 +301,7 @@ const Template = () => {
                 </a>
               </div>
             </div>
-            <h2 className={styles.project__title}>Архитектура</h2>
-            <a href="https://rhome.by/images/portfolio/dom-berezino/15_dom-berezino.webp"
-              data-fancybox="gallery"
-              className={styles.project__one_image_link}
-              >
-              <StaticImage
-                src="../../images/portfolio/dom-berezino/19_dom-berezino.jpg"
-                alt=""
-                className={styles.project__one_image}
-              />
-            </a>
+
             <div className={styles.project__three_with_padding}>
               <a href="https://rhome.by/images/portfolio/dom-berezino/16_dom-berezino.webp"
                 data-fancybox="gallery"
@@ -171,36 +341,13 @@ const Template = () => {
             />
           </a>
           <div className="wrapper">
-            <div className="line"></div>
-            <div className={styles.project__lefttitle_righttext}>
-              <h2 className={styles.project__lefttitle_righttext__title}>Дизайн интерьера</h2>
-              <div>
-                <p className={styles.project__p}>Во&nbsp;всех помещениях первого этажа пол вымощен плиткой под дерево. За&nbsp;плиткой ухаживать легче, чем за&nbsp;деревянным полом: ее&nbsp;легко убирать, она износостойкая, что очень важно для загородной жизни. Общую строгость интерьера чуть смягчили в&nbsp;зоне гостиной&nbsp;&mdash; здесь много текстиля и&nbsp;мягких линий.</p>
-              </div>
-            </div>
-            <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/20_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/20_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/21_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/21_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
+
             <div className={styles.project__bigmargin}>
               <ProjectConsultationSvetlana
                 text="Продумывая планировку, отталкивайтесь от&nbsp;возможностей, которые предлагает архитектура дома. Например, этом проекте на&nbsp;первом этаже все основные функциональные зоны расположены в&nbsp;одном пространстве. Такой ход помогает рационально использовать большую площадь помещения и&nbsp;сделать так, чтобы свет из&nbsp;огромных окон с&nbsp;видом на&nbsp;сад рассеивался свободно."
               />
             </div>
+
             <div className={styles.project__two_inline_bigrightimg}>
               <div className={styles.project__two_inline_bigrightimg_left}>
                 <div>
@@ -224,8 +371,7 @@ const Template = () => {
                 />
               </a>
             </div>
-            <div className="line"></div>
-            <h2 className={styles.project__title}>Зона отдыха с&nbsp;видом на&nbsp;сад</h2>
+
             <div className={styles.project__two_inline_mediumrightimg}>
               <div className={styles.project__two_inline_mediumrightimg_left}>
                 <div>
@@ -250,123 +396,7 @@ const Template = () => {
                 />
               </a>
             </div>
-            <div className="line"></div>
-            <div className={styles.project__lefttitle_righttext}>
-              <h2 className={styles.project__lefttitle_righttext__title}>Строгий, но&nbsp;уютный кабинет на&nbsp;втором этаже</h2>
-              <div>
-                <p className={styles.project__p}>Поскольку, семья планирует часть времени жить в&nbsp;этом доме, нужно было продумать место для домашнего офиса. Кабинет хозяина этого дома строгий и&nbsp;сдержанный, но&nbsp;за&nbsp;счет цветовой гаммы и&nbsp;натуральных материалов по-домашнему уютный. Рабочий стол&nbsp;&mdash; Armani Casa Euclide Desk. В&nbsp;кабинете есть и&nbsp;зона для отдыха, где мы&nbsp;поместили кресло Cosmorelax Swan, диван Sofa Frigerio Salotti Cloud и&nbsp;журнальный столик Menu Androgyne Side Table White.</p>
-              </div>
-            </div>
-            <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/26_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/26_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/27_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/27_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div className="line"></div>
-            <div className={styles.project__lefttitle_righttext}>
-              <h2 className={styles.project__lefttitle_righttext__title}>Спальня с&nbsp;выходом на&nbsp;террасу</h2>
-              <div>
-                <p className={styles.project__p}>Спальня хозяев&nbsp;&mdash; это своеобразное автономное пространство. К&nbsp;ней примыкает ванная комната, неподалеку расположен кабинет. Кроме того, отсюда можно выйти на&nbsp;просторную террасу.</p>
-              </div>
-            </div>
-            <a href="https://rhome.by/images/portfolio/dom-berezino/28_dom-berezino.webp"
-              data-fancybox="gallery"
-              className={styles.project__one_image_link + " " + styles.project__bigmargin}
-              >
-              <StaticImage
-                src="../../images/portfolio/dom-berezino/28_dom-berezino.jpg"
-                alt=""
-                className={styles.project__one_image}
-              />
-            </a>
-            <div className={styles.project__text_center900 + " " + styles.project__bigmargin}>
-              <p className={styles.project__p}>В&nbsp;спальне много света, ведь здесь целых два французских окна. У&nbsp;каждого стоит по&nbsp;кожаному креслу Knoll Hardoy Chair и&nbsp;журнальному столику Menu Androgyne Side Table Black, чтобы можно было почитать при естественном освещении. Напротив двуспальной кровати&nbsp;&mdash; широкий комод Minotti Easel.</p>
-            </div>
-            <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/29_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/29_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/30_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/30_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/31_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/31_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div className="line"></div>
-            <h2 className={styles.project__title}>Санузлы</h2>
-            <div className={styles.project__two_inline}>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/32_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/32_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/33_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/33_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div className={styles.project__three_inline}>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/34_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/34_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/35_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/35_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-              <a href="https://rhome.by/images/portfolio/dom-berezino/36_dom-berezino.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../images/portfolio/dom-berezino/36_dom-berezino.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
+
           </div>
         </div>
       </Fancybox>
