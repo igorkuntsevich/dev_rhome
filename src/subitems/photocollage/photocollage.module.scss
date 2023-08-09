@@ -36,6 +36,19 @@ $mobile: 768px;
 }
 .photocollage_img {
   height: 100%;
+  position: relative;
+}
+.photocollage_img_50 {
+  margin-top: 3.5vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-top: 53px;
+  }
+}
+.photocollage_img_100 {
+  margin-top: 6.9vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-top: 105px;
+  }
 }
 .photocollage_apart_img1 {
   margin-top: 9.7vw;

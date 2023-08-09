@@ -6,13 +6,15 @@ import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
+import { ProjectConsultationSergey } from '../../../subitems/project/consultation/project-consultation-sergey'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
-import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey';
+
 
 const DomBarnhaus = () => {
   return (
@@ -50,39 +52,147 @@ const DomBarnhaus = () => {
             </div>    
           </div>
           <PhotoCollage
-            amount={collageStyles.photocollage_five_images}
+            amount={collageStyles.photocollage_four_images}
           >
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/dom-barnhaus/cut/10_dom-barnhaus.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/dom-barnhaus/cut/01_dom-barnhaus.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/dom-barnhaus/cut/08_dom-barnhaus.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/dom-barnhaus/cut/07_dom-barnhaus.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
             />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
-            />
           </PhotoCollage>
           <div className="wrapper">
-            <ProjectTaskSergey
+            <ProjectTaskAlexey
               taskText="Оформить фасад дома в стиле барнхаус."
               wishText="Мы купили дом в городе и хотим, чтобы он выглядел современно как внутри, так и снаружи. Так как участок небольшой, нужно максимально рационально использовать имеющуюся площадь. Обязательно спроектируйте гараж и предусмотрите место для небольшой зоны барбекю."
             />
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Концепция</h2>
+              <div>
+              <p className={styles.project__p}>Форм-фактор дома прост и минималистичен. Фасад выглядит современно благодаря комбинированию различных приемов наружного оформления, в нашем случае это декоративная штукатурка и деревянные рейки.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline + " " + styles.project__narrow_block}>
+              <a href="https://rhome.by/images/portfolio/dom-barnhaus/02_dom-barnhaus.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-barnhaus/02_dom-barnhaus.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-barnhaus/03_dom-barnhaus.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-barnhaus/03_dom-barnhaus.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>В гармонии с природой</h2>
+                <div>
+                <p className={styles.project__p}>Дом имеет прямую двускатную крышу из модульной черепицы, сплошные стены и панорамные окна. Простота дома прекрасно вписывается в природный ландшафт городской среды. Свободное внутреннее пространство визуально расширяется, уходит за пределы дома благодаря панорамным окнам на всю высоту первого этажа, они же дают помещению максимум естественного света.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-barnhaus/04_dom-barnhaus.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-barnhaus/04_dom-barnhaus.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-barnhaus/05_dom-barnhaus.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-barnhaus/05_dom-barnhaus.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/dom-barnhaus/08_dom-barnhaus.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-barnhaus/08_dom-barnhaus.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-barnhaus/07_dom-barnhaus.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-barnhaus/07_dom-barnhaus.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-barnhaus/06_dom-barnhaus.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-barnhaus/06_dom-barnhaus.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <ProjectConsultationSergey
+                text="Для внешней отделки фасадов и террас наилучшим выбором станет термодоска (прошедшая термообработку древесина). Это один из самых долговечных, прочных и устойчивых к внешним факторам отделочный материал. К тому же экологически чистый."
+            />
+                        <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Комбинированный фасад</h2>
+                <div>
+                <p className={styles.project__p}>Форм-фактор дома прост и минималистичен. Фасад выглядит современно благодаря комбинированию различных приемов наружного оформления, в нашем случае это декоративная штукатурка и деревянные рейки.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-barnhaus/10_dom-barnhaus.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-barnhaus/10_dom-barnhaus.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-barnhaus/09_dom-barnhaus.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-barnhaus/09_dom-barnhaus.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div className="wrapper">

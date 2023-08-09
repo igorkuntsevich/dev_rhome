@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
+import { ProjectConsultationAlexey } from '../../../subitems/project/consultation/project-consultation-alexey'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import { ProjectPartner } from "../../../subitems/project/project-partner"
@@ -53,27 +54,27 @@ const FasadBorovlyany = () => {
             amount={collageStyles.photocollage_five_images}
           >
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/fasad-borovlyany/cut/08_fasad-borovlyany.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/fasad-borovlyany/cut/04_fasad-borovlyany.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_100}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/fasad-borovlyany/cut/06_fasad-borovlyany.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/fasad-borovlyany/cut/02_fasad-borovlyany.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/fasad-borovlyany/cut/05_fasad-borovlyany.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
             />
@@ -90,12 +91,12 @@ const FasadBorovlyany = () => {
                 <p className={styles.project__p}>Владелец дома построил неплохую "коробку", но оставалось самое сложное – красиво оформить экстерьер здания и грамотно вписать его в существующую коттеджную застройку. Фасад – это не просто отделка стен – здесь важно продумать оформление входной группы, въезд в гараж, разработать конструктивные узлы и подобрать финишные материалы. Кроме этого мы сделали и дизайн-проект интерьера для этого дома.</p>
               </div>
             </div>
-            <a href="https://rhome.by/images/portfolio/fasad-borovlyany/11_fasad-borovlyany.webp"
+            <a href="https://rhome.by/images/portfolio/fasad-borovlyany/09_fasad-borovlyany.webp"
               data-fancybox="gallery"
               className={styles.project__one_image_link}
             >
               <StaticImage
-                src="../../../images/portfolio/fasad-borovlyany/11_fasad-borovlyany.jpg"
+                src="../../../images/portfolio/fasad-borovlyany/09_fasad-borovlyany.jpg"
                 alt=""
                 className={styles.project__one_image}
             />
@@ -120,8 +121,94 @@ const FasadBorovlyany = () => {
                 />
               </a>
             </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Экстерьер этого дома – отсылка одновременно к неоклассицизму и архитектуре модерна</h2>
+              <div>
+                <p className={styles.project__p}>Фасад дома мы решили сделать сдержанным – строгим и легким одновременно. Для отделки использовали молочные и графитовые оттенки – цветовая гамма монохромная, но при этом неконтрастная и мягкая. На наш взгляд, такой сдержанный стиль отлично подходит для коттеджей в Беларуси. Такие дома гармонируют с местной природой и культурно-историческим наследием страны.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/04_fasad-borovlyany.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-borovlyany/04_fasad-borovlyany.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/05_fasad-borovlyany.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-borovlyany/05_fasad-borovlyany.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/08_fasad-borovlyanye.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-borovlyany/08_fasad-borovlyany.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/02_fasad-borovlyany.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-borovlyany/02_fasad-borovlyany.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/03_fasad-borovlyany.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-borovlyany/03_fasad-borovlyany.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <ProjectConsultationAlexey
+                text="Проектируя фасад дома, всегда обдумывайте, как он впишется в окружающий ландшафт. Если ваш дом стоит неподалеку от соседских, то стоит обратить внимание, будет ли он гармонировать с их домами. Ведь вклад в красоту всей улицы – дело каждого."
+            />
+                      <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Цокольный этаж</h2>
+              <div>
+                <p className={styles.project__p}>Цокольный этаж дома довольно высокий, мы решили, что лучшим вариантом будет немного скрыть лестницу, ведущую в дом за насыпным холмом. Такой прием помог объединить ландшафт участка с постройкой.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/06_fasad-borovlyany.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-borovlyany/06_fasad-borovlyany.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/fasad-borovlyany/07_fasad-borovlyany.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-borovlyany/07_fasad-borovlyany.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
           </div>
-          
+
         </div>
         <div className="wrapper">
           <ProjectPartner

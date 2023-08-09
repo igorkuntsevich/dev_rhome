@@ -6,11 +6,11 @@ import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { PhotoCollage } from "../../../subitems/photocollage"
-import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectConsultationAlexey } from '../../../subitems/project/consultation/project-consultation-alexey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+
 
 const FasadSovremennyj = () => {
   return (
@@ -47,40 +47,57 @@ const FasadSovremennyj = () => {
               />
             </div>    
           </div>
-          <PhotoCollage
-            amount={collageStyles.photocollage_five_images}
-          >
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
-            />
-          </PhotoCollage>
           <div className="wrapper">
             <ProjectTaskSergey
               taskText="Оформить фасад дома в современном стиле."
               wishText="Хотим придать нашему дому современный внешний вид. В оформлении фасадов нравится лаконичный европейский подход. Необходимо также разработать входную группу и террасу с обратной стороны дома. Делайте все что угодно, только не «избушку»."
             />
+           <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Концепция</h2>
+                <div>
+                <p className={styles.project__p}>Финишное покрытие кровли и ливневая система полностью устраивали хозяев, поэтому дизайн фасада архитектор проектировал исходя из этих данных. Фасад решили не дробить и «залили» его белым цветом. Помимо штукатурки ввели еще декоративную клинкерную плитку под кирпич, чтобы разнообразить фактуры.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/fasad-sovremennyj/02_fasad-sovremennyj.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-sovremennyj/02_fasad-sovremennyj.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/fasad-sovremennyj/03_fasad-sovremennyj.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-sovremennyj/03_fasad-sovremennyj.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <ProjectConsultationAlexey
+                text="Для фасада частного дома лучше использовать декоративную штукатурку шагрень. Привычные «шуба» и «короед» чаще используются для офисных зданий и уже изрядно набили оскомину. Лаконичное решение входной группы добавляет современности в традиционную архитектуру. Металлические ограждения из труб прямоугольного сечения сделали на заказ наши партнеры."
+              />
+
+            <div className={styles.project__leftimage_righttext}>
+              <a href="https://rhome.by/images/portfolio/fasad-sovremennyj/04_fasad-sovremennyj.webp"
+                data-fancybox="gallery"
+                className={styles.project__leftimage_righttext_link}
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-sovremennyj/04_fasad-sovremennyj.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <div className={styles.project__leftimage_righttext_text}>
+                <p className={styles.project__leftimage_righttext_text_p}>Чтобы уравновесить высоту фронтонов добавили декоративные распорки. Часть террасы сделали открытой, однако ее всегда можно будет укрыть от дождя с помощью раздвижной маркизы. За счет этого в гостиной будет больше света, а на террасе хозяева смогут установить шезлонги и загорать.</p>
+              </div>
+            </div>
           </div>
         </div>
       </Fancybox>

@@ -6,8 +6,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { PhotoCollage } from "../../../subitems/photocollage"
-import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
@@ -23,7 +21,7 @@ const PolskijProekt = () => {
       <Fancybox>
         <div className={styles.project}>
           <div className="wrapper">
-            <div className={styles.project_intro} style={{"backgroundColor" : "#ECE9E5"}}>
+            <div className={styles.project_intro} style={{"backgroundColor" : "#E7E6EB"}}>
               <ProjectIntro
                 breadcrumbs={<BreadcrumbsProject />}
                 title="Польский проект"
@@ -47,40 +45,83 @@ const PolskijProekt = () => {
               />
             </div>    
           </div>
-          <PhotoCollage
-            amount={collageStyles.photocollage_five_images}
-          >
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
-            />
-          </PhotoCollage>
           <div className="wrapper">
+          <div className={styles.project__bigmargin}>
             <ProjectTaskSergey
               taskText="Доработать внешний вид дома, подобрать отделочные материалы, разработать техническую документацию для строителей."
               wishText="Первоначальный проект мне в принципе нравится, но есть моменты которые можно улучшить. Так же в проекте нет ни слова о материалах, которые использовали польские архитекторы в отделке фасада, их необходимо подобрать."
             />
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/polskij-proekt/07_polskij-proekt.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/polskij-proekt/07_polskij-proekt.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/polskij-proekt/08_polskij-proekt.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/polskij-proekt/08_polskij-proekt.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <a href="https://rhome.by/images/portfolio/polskij-proekt/02_polskij-proekt.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+              >
+              <StaticImage
+                src="../../../images/portfolio/polskij-proekt/02_polskij-proekt.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/polskij-proekt/03_polskij-proekt.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/polskij-proekt/03_polskij-proekt.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/polskij-proekt/04_polskij-proekt.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/polskij-proekt/04_polskij-proekt.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <a href="https://rhome.by/images/portfolio/polskij-proekt/05_polskij-proekt.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+              >
+              <StaticImage
+                src="../../../images/portfolio/polskij-proekt/05_polskij-proekt.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <a href="https://rhome.by/images/portfolio/polskij-proekt/06_polskij-proekt.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+              >
+              <StaticImage
+                src="../../../images/portfolio/polskij-proekt/06_polskij-proekt.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
           </div>
         </div>
       </Fancybox>

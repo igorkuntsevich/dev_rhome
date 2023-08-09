@@ -6,11 +6,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { PhotoCollage } from "../../../subitems/photocollage"
-import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
-import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey';
 
 const FasadMogilev = () => {
   return (
@@ -47,40 +45,54 @@ const FasadMogilev = () => {
               />
             </div>    
           </div>
-          <PhotoCollage
-            amount={collageStyles.photocollage_five_images}
-          >
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
-            />
-          </PhotoCollage>
           <div className="wrapper">
-            <ProjectTaskSergey
+            <div className={styles.project__bigmargin}>
+            <ProjectTaskAlexey
               taskText="Оформить фасад здания в современном стиле."
               wishText="Сейчас коробка дома напоминает шале, а мне хочется, чтобы дом имел современный вид. Возможно комбинировать в отделке дерево и штукатурку."
             />
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/fasad-mogilev/02_fasad-mogilev.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-mogilev/02_fasad-mogilev.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/fasad-mogilev/03_fasad-mogilev.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-mogilev/03_fasad-mogilev.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/fasad-mogilev/04_fasad-mogilev.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-mogilev/04_fasad-mogilev.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/fasad-mogilev/05_fasad-mogilev.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/fasad-mogilev/05_fasad-mogilev.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </Fancybox>

@@ -7,7 +7,6 @@ import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
-import { ProjectConsultationAlexey } from '../../../subitems/project/consultation/project-consultation-alexey'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import { ProjectPartner } from "../../../subitems/project/project-partner"
@@ -279,9 +278,6 @@ const HouseBerezino = () => {
               />
             </div>
             <div className={styles.project__bigmargin}>
-              <ProjectConsultationAlexey
-                text="Продумывая планировку, отталкивайтесь от&nbsp;возможностей, которые предлагает архитектура дома. Например, этом проекте на&nbsp;первом этаже все основные функциональные зоны расположены в&nbsp;одном пространстве. Такой ход помогает рационально использовать большую площадь помещения и&nbsp;сделать так, чтобы свет из&nbsp;огромных окон с&nbsp;видом на&nbsp;сад рассеивался свободно."
-              />
             </div>
             <div className={styles.project__two_inline_bigrightimg}>
               <div className={styles.project__two_inline_bigrightimg_left}>
