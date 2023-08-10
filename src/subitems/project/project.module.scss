@@ -38,6 +38,7 @@ $mobile: 768px;
   @media screen and (max-width: $mobile) {
     font-size: 8.2vw;
     line-height: 10.1vw;
+    max-width: 80vw;
     color: #FFFFFF;
   }
 }
@@ -131,6 +132,17 @@ $mobile: 768px;
   @media screen and (max-width: $mobile) {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 7.8vw 10vw;
+  }
+}
+.project_partners_grid_narrow {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 22vw;
+  @media screen and (min-width: $fullscreen) {
+    margin: 0 425px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin: 0 4vw;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .project_partner {

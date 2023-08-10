@@ -176,13 +176,13 @@ $mobile: 768px;
   }
 }
 .consultation_social_telegram {
-  background-image: url(../../images/footer_cons_tel.svg);
+  background-image: url(../../svg/telegram.svg);
 }
 .consultation_social_viber {
-  background-image: url(../../images/footer_cons_viber.svg);
+  background-image: url(../../svg/viber.svg);
 }
 .consultation_social_wp {
-  background-image: url(../../images/footer_cons_wp.svg);
+  background-image: url(../../svg/whatsapp.svg);
 }
 .consultation_form_block {
   display: flex;
@@ -237,7 +237,7 @@ $mobile: 768px;
   background-color: #E4E4E4;
   color: #000000;
   margin-bottom: 1vw;
-  padding: 1vw 1.1vw;
+  padding: 1.2vw 1.1vw 0.8vw 1.1vw;
   width: 100%;
   outline: none;
   &:last-child {
@@ -252,7 +252,7 @@ $mobile: 768px;
     font-size: 19px;
     line-height: 23px;
     margin-bottom: 15px;
-    padding: 15px 17px;
+    padding: 18px 17px 12px 17px;
     &::placeholder {
       font-size: 19px;
       line-height: 23px;
@@ -262,7 +262,7 @@ $mobile: 768px;
     font-size: 3.8vw;
     line-height: 4.6vw;
     margin-bottom: 1.9vw;
-    padding: 3.8vw 4.1vw;
+    padding: 4.2vw 4.1vw 3.4vw 4.1vw;
     &::placeholder {
       font-size: 3.8vw;
       line-height: 4.6vw;
@@ -299,7 +299,6 @@ $mobile: 768px;
   @media screen and (min-width: $fullscreen) {
     font-size: 23px;
     line-height: 26px;
-    color: #FFFFFF;
     max-width: 350px;
   }
   @media screen and (max-width: $mobile) {

@@ -9,7 +9,7 @@ import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { ProjectConsultationSergey } from '../../../subitems/project/consultation/project-consultation-sergey'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
-import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerNarrow } from "../../../subitems/project/project-partner-narrow"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
@@ -196,7 +196,7 @@ const DomBarnhaus = () => {
           </div>
         </div>
         <div className="wrapper">
-          <ProjectPartner
+          <ProjectPartnerNarrow
             items={
             <>
               <ProjectPartnerItem

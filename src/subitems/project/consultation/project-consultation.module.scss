@@ -110,6 +110,7 @@ $mobile: 768px;
 .project_cons_person_status {
   font-size: 1.6vw;
   line-height: 1.9vw;
+  text-align: right;
   color: #FFFFFF;
   position: absolute;
   top: 2.8vw;
@@ -212,7 +213,9 @@ $mobile: 768px;
   padding: 1.2vw 3vw;
   cursor: pointer;
   @media screen and (min-width: $fullscreen) {
-
+    font-size: 22px;
+    line-height: 26px;
+    padding: 18px 45px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 4.3vw;

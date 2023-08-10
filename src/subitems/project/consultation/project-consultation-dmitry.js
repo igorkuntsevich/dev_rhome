@@ -28,7 +28,7 @@ export const ProjectConsultationDmitry = ({ text }) => {
           alt="Дмитрий, руководитель проектов"
           className={styles.project_cons_img_mob}
         />
-        <p className={styles.project_cons_person_status}>Дмитрий, руководитель проектов</p>
+        <p className={styles.project_cons_person_status}>Дмитрий,<br />руководитель проектов</p>
       </div>
       <p ref={ref} className={styles.project_cons_ref}></p>
     </div>

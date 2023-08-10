@@ -83,6 +83,10 @@ const OfisSovremenni = () => {
               taskText="Разработать дизайн-проект интерьера офисных помещений торгового центра в современном стиле."
               wishText="Нам нужно оформление офисных помещений торгового центра для 15-17 сотрудников. Плюс ресепшн, удобная переговорная и кабинет директора. Все помещения должны выглядеть респектабельно и по-европейски."
             />
+            <div className={styles.project_video}>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7jmhaN9cAJA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
           </div>
         </div>
         <div className="wrapper">

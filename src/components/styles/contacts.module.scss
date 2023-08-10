@@ -1,0 +1,225 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+.contacts {
+  display: flex;
+  border-radius: 30px 30px 0 0;
+  background: linear-gradient(180deg, #3E393B 0%, #231F20 100%);
+  margin-bottom: 1.5vw;
+  overflow: hidden;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 23px;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    margin-bottom: 6.3vw;
+  }
+}
+.contacts_title {
+  font-size: 3.5vw;
+  line-height: 4.2vw;
+  color: #FFFFFF;
+  margin-bottom: 2.5vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 53px;
+    line-height: 64px;
+    margin-bottom: 38px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 8.2vw;
+    line-height: 9.7vw;
+    margin-bottom: 7vw;
+  }
+}
+.contacts_left {
+  padding: 4.5vw 2.3vw 4.4vw;
+  width: 50%;
+  @media screen and (min-width: $fullscreen) {
+    padding: 68px 35px 153px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    padding: 10.4vw 5.1vw;
+  }
+}
+.contacts_map {
+  width: 50%;
+  background-image: url(../../images/map_bcg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    height: 100vw;
+  }
+}
+.contacts_quote {
+  background-color: rgba(0, 0, 0, 0.70);
+  border: 1px solid #6B6B6B;
+  border-radius: 30px 30px 0 30px;
+  padding: 3.4vw 5.2vw 3.4vw 1.8vw;
+  margin-bottom: 3.8vw;
+  @media screen and (min-width: $fullscreen) {
+    padding: 52px 105px 52px 27px;
+    margin-bottom: 58px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 8.9vw 7.2vw 9.4vw 4.1vw;
+    margin-bottom: 8vw;
+  }
+}
+.contacts_quote_span {
+  display: inline-block;
+  font-size: 1.9vw;
+  line-height: 2.4vw;
+  color: #FFFFFF;
+  margin-bottom: 1.25vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 23px;
+    line-height: 36px;
+    margin-bottom: 19px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 5.8vw;
+    line-height: 7vw;
+    margin-bottom: 2.4vw;
+  }
+}
+.contacts_quote_p {
+  font-size: 1.5vw;
+  line-height: 1.7vw;
+  color: #FFFFFF;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 23px;
+    line-height: 26px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+  }
+}
+.contacts_text {
+  @media screen and (min-width: $fullscreen) {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+}
+.contacts_text1 {
+  margin-bottom: 2.1vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 32px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 10.9vw;
+  }
+}
+.contacts_text_p {
+  font-size: 1.6vw;
+  line-height: 2vw;
+  color: #FFFFFF;
+  margin-bottom: 1.25vw;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:nth-child(1) {
+    max-width: 34vw;
+  }
+  &:nth-child(2) {
+    max-width: 25vw;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 19px;
+    &:nth-child(1) {
+      max-width: 517px;
+    }
+    &:nth-child(2) {
+      max-width: 380px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 5.8vw;
+    margin-bottom: 5.1vw;
+    &:nth-child(1),
+    &:nth-child(2) {
+      max-width: 64.5vw;
+    }
+  }
+}
+.contacts_text2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 0;
+  }
+}
+.contacts_flex {
+  @media screen and (min-width: $fullscreen) {
+    margin-right: 30px;
+  }
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.contacts_link {
+  display: inline-block;
+  font-size: 1.8vw;
+  line-height: 2vw;
+  color: #FFFFFF;
+  margin-bottom: 0.8vw;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 5.8vw;
+    margin-bottom: 0;
+  }
+}
+.contacts_social {
+  display: flex;
+  gap: 1.1vw;
+  @media screen and (min-width: $fullscreen) {
+    gap: 17px;
+  }
+  @media screen and (max-width: $mobile) {
+    gap: 3.5vw;
+  }
+}
+.contacts_social_link {
+  width: 4vw;
+  height: 4vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (min-width: $fullscreen) {
+    width: 61px;
+    height: 61px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 8.55vw;
+    height: 8.55vw;
+  }
+}
+.contacts_social_telegram {
+  background-image: url(../../svg/telegram.svg);
+}
+.contacts_social_viber {
+  background-image: url(../../svg/viber.svg);
+}
+.contacts_social_wp {
+  background-image: url(../../svg/whatsapp.svg);
+}

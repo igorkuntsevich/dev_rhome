@@ -89,7 +89,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/3"
+                to="/cost"
                 className="header_nav_li"
                 activeClassName="header_nav_li_active"
               >Стоимость</Link>
@@ -126,7 +126,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/5"
+                to="/contacts"
                 className="header_nav_li"
                 activeClassName="header_nav_li_active"
               >Контакты</Link>
@@ -174,7 +174,7 @@ const Header = () => {
             </div>
             <div className="header_mobile_flex">
               <Link
-                to="/5"
+                to="/cost"
                 className="header_mobile_nav_title header_mobile_nav_title_cost"
               >Стоимость</Link>
             </div>
@@ -229,7 +229,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/"
+                    to="/contacts"
                     className="header_mobile_nav_title header_mobile_nav_title_contacts"
                   >Контакты</Link>
                 </li>

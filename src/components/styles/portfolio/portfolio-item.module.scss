@@ -166,6 +166,12 @@ $mobile: 768px;
     max-width: 100%;
   }
 }
+.project__lefttitle_righttext__title_long {
+  max-width: 35vw;
+  @media screen and (max-width: $mobile) {
+    max-width: 100%;
+  }
+}
 .project__text_center900 {
   width: 62.8vw;
   margin: 0 auto;
@@ -193,6 +199,7 @@ $mobile: 768px;
   }
 }
 .project__one_image_link {
+  width: 100%;
   margin-bottom: 1.7vw;
   @media screen and (min-width: $fullscreen) {
     margin-bottom: 26px;
@@ -399,5 +406,14 @@ $mobile: 768px;
   }
   @media screen and (max-width: $mobile) {
     margin-bottom: 7vw;
+  }
+}
+.project_video {
+  height: 53.7vw;
+  @media screen and (min-width: $bigfullscreen) {
+    height: 1040px;
+  }
+  @media screen and (max-width: $mobile) {
+    height: 52vw;
   }
 }

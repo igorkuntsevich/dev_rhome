@@ -3,6 +3,7 @@ $fullscreen: 1520px;
 $mobile: 768px;
 .portfolio_item {
   position: relative;
+  overflow: hidden;
   &::after {
     content: "";
     position: absolute;

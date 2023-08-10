@@ -9,7 +9,7 @@ import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { ProjectConsultationAlexey } from '../../../subitems/project/consultation/project-consultation-alexey'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
-import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerNarrow } from "../../../subitems/project/project-partner-narrow"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
@@ -123,7 +123,7 @@ const FasadBorovlyany = () => {
             </div>
             <div className="line"></div>
             <div className={styles.project__lefttitle_righttext}>
-              <h2 className={styles.project__lefttitle_righttext__title}>Экстерьер этого дома – отсылка одновременно к неоклассицизму и архитектуре модерна</h2>
+              <h2 className={styles.project__lefttitle_righttext__title + " " + styles.project__lefttitle_righttext__title_long}>Экстерьер этого дома – отсылка одновременно к неоклассицизму и архитектуре модерна</h2>
               <div>
                 <p className={styles.project__p}>Фасад дома мы решили сделать сдержанным – строгим и легким одновременно. Для отделки использовали молочные и графитовые оттенки – цветовая гамма монохромная, но при этом неконтрастная и мягкая. На наш взгляд, такой сдержанный стиль отлично подходит для коттеджей в Беларуси. Такие дома гармонируют с местной природой и культурно-историческим наследием страны.</p>
               </div>
@@ -211,7 +211,7 @@ const FasadBorovlyany = () => {
 
         </div>
         <div className="wrapper">
-          <ProjectPartner
+          <ProjectPartnerNarrow
             items={
             <>
               <ProjectPartnerItem
