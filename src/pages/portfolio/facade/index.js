@@ -58,6 +58,32 @@ const PortfolioFacade = () => (
           }
         />
         <PortfolioItem
+          url="/portfolio/facade/selskij-dom"
+          title="Сельский дом"
+          metr="500"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/facade/fasad-zelenaya-gavan"
+          title="Зеленая гавань"
+          metr="180"
+          building=""
+          budget={styles.project_intro_item_cost2}
+          image={
+            <StaticImage
+              src="../../../images/portfolio/fasad-zelenaya-gavan/00_fasad-zelenaya-gavan.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
           url="/portfolio/facade/dom-staroeselo"
           title="Дом в Старом селе"
           metr="350"

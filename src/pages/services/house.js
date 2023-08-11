@@ -129,19 +129,6 @@ const ServicesHouse = () => (
             }
           />
           <PortfolioItem
-            url="/portfolio/house/selskij-dom"
-            title="Сельский дом"
-            metr="500"
-            building=""
-            budget=""
-            image={
-              <StaticImage
-                src="../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
             url="/portfolio/house/dom-leskovka"
             title="Дом в Лесковке"
             metr="220"
@@ -180,6 +167,19 @@ const ServicesHouse = () => (
               />
             }
           />
+          <PortfolioItem
+          url="/portfolio/house/interer-zelenoja-gavan"
+          title="Интерьер дома в Зеленой Гавани"
+          metr="189"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../images/portfolio/interer-zelenoja-gavan/00_interer-zelenoja-gavan.jpg"
+              alt=""
+            />
+          }
+        />
           <PortfolioItem
             url="/portfolio/house/monohrom-zelenaya-gavan"
             title="Монохромный интерьер дома в Зеленой Гавани"

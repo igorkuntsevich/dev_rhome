@@ -14,7 +14,7 @@ const Portfolio = () => (
     <Seo 
       title={"Портфолио проектов студии RHome"} description={"Примеры реализованных проектов квартир, домов и коммерческой недвижимости, фото интерьеров до и после, чертежи, 3D визуализация проектов."}
       location={"https://rhome.by/portfolio/"}
-      image={"https://rhome.by/images/portfolio/photos/170-kv-metrov/01_170-kv-metrov.jpg"}
+      image={"https://rhome.by/images/default_image.jpg"}
     />
     <div className="wrapper">
       <div className={styles.portfolio_intro}>
@@ -98,7 +98,7 @@ const Portfolio = () => (
           }
         />
         <PortfolioItem
-          url="/portfolio/house/selskij-dom"
+          url="/portfolio/facade/selskij-dom"
           title="Сельский дом"
           metr="500"
           building=""
@@ -106,6 +106,19 @@ const Portfolio = () => (
           image={
             <StaticImage
               src="../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/facade/fasad-zelenaya-gavan"
+          title="Зеленая гавань"
+          metr="180"
+          building=""
+          budget={styles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../images/portfolio/fasad-zelenaya-gavan/00_fasad-zelenaya-gavan.jpg"
               alt=""
             />
           }

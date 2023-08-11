@@ -6,8 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-commercial"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { PhotoCollage } from "../../../subitems/photocollage"
-import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
@@ -47,40 +46,102 @@ const OfisSilvano = () => {
               />
             </div>
           </div>
-          <PhotoCollage
-            amount={collageStyles.photocollage_five_images}
-          >
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
-            />
-          </PhotoCollage>
           <div className="wrapper">
             <ProjectTaskSergey
               taskText="Разработать концепцию офиса для компании, работающей в сфере моды."
               wishText="Офис должен быть удобным для сотрудников и достаточно презентабельным для проведения переговоров с компаньонами и заказчиками. Нам нужен офис, в котором могли бы расположиться бухгалтерия, отдел кадров, дирекция и конференц-зал."
             />
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Концепция</h2>
+              <div>
+              <p className={styles.project__p}>Главной сложностью при разработке концепции дизайна офиса стала планировка. Помещения, в которых могли быть расположены кабинеты, находятся в противоположных концах здания: у главного и черного входа, а в центральной части располагаются складские помещения.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/ofis-silvano/04_ofis-silvano.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/ofis-silvano/04_ofis-silvano.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/ofis-silvano/06_ofis-silvano.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/ofis-silvano/06_ofis-silvano.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Функциональные связи в компании – основа планировочного решения</h2>
+              <div>
+              <p className={styles.project__p}>Для создания действительно удобного пространства нужно было продумать функциональные связи в компании. Необходимо было создать такую планировку, чтобы отделы, которые часто работают друг с другом, располагались рядом.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/ofis-silvano/08_ofis-silvano.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/ofis-silvano/08_ofis-silvano.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/ofis-silvano/05_ofis-silvano.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/ofis-silvano/05_ofis-silvano.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__bigmargin}>
+              <ProjectConsultationSvetlana
+                text="Логично, что кабинет директора должен соседствовать с блоком, где работает секретарь. Конференц-зал также стоит расположить неподалеку от дирекции. К тому же, он должен располагаться у главного входа в здание, ведь не всегда удобно проводить посетителей по коридорам через подсобные и складские помещения"
+              />
+            </div>
+            <div className={styles.project__text_center900 + " " + styles.project__bigmargin}>
+              <p className={styles.project__p}>В интерьере использовались контрастные сочетания цветов и сдержанный декор. Так, потребности сотрудников и особенности планировки здания легли в основу концепции минималистичного офиса.</p>
+            </div>
+            <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/ofis-silvano/02_ofis-silvano.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/ofis-silvano/02_ofis-silvano.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/ofis-silvano/07_ofis-silvano.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/ofis-silvano/07_ofis-silvano.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/ofis-silvano/03_ofis-silvano.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/ofis-silvano/03_ofis-silvano.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </Fancybox>

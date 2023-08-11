@@ -86,7 +86,7 @@ const FasadBorovlyany = () => {
             />
             <div className="line"></div>
             <div className={styles.project__lefttitle_righttext}>
-              <h2 className={styles.project__lefttitle_righttext__title}>Концепция</h2>
+              <h2 className={styles.project__lefttitle_righttext__title}>Исходный материал</h2>
                 <div>
                 <p className={styles.project__p}>Владелец дома построил неплохую "коробку", но оставалось самое сложное – красиво оформить экстерьер здания и грамотно вписать его в существующую коттеджную застройку. Фасад – это не просто отделка стен – здесь важно продумать оформление входной группы, въезд в гараж, разработать конструктивные узлы и подобрать финишные материалы. Кроме этого мы сделали и дизайн-проект интерьера для этого дома.</p>
               </div>

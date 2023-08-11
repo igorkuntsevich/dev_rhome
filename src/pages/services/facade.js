@@ -136,19 +136,19 @@ const ServicesFasad = () => (
               />
             }
           />
-          <PortfolioItem
-            url="/portfolio/facade/dom-terassa"
-            title="Автономный дом в Литве"
-            metr="450"
-            building=""
-            budget=""
-            image={
-              <StaticImage
-                src="../../images/portfolio/dom-terassa/00_dom-terassa.jpg"
-                alt=""
-              />
-            }
-          />
+        <PortfolioItem
+          url="/portfolio/facade/selskij-dom"
+          title="Сельский дом"
+          metr="500"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
+              alt=""
+            />
+          }
+        />
           <PortfolioItem
             url="/portfolio/facade/fasad-borovlyany"
             title="Фасад дома в Боровлянах"
@@ -175,19 +175,19 @@ const ServicesFasad = () => (
               />
             }
           />
-          <PortfolioItem
-            url="/portfolio/facade/dom-provintsialnyj"
-            title="Провинциальный дом"
-            metr="160"
-            building=""
-            budget=""
-            image={
-              <StaticImage
-                src="../../images/portfolio/dom-provintsialnyj/00_dom-provintsialnyj.jpg"
-                alt=""
-              />
-            }
-          />
+        <PortfolioItem
+          url="/portfolio/facade/fasad-zelenaya-gavan"
+          title="Зеленая гавань"
+          metr="180"
+          building=""
+          budget={PortfolioItemStyles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../images/portfolio/fasad-zelenaya-gavan/00_fasad-zelenaya-gavan.jpg"
+              alt=""
+            />
+          }
+        />
         </div>
       </div>
       <ServicesFacadeCost

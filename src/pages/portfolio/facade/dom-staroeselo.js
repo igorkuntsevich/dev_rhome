@@ -93,7 +93,7 @@ const DomStaroeselo = () => {
                 className={styles.project__one_image}
               />
             </a>
-            <div className={styles.project__two_inline}>
+            <div className={styles.project__two_inline + " " + styles.project__narrow_block}>
               <a href="https://rhome.by/images/portfolio/dom-staroeselo/03_dom-staroeselo.webp"
                 data-fancybox="gallery"
                 >

@@ -71,19 +71,6 @@ const PortfolioHouse = () => (
           }
         />
         <PortfolioItem
-          url="/portfolio/house/selskij-dom"
-          title="Сельский дом"
-          metr="500"
-          building=""
-          budget=""
-          image={
-            <StaticImage
-              src="../../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
           url="/portfolio/house/dom-leskovka"
           title="Дом в Лесковке"
           metr="220"
