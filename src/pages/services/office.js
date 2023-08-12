@@ -56,35 +56,37 @@ const ServicesOffice = () => (
         <span className={styles.services_intro_text_span}>Наши дизайн проекты соответствуют законодательству с&nbsp;учетом повышенных требований к&nbsp;уровню пожарной безопасности, санитарным и&nbsp;экологическим нормам.</span>
       </div>
     </div>
-    <PhotoCollage
-      amount={collageStyles.photocollage_five_images}
-    >
-      <StaticImage
-        src="../../images/services/office/office_1.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_office_img1}
-      />
-      <StaticImage
-        src="../../images/services/office/office_2.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_office_img2}
-      />
-      <StaticImage
-        src="../../images/services/office/office_3.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_office_img3}
-      />
-      <StaticImage
-        src="../../images/services/office/office_4.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_office_img4}
-      />
-      <StaticImage
-        src="../../images/services/office/office_5.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_office_img5}
-      />
-    </PhotoCollage>
+    <div className={collageStyles.photocollage_services}>
+      <PhotoCollage
+        amount={collageStyles.photocollage_five_images}
+      >
+        <StaticImage
+          src="../../images/services/office/office_1.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_office_img1}
+        />
+        <StaticImage
+          src="../../images/services/office/office_2.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_office_img2}
+        />
+        <StaticImage
+          src="../../images/services/office/office_3.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_office_img3}
+        />
+        <StaticImage
+          src="../../images/services/office/office_4.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_office_img4}
+        />
+        <StaticImage
+          src="../../images/services/office/office_5.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_office_img5}
+        />
+      </PhotoCollage>
+    </div>
     <div className="wrapper">
       <div className="line"></div>
       <DecisionOffice />

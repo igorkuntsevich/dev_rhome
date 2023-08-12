@@ -29,7 +29,7 @@ export const ProjectTaskDmitry = ({ taskText , wishText }) => {
           src="../../../images/personal/project_task_dmitry.jpg"
           alt="Дмитрий, руководитель проектов"
         />
-        <p className={styles.project_task_person_status}>Дмитрий, руководитель проектов</p>
+        <p className={styles.project_task_person_status}>Дмитрий,<br />руководитель проектов</p>
       </div>
       <p ref={ref} className={styles.project_task_ref1}></p>
       <p ref={ref2} className={styles.project_task_ref2}></p>

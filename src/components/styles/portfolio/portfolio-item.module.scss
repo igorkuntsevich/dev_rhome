@@ -15,12 +15,12 @@ $mobile: 768px;
   justify-content: space-between;
   border-radius: 30px 0 0 30px;
   height: 41.6vw;
-  margin-bottom: 7vw;
+  margin-bottom: 4.3vw;
   position: relative;
   overflow: hidden;
   @media screen and (min-width: $fullscreen) {
     height: 632px;
-    margin-bottom: 106px;
+    margin-bottom: 65px;
   }
   @media screen and (max-width: $mobile) {
     flex-direction: column-reverse;
@@ -210,12 +210,12 @@ $mobile: 768px;
 }
 .project__narrow_block {
   @media screen and (min-width: $fullscreen) {
-    margin-right: 8vw;
-    margin-left: 8vw;
+    padding-right: 8vw;
+    padding-left: 8vw;
   }
   @media screen and (max-width: $mobile) {
-    margin-right: 0;
-    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 .project__one_image {
@@ -226,14 +226,15 @@ $mobile: 768px;
   display: flex;
   justify-content: space-between;
   @media screen and (min-width: $fullscreen) {
-    margin-right: 8vw;
-    margin-left: 8vw;
+    padding-right: 8vw;
+    padding-left: 8vw;
   }
   @media screen and (max-width: $mobile) {
     flex-direction: column;
     gap: 7vw;
-    margin: 0 auto;
     margin-bottom: 7vw;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 .project__leftimage_righttext_link {

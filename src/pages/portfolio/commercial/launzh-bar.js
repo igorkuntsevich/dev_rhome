@@ -6,10 +6,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-commercial"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey';
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
-
+import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey';
 
 const LaunzhBar = () => {
   return (

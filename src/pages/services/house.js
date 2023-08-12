@@ -54,35 +54,37 @@ const ServicesHouse = () => (
         <span className={styles.services_intro_text_span}>Кроме визуального оформления, дизайн-проект&nbsp;&mdash; это ещё схемы и&nbsp;чертежи для каждого участка работы. Проект даёт чёткую инструкцию по&nbsp;этапам строительства и&nbsp;точный бюджет.</span>
       </div>
     </div>
-    <PhotoCollage
-      amount={collageStyles.photocollage_five_images}
-    >
-      <StaticImage
-        src="../../images/services/house/house_1.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
-      />
-      <StaticImage
-        src="../../images/services/house/house_2.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
-      />
-      <StaticImage
-        src="../../images/services/house/house_3.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
-      />
-      <StaticImage
-        src="../../images/services/house/house_4.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
-      />
-      <StaticImage
-        src="../../images/services/house/house_5.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
-      />
-    </PhotoCollage>
+    <div className={collageStyles.photocollage_services}>
+      <PhotoCollage
+        amount={collageStyles.photocollage_five_images}
+      >
+        <StaticImage
+          src="../../images/services/house/house_1.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
+        />
+        <StaticImage
+          src="../../images/services/house/house_2.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
+        />
+        <StaticImage
+          src="../../images/services/house/house_3.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
+        />
+        <StaticImage
+          src="../../images/services/house/house_4.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
+        />
+        <StaticImage
+          src="../../images/services/house/house_5.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
+        />
+      </PhotoCollage>
+    </div>
     <div className="wrapper">
       <div className="line"></div>
       <DecisionHouse />

@@ -53,30 +53,32 @@ const ServicesFasad = () => (
         <span className={styles.services_intro_text_span}>Мы&nbsp;поможем вам сделать экстерьер дома визуально привлекательным, а&nbsp;также придумаем, как пристроить крыльцо, гараж, террасу, сохранив стилистическую целостность дома.</span>
       </div>
     </div>
-    <PhotoCollage
-      amount={collageStyles.photocollage_four_images}
-    >
-      <StaticImage
-        src="../../images/services/fasad/fasad_1.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img1}
-      />
-      <StaticImage
-        src="../../images/services/fasad/fasad_2.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img2}
-      />
-      <StaticImage
-        src="../../images/services/fasad/fasad_3.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img3}
-      />
-      <StaticImage
-        src="../../images/services/fasad/fasad_4.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img4}
-      />
-    </PhotoCollage>
+    <div className={collageStyles.photocollage_services}>
+      <PhotoCollage
+        amount={collageStyles.photocollage_four_images}
+      >
+        <StaticImage
+          src="../../images/services/fasad/fasad_1.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img1}
+        />
+        <StaticImage
+          src="../../images/services/fasad/fasad_2.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img2}
+        />
+        <StaticImage
+          src="../../images/services/fasad/fasad_3.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img3}
+        />
+        <StaticImage
+          src="../../images/services/fasad/fasad_4.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img4}
+        />
+      </PhotoCollage>
+    </div>
     <div className="wrapper">
       <div className="line"></div>
       <DecisionFacade />

@@ -75,7 +75,7 @@ const PortfolioFacade = () => (
           title="Зеленая гавань"
           metr="180"
           building=""
-          budget={styles.project_intro_item_cost2}
+          budget={styles.portfolio_item_cost2}
           image={
             <StaticImage
               src="../../../images/portfolio/fasad-zelenaya-gavan/00_fasad-zelenaya-gavan.jpg"

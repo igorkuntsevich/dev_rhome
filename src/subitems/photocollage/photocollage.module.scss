@@ -8,13 +8,22 @@ $mobile: 768px;
 .photocollage_images {
   display: flex;
   justify-content: space-between;
+  margin-top: 7vw;
   margin-bottom: 8.4vw;
   @media screen and (min-width: $fullscreen) {
+    margin-top: 106px;
     margin-bottom: 128px;
   }
   @media screen and (max-width: $mobile) {
-    margin-bottom: 10.6vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
   }
+}
+.photocollage_services {
+  .photocollage_images {
+    margin-top: 0;
+  }
+
 }
 .photocollage_four_images {
   gap: 3.3vw;

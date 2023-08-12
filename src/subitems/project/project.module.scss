@@ -17,10 +17,6 @@ $mobile: 768px;
   }
 }
 .project_intro_left_top {
-
-  @media screen and (min-width: $fullscreen) {
-
-  }
   @media screen and (max-width: $mobile) {
     position: absolute;
     top: 9.7vw;

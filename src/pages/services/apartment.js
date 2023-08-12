@@ -57,35 +57,38 @@ const ServicesApart = () => (
         <span className={styles.services_intro_text_span}>Также для нас важно дать вам возможность реализовать свои идеи, оказать профессиональную поддержку на&nbsp;всех этапах реализации проекта.</span>
       </div>
     </div>
-    <PhotoCollage
-      amount={collageStyles.photocollage_five_images}
-    >
-      <StaticImage
-        src="../../images/services/apartment/apart_1.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_apart_img1}
-      />
-      <StaticImage
-        src="../../images/services/apartment/apart_2.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_apart_img2}
-      />
-      <StaticImage
-        src="../../images/services/apartment/apart_3.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_apart_img3}
-      />
-      <StaticImage
-        src="../../images/services/apartment/apart_4.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_apart_img4}
-      />
-      <StaticImage
-        src="../../images/services/apartment/apart_5.jpg"
-        alt=""
-        className={collageStyles.photocollage_img + " " + collageStyles.photocollage_apart_img5}
-      />
-    </PhotoCollage>
+    <div className={collageStyles.photocollage_services}>
+      <PhotoCollage
+        amount={collageStyles.photocollage_five_images}
+      >
+        <StaticImage
+          src="../../images/services/apartment/apart_1.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_apart_img1}
+        />
+        <StaticImage
+          src="../../images/services/apartment/apart_2.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_apart_img2}
+        />
+        <StaticImage
+          src="../../images/services/apartment/apart_3.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_apart_img3}
+        />
+        <StaticImage
+          src="../../images/services/apartment/apart_4.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_apart_img4}
+        />
+        <StaticImage
+          src="../../images/services/apartment/apart_5.jpg"
+          alt=""
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_apart_img5}
+        />
+      </PhotoCollage>
+    </div>
+
     <div className="wrapper">
       <div className={styles.services_zndp}>
         <h2 className={styles.services_zndp_title}>Зачем нужен дизайн проект?</h2>
