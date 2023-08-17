@@ -171,7 +171,7 @@ const ServicesHouse = () => (
           />
           <PortfolioItem
           url="/portfolio/house/interer-zelenoja-gavan"
-          title="Интерьер дома в Зеленой Гавани"
+          title="Черничный проезд"
           metr="189"
           building=""
           budget=""

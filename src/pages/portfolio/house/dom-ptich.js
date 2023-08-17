@@ -12,7 +12,7 @@ import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
-import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey';
 
 const DomPtich = () => {
   return (
@@ -53,36 +53,281 @@ const DomPtich = () => {
             amount={collageStyles.photocollage_five_images}
           >
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/dom-ptich/cut/08_dom-ptich.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/dom-ptich/cut/22_dom-ptich.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/dom-ptich/cut/03_dom-ptich.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/dom-ptich/cut/06_dom-ptich.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/dom-ptich/cut/14_dom-ptich.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
             />
           </PhotoCollage>
           <div className="wrapper">
-            <ProjectTaskSergey
+            <ProjectTaskAlexey
               taskText="Спроектировать интерьер жилого дома"
               wishText="Светлый, современный, уютный."
             />
+
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title + " " + styles.project__lefttitle_righttext__title_long}>Кухня, совмещенная с гостиной</h2>
+            </div> 
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/02_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/02_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/03_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/03_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/04_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/04_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/05_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/05_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/06_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/06_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/07_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/07_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/09_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/09_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Мастер-спальня</h2>
+            </div> 
+
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/08_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/08_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/10_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/10_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/11_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/11_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/12_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/12_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/13_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/13_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/14_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/14_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Рабочий кабинет</h2>
+            </div> 
+
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/16_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/16_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/17_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/17_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/18_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/18_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/19_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/19_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_with_padding}>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/20_dom-ptich.webp"
+                data-fancybox="gallery"
+                className={styles.project__three_with_padding_fimg}
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/20_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/21_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/21_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/22_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/22_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
+
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/12_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/12_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/13_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/13_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/14_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/14_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
           </div>
         </div>
         <div className="wrapper">

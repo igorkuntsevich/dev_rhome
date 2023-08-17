@@ -69,7 +69,7 @@ const OfisLogisticheskojkompanii = () => {
                 className={styles.project__one_image}
               />
             </a>
-            <div className={styles.project__two_inline}>
+            <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
               <a href="https://rhome.by/images/ofis-logisticheskoj-kompanii/03_ofis-logisticheskoj-kompanii.webp"
                 data-fancybox="gallery"
                 >
@@ -115,6 +115,36 @@ const OfisLogisticheskojkompanii = () => {
                 />
               </a>
             </div>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/ofis-logisticheskoj-kompanii/09_ofis-logisticheskoj-kompanii.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/ofis-logisticheskoj-kompanii/09_ofis-logisticheskoj-kompanii.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/ofis-logisticheskoj-kompanii/10_ofis-logisticheskoj-kompanii.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/ofis-logisticheskoj-kompanii/10_ofis-logisticheskoj-kompanii.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/ofis-logisticheskoj-kompanii/11_ofis-logisticheskoj-kompanii.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/ofis-logisticheskoj-kompanii/11_ofis-logisticheskoj-kompanii.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
             <div className="line"></div>
             <h2 className={styles.project__title}>Офис — это отражение духа и миссии компании</h2>
             <div className={styles.project__two_inline_mediumrightimg}>

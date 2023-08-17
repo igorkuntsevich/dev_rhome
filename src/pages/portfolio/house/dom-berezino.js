@@ -234,7 +234,7 @@ const HouseBerezino = () => {
               </a>
             </div>
           </div>
-          <a href="https://rhome.by/images/portfolio/dom-berezino/19_dom-berezino.webp"
+          <a href="https://rhome.by/images/portfolio/dom-berezino/15_dom-berezino.webp"
             data-fancybox="gallery"
             className={styles.project__one_image_link}
             >

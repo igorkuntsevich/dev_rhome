@@ -146,7 +146,7 @@ const ServicesFasad = () => (
           budget=""
           image={
             <StaticImage
-              src="../../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
+              src="../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
               alt=""
             />
           }

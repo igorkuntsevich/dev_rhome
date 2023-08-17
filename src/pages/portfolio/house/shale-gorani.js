@@ -12,7 +12,7 @@ import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
-import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey';
 
 const ShaleGorani = () => {
   return (
@@ -53,36 +53,264 @@ const ShaleGorani = () => {
             amount={collageStyles.photocollage_five_images}
           >
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/shale-gorani/cut/18_shale-gorani.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/shale-gorani/cut/16_shale-gorani.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/shale-gorani/cut/10_shale-gorani.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/shale-gorani/cut/21_shale-gorani.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/shale-gorani/cut/13_shale-gorani.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
           </PhotoCollage>
           <div className="wrapper">
-            <ProjectTaskSergey
+            <ProjectTaskAlexey
               taskText="Спроектировать дом и интерьер для сдачи в аренду."
               wishText="Есть участок с прекрасным видом на озеро Свирь. Нужно спроектировать дом в стиле Шале."
             />
+
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Концепция</h2>
+            </div> 
+            <div className={styles.project__two_inline + " " + styles.project__narrow_block + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/02_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/02_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/03_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/03_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            </div>
+            <a href="https://rhome.by/images/portfolio/shale-gorani/04_shale-gorani.webp"
+            data-fancybox="gallery"
+            className={styles.project__one_image_link}
+            >
+            <StaticImage
+              src="../../../images/portfolio/shale-gorani/04_shale-gorani.jpg"
+              alt=""
+              className={styles.project__one_image}
+            />
+            </a>
+            <div className="wrapper">
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title + " " + styles.project__lefttitle_righttext__title_long}>Кухня, совмещенная с гостиной</h2>
+            </div> 
+
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/09_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/09_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/15_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/15_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/05_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/05_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/10_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/10_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/07_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/07_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/06_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/06_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/08_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/08_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/13_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/13_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/16_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/16_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/14_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/14_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/21_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/21_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/11_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/11_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/22_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/22_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Санузел</h2>
+            </div> 
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/12_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/12_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/17_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/17_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Мастер спальня</h2>
+            </div> 
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/18_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/18_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/19_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/19_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/shale-gorani/20_shale-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/shale-gorani/20_shale-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
           </div>
         </div>
         <div className="wrapper">
