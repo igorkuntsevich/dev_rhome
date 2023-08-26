@@ -266,22 +266,12 @@ const DomPtich = () => {
                 />
               </a>
             </div>
-            <div className={styles.project__three_with_padding}>
+            <div className={styles.project__three_inline}>
               <a href="https://rhome.by/images/portfolio/dom-ptich/20_dom-ptich.webp"
                 data-fancybox="gallery"
-                className={styles.project__three_with_padding_fimg}
                 >
                 <StaticImage
                   src="../../../images/portfolio/dom-ptich/20_dom-ptich.jpg"
-                  alt=""
-                  className={styles.project__one_image}
-                />
-              </a>
-              <a href="https://rhome.by/images/portfolio/dom-ptich/21_dom-ptich.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../../images/portfolio/dom-ptich/21_dom-ptich.jpg"
                   alt=""
                   className={styles.project__one_image}
                 />
@@ -291,6 +281,15 @@ const DomPtich = () => {
                 >
                 <StaticImage
                   src="../../../images/portfolio/dom-ptich/22_dom-ptich.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/dom-ptich/21_dom-ptich.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/dom-ptich/21_dom-ptich.jpg"
                   alt=""
                   className={styles.project__one_image}
                 />

@@ -152,13 +152,22 @@ const BarnhausGorani = () => {
                 />
               </a>
             </div>
-
+            <a href="https://rhome.by/images/portfolio/barnhaus-gorani/27_barnhaus-gorani.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+            >
+              <StaticImage
+                src="../../../images/portfolio/barnhaus-gorani/27_barnhaus-gorani.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
             <div className={styles.project__three_inline}>
-              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/27_barnhaus-gorani.webp"
+              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/13_barnhaus-gorani.webp"
                 data-fancybox="gallery"
                 >
                 <StaticImage
-                  src="../../../images/portfolio/barnhaus-gorani/27_barnhaus-gorani.jpg"
+                  src="../../../images/portfolio/barnhaus-gorani/13_barnhaus-gorani.jpg"
                   alt=""
                   className={styles.project__one_image}
                 />
@@ -182,18 +191,7 @@ const BarnhausGorani = () => {
                 />
               </a>
             </div>
-
-            <div className={styles.project__three_with_padding}>
-              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/13_barnhaus-gorani.webp"
-                data-fancybox="gallery"
-                className={styles.project__three_with_padding_fimg}
-                >
-                <StaticImage
-                  src="../../../images/portfolio/barnhaus-gorani/13_barnhaus-gorani.jpg"
-                  alt=""
-                  className={styles.project__one_image}
-                />
-              </a>
+            <div className={styles.project__two_inline}>
               <a href="https://rhome.by/images/portfolio/barnhaus-gorani/14_barnhaus-gorani.webp"
                 data-fancybox="gallery"
                 >
@@ -219,6 +217,18 @@ const BarnhausGorani = () => {
                 text="Одним из ключевых решений для данного проекта стала кольцевая система передвижения. В центре кольца — лестница на второй этаж, заключённая в куб. Конструкция лестницы-куба зонирует и при этом не перегружает пространство. Благодаря такому решению планировка проста и логична. Перейти в любую зону можно двигаясь по кругу."
               />
             </div>
+
+            <a href="https://rhome.by/images/portfolio/barnhaus-gorani/30_barnhaus-gorani.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+            >
+              <StaticImage
+                src="../../../images/portfolio/barnhaus-gorani/30_barnhaus-gorani.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+
             <div className={styles.project__three_inline}>
               <a href="https://rhome.by/images/portfolio/barnhaus-gorani/19_barnhaus-gorani.webp"
                 data-fancybox="gallery"
@@ -238,18 +248,6 @@ const BarnhausGorani = () => {
                   className={styles.project__one_image}
                 />
               </a>
-              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/30_barnhaus-gorani.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../../images/portfolio/barnhaus-gorani/30_barnhaus-gorani.jpg"
-                  alt=""
-                  className={styles.project__one_image}
-                />
-              </a>
-            </div>
-
-            <div className={styles.project__two_inline}>
               <a href="https://rhome.by/images/portfolio/barnhaus-gorani/16_barnhaus-gorani.webp"
                 data-fancybox="gallery"
                 >
@@ -259,22 +257,13 @@ const BarnhausGorani = () => {
                   className={styles.project__one_image}
                 />
               </a>
+            </div>
+            <div className={styles.project__three_inline}>
               <a href="https://rhome.by/images/portfolio/barnhaus-gorani/21_barnhaus-gorani.webp"
                 data-fancybox="gallery"
                 >
                 <StaticImage
                   src="../../../images/portfolio/barnhaus-gorani/21_barnhaus-gorani.jpg"
-                  alt=""
-                  className={styles.project__one_image}
-                />
-              </a>
-            </div>
-            <div className={styles.project__two_inline}>
-              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/20_barnhaus-gorani.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../../images/portfolio/barnhaus-gorani/20_barnhaus-gorani.jpg"
                   alt=""
                   className={styles.project__one_image}
                 />
@@ -288,7 +277,17 @@ const BarnhausGorani = () => {
                   className={styles.project__one_image}
                 />
               </a>
+              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/20_barnhaus-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/barnhaus-gorani/20_barnhaus-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
             </div>
+
 
             <div className="line"></div>
             <div className={styles.project__lefttitle_righttext}>
@@ -297,7 +296,7 @@ const BarnhausGorani = () => {
                 <p className={styles.project__p}>В интерьере комнаты для гостей предусмотрено всё для комфортного отдыха: кровать Minotti Tatlin Soft, встроенный шкаф и небольшая зона отдыха с мягким креслом. Прикроватные тумбы Minotti Lou на фоне правильной геометрии комнаты выглядят как оригинальный арт-объект.</p>
               </div>
             </div>
-            <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
+            <div className={styles.project__two_inline}>
               <a href="https://rhome.by/images/portfolio/barnhaus-gorani/02_barnhaus-gorani.webp"
                 data-fancybox="gallery"
                 >
@@ -317,10 +316,9 @@ const BarnhausGorani = () => {
                 />
               </a>
             </div>
-            <div className={styles.project__three_with_padding}>
+            <div className={styles.project__three_inline}>
               <a href="https://rhome.by/images/portfolio/barnhaus-gorani/03_barnhaus-gorani.webp"
                 data-fancybox="gallery"
-                className={styles.project__three_with_padding_fimg}
                 >
                 <StaticImage
                   src="../../../images/portfolio/barnhaus-gorani/03_barnhaus-gorani.jpg"
@@ -347,22 +345,22 @@ const BarnhausGorani = () => {
                 />
               </a>
             </div>
-
-            <div className={styles.project__three_inline}>
+            <a href="https://rhome.by/images/portfolio/barnhaus-gorani/24_barnhaus-gorani.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+            >
+              <StaticImage
+                src="../../../images/portfolio/barnhaus-gorani/24_barnhaus-gorani.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <div className={styles.project__two_inline}>
               <a href="https://rhome.by/images/portfolio/barnhaus-gorani/23_barnhaus-gorani.webp"
                 data-fancybox="gallery"
                 >
                 <StaticImage
                   src="../../../images/portfolio/barnhaus-gorani/23_barnhaus-gorani.jpg"
-                  alt=""
-                  className={styles.project__one_image}
-                />
-              </a>
-              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/24_barnhaus-gorani.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../../images/portfolio/barnhaus-gorani/24_barnhaus-gorani.jpg"
                   alt=""
                   className={styles.project__one_image}
                 />
@@ -386,20 +384,20 @@ const BarnhausGorani = () => {
               </div>
             </div>
             <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
-              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/09_barnhaus-gorani.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../../images/portfolio/barnhaus-gorani/09_barnhaus-gorani.jpg"
-                  alt=""
-                  className={styles.project__one_image}
-                />
-              </a>
               <a href="https://rhome.by/images/portfolio/barnhaus-gorani/10_barnhaus-gorani.webp"
                 data-fancybox="gallery"
                 >
                 <StaticImage
                   src="../../../images/portfolio/barnhaus-gorani/10_barnhaus-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/09_barnhaus-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/barnhaus-gorani/09_barnhaus-gorani.jpg"
                   alt=""
                   className={styles.project__one_image}
                 />
@@ -410,20 +408,20 @@ const BarnhausGorani = () => {
               <p className={styles.project__p}>К спальне примыкает большой просторный санузел. Отделка стен выполнена керамогранитом. Дополнительный объем пространству создаёт зеркало, расположенное во всю стену с подсветкой по периметру.</p>
             </div>
             <div className={styles.project__two_inline}>
-              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/31_barnhaus-gorani.webp"
-                data-fancybox="gallery"
-                >
-                <StaticImage
-                  src="../../../images/portfolio/barnhaus-gorani/31_barnhaus-gorani.jpg"
-                  alt=""
-                  className={styles.project__one_image}
-                />
-              </a>
               <a href="https://rhome.by/images/portfolio/barnhaus-gorani/32_barnhaus-gorani.webp"
                 data-fancybox="gallery"
                 >
                 <StaticImage
                   src="../../../images/portfolio/barnhaus-gorani/32_barnhaus-gorani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/barnhaus-gorani/31_barnhaus-gorani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/barnhaus-gorani/31_barnhaus-gorani.jpg"
                   alt=""
                   className={styles.project__one_image}
                 />

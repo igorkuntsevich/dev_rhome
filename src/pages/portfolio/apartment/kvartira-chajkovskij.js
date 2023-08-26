@@ -6,8 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { PhotoCollage } from "../../../subitems/photocollage"
-import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
+import { ProjectConsultationSergey } from '../../../subitems/project/consultation/project-consultation-sergey'
 import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
@@ -49,40 +48,203 @@ const KvartiraChajkovskij = () => {
               />
             </div>
           </div>
-          <PhotoCollage
-            amount={collageStyles.photocollage_five_images}
-          >
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
-            />
-          </PhotoCollage>
           <div className="wrapper">
             <ProjectTaskDmitry
               taskText="Разработать дизайн интерьера квартиры в современном стиле."
               wishText="В нашей новой квартире хотим видеть современный, воздушный интерьер, располагающий в первую очередь к отдыху. Нам нравятся светлые глянцевые поверхности в сочетании с темными контрастными элементами. Так как квартира свободной планировки, обязательно отделите спальню от всего остального пространства, а вместо кладовой было бы отлично сделать небольшую гардеробную."
             />
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Планировка</h2>
+              <div>
+                <p className={styles.project__p}>Изначально планировка квартиры была свободная, поэтому зонирование создавалось с учетом потребностей всех членов семьи. Хозяевам было важно, чтобы каждая из зон на 100% выполняла свою функцию, поэтому от общего объединенного пространства все же решили отказаться. Таким образом, помещение разделили на несколько зон: входную, спальную, столовую и гостиную. Ванную и туалет, наоборот, объединили в общий санузел, так было удобнее хозяевам.</p>
+              </div>
+            </div>
+
+            <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/02_kvartira-chajkovskij.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link + " " + styles.project__bigmargin + " " + styles.project__narrow_block}
+            >
+              <StaticImage
+                src="../../../images/portfolio/kvartira-chajkovskij/02_kvartira-chajkovskij.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Cветлый согревающий интерьер</h2>
+              <div>
+                <p className={styles.project__p}>Оформив все пожелания заказчиков в единую концепцию дизайн-проекта квартиры, в качестве основных материалов выбрали стекло, зеркала, эффектные глянцевые поверхности. А чтобы смягчить активный белый цвет и «согреть» его, ввели в интерьер дерево в светлых оттенках. Для того, чтобы интерьер не выглядел слишком стерильным, к белым глянцевым поверхностям добавили черные контрастные элементы: стеллаж до потолка и фрезерованную МДФ-панель в зоне TV.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/03_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/03_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/04_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/04_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/06_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/06_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/09_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/09_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Игра с объемами</h2>
+              <div>
+                <p className={styles.project__p}>Обсуждая пожелания с заказчиками, дизайнер выяснил, что им нравится игра с объемами. Благодаря этому на потолке появилась многоуровневая конструкция с эффектом «парения». Центром композиции здесь, безусловно, стала оригинальная спиралевидная люстра Delta Light, которая меняет свою конфигурацию в зависимости от ракурса взгляда. Несущую колонну, которая осталась после объединения гостиной с лоджией, отделали зеркалами: этот трюк не только визуально раздвигает границы пространства, но и добавляет комнате еще больше воздушности за счет отраженного света.</p>
+              </div>
+            </div>
+            <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/05_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/05_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/07_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/07_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/08_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/08_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__text_center900 + " " + styles.project__bigmargin}>
+              <p className={styles.project__p}>На бывшей лоджии организовали небольшой домашний офис. Окна тут в пол, поэтому недостатка дневного света точно не будет. На пол в жилых помещениях положили светлый кремовый паркет, в прихожей и на кухне — керамогранит Atlas Concorde в таком же оттенке. В торце коридора установили большое зеркало с фацетом: опять-таки, с целью раздвинуть границы пространства.</p>
+            </div>
+
+
+            <ProjectConsultationSergey
+                text="Когда обсуждаете пожелания по интерьеру квартиры с дизайнером, важно рассказать о стиле жизни и предпочтениях будущих жильцов. Даже если вы делаете ремонт квартиры под сдачу, стоит заранее обдумать, кто может жить в этой квартире. Это прояснит не только задачу дизайнеру, но и сделает квартиру более привлекательной для потенциальных арендаторов."
+            />
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Спальня с бьюти-зоной</h2>
+              <div>
+              <p className={styles.project__p}>В спальне – самый большой комнате квартиры – заказчикам хотелось создать мягкую расслабляющую атмосферу с намеком на классику, поэтому для ее оформления были выбраны нежные пастельные тона. Стильный акцент – композиция из ассиметричных декоративных зеркал Cattelan Italia в изголовье огромной, мягкой двуспальной кровати.</p>
+                <p className={styles.project__p}>В углу комнаты организовали небольшую beauty-зону для хозяйки со встроенным туалетным столиком и большим зеркалом с вставками, как в гостиной.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/10_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/10_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/11_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/11_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/12_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/12_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/13_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/13_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Перепланировка ванной комнаты</h2>
+            </div>
+            <div className={styles.project__two_inline_bigrightimg}>
+              <div className={styles.project__two_inline_bigrightimg_left}>
+                <div>
+                  <p className={styles.project__p}>В ванной на фоне белого керамогранита под мрамор ярко выделяется черная подвесная тумба с умывальником. В целом, весь санузел воплощает основные пожелания заказчиков: светлый интерьер и контрастные вставки. Небольшая ванная и туалет за счет перепланировки были незначительно расширены и объединены в единое пространство. В итоге получили просторное помещение, где удалось разместить не только ванную, а еще стильную стеклянную душевую и необычный подвесной унитаз обтекаемой формы от немецкого бренда Villeroy & Boch.</p>
+                </div>
+                <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/14_kvartira-chajkovskij.webp"
+                  data-fancybox="gallery"
+                  >
+                  <StaticImage
+                    src="../../../images/portfolio/kvartira-chajkovskij/14_kvartira-chajkovskij.jpg"
+                    alt=""
+                    className={styles.project__one_image}
+                  />
+                </a>
+              </div>
+              <a href="https://rhome.by/images/portfolio/kvartira-chajkovskij/15_kvartira-chajkovskij.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-chajkovskij/15_kvartira-chajkovskij.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
+
+            
+
             </div>
           </div>
           <div className="wrapper">

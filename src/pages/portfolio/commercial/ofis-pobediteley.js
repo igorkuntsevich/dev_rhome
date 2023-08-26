@@ -194,7 +194,7 @@ const OfisPobediteley = () => {
               <p className={styles.project__p}>Пространство довольно аскетичное без ярких элементов, которые перегружали бы интерьер. Но интересные акценты здесь также присутствуют — светильники Superloop Midispy On и комбинация светильников Nowodworski Soft. Светильники Nowodworski мы использовали и для освещения рабочих столов сотрудников. Дизайнер проекта придумал, как обыграть минималистичный светильник, создав уникальную и запоминающуюся инсталляцию.</p>
               </div>
             </div>
-            <div className={styles.project__two_inline + " " + styles.project__bigmargin}>
+            <div className={styles.project__two_inline}>
               <a href="https://rhome.by/images/portfolio/ofis-pobediteley/03_ofis-pobediteley.webp"
                 data-fancybox="gallery"
                 >

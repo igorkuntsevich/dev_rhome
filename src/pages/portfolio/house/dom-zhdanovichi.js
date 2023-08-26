@@ -290,10 +290,9 @@ const DomZhdanovichi = () => {
                 />
               </a>
             </div>
-            <div className={styles.project__three_with_padding}>
+            <div className={styles.project__three_inline}>
               <a href="https://rhome.by/images/portfolio/dom-zhdanovichi/20_dom-zhdanovichi.webp"
                 data-fancybox="gallery"
-                className={styles.project__three_with_padding_fimg}
                 >
                 <StaticImage
                   src="../../../images/portfolio/dom-zhdanovichi/20_dom-zhdanovichi.jpg"

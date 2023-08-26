@@ -53,29 +53,29 @@ const KvartiraPirs = () => {
             amount={collageStyles.photocollage_five_images}
           >
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/kvartira-pirs/cut/13_kvartira-pirs.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/kvartira-pirs/cut/05_kvartira-pirs.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/kvartira-pirs/cut/08_kvartira-pirs.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/kvartira-pirs/cut/22_kvartira-pirs.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/kvartira-pirs/cut/15_kvartira-pirs.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
           </PhotoCollage>
           <div className="wrapper">
@@ -83,6 +83,392 @@ const KvartiraPirs = () => {
               taskText="Спроектировать интерьер в современном стиле для семьи из 7 человек"
               wishText="Представляем интерьер нашей квартиры в теплых белых тонах, пол и мебель из дерева натурального цвета. В отделке используйте прочные и износостойкие материалы. Детские обязательно с двухъярусными кроватями и местами для игр."
             />
+          <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Планировка</h2>
+            </div>
+
+            <a href="https://rhome.by/images/portfolio/kvartira-pirs/02_kvartira-pirs.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link + " " + styles.project__bigmargin + " " + styles.project__narrow_block}
+            >
+              <StaticImage
+                src="../../../images/portfolio/kvartira-pirs/02_kvartira-pirs.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title + " " + styles.project__lefttitle_righttext__title_long}>Кухня, совмещенная с гостиной</h2>
+            </div> 
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/03_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/03_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/04_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/04_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/06_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/06_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/05_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/05_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <a href="https://rhome.by/images/portfolio/kvartira-pirs/09_kvartira-pirs.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+            >
+              <StaticImage
+                src="../../../images/portfolio/kvartira-pirs/09_kvartira-pirs.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/10_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/10_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/07_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/07_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/11_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/11_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <a href="https://rhome.by/images/portfolio/kvartira-pirs/08_kvartira-pirs.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+            >
+              <StaticImage
+                src="../../../images/portfolio/kvartira-pirs/08_kvartira-pirs.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/12_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/12_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/14_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/14_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/13_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/13_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title + " " + styles.project__lefttitle_righttext__title_long}>Мастер-спальня</h2>
+            </div> 
+            <a href="https://rhome.by/images/portfolio/kvartira-pirs/15_kvartira-pirs.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+            >
+              <StaticImage
+                src="../../../images/portfolio/kvartira-pirs/15_kvartira-pirs.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/32_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/32_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/29_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/29_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/27_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/27_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/28_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/28_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/31_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/31_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title + " " + styles.project__lefttitle_righttext__title_long}>Десткая комната</h2>
+            </div> 
+
+            <a href="https://rhome.by/images/portfolio/kvartira-pirs/18_kvartira-pirs.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link}
+            >
+              <StaticImage
+                src="../../../images/portfolio/kvartira-pirs/18_kvartira-pirs.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/16_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/16_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/17_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/17_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/19_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/19_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/22_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/22_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/23_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/23_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/20_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/20_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/25_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/25_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/26_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/26_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
+
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Реализация</h2>
+            </div> 
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/33_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/33_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/35_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/35_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/34_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/34_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/36_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/36_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/37_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/37_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/38_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/38_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className={styles.project__three_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/39_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/39_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/41_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/41_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-pirs/40_kvartira-pirs.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-pirs/40_kvartira-pirs.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div className="wrapper">

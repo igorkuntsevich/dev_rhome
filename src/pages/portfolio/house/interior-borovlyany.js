@@ -13,7 +13,6 @@ import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
-import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
 import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey';
 
 const InteriorBorovlyany = () => {
@@ -215,10 +214,9 @@ const InteriorBorovlyany = () => {
               <h2 className={styles.project__lefttitle_righttext__title + " " + styles.project__lefttitle_righttext__title_long}>Баланс форм в дизайне спальной комнате</h2>
             </div> 
 
-            <div className={styles.project__three_with_padding}>
+            <div className={styles.project__three_inline}>
               <a href="https://rhome.by/images/portfolio/interior-borovlyany/10_interior-borovlyany.webp"
                 data-fancybox="gallery"
-                className={styles.project__three_with_padding_fimg}
                 >
                 <StaticImage
                   src="../../../images/portfolio/interior-borovlyany/10_interior-borovlyany.jpg"
