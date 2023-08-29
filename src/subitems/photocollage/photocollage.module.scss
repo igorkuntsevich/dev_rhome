@@ -10,9 +10,13 @@ $mobile: 768px;
   justify-content: space-between;
   margin-top: 7vw;
   margin-bottom: 8.4vw;
+  margin-right: 1.2vw;
+  margin-left: 1.2vw;
   @media screen and (min-width: $fullscreen) {
     margin-top: 106px;
     margin-bottom: 128px;
+    margin-right: 0;
+    margin-left: 0;
   }
   @media screen and (max-width: $mobile) {
     margin-top: 10vw;
@@ -36,8 +40,10 @@ $mobile: 768px;
 }
 .photocollage_five_images {
   gap: 1.7vw;
+  gap: 2.9vw;
   @media screen and (min-width: $fullscreen) {
     gap: 26px;
+    gap: 44px;
   }
   @media screen and (max-width: $mobile) {
     gap: 3.7vw;

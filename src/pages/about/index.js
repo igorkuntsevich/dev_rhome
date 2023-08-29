@@ -114,6 +114,16 @@ const About = () => (
               <p className={styles.about_personal_quote_p}>В&nbsp;архитектуре и&nbsp;дизайне мне нравится, когда что-то старинное, имеющее историю, сохраняют и&nbsp;сочетают с&nbsp;современными материалами, дают им&nbsp;новую жизнь, новое звучание.</p>
             </div>
           </div>
+          <div className={styles.about_personal_item + " " + styles.about_personal_item3}>
+            <div className={styles.about_personal_image + " " + styles.about_personal_image_alexey}></div>
+            <div className={styles.about_personal_text}>
+              <p className={styles.about_personal_text_head_p}>Алексей Сергеев</p>
+              <p className={styles.about_personal_text_p}>Арт-директор, автор и&nbsp;куратор более 200 проектов дизайна интерьеров и&nbsp;архитектурного проектирования, от&nbsp;квартир и&nbsp;домов до&nbsp;крупных торговых центов (гостиничный комплекс &laquo;Мариотт&raquo;, ТЦ&nbsp;&laquo;Палаццо&raquo; и&nbsp;пр.). Образование: Окончил БНТУ, по&nbsp;специальности архитектор</p>
+            </div>
+            <div className={styles.about_personal_quote + " " + styles.about_personal_quote3}>
+              <p className={styles.about_personal_quote_p}>Мне хочется, чтобы после нас осталась среда, которая охарактеризует нашу эпоху. Наибольшее удовлетворение и&nbsp;вдохновение получаю от&nbsp;современной архитектуры и&nbsp;дизайна.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

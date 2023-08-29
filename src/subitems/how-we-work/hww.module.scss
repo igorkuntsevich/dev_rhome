@@ -1,0 +1,66 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+.hww {
+  background-color: #f3efe4;
+  border-radius: 30px;
+  margin-bottom: 4.1vw;
+  padding: 5.7vw 3vw 5.3vw 2.6vw;
+  position: relative;
+  overflow: hidden;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 62px;
+    padding: 87px 46px 81px 40px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 8.9vw;
+    padding: 11.1vw 31vw 9.4vw 4.3vw;
+  }
+}
+.hww_text {
+  position: relative;
+  z-index: 1;
+  @media screen and (min-width: $fullscreen) {
+  }
+  @media screen and (max-width: $mobile) {
+  }
+}
+.hww_title {
+  font-size: 2.8vw;
+  line-height: 3.1vw;
+  margin-bottom: 2.15vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 42px;
+    line-height: 47px;
+    margin-bottom: 33px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.7vw;
+    line-height: 7.7vw;
+    margin-bottom: 2.6vw;
+  }
+}
+.hww_p {
+  font-size: 1.25vw;
+  line-height: 1.8vw;
+  max-width: 44.4vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 27px;
+    max-width: 900px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+    max-width: 44.4vw;
+  }
+}
+.hww_video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @media screen and (max-width: $mobile) {
+    height: 100%;
+    right: -43vw;
+  }
+}

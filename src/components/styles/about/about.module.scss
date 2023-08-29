@@ -6,21 +6,17 @@ $mobile: 768px;
   position: relative;
   overflow: hidden;
   margin-bottom: 4.1vw;
-  @media screen and (min-width: $fullscreen) {
-    margin-bottom: 62px;
-  }
-  @media screen and (max-width: $mobile) {
-    margin-bottom: 8.45vw;
-  }
-}
-.about_intro {
   .about_intro_img {
     display: block;
   }
   .about_intro_img_mob {
     display: none;
   }
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 62px;
+  }
   @media screen and (max-width: $mobile) {
+    margin-bottom: 8.45vw;
     .about_intro_img {
       display: none;
     }
@@ -410,7 +406,7 @@ $mobile: 768px;
 }
 .about_personal_flex {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-gap: 1.1vw;
   @media screen and (min-width: $fullscreen) {
@@ -419,46 +415,42 @@ $mobile: 768px;
   @media screen and (max-width: $mobile) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
+    grid-gap: 4.2vw;
   }
 }
 .about_personal_item {
   display: flex;
   background-color: #232323;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 30px;
   min-height: 31.6vw;
   position: relative;
   @media screen and (min-width: $fullscreen) {
     min-height: 480px;
   }
   @media screen and (max-width: $mobile) {
+    border-radius: 0 30px 30px 0;
     &.about_personal_item1 {
       min-height: 105.3vw;
     }
     &.about_personal_item2 { 
       min-height: 117.4vw;
     }
+    &.about_personal_item3 { 
+      min-height: 114.4vw;
+    }
   }
 }
-// .about_personal_item1 {
-//   @media screen and (max-width: $mobile) {
-
-//   }
-// }
-// .about_personal_item2 {
-//   @media screen and (max-width: $mobile) {
-
-//   }
-// }
 .about_personal_image {
-  width: 35%;
-  height: 100%;
+  width: 45%;
+  height: 24.8vw;
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (min-width: $fullscreen) {
-
+    height: 377px;
   }
   @media screen and (max-width: $mobile) {
     width: 36%;
+    height: 100%;
   }
 }
 .about_personal_image_sergey {
@@ -473,11 +465,17 @@ $mobile: 768px;
     background-image: url(../../../images/about/personal_2_mob.jpg);
   }
 }
+.about_personal_image_alexey {
+  background-image: url(../../../images/about/personal_3.jpg);
+  @media screen and (max-width: $mobile) {
+    background-image: url(../../../images/about/personal_3_mob.jpg);
+  }
+}
 .about_personal_text {
-  padding: 3.6vw 1.5vw 3vw 1.6vw;
-  width: 63%;
+  padding: 2.4vw 1.3vw 3vw 1.5vw;
+  width: 55%;
   @media screen and (min-width: $fullscreen) {
-    padding: 55px 23px 46px 24px;
+    padding: 36px 20px 46px 23px;
   }
   @media screen and (max-width: $mobile) {
     padding: 6.8vw 4.8vw 3vw 5.5vw;
@@ -485,12 +483,12 @@ $mobile: 768px;
   }
 }
 .about_personal_text_head_p {
-  font-size: 1.6vw;
+  font-size: 1.45vw;
   line-height: 1.8vw;
   color: #FFFFFF;
   margin-bottom: 0.5vw;
   @media screen and (min-width: $fullscreen) {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 27px;
     margin-bottom: 8px;
   }
@@ -501,12 +499,12 @@ $mobile: 768px;
   }
 }
 .about_personal_text_p {
-  font-size: 1.1vw;
-  line-height: 1.45vw;
+  font-size: 1vw;
+  line-height: 1.2vw;
   color: #FFFFFF;
   @media screen and (min-width: $fullscreen) {
-    font-size: 17px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 18px;
     max-width: 450px;
   }
   @media screen and (max-width: $mobile) {
@@ -527,72 +525,92 @@ $mobile: 768px;
   }
 }
 .about_personal_quote1 {
-  bottom: 3.2vw;
-  left: 13.4vw;
-  padding: 2.3vw 2.5vw;
+  bottom: 5.1vw;
+  right: 1.25vw;
+  padding: 1.6vw 2.1vw 1.6vw 1.4vw;
   .about_personal_quote_p {
-    max-width: 27vw;
+    max-width: 19.2vw;
   }
   @media screen and (min-width: $bigfullscreen) {
-    left: 255px;
   }
   @media screen and (min-width: $fullscreen) {
-    bottom: 71px;
-    padding: 35px 38px;
+    bottom: 78px;
+    padding: 24px 32px 24px 21px;
     .about_personal_quote_p {
-      max-width: 410px;
+      max-width: 292px;
     }
   }
   @media screen and (max-width: $mobile) {
     bottom: 9.9vw;
-    left: auto;
     right: 3.6vw;
-    padding: 6.5vw 4.6vw;
+    padding: 5.1vw 4.8vw 7.5vw;
     .about_personal_quote_p {
       max-width: 60.6vw;
     }
   }
 }
 .about_personal_quote2 {
-  bottom: 2.1vw;
-  left: 10.7vw;
-  padding: 1.8vw 2.5vw;
+  bottom: 2vw;
+  right: 1.1vw;
+  padding: 1.5vw;
   .about_personal_quote_p {
-    max-width: 30.5vw;
+    max-width: 23.8vw;
   }
   @media screen and (min-width: $bigfullscreen) {
-    left: 203px;
   }
   @media screen and (min-width: $fullscreen) {
-    bottom: 32px;
-    // left: 162px;
-    padding: 27px 38px;
+    bottom: 30px;
+    padding: 23px;
     .about_personal_quote_p {
-      max-width: 464px;
+      max-width: 362px;
     }
   }
   @media screen and (max-width: $mobile) {
     bottom: 9.9vw;
-    left: auto;
     right: 3.6vw;
-    padding: 5.8vw 5vw;
+    padding: 4.3vw 6.3vw 6vw 4.1vw;
+    .about_personal_quote_p {
+      max-width: 65.9vw;
+    }
+  }
+}
+.about_personal_quote3 {
+  bottom: 2.7vw;
+  right: 1.1vw;
+  padding: 1.5vw;
+  .about_personal_quote_p {
+    max-width: 21.8vw;
+  }
+  @media screen and (min-width: $bigfullscreen) {
+  }
+  @media screen and (min-width: $fullscreen) {
+    bottom: 41px;
+    padding: 23px;
+    .about_personal_quote_p {
+      max-width: 331px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    bottom: 9.9vw;
+    right: 3.6vw;
+    padding: 5.1vw 4.8vw 6.5vw;
     .about_personal_quote_p {
       max-width: 65.9vw;
     }
   }
 }
 .about_personal_quote_p {
-  font-size: 1.1vw;
-  line-height: 1.45vw;
+  font-size: 1vw;
+  line-height: 1.25vw;
   color: #FFFFFF;
-  margin-bottom: 0.7vw;
+  margin-bottom: 0.3vw;
   &:last-child {
     margin-bottom: 0;
   }
   @media screen and (min-width: $fullscreen) {
-    font-size: 17px;
-    line-height: 22px;
-    margin-bottom: 11px;
+    font-size: 15px;
+    line-height: 19px;
+    margin-bottom: 5px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 3.4vw;

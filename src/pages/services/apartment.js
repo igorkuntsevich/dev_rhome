@@ -18,6 +18,7 @@ import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
 import { PhotoCollage } from "../../subitems/photocollage"
 import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
 import { ServicesCost } from "../../subitems/services-cost"
+import { HowWeWork } from "../../subitems/how-we-work/hww"
 
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 
@@ -214,6 +215,7 @@ const ServicesApart = () => (
         title="Сколько стоит дизайн-проект интерьера квартиры?"
       />
       <StagesApart />
+      <HowWeWork />
       <div className="line"></div>
       <div className={faqStyles.faq}>
         <h2 className={faqStyles.faq_title}>Часто задаваемые<br />вопросы</h2>

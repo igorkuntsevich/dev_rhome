@@ -6,8 +6,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { PhotoCollage } from "../../../subitems/photocollage"
 import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
+import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'

@@ -1,7 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import logo from "../images/rhome_logo.svg"
-import logo_mob from "../images/rhome_logo_mob.svg"
+import logo from "../svg/rhome_logo.svg"
+import logoMob from "../svg/rhome_logo_mob.svg"
+import stickyLogo from "../svg/rhome_logo_sticky.svg"
+import stickyLogoMob from "../svg/rhome_logo_mob_sticky.svg"
 
 const Header = () => {
   const [navOpen , setNavOpen ]= React.useState(false);
@@ -14,15 +16,43 @@ const Header = () => {
       document.body.style.overflow="";
     }
   }, [navOpen]);
+  const [getStickyHeader , setStickyHeader] = React.useState(true);
+  React.useEffect(() => {
+    let pscroll = 0;
+    const stickyHeader = ()=>{
+      if(typeof window ==='undefined'){
+        return
+      }
+      const pageYOffset = window.pageYOffset; 
+      if (pscroll>pageYOffset&&pageYOffset>100){
+        setStickyHeader(true);
+        document.body.classList.add('is_sticky');
+      } else { 
+        setStickyHeader(false);
+        document.body.classList.remove('is_sticky');
+        }  
+      pscroll=pageYOffset;
+    };
+    window.addEventListener('scroll', stickyHeader);
+    return () => {
+      window.removeEventListener('scroll', stickyHeader);
+    }
+  }, [ ])
+  let position = getStickyHeader?"sticky":"relative" ;
+  if (navOpen ){
+    position="fixed";
+  }
   return (
-    <header className={(navOpen?"header_open":"")}>
+    <header style={{position:position}} className={( getStickyHeader?"header_sticky":"" ) + (navOpen?"header_open":"")}>
       <div className="wrapper">
         <div className="header_desktop">
           <Link to="/" className="header_logo_link">
             <img src={logo} alt="rhome logotype" class="header_logo_img" />
+            <img src={stickyLogo} alt="rhome logotype" class="header_sticky_logo_img" />
+            <img src={stickyLogoMob} alt="rhome logotype" class="header_sticky_logo_mob_img" />
           </Link>
           <Link to="/" className="header_logo_link_mob_open">
-            <img src={logo_mob} alt="rhome logotype" class="header_logo_img_mob_open" />
+            <img src={logoMob} alt="rhome logotype" class="header_logo_img_mob_open" />
           </Link>
           <ul className="header_nav">
             <li className="header_subnav_services">
@@ -103,14 +133,14 @@ const Header = () => {
                 <ul className="header_subnav_ul">
                   <li>
                     <Link 
-                      to="/3" 
+                      to="/about/vacancy" 
                       className="header_subnav_a"
                       activeClassName="header_subnav_a_active"
                     >Вакансии</Link>
                   </li>
                   <li>
                     <Link 
-                      to="/3" 
+                      to="/3"
                       className="header_subnav_a"
                       activeClassName="header_subnav_a_active"
                     >Отзывы</Link>
@@ -211,7 +241,7 @@ const Header = () => {
               <ul className="header_mobile_nav">
                 <li>
                   <Link
-                    to="/9"
+                    to="/about/vacancy"
                     className="header_mobile_nav_li"
                   >Вакансии</Link>
                 </li>
