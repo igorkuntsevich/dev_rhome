@@ -4,11 +4,10 @@ import Seo from "../../../components/seo"
 // import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-
-import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
-import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
 import { PortfolioItem } from "../../../subitems/portfolio"
 import * as projectStyles from "../../../components/styles/portfolio/portfolio.module.scss"
+import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
+import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
 import * as styles from "../../../components/styles/about/inspiration.module.scss"

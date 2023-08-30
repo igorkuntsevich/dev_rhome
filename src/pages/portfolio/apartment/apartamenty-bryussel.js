@@ -136,11 +136,9 @@ const ApartamentyBryussel = () => {
                 />
               </a>
             </div>
-
             <div className={styles.project__text_center900 + " " + styles.project__bigmargin}>
             <p className={styles.project__p}>Наш заказчик не хотел дробить пространство на комнаты – гостиная, кухня и столовая образуют общее пространство. Диван в гостиной от Granger Hertzog напоминает работы знаменитого дизайнера мебели Владимира Кагана. Он автор скульптурного стиля мебели, его мебель – классика американского дизайна середины прошлого столетия.</p>
             </div>
-
             <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
               <a href="https://rhome.by/images/portfolio/apartamenty-bryussel/09_apartamenty-bryussel.webp"
                 data-fancybox="gallery"
@@ -170,11 +168,9 @@ const ApartamentyBryussel = () => {
                 />
               </a>
             </div>
-            
             <ProjectConsultationSergey
                 text="Когда обсуждаете пожелания по интерьеру квартиры с дизайнером, важно рассказать о стиле жизни и предпочтениях будущих жильцов. Даже если вы делаете ремонт квартиры под сдачу, стоит заранее обдумать, кто может жить в этой квартире. Это прояснит не только задачу дизайнеру, но и сделает квартиру более привлекательной для потенциальных арендаторов."
             />
-
             <div className="line"></div>
             <div className={styles.project__lefttitle_righttext}>
               <h2 className={styles.project__lefttitle_righttext__title + " " + styles.project__lefttitle_righttext__title_long}>В дизайне квартиры мы использовали узнаваемый декор интерьеров в неоклассическом стиле</h2>
@@ -202,7 +198,6 @@ const ApartamentyBryussel = () => {
                 />
               </a>
             </div>
-
             <a href="https://rhome.by/images/portfolio/apartamenty-bryussel/16_apartamenty-bryussel.webp"
               data-fancybox="gallery"
               className={styles.project__one_image_link}
@@ -213,8 +208,6 @@ const ApartamentyBryussel = () => {
                 className={styles.project__one_image}
               />
             </a>
-
-
             <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
               <a href="https://rhome.by/images/portfolio/apartamenty-bryussel/15_apartamenty-bryussel.webp"
                 data-fancybox="gallery"
@@ -244,7 +237,6 @@ const ApartamentyBryussel = () => {
                 />
               </a>
             </div>
-
             <div className={styles.project__two_inline_bigrightimg}>
               <div className={styles.project__two_inline_bigrightimg_left}>
                 <div>
@@ -270,7 +262,6 @@ const ApartamentyBryussel = () => {
                 />
               </a>
             </div>
-
             <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
               <a href="https://rhome.by/images/portfolio/apartamenty-bryussel/17_apartamenty-bryussel.webp"
                 data-fancybox="gallery"

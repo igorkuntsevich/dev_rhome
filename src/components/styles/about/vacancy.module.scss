@@ -39,10 +39,6 @@ $mobile: 768px;
     left: 5.1vw;
   }
 }
-// .vacancy_intro_video {
-//   @media screen and (min-width: $fullscreen) {}
-//   @media screen and (max-width: $mobile) {}
-// }
 .vacancy_intro_video_desk {
   display: block;
   overflow: hidden;
@@ -276,7 +272,6 @@ $mobile: 768px;
     font-size: 22px;
     line-height: 29px;
     max-width: 665px;
-    
   }
   @media screen and (max-width: $mobile) {
     font-size: 3.4vw;
@@ -351,7 +346,6 @@ $mobile: 768px;
   width: 63.9vw;
   z-index: 2;
   @media screen and (min-width: $fullscreen) {
-    // left: 109px;
     bottom: -304px;
     padding: 50px 40px 64px 30px;
     width: 971px;
@@ -483,13 +477,5 @@ $mobile: 768px;
     font-size: 3.4vw;
     line-height: 3.9vw;
     max-width: 41vw;
-  }
-}
-.vacancy_relax_img {
-  @media screen and (min-width: $fullscreen) {
-
-  }
-  @media screen and (max-width: $mobile) {
-    
   }
 }
