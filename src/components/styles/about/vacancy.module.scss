@@ -9,6 +9,7 @@ $mobile: 768px;
   padding: 3.3vw 2.5vw;
   margin-bottom: 4.1vw;
   @media screen and (min-width: $fullscreen) {
+    padding: 50px 38px;
     margin-bottom: 62px;
   }
   @media screen and (max-width: $mobile) {

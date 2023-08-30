@@ -85,9 +85,9 @@ const About = () => (
           <p className={styles.about_schedule_text_p}>Предоставляем графики работ, оплат и&nbsp;поставок материалов. Графики нужны для того, чтобы отладить и&nbsp;сделать прозрачными все процессы. Вы&nbsp;заранее будете знать, когда и&nbsp;кем будут выполняться работы и&nbsp;когда нужно вносить оплату. Кроме того, раннее планирование позволяет избежать простоев и&nbsp;сократить время строительных работ.</p>
         </div>
         <div className={styles.about_schedule_links}>
-          <Link to="/" className={styles.about_schedule_link}>Портфолио</Link>
-          <Link to="/" className={styles.about_schedule_link}>Вдохновение</Link>
-          <Link to="/" className={styles.about_schedule_link}>Отзывы</Link>
+          <Link to="/portfolio" className={styles.about_schedule_link}>Портфолио</Link>
+          <Link to="/inspiration" className={styles.about_schedule_link}>Вдохновение</Link>
+          <Link to="/reviews" className={styles.about_schedule_link}>Отзывы</Link>
         </div>
       </div>
       <div className={styles.about_personal}>
