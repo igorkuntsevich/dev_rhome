@@ -202,19 +202,6 @@ const Portfolio = () => (
           }
         />
         <PortfolioItem
-          url="/portfolio/apartment/kvartira-dzerzhinskogo"
-          title="Квартира на Дзержинского 19"
-          metr="87"
-          building="8 месяцев"
-          budget={styles.portfolio_item_cost3}
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-dzerzhinskogo/00_kvartira-dzerzhinskogo.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
           url="/portfolio/apartment/stalinka-nezavisimosti"
           title="Сталинка в Минске"
           metr="74"
@@ -358,19 +345,6 @@ const Portfolio = () => (
           }
         />
         <PortfolioItem
-          url="/portfolio/apartment/kvartira-novojaborovoja"
-          title="Современная квартира в ЖК «Новая Боровая»"
-          metr="75"
-          building="7 месяцев"
-          budget=""
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-novojaborovoja/00_kvartira-novojaborovoja.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
           url="/portfolio/apartment/interer-bryussel-sovremennyj"
           title="Современный интерьер в Брюсселе"
           metr="98"
@@ -488,19 +462,6 @@ const Portfolio = () => (
           }
         />
         <PortfolioItem
-          url="/portfolio/apartment/kvartira-dlya-semi"
-          title="Интерьер квартиры для семьи"
-          metr="80"
-          building="10 месяцев"
-          budget={styles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-dlya-semi/00_kvartira-dlya-semi.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
           url="/portfolio/house/dom-berezovaya-roshha"
           title="Дом в Березовой роще"
           metr="250"
@@ -548,19 +509,6 @@ const Portfolio = () => (
           image={
             <StaticImage
               src="../../images/portfolio/kvartira-promenad/00_kvartira-promenad.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/kvartira-mstislavtsa"
-          title="Монохромная квартира на ул. Мстиславца"
-          metr="48"
-          building=""
-          budget={styles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-mstislavtsa/00_kvartira-mstislavtsa.jpg"
               alt=""
             />
           }
@@ -800,32 +748,6 @@ const Portfolio = () => (
           }
         />
         <PortfolioItem
-          url="/portfolio/apartment/kvartira-marina4"
-          title="Квартира в жилом доме Марина-4"
-          metr="68"
-          building=""
-          budget={styles.portfolio_item_cost1}
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-marina4/00_kvartira-marina4.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/kvartira-svetlyd3"
-          title="Светлый интерьер квартиры в ЖК D3"
-          metr="86"
-          building=""
-          budget=""
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-svetlyd3/00_kvartira-svetlyd3.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
           url="/portfolio/house/interer-sovremenni"
           title="Светлый интерьер в современном стиле"
           metr="91"
@@ -834,45 +756,6 @@ const Portfolio = () => (
           image={
             <StaticImage
               src="../../images/portfolio/interer-sovremenni/00_interer-sovremenni.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/kvartira-belinskogo"
-          title="Квартира на ул. Белинского"
-          metr="72"
-          building=""
-          budget={styles.portfolio_item_cost1}
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-belinskogo/00_kvartira-belinskogo.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/kvartira-trehkomnatnaya-d3"
-          title="Трехкомнатная квартира в ЖК D3"
-          metr="87"
-          building=""
-          budget=""
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-trehkomnatnaya-d3/00_kvartira-trehkomnatnaya-d3.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/kvartira-olimpik-park"
-          title="Квартира в ЖК «Олимпик Парк»"
-          metr="116"
-          building=""
-          budget={styles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-olimpik-park/00_kvartira-olimpik-park.jpg"
               alt=""
             />
           }
@@ -943,32 +826,6 @@ const Portfolio = () => (
           }
         />
         <PortfolioItem
-          url="/portfolio/apartment/kvartira-studiya"
-          title="Квартира-студия на Аэродромной"
-          metr="58"
-          building="5 месяцев"
-          budget=""
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-studiya/00_kvartira-studiya.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/kvartira-semenyako"
-          title="Трехкомнатная квартира на Семеняко 15"
-          metr="76,8"
-          building="6 месяцев"
-          budget=""
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-semenyako/00_kvartira-semenyako.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
           url="/portfolio/commercial/ofis-silvano"
           title="Офис Silvano Fashion"
           metr="150"
@@ -990,19 +847,6 @@ const Portfolio = () => (
           image={
             <StaticImage
               src="../../images/portfolio/kvartira-slavyanskom/00_kvartira-slavyanskom.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/kvartira-natural"
-          title="Квартира на проспекте Дзержинского"
-          metr="108"
-          building="9 месяцев"
-          budget={styles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-natural/00_kvartira-natural.jpg"
               alt=""
             />
           }
@@ -1034,19 +878,6 @@ const Portfolio = () => (
           }
         />
         <PortfolioItem
-          url="/portfolio/apartment/kvartira-megapolis"
-          title="Квартира в светлых тонах в ЖК «Мегаполис»"
-          metr="120"
-          building=""
-          budget={styles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-megapolis/00_kvartira-megapolis.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
           url="/portfolio/facade/fasad-mogilev"
           title="Фасад дома в Могилеве"
           metr="300"
@@ -1055,19 +886,6 @@ const Portfolio = () => (
           image={
             <StaticImage
               src="../../images/portfolio/fasad-mogilev/00_fasad-mogilev.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/kvartira-belomorskaya"
-          title="Квартира на ул. Беломорская"
-          metr="104"
-          building=""
-          budget={styles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-belomorskaya/00_kvartira-belomorskaya.jpg"
               alt=""
             />
           }
@@ -1094,19 +912,6 @@ const Portfolio = () => (
           image={
             <StaticImage
               src="../../images/portfolio/dom-alpshale/00_dom-alpshale.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/kvartira-braslavskij"
-          title="Квартира в ЖК «Браславский»"
-          metr="120"
-          building=""
-          budget=""
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-braslavskij/00_kvartira-braslavskij.jpg"
               alt=""
             />
           }

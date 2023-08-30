@@ -105,110 +105,110 @@ const ServicesApart = () => (
       <div className={styles.services_portfolio}>
         <h2 className={styles.services_portfolio_title}>Наши работы</h2>
         <div className={PortfolioItemStyles.portfolio_content}>
-          <PortfolioItem
-            url="/portfolio/apartment/zhk-farforovyj"
-            title="ЖК&nbsp;Фарфоровый"
-            metr="85"
-            building="6 месяцев"
-            budget={PortfolioItemStyles.portfolio_item_cost1}
-            image={
-              <StaticImage
-                src="../../images/portfolio/zhk-farforovyj/00_zhk-farforovyj.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
-            url="/portfolio/apartment/kvartira-dlya-dvoih"
-            title="Квартира в ЖК «D3»"
-            metr="109"
-            building="10 месяцев"
-            budget={PortfolioItemStyles.portfolio_item_cost2}
-            image={
-              <StaticImage
-                src="../../images/portfolio/kvartira-dlya-dvoih/00_kvartira-dlya-dvoih.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
-            url="/portfolio/apartment/kvartira-myastrovskaya"
-            title="Квартира на Мястровской"
-            metr="150"
-            building=""
-            budget=""
-            image={
-              <StaticImage
-                src="../../images/portfolio/kvartira-myastrovskaya/00_kvartira-myastrovskaya.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
-            url="/portfolio/apartment/kvartira-dzerzhinskogo"
-            title="Квартира на Дзержинского 19"
-            metr="87"
-            building="8 месяцев"
-            budget={PortfolioItemStyles.portfolio_item_cost3}
-            image={
-              <StaticImage
-                src="../../images/portfolio/kvartira-dzerzhinskogo/00_kvartira-dzerzhinskogo.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
-            url="/portfolio/apartment/stalinka-nezavisimosti"
-            title="Сталинка в Минске"
-            metr="74"
-            building="8 месяцев"
-            budget={PortfolioItemStyles.portfolio_item_cost1}
-            image={
-              <StaticImage
-                src="../../images/portfolio/stalinka-nezavisimosti/00_stalinka-nezavisimosti.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
-            url="/portfolio/apartment/apartamenty-bryussel"
-            title="Неоклассика в Брюсселе"
-            metr="96"
-            building=""
-            budget=""
-            image={
-              <StaticImage
-                src="../../images/portfolio/apartamenty-bryussel/00_apartamenty-bryussel.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
-            url="/portfolio/apartment/kvartira-novojaborovoja"
-            title="Современная квартира в ЖК «Новая Боровая»"
-            metr="75"
-            building="7 месяцев"
-            budget=""
-            image={
-              <StaticImage
-                src="../../images/portfolio/kvartira-novojaborovoja/00_kvartira-novojaborovoja.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
-            url="/portfolio/apartment/interer-bryussel-sovremennyj"
-            title="Современный интерьер в Брюсселе"
-            metr="98"
-            building="6 месяцев"
-            budget={PortfolioItemStyles.portfolio_item_cost2}
-            image={
-              <StaticImage
-                src="../../images/portfolio/interer-bryussel-sovremennyj/00_interer-bryussel-sovremennyj.jpg"
-                alt=""
-              />
-            }
-          />
+        <PortfolioItem
+          url="/portfolio/apartment/zhk-farforovyj"
+          title="ЖК&nbsp;Фарфоровый"
+          metr="85"
+          building="6 месяцев"
+          budget={PortfolioItemStyles.portfolio_item_cost1}
+          image={
+            <StaticImage
+              src="../../images/portfolio/zhk-farforovyj/00_zhk-farforovyj.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/apartment/kvartira-dlya-dvoih"
+          title="Квартира в ЖК «D3»"
+          metr="109"
+          building="10 месяцев"
+          budget={PortfolioItemStyles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../images/portfolio/kvartira-dlya-dvoih/00_kvartira-dlya-dvoih.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/apartment/kvartira-myastrovskaya"
+          title="Квартира на Мястровской"
+          metr="150"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../images/portfolio/kvartira-myastrovskaya/00_kvartira-myastrovskaya.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/apartment/stalinka-nezavisimosti"
+          title="Сталинка в Минске"
+          metr="74"
+          building="8 месяцев"
+          budget={PortfolioItemStyles.portfolio_item_cost1}
+          image={
+            <StaticImage
+              src="../../images/portfolio/stalinka-nezavisimosti/00_stalinka-nezavisimosti.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/apartment/apartamenty-bryussel"
+          title="Неоклассика в Брюсселе"
+          metr="96"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../images/portfolio/apartamenty-bryussel/00_apartamenty-bryussel.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/apartment/kvartira-dvuhurovnevaya"
+          title="Двухуровневая квартира на Васнецова"
+          metr="152"
+          building="11 месяцев"
+          budget=""
+          image={
+            <StaticImage
+              src="../../images/portfolio/kvartira-dvuhurovnevaya/00_kvartira-dvuhurovnevaya.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/apartment/interer-bryussel-sovremennyj"
+          title="Современный интерьер в Брюсселе"
+          metr="98"
+          building="6 месяцев"
+          budget={PortfolioItemStyles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../images/portfolio/interer-bryussel-sovremennyj/00_interer-bryussel-sovremennyj.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/apartment/kvartira-prestigino"
+          title="Квартира в ЖК «Престижино»"
+          metr="96"
+          building="7 месяцев"
+          budget={PortfolioItemStyles.portfolio_item_cost1}
+          image={
+            <StaticImage
+              src="../../images/portfolio/kvartira-prestigino/00_kvartira-prestigino.jpg"
+              alt=""
+            />
+          }
+        />
         </div>
       </div>
       <ServicesCost

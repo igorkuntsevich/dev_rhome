@@ -25,7 +25,7 @@ const KvartiraBorovlyani = () => {
       <Fancybox>
         <div className={styles.project}>
           <div className="wrapper">
-            <div className={styles.project_intro} style={{"backgroundColor" : "#F3E8D6"}}>
+            <div className={styles.project_intro} style={{"backgroundColor" : "#E3E2E9"}}>
               <ProjectIntro
                 breadcrumbs={<BreadcrumbsProject />}
                 title="Квартира в Боровлянах"
@@ -50,32 +50,27 @@ const KvartiraBorovlyani = () => {
             </div>
           </div>
           <PhotoCollage
-            amount={collageStyles.photocollage_five_images}
+            amount={collageStyles.photocollage_four_images}
           >
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/01_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/kvartira-borovlyani/cut/03_kvartira-borovlyani.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img1}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/kvartira-borovlyani/cut/10_kvartira-borovlyani.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/kvartira-borovlyani/cut/04_kvartira-borovlyani.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img3}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
+              src="../../../images/portfolio/kvartira-borovlyani/cut/08_kvartira-borovlyani.jpg"
               alt=""
               className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
-            />
-            <StaticImage
-              src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"
-              alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img5}
             />
           </PhotoCollage>
           <div className="wrapper">
@@ -83,6 +78,177 @@ const KvartiraBorovlyani = () => {
               taskText="Разработать дизайн интерьера в классическом стиле."
               wishText="Нам нужен в первую очередь функциональный дизайн. Квартира двухкомнатная и хочется максимально использовать каждый квадратный метр. Гостиную можно совместить с нашей спальней. Так как комната небольшая, мы не настаиваем на отдельной кровати, но подберите, пожалуйста, очень удобный раскладной диван."
             />
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Планировка</h2>
+                <div>
+                <p className={styles.project__p}>Поскольку это дом панельный, кардинальную перепланировку мы делать не можем — основные стены несущие — это запрещено законом и здравым смыслом. Но, надо отдать должное, планировка и так оказалась приемлемой. Все, что мы сделали — построили перегородку в коридоре и получили гардеробную, которую, при необходимости, можно использовать как кладовую.</p>
+              </div>
+            </div>
+
+            <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/02_kvartira-borovlyani.webp"
+              data-fancybox="gallery"
+              className={styles.project__one_image_link + " " + styles.project__bigmargin + " " + styles.project__narrow_block}
+            >
+              <StaticImage
+                src="../../../images/portfolio/kvartira-borovlyani/02_kvartira-borovlyani.jpg"
+                alt=""
+                className={styles.project__one_image}
+              />
+            </a>
+
+            <div className={styles.project__text_center900 + " " + styles.project__bigmargin}>
+            <p className={styles.project__p}>Светлые пудровые тона, большое зеркало и плитка в классической раскладке создают парадное настроение. Обрамляем входную дверь черной рамой, выделяем ее и визуально связываем с декором на полу. Чтобы еще больше намекнуть на классический стиль, предусматриваем симметричную композицию из консоли, зеркала и светильников.</p>
+            </div>
+
+
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/04_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/04_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/05_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/05_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Неоклассический интерьер кухни</h2>
+                <div>
+                <p className={styles.project__p}>Парадная кухня с красивым эркером приковывает внимание. Здесь продумана каждая деталь. Обратите снимание, что точечное освещение на потолке предусмотрено не просто так. Споты будут подсвечивать растения, создавая волшебную игру света и теней. Мы постарались сделать как можно больше систем хранения. Для двухкомнатной квартиры это особенно актуально.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/03_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/03_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/06_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/06_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Гостиная с функционалом спальни</h2>
+                <div>
+                <p className={styles.project__p}>Для гостиной выбрали тот же мягкий цвет, что и для кухни. Размещаем удобный диван, который будет служить хозяевам кроватью и организовываем «прикроватное» освещение. Роль прикроватных тумбочек будут выполнять журнальные столики.В комнате нашлось место большому шкафу и даже туалетному столику. Классическая люстра сливочного цвета эффектно дополнила основное стилистическое направление.</p>
+              </div>
+            </div>
+
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/07_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/07_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/08_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/08_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Классический интерьер детской</h2>
+                <div>
+                <p className={styles.project__p}>Детская, хоть и выполнена в классическом стиле, все же получилась яркой и с юмором. Нестандартная кровать-диван и большие картины задают особый ритм.  Эргономичная рабочая зона и большая система хранения призваны поддержать и сохранить порядок в комнате.</p>
+              </div>
+            </div>
+            <div className={styles.project__two_inline}>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/10_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/10_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/11_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/11_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
+
+            <div className="line"></div>
+            <div className={styles.project__lefttitle_righttext}>
+              <h2 className={styles.project__lefttitle_righttext__title}>Ванная с мраморной мозаикой</h2>
+                <div>
+                <p className={styles.project__p}>Мозаика из шестиугольников под мрамор красиво сочетается с белой плиткой с серыми прожилками и классическими фасадами. Самое приятное в этой коллекции — местный производитель. У нашего «Керамина» попадаются достойные коллекции по приятной цене.</p>
+              </div>
+            </div>
+
+            <div className={styles.project__three_inline + " " + styles.project__bigmargin}>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/12_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/12_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/13_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/13_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+              <a href="https://rhome.by/images/portfolio/kvartira-borovlyani/14_kvartira-borovlyani.webp"
+                data-fancybox="gallery"
+                >
+                <StaticImage
+                  src="../../../images/portfolio/kvartira-borovlyani/14_kvartira-borovlyani.jpg"
+                  alt=""
+                  className={styles.project__one_image}
+                />
+              </a>
+            </div>
+
+            <div className={styles.project_video}>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/66iYVU8IG5o?si=83GZ8Q9RXBI72QV3" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+
           </div>
         </div>
         <div className="wrapper">
