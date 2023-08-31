@@ -354,15 +354,26 @@ $mobile: 768px;
 .articles__lefttitle_righttext__title {
   font-size: 2.8vw;
   line-height: 3.1vw;
+  max-width: 29vw;
   @media screen and (min-width: $fullscreen) {
     font-size: 43px;
     line-height: 47px;
-    max-width: 800px;
+    max-width: 740px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 6.8vw;
     line-height: 7.7vw;
     margin-bottom: 4.8vw;
+    max-width: 100%;
+  }
+}
+.articles__lefttitle_righttext__title_long {
+  max-width: 100%;
+  @media screen and (min-width: $fullscreen) {
+    max-width: 740px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 100%;
   }
 }
 .articles__leftimg_righttext_with_bcg {

@@ -47,7 +47,7 @@ const ArticleGira = () => (
         </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>&mdash;&nbsp;Начнем, пожалуй, с&nbsp;розеток. Они в&nbsp;наших домах без малого уже столетие&nbsp;&mdash; вещь привычная и&nbsp;мало меняющаяся. Что нового появилось на&nbsp;рынке в&nbsp;последнее время, на&nbsp;что стоит обратить внимание?</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;Начнем, пожалуй, с&nbsp;розеток. Они в&nbsp;наших домах без малого уже столетие&nbsp;&mdash; вещь привычная и&nbsp;мало меняющаяся. Что нового появилось на&nbsp;рынке в&nbsp;последнее время, на&nbsp;что стоит обратить внимание?</h2>
           <div>
             <p className={styles.articles__p}>&mdash;&nbsp;Прогресс не&nbsp;стоит на&nbsp;месте и&nbsp;постоянно появляется что-то новенькое! Например, сейчас популярны USB-розетки, предусмотренные для питания мобильных устройств без блока питания. Внутрь таких розеток сразу встроен трансформатор&nbsp;&mdash; он&nbsp;переводит ток с&nbsp;напряжением 220V&nbsp;на 5V&nbsp;и&nbsp;на&nbsp;пониженную силу тока. У&nbsp;Gira такие розетки с&nbsp;двумя выходами, с&nbsp;силой тока 3000&nbsp;mA. Это достаточно шустрая зарядочка! Существует несколько видов&nbsp;&mdash; стандартный разъем USB, а&nbsp;также одно из&nbsp;новшеств&nbsp;&mdash; USB и&nbsp;разъем Type-C. Такая комбинация позволяет заряжать устройства с&nbsp;разными разъемами одновременно.</p>
             <p className={styles.articles__p}>Многие не&nbsp;знают о&nbsp;розетках с&nbsp;дополнительным защитным эффектом, хотя существуют они довольно давно. В&nbsp;таких розетках предусмотрены защитные шторки&nbsp;&mdash; затворы в&nbsp;отверстиях для электровилки. В&nbsp;обычном состоянии они закрыты&nbsp;&mdash; открываются эти шторки только когда вилка вставляется в&nbsp;розетку. Этот механизм ограничивает попадание внутрь розетки посторонних предметов и&nbsp;мусора.</p>
@@ -66,7 +66,7 @@ const ArticleGira = () => (
         </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>&mdash;&nbsp;А&nbsp;еще&nbsp;же есть слаботочные розетки. Зачем они нужны?</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;А&nbsp;еще&nbsp;же есть слаботочные розетки. Зачем они нужны?</h2>
           <div>
             <p className={styles.articles__p}>&mdash;&nbsp;Слаботочные розетки нужны для передачи слаботочных информационных сигналов: телевизионных, сетевых, акустических и&nbsp;т.&nbsp;д. Обычные розетки на&nbsp;220&nbsp;V тут не&nbsp;годятся. В&nbsp;зависимости от&nbsp;типа передаваемого сигнала, слаботочные розетки оснащаются нужными разъемами: TV, TV-SAT, RJ-45, HDMI, VGA и&nbsp;другими. К&nbsp;розетке подключается слаботочный кабель, который можно соединить с&nbsp;соответствующим устройством: телевизором, проигрывателем, компьютером, телефоном. Слаботочными могут быть и&nbsp;USB-розетки. Их&nbsp;используют для доступа к&nbsp;серверу или передаче информации от&nbsp;носителя к&nbsp;проектору, компьютеру. Наиболее актуальны слаботочные розетки для офисов.</p>
           </div>
@@ -100,7 +100,7 @@ const ArticleGira = () => (
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>&mdash;&nbsp;Сейчас появились самовозвратные выключатели? Почему они стали популярными? В&nbsp;чем их&nbsp;эстетическое и&nbsp;технологическое преимущество? Или это просто мода?</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;Сейчас появились самовозвратные выключатели? Почему они стали популярными? В&nbsp;чем их&nbsp;эстетическое и&nbsp;технологическое преимущество? Или это просто мода?</h2>
           <div>
             <p className={styles.articles__p}>&mdash;&nbsp;Они существуют уже давно, но&nbsp;мода на&nbsp;них пришла недавно. В&nbsp;целом, они не&nbsp;сильно отличаются от&nbsp;выключателей обычного хода, к&nbsp;которым мы&nbsp;привыкли. Главное отличие&nbsp;&mdash; клавиша всегда находится в&nbsp;одном положение, вне зависимости от&nbsp;того, включен&nbsp;ли свет. Чаще всего их&nbsp;устанавливают в&nbsp;проходных зонах, где один и&nbsp;тот&nbsp;же светильник включается-выключается из&nbsp;разных мест. Так выключатели, расположенные поодаль, но&nbsp;на&nbsp;одной стене, всегда выглядят симметрично. Для многих это важно с&nbsp;эстетической точки зрения!</p>
           </div>
@@ -155,14 +155,14 @@ const ArticleGira = () => (
         </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>&mdash;&nbsp;Как датчики присутствия/движения реагируют на&nbsp;домашних питомцев?</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;Как датчики присутствия/движения реагируют на&nbsp;домашних питомцев?</h2>
           <div>
             <p className={styles.articles__p}>Домашних животных и&nbsp;датчики движения, и&nbsp;датчики присутствия распознают. Но&nbsp;это зависит от&nbsp;размера животного. У&nbsp;некоторых датчиков чувствительность достаточно высокая и&nbsp;они могут срабатывать даже на&nbsp;маленьких питомцев. Обойти это можно, либо установив датчик на&nbsp;зону, в&nbsp;которой домашнее животное не&nbsp;появляется, либо отключив датчик движения.</p>
           </div>
         </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>&mdash;&nbsp;Еще хотим поговорить об&nbsp;утопленном монтаже. Расскажите, что это такое и&nbsp;чем отличается от&nbsp;обычной установки.</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;Еще хотим поговорить об&nbsp;утопленном монтаже. Расскажите, что это такое и&nbsp;чем отличается от&nbsp;обычной установки.</h2>
           <div>
             <p className={styles.articles__p}>&mdash;&nbsp;Утопленный монтаж&nbsp;&mdash; это одна из&nbsp;новинок в&nbsp;сфере электроустановочных изделий. Стандартная установка розеток и&nbsp;выключателей в&nbsp;круглый подрозетник&nbsp;&mdash; это классика. Прогресс, все&nbsp;же не&nbsp;стоит на&nbsp;месте, захотелось придумать что-то новенькое. И&nbsp;производители выпустили коллекцию Gira E2&nbsp;монтаж заподлицо. Особенность этой коллекции&nbsp;&mdash; установка в&nbsp;квадратный, более глубокий подрозетник, в&nbsp;котором часть рамки также утапливается. За&nbsp;счет этого рамка над поверхностью стены почти не&nbsp;выступает: буквально на&nbsp;3&nbsp;мм, а&nbsp;розетки совсем плоские. Это эстетично и&nbsp;подходит в&nbsp;любой интерьер.</p>
           </div>
@@ -174,28 +174,28 @@ const ArticleGira = () => (
         />
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>&mdash;&nbsp;Можно&nbsp;ли установить утопленные розетки и&nbsp;выключатели уже после окончания ремонта?</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;Можно&nbsp;ли установить утопленные розетки и&nbsp;выключатели уже после окончания ремонта?</h2>
           <div>
             <p className={styles.articles__p}>&mdash;&nbsp;Сейчас на&nbsp;утопленный монтаж большой спрос. Но&nbsp;не&nbsp;все знают, что такие розетки и&nbsp;выключатели устанавливаются только в&nbsp;квадратный подрозетник, и&nbsp;приходят к&nbsp;нам покупать такие розетки на&nbsp;финальной стадии, когда уже установлены круглые подрозетники, закончена штукатурка, поклеены обои и&nbsp;уже поздно что-то менять. Их&nbsp;крайне затруднительно установить на&nbsp;финальном этапе, когда все уже подготовлено под стандартную установку. Мы&nbsp;со&nbsp;своей стороны стараемся как можно больше об&nbsp;этом информировать, но&nbsp;не&nbsp;всегда получается предусмотреть такое заранее.</p>
           </div>
         </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>&mdash;&nbsp;Да&nbsp;уж, еще одно напоминание, как важно иметь дизайн-проект. Они довольно незаметные, но&nbsp;не&nbsp;будут&nbsp;ли они сильно отличаться от&nbsp;стены по&nbsp;цвету?</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;Да&nbsp;уж, еще одно напоминание, как важно иметь дизайн-проект. Они довольно незаметные, но&nbsp;не&nbsp;будут&nbsp;ли они сильно отличаться от&nbsp;стены по&nbsp;цвету?</h2>
           <div>
             <p className={styles.articles__p}>&mdash;&nbsp;Вариации цветов коллекции довольно много&nbsp;&mdash; можно подобрать под любой интерьер.</p>
           </div>
         </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>&mdash;&nbsp;Сейчас много говорят о&nbsp;System 3000 от&nbsp;Gira. Как она работает?</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;Сейчас много говорят о&nbsp;System 3000 от&nbsp;Gira. Как она работает?</h2>
           <div>
             <p className={styles.articles__p}>&mdash;&nbsp;Сейчас на&nbsp;утопленный монтаж большой спрос. Но&nbsp;не&nbsp;все знают, что такие розетки и&nbsp;выключатели устанавливаются только в&nbsp;квадратный подрозетник, и&nbsp;приходят к&nbsp;нам покупать такие розетки на&nbsp;финальной стадии, когда уже установлены круглые подрозетники, закончена штукатурка, поклеены обои и&nbsp;уже поздно что-то менять. Их&nbsp;крайне затруднительно установить на&nbsp;финальном этапе, когда все уже подготовлено под стандартную установку. Мы&nbsp;со&nbsp;своей стороны стараемся как можно больше об&nbsp;этом информировать, но&nbsp;не&nbsp;всегда получается предусмотреть такое заранее.</p>
           </div>
         </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>&mdash;&nbsp;Можно&nbsp;ли сделать выключатели с&nbsp;индивидуальной гравировкой, например, для детской. Или нанести пиктограммы приборов, которые они включают.</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;Можно&nbsp;ли сделать выключатели с&nbsp;индивидуальной гравировкой, например, для детской. Или нанести пиктограммы приборов, которые они включают.</h2>
           <div>
             <p className={styles.articles__p}>&mdash;&nbsp;В&nbsp;целом, такое можно сделать. Но&nbsp;для System 3000 это не&nbsp;совсем актуально, потому что все девайсы идут уже с&nbsp;условными пиктограммами, по&nbsp;которым понятно, чем мы&nbsp;управляем. В&nbsp;мобильном приложении, соответственно, каждый светильник или термостат подписаны.</p>
           </div>
