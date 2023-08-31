@@ -365,6 +365,20 @@ $mobile: 768px;
     margin-bottom: 3.4vw;
   }
 }
+.articles__three_inline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.7vw;
+  margin-bottom: 1.7vw;
+  @media screen and (min-width: $fullscreen) {
+    grid-gap: 26px;
+    margin-bottom: 26px;
+  }
+  @media screen and (max-width: $mobile) {
+    grid-gap: 3.4vw;
+    margin-bottom: 3.4vw;
+  }
+}
 .articles__lefttitle_righttext {
   display: grid;
   grid-template-columns: 1fr 1.07fr;
