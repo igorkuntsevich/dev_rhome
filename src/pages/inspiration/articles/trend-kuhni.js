@@ -73,6 +73,20 @@ const TrendKuhni = () => (
             <p className={styles.articles__p}>Появляется масса надёжных механизмов, чтобы минимизировать визуальный шум и закрыть всё, что выдаёт зону готовки и хранения. Например, панели.</p>
           </div>
         </div>
+
+
+
+        <div className={styles.articles__greyblock}>
+          <div className={styles.articles__greyblock_wrap}>
+            <h2 className={styles.articles__greyblock_title}>Примеры грамотного использования пространства интерьера однокомнатной квартиры</h2>
+            <div className={styles.articles__greyblock_text}>
+              <p className={styles.articles__p}>Визуально расширить пространство непросто. Основная задача&nbsp;&mdash; разместить на&nbsp;небольшой площади однокомнатной квартиры мебель и&nbsp;предметы декора таким образом, чтобы поместилось все функционально необходимое. Поэтому важно понять, что действительно нужно, а&nbsp;без чего можно обойтись. Самое главное&nbsp;&mdash; тщательно продумать дизайн интерьера однокомнатной квартиры еще на&nbsp;этапе планировки!</p>
+            </div>
+          </div>
+        </div>
+
+
+
         <StaticImage
           src="../../../images/inspiration/articles/trend-kuhni/03_trend-kuhni.jpg"
           alt=""
