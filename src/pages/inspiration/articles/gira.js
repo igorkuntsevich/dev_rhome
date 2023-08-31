@@ -18,7 +18,7 @@ import * as styles from "../../../components/styles/about/inspiration.module.scs
 const ArticleGira = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Что нового появилось на рынке розеток - RHOME"} description={"Рассмотрим ассортимент немецкого бренда Gira в Беларуси"}
       location={"https://rhome.by/articles/gira"}
       image={""}
     />
@@ -36,7 +36,7 @@ const ArticleGira = () => (
             className={styles.articles_intro_img}
           />
           <StaticImage
-            src="../../../images/inspiration/articles/gira/03_gira.jpg"
+            src="../../../images/inspiration/articles/gira/00_gira.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img_mob}
