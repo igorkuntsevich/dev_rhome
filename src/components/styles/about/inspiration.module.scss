@@ -277,14 +277,14 @@ $mobile: 768px;
   position: absolute;
   top: 6.1vw;
   left: 2.5vw;
-  max-width: 38.2vw;
+  max-width: 45vw;
   z-index: 1;
   @media screen and (min-width: $fullscreen) {
     font-size: 53px;
     line-height: 64px;
     top: 93px;
     left: 38px;
-    max-width: 580px;
+    max-width: 684px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 7.2vw;
@@ -296,10 +296,14 @@ $mobile: 768px;
 }
 .articles_intro_text {
   max-width: 78.5vw;
+  margin-bottom: 4.3vw;
   @media screen and (min-width: $fullscreen) {
     max-width: 1200px;
+    margin-bottom: 65px;
   }
   @media screen and (max-width: $mobile) {
+    max-width: 100%;
+    margin-bottom: 7vw;
   }
 }
 .articles_intro_p {
@@ -483,5 +487,14 @@ $mobile: 768px;
     grid-template-columns: 1fr;
     grid-gap: 4vw;
     margin-bottom: 10vw;
+  }
+}
+.articles__video {
+  margin-bottom: 4.3vw;
+  @media screen and (min-width: $fullscreen) {
+    margin-bottom: 65px;
+  }
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 7vw;
   }
 }

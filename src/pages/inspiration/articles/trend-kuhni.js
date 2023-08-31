@@ -4,6 +4,8 @@ import Seo from "../../../components/seo"
 // import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+import video from "../../../images/inspiration/articles/trend-kuhni/04_trend-kuhni-video.mp4"
+
 import { PortfolioItem } from "../../../subitems/portfolio"
 import * as projectStyles from "../../../components/styles/portfolio/portfolio.module.scss"
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
@@ -43,15 +45,13 @@ const TrendKuhni = () => (
           />
         </div>
         <div className={styles.articles_intro_text}>
-          <p className={styles.articles_intro_p}>Создать уютную обстановку без лишних деталей с использованием новых технологий  - одна из основных задач в современном дизайне интерьера. Специалисты студии RHOME совместно с производителем корпусной мебели DOMANI реализуют эту задачу, внедряя инновационные  решения в местный производственный процесс. Так архитектурный и дизайнерский опыт соединяется с промышленным возможностями. Всё для того, чтобы белорусские потребители могли воплотить европейские тенденции в оформлении своих домов.  </p>
+          <p className={styles.articles_intro_p}>Создать уютную обстановку без лишних деталей с использованием новых технологий  - одна из основных задач в современном дизайне интерьера. Специалисты студии RHOME совместно с производителем корпусной мебели DOMANI реализуют эту задачу, внедряя инновационные  решения в местный производственный процесс. Так архитектурный и дизайнерский опыт соединяется с промышленным возможностями. Всё для того, чтобы белорусские потребители могли воплотить европейские тенденции в оформлении своих домов.</p>
         </div>
         <StaticImage
           src="../../../images/inspiration/articles/trend-kuhni/02_trend-kuhni.jpg"
           alt=""
           className={styles.articles__one_image}
         />
-
-
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
           <h2 className={styles.articles__lefttitle_righttext__title}>Концепция единого пространства</h2>
@@ -60,7 +60,11 @@ const TrendKuhni = () => (
             <p className={styles.articles__p}>Кухня уже давно из функциональной территории для готовки превратилась в место коллективного действа для общения с семьёй, друзьями или уединённого отдыха после напряжённого дня. </p>
           </div>
         </div>
-
+        <div className={styles.articles__video}>
+          <video width="100%" height="100%" muted={true} playsInline={true} autoPlay={true} loop={true} type="video/mp4">
+            <source src={video} type="video/mp4"/>
+          </video>
+        </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
           <h2 className={styles.articles__lefttitle_righttext__title}>Надёжные механизмы</h2>
@@ -69,13 +73,11 @@ const TrendKuhni = () => (
             <p className={styles.articles__p}>Появляется масса надёжных механизмов, чтобы минимизировать визуальный шум и закрыть всё, что выдаёт зону готовки и хранения. Например, панели.</p>
           </div>
         </div>
-
         <StaticImage
           src="../../../images/inspiration/articles/trend-kuhni/03_trend-kuhni.jpg"
           alt=""
           className={styles.articles__one_image}
         />
-
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
           <h2 className={styles.articles__lefttitle_righttext__title}>Экспозиция GRANDE</h2>
@@ -89,10 +91,8 @@ const TrendKuhni = () => (
           alt=""
           className={styles.articles__one_image}
         />
-
       </div>
     </div>
-    
     <div className="wrapper">
       <div className={styles.last_articles}>
         <h2 className={styles.last_articles_title}>Последние статьи</h2>
