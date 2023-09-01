@@ -6,8 +6,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import video from "../../../images/inspiration/articles/trend-kuhni/04_trend-kuhni-video.mp4"
 
-import { PortfolioItem } from "../../../subitems/portfolio"
-import * as projectStyles from "../../../components/styles/portfolio/portfolio.module.scss"
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
 import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"

@@ -336,6 +336,45 @@ $mobile: 768px;
     margin-bottom: 2.4vw;
   }
 }
+.articles__li {
+  font-size: 1.45vw;
+  line-height: 2vw;
+  position: relative;
+  padding-left: 2.8vw;
+  margin-bottom: 1.7vw;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1.45vw;
+    height: 1px;
+    left: 0;
+    top: 0.9vw;
+    background-color: #000000;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 22px;
+    line-height: 30px;
+    padding-left: 43px;
+    margin-bottom: 26px;
+    &::before {
+      width: 22px;
+      top: 14px;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+    padding-left: 8.45vw;
+    margin-bottom: 6vw;
+    &::before {
+      width: 5.1vw;
+      top: 1.8vw;
+    }
+  }
+}
 .articles__title {
   font-size: 2.8vw;
   line-height: 3.1vw;
