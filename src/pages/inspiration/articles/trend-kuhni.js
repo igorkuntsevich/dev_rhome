@@ -76,14 +76,7 @@ const TrendKuhni = () => (
 
 
 
-        <div className={styles.articles__greyblock}>
-          <div className={styles.articles__greyblock_wrap}>
-            <h2 className={styles.articles__greyblock_title}>Примеры грамотного использования пространства интерьера однокомнатной квартиры</h2>
-            <div className={styles.articles__greyblock_text}>
-              <p className={styles.articles__p}>Визуально расширить пространство непросто. Основная задача&nbsp;&mdash; разместить на&nbsp;небольшой площади однокомнатной квартиры мебель и&nbsp;предметы декора таким образом, чтобы поместилось все функционально необходимое. Поэтому важно понять, что действительно нужно, а&nbsp;без чего можно обойтись. Самое главное&nbsp;&mdash; тщательно продумать дизайн интерьера однокомнатной квартиры еще на&nbsp;этапе планировки!</p>
-            </div>
-          </div>
-        </div>
+
 
 
 
