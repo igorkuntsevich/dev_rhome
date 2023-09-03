@@ -95,27 +95,6 @@ const ArticleGira = () => (
             }
           />
         </div>
-
-
-
-
-
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;Сейчас появились самовозвратные выключатели? Почему они стали популярными? В&nbsp;чем их&nbsp;эстетическое и&nbsp;технологическое преимущество? Или это просто мода?</h2>
-          <div>
-            <p className={styles.articles__p}>&mdash;&nbsp;Они существуют уже давно, но&nbsp;мода на&nbsp;них пришла недавно. В&nbsp;целом, они не&nbsp;сильно отличаются от&nbsp;выключателей обычного хода, к&nbsp;которым мы&nbsp;привыкли. Главное отличие&nbsp;&mdash; клавиша всегда находится в&nbsp;одном положение, вне зависимости от&nbsp;того, включен&nbsp;ли свет. Чаще всего их&nbsp;устанавливают в&nbsp;проходных зонах, где один и&nbsp;тот&nbsp;же светильник включается-выключается из&nbsp;разных мест. Так выключатели, расположенные поодаль, но&nbsp;на&nbsp;одной стене, всегда выглядят симметрично. Для многих это важно с&nbsp;эстетической точки зрения!</p>
-            <ul>
-              <li className={styles.articles__li}>Несколько вариантов планировки</li>
-              <li className={styles.articles__li}>4-6 ракурсов 3D-визуализации каждой комнаты</li>
-              <li className={styles.articles__li}>25&nbsp;листов чертежей, подробно иллюстрирующих все технические моменты: от&nbsp;электрики до&nbsp;развёртки стен</li>
-              <li className={styles.articles__li}>Полный перечень материалов, которые понадобятся для ремонтных работ</li>
-              <li className={styles.articles__li}>Расчет бюджета проекта</li>
-              <li className={styles.articles__li}>Смету на&nbsp;ремонтно-отделочные работы</li>
-            </ul>
-          </div>
-        </div>
         <div className={styles.articles__one_image_link}>
           <StaticImage
             src="../../../images/inspiration/articles/gira/02_gira.jpg"
