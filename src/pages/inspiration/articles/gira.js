@@ -116,11 +116,13 @@ const ArticleGira = () => (
             </ul>
           </div>
         </div>
-        <StaticImage
-          src="../../../images/inspiration/articles/gira/02_gira.jpg"
-          alt=""
-          className={styles.articles__one_image}
-        />
+        <div className={styles.articles__one_image_link}>
+          <StaticImage
+            src="../../../images/inspiration/articles/gira/02_gira.jpg"
+            alt=""
+            className={styles.articles__one_image}
+          />
+        </div>
         <div className="line"></div>
         <div className={styles.articles__mirror}>
           <div>
@@ -178,11 +180,14 @@ const ArticleGira = () => (
             <p className={styles.articles__p}>&mdash;&nbsp;Утопленный монтаж&nbsp;&mdash; это одна из&nbsp;новинок в&nbsp;сфере электроустановочных изделий. Стандартная установка розеток и&nbsp;выключателей в&nbsp;круглый подрозетник&nbsp;&mdash; это классика. Прогресс, все&nbsp;же не&nbsp;стоит на&nbsp;месте, захотелось придумать что-то новенькое. И&nbsp;производители выпустили коллекцию Gira E2&nbsp;монтаж заподлицо. Особенность этой коллекции&nbsp;&mdash; установка в&nbsp;квадратный, более глубокий подрозетник, в&nbsp;котором часть рамки также утапливается. За&nbsp;счет этого рамка над поверхностью стены почти не&nbsp;выступает: буквально на&nbsp;3&nbsp;мм, а&nbsp;розетки совсем плоские. Это эстетично и&nbsp;подходит в&nbsp;любой интерьер.</p>
           </div>
         </div>
-        <StaticImage
-          src="../../../images/inspiration/articles/gira/05_gira.jpg"
-          alt=""
-          className={styles.articles__one_image}
-        />
+        <div className={styles.articles__one_image_link}>
+          <StaticImage
+            src="../../../images/inspiration/articles/gira/05_gira.jpg"
+            alt=""
+            className={styles.articles__one_image}
+          />
+        </div>
+        
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
           <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>&mdash;&nbsp;Можно&nbsp;ли установить утопленные розетки и&nbsp;выключатели уже после окончания ремонта?</h2>

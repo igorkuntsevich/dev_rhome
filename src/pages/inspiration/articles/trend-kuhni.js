@@ -45,11 +45,13 @@ const TrendKuhni = () => (
         <div className={styles.articles_intro_text}>
           <p className={styles.articles_intro_p}>Создать уютную обстановку без лишних деталей с использованием новых технологий  - одна из основных задач в современном дизайне интерьера. Специалисты студии RHOME совместно с производителем корпусной мебели DOMANI реализуют эту задачу, внедряя инновационные  решения в местный производственный процесс. Так архитектурный и дизайнерский опыт соединяется с промышленным возможностями. Всё для того, чтобы белорусские потребители могли воплотить европейские тенденции в оформлении своих домов.</p>
         </div>
-        <StaticImage
-          src="../../../images/inspiration/articles/trend-kuhni/02_trend-kuhni.jpg"
-          alt=""
-          className={styles.articles__one_image}
-        />
+        <div className={styles.articles__one_image_link}>
+          <StaticImage
+            src="../../../images/inspiration/articles/trend-kuhni/02_trend-kuhni.jpg"
+            alt=""
+            className={styles.articles__one_image}
+          />
+        </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
           <h2 className={styles.articles__lefttitle_righttext__title}>Концепция единого пространства</h2>
@@ -77,12 +79,13 @@ const TrendKuhni = () => (
 
 
 
-
-        <StaticImage
-          src="../../../images/inspiration/articles/trend-kuhni/03_trend-kuhni.jpg"
-          alt=""
-          className={styles.articles__one_image}
-        />
+        <div className={styles.articles__one_image_link}>
+          <StaticImage
+            src="../../../images/inspiration/articles/trend-kuhni/03_trend-kuhni.jpg"
+            alt=""
+            className={styles.articles__one_image}
+          />
+        </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
           <h2 className={styles.articles__lefttitle_righttext__title}>Экспозиция GRANDE</h2>

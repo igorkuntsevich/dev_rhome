@@ -218,13 +218,13 @@ const DizajnOdnokomnatnoj = () => (
             <p className={styles.articles__p}>Как много вы готовите? Если кулинарию сложно назвать вашим хобби, и вы нередко едите в городе, не стоит отводить под кухню слишком много пространство. Все необходимое можно разместить возле одной стены, чтобы переход от кухни к гостиной был менее заметным, и пространство казалось больше.</p>
           </div>
         </div>
-
-        <StaticImage
-          src="../../../images/inspiration/articles/dizajn-odnokomnatnoj-kvartiry/03_dizajn-odnokomnatnoj-kvartiry.jpg"
-          alt=""
-          className={styles.articles__one_image}
-        />
-
+        <div className={styles.articles__one_image_link}>
+          <StaticImage
+            src="../../../images/inspiration/articles/dizajn-odnokomnatnoj-kvartiry/03_dizajn-odnokomnatnoj-kvartiry.jpg"
+            alt=""
+            className={styles.articles__one_image}
+          />
+        </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
           <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Что такое квартира-студия и чем она отличается от однокомнатной квартиры?</h2>
