@@ -1,0 +1,65 @@
+$bigfullscreen: 1900px;
+$fullscreen: 1520px;
+$mobile: 768px;
+.reviews_intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 30px 30px 0px 0px;
+  background: linear-gradient(180deg, #3E393B 0%, #231F20 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 3.3vw 2.5vw 1.4vw;
+  margin-bottom: 1.7vw;
+  @media screen and (min-width: $fullscreen) {
+    padding: 50px 38px 21px;
+    margin-bottom: 26px;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9.7vw 5.1vw 6.7vw;
+    margin-bottom: 4.4vw;
+  }
+}
+.reviews_intro_title {
+  font-size: 3.5vw;
+  line-height: 4.2vw;
+  color: #FFFFFF;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 53px;
+    line-height: 64px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 5.2vw;
+    line-height: 8.7vw;
+  }
+}
+.reviews_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 2.4vw;
+  margin-bottom: 3.7vw;
+  @media screen and (min-width: $fullscreen) {
+    grid-gap: 36px;
+    margin-bottom: 56px;
+  }
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    grid-gap: 7.2vw;
+    margin-bottom: 7vw;
+  }
+}
+.reviews_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8vw;
+  @media screen and (min-width: $fullscreen) {
+  }
+  @media screen and (max-width: $mobile) {
+    gap: 5.2vw;
+  }
+}
+

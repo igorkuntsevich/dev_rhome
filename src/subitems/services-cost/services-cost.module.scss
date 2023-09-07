@@ -14,8 +14,34 @@ $mobile: 768px;
     bottom: 0;
   }
 }
+@keyframes popupMessage1 {
+  0% {
+    opacity: 0;
+    bottom: -5vw;
+  }
+  80% {
+    opacity: 1;
+    bottom: 4vw;
+  }
+  100% {
+    bottom: 3.2vw;
+  }
+}
 @media screen and (max-width: $mobile) {
   @keyframes popupMessage {
+    0% {
+      opacity: 0;
+      top: 0;
+    }
+    80% {
+      opacity: 1;
+      top: -14vw;
+    }
+    100% {
+      top: -10.4vw;
+    }
+  }
+  @keyframes popupMessage1 {
     0% {
       opacity: 0;
       top: 0;
@@ -163,16 +189,16 @@ $mobile: 768px;
   }
 }
 .services_cost_image_status {
-  font-size: 1.25vw;
-  line-height: 1.8vw;
+  font-size: 1.6vw;
+  line-height: 1.9vw;
   text-align: right;
   color: #FFFFFF;
   max-width: 14vw;
   margin-left: auto;
   margin-bottom: 2.4vw;
   @media screen and (min-width: $fullscreen) {
-    font-size: 19px;
-    line-height: 27px;
+    font-size: 24px;
+    line-height: 29px;
     max-width: 213px;
     margin-bottom: 36px;
   }
@@ -223,5 +249,149 @@ $mobile: 768px;
   @media screen and (max-width: $mobile) {
     top: auto;
     bottom: 40vw;
+  }
+}
+.services_interests {
+  display: flex;
+  background-color: #F5F5F5;
+  border-radius: 30px 0 0 30px;
+  height: 28.8vw;
+  margin-bottom: 4.6vw;
+  @media screen and (min-width: $fullscreen) {
+    height: 438px;
+    margin-bottom: 70px;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 8.9vw;
+  }
+}
+.services_interests_text {
+  width: 50%;
+  padding: 4.6vw 2vw 5vw 2.4vw;
+  @media screen and (min-width: $fullscreen) {
+    padding: 70px 30px 76px 36px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    padding: 9.2vw 5.6vw 0 3.9vw;
+  }
+}
+.services_interests_title {
+  font-size: 2.8vw;
+  line-height: 3vw;
+  margin-bottom: 1.5vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 43px;
+    line-height: 46px;
+    margin-bottom: 23px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.7vw;
+    line-height: 7.7vw;
+    margin-bottom: 3.6vw;
+  }
+}
+.services_interests_text_wrap {
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 7.5vw;
+  }
+}
+.services_interests_text_p {
+  font-size: 1.25vw;
+  line-height: 1.8vw;
+  margin-bottom: 1vw;
+  max-width: 35.4vw;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 27px;
+    margin-bottom: 15px;
+    max-width: 538px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+    margin-bottom: 1.9vw;
+    max-width: 100%;
+  }
+}
+.services_interests_image {
+  width: 50%;
+  background-image: url(../../images/services/remont_cons_dmitry.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2.15vw;
+  padding-right: 1.8vw;
+  position: relative;
+  @media screen and (min-width: $fullscreen) {
+    padding-top: 33px;
+    padding-right: 27px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 7vw 3.4vw 6.5vw 0;
+    border-radius: 0px 30px 30px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.services_interests_image_status {
+  font-size: 1.25vw;
+  line-height: 1.8vw;
+  text-align: right;
+  color: #FFFFFF;
+  max-width: 14vw;
+  margin-left: auto;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 27px;
+    max-width: 213px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 3.9vw;
+    max-width: 38vw;
+    // margin-bottom: 12.1vw;
+  }
+}
+.services_interests_image_text {
+  font-size: 1.25vw;
+  line-height: 1.5vw;
+  font-style: italic;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #6B6B6B;
+  max-width: 20.8vw;
+  padding: 2.15vw 1.5vw;
+  border-radius: 0 34px 34px 34px;
+  margin-left: auto;
+  position: absolute;
+  right: 1.8vw;
+  bottom: 3.2vw;
+  opacity: 0;
+  &.active {
+    animation: popupMessage1 0.7s;
+    opacity: 1;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 23px;
+    max-width: 316px;
+    padding: 33px 23px;
+    right: 27px;
+    bottom: 49px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 3.9vw;
+    max-width: 43vw;
+    padding: 5.1vw 3.4vw 3.6vw;
+    border-radius: 30px 30px 30px 0;
+    position: static;
+    margin-bottom: 3.1vw;
   }
 }

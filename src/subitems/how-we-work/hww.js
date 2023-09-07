@@ -11,7 +11,7 @@ export const HowWeWork = () => {
         <p className={styles.hww_p}>Создание дизайн-проекта включает в&nbsp;себя 7&nbsp;этапов. Мы&nbsp;хотим подробно рассказать о&nbsp;каждом из&nbsp;них, чтобы вы&nbsp;могли заранее узнать, что стоит за&nbsp;созданием интерьера.</p>
       </div>
       <div className={styles.hww_video}>
-        <video className="video_presentation" width="100%" height="100%" muted={true} playsInline={true} autoPlay={true} loop={true} type="video/mp4">
+        <video width="100%" height="100%" muted={true} playsInline={true} autoPlay={true} loop={true} type="video/mp4">
           <source src={shortVideo} type="video/mp4"/>
         </video>
       </div>

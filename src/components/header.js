@@ -140,7 +140,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link 
-                      to="/3"
+                      to="/about/reviews"
                       className="header_subnav_a"
                       activeClassName="header_subnav_a_active"
                     >Отзывы</Link>
@@ -247,7 +247,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/10"
+                    to="/about/reviews"
                     className="header_mobile_nav_li"
                   >Отзывы</Link>
                 </li>

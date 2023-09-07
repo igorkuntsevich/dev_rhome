@@ -6,8 +6,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import { PortfolioItem } from "../../../subitems/portfolio"
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
 import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
-import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectConsultationAlexey } from '../../../subitems/project/consultation/project-consultation-alexey'
+import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
 
@@ -109,12 +109,12 @@ const ArDeko = () => (
         />
         </div>
         <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-              <p className={styles.articles__p}>Кстати, блеск – это наиболее характерная черта классического ар-деко. Глянцевые поверхности, большое количество зеркал, преломление света через стекло и отражающие элементы современной техники создают ту самую атмосферу роскоши и вечного праздника. Также очень широко используются в интерьерах ар-деко зеркальные элементы. Это могут быть как настенные зеркала в вычурных дорогих рамах, так и зеркальная плитка, вставки на мебели.</p>
-            </div>
-        <div className={styles.project__bigmargin}>
-            <ProjectConsultationAlexey
-                text="Отдавайте предпочтение поверхностям с блестящими металлическими элементами, зеркальными и стеклянными вставками для создания эффекта мерцания. Лак и глянцевая краска, полированное дерево и металл – в ар-деко все должно блестеть!"
-            />
+          <p className={styles.articles__p}>Кстати, блеск – это наиболее характерная черта классического ар-деко. Глянцевые поверхности, большое количество зеркал, преломление света через стекло и отражающие элементы современной техники создают ту самую атмосферу роскоши и вечного праздника. Также очень широко используются в интерьерах ар-деко зеркальные элементы. Это могут быть как настенные зеркала в вычурных дорогих рамах, так и зеркальная плитка, вставки на мебели.</p>
+        </div>
+        <div className={styles.articles__bigmargin}>
+          <ProjectConsultationAlexey
+            text="Отдавайте предпочтение поверхностям с блестящими металлическими элементами, зеркальными и стеклянными вставками для создания эффекта мерцания. Лак и глянцевая краска, полированное дерево и металл – в ар-деко все должно блестеть!"
+          />
         </div>
 
 
@@ -185,7 +185,7 @@ const ArDeko = () => (
           className={styles.articles__one_image + " " + styles.articles__bigmargin}
         />
         </div>
-        <div className={styles.project__bigmargin}>
+        <div className={styles.articles__bigmargin}>
             <ProjectConsultationAlexey
                 text="Зеркала – это must have для интерьера в стиле ар- деко. Купите пару зеркал в красивых рамах и повесьте их симметрично. Или используйте специальные зеркальные панно, которые образуют оригинальные композиции и служат в качестве своеобразных картин."
             />

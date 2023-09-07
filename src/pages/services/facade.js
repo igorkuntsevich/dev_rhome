@@ -3,23 +3,18 @@ import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 // import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
-
-
 import * as styles from "../../components/styles/services.module.scss"
-
-
 import { DecisionFacade } from "../../subitems/decision/decisionFacade"
 import { StagesFacade } from "../../subitems/services-stages/stagesFacade"
 import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
-
-
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
 import { PhotoCollage } from "../../subitems/photocollage"
 import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
 import { ServicesFacadeCost } from "../../subitems/services-cost/services-facade-cost"
-
+import { RemoteWork } from "../../subitems/remote-work/index"
+import { ReviewBerezovayaRoshchaSpecial } from "../../subitems/reviews/special/reviewBerezovayaRoshcha"
+import * as reviewStyles from "../../subitems/reviews/review.module.scss"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 
 import { Faq } from "../../subitems/faq/office"
@@ -35,15 +30,6 @@ const ServicesFasad = () => (
       image={""}
     />
     <div className="wrapper">
-      {/* <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      /> */}
       <div className={styles.services_intro + " " + styles.services_intro_facade}>
         <BreadcrumbsServices />
         <h1 className={styles.services_intro_title}>Оформление фасадов</h1>
@@ -60,22 +46,22 @@ const ServicesFasad = () => (
         <StaticImage
           src="../../images/services/fasad/fasad_1.jpg"
           alt=""
-          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img1}
+          className={collageStyles.photocollage_img}
         />
         <StaticImage
           src="../../images/services/fasad/fasad_2.jpg"
           alt=""
-          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img2}
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
         />
         <StaticImage
           src="../../images/services/fasad/fasad_3.jpg"
           alt=""
-          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img3}
+          className={collageStyles.photocollage_img}
         />
         <StaticImage
           src="../../images/services/fasad/fasad_4.jpg"
           alt=""
-          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_fasad_img4}
+          className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
         />
       </PhotoCollage>
     </div>
@@ -197,8 +183,6 @@ const ServicesFasad = () => (
       />
       <StagesFacade />
     </div>
-
-
     <div className="wrapper">
       {/* <div className={styles.services_zndp}>
         <h2 className={styles.services_zndp_title}>Зачем нужен дизайн проект?</h2>
@@ -207,6 +191,13 @@ const ServicesFasad = () => (
           <p className={styles.services_zndp_text_p}>При создании интерьера вашей квартиры мы разрабатываем подробный дизайн-проект. В&nbsp;него входят все необходимые документы для проведения ремонта: от&nbsp;общей концепции интерьера до детализированных технических чертежей.</p>
         </div>
       </div> */}
+      <RemoteWork />
+      <div className={reviewStyles.review}>
+        <h2 className={reviewStyles.review_title}>Отзывы о нашей <br />работе</h2>
+        <div className={reviewStyles.review_items}>
+          <ReviewBerezovayaRoshchaSpecial />
+        </div>
+      </div>
       <div className="line"></div>
       <div className={faqStyles.faq}>
         <h2 className={faqStyles.faq_title}>Часто задаваемые<br />вопросы</h2>

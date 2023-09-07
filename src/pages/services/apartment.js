@@ -19,6 +19,11 @@ import { PhotoCollage } from "../../subitems/photocollage"
 import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
 import { ServicesCost } from "../../subitems/services-cost"
 import { HowWeWork } from "../../subitems/how-we-work/hww"
+import { RemoteWork } from "../../subitems/remote-work/index"
+import { DesignProektDecision } from "../../subitems/dp-decision/index"
+
+import { ReviewBorovlianiSpecial } from "../../subitems/reviews/special/reviewBorovliani"
+import * as reviewStyles from "../../subitems/reviews/review.module.scss"
 
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 
@@ -217,15 +222,38 @@ const ServicesApart = () => (
       <StagesApart />
       <HowWeWork />
       <div className="line"></div>
+      <div className={styles.services__lefttitle_righttext}>
+        <h2 className={styles.services__lefttitle_righttext__title}>Состав дизайн проекта</h2>
+        <div className={styles.services__lefttitle_righttext__text}>
+          <div className={styles.services__lefttitle_righttext__wrap}>
+            <span className={styles.services__lefttitle_righttext__text_span}>Готовый дизайн-проект&nbsp;&mdash; это инструкция по&nbsp;проведению ремонта, поэтому его можно отдать на&nbsp;реализацию прорабу или руководить командой строителей самостоятельно. По&nbsp;окончании работ по&nbsp;созданию дизайн-проекта вы&nbsp;получите пакет документов&nbsp;&mdash; гид по&nbsp;вашему будущему интерьеру.</span>
+          </div>
+          <p className={styles.services__lefttitle_righttext__text_title}>Документ включает в себя:</p>
+          <ul>
+            <li className={styles.services__lefttitle_righttext__text_li}>Несколько вариантов планировки</li>
+            <li className={styles.services__lefttitle_righttext__text_li}>4-6 ракурсов 3D-визуализации каждой комнаты</li>
+            <li className={styles.services__lefttitle_righttext__text_li}>25&nbsp;листов чертежей, подробно иллюстрирующих все технические моменты: от&nbsp;электрики до&nbsp;развёртки стен</li>
+            <li className={styles.services__lefttitle_righttext__text_li}>Полный перечень материалов, которые понадобятся для ремонтных работ</li>
+            <li className={styles.services__lefttitle_righttext__text_li}>Расчет бюджета проекта</li>
+            <li className={styles.services__lefttitle_righttext__text_li}>Смету на&nbsp;ремонтно-отделочные работы</li>
+          </ul>
+        </div>
+      </div>
+      <DesignProektDecision />
+      <RemoteWork />
+      <div className={reviewStyles.review}>
+        <h2 className={reviewStyles.review_title}>Отзывы о нашей <br />работе</h2>
+        <div className={reviewStyles.review_items}>
+          <ReviewBorovlianiSpecial />
+        </div>
+      </div>
+      <div className="line"></div>
       <div className={faqStyles.faq}>
         <h2 className={faqStyles.faq_title}>Часто задаваемые<br />вопросы</h2>
         <div className={faqStyles.faq_items}>
           <Faq/>
         </div>
       </div>
-
-
-      
       <FooterConsultationDmitry />
     </div>
   </Layout>

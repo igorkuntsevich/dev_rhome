@@ -14,9 +14,16 @@ import * as PortfolioItemStyles from "../components/styles/portfolio/portfolio.m
 import * as styles from "../components/styles/index.module.scss"
 // import { PortfolioItems } from "../subitems/portfolio/portfolioItems"
 // import { Footer } from "../components/footer.js"
+import { RemoteWork } from "../subitems/remote-work/index"
+
+
+import { ReviewBelomorskayaSpecial } from "../subitems/reviews/special/reviewBelomorskaya"
+import * as reviewStyles from "../subitems/reviews/review.module.scss"
 
 import { FooterConsultationDmitry } from "../subitems/footer-consultation-dmitry"
 
+import { Faq } from "../subitems/faq/apartment"
+import * as faqStyles from "../subitems/faq/faq.module.scss"
 
 
 const IndexPage = () => (
@@ -184,7 +191,20 @@ const IndexPage = () => (
             </div>
           </SimpleBar>
         </div>
-        
+      </div>
+      <RemoteWork />
+      <div className={reviewStyles.review}>
+        <h2 className={reviewStyles.review_title}>Отзывы о нашей <br />работе</h2>
+        <div className={reviewStyles.review_items}>
+          <ReviewBelomorskayaSpecial />
+        </div>
+      </div>
+      <div className="line"></div>
+      <div className={faqStyles.faq}>
+        <h2 className={faqStyles.faq_title}>Часто задаваемые <br />вопросы</h2>
+        <div className={faqStyles.faq_items}>
+          <Faq/>
+        </div>
       </div>
       <FooterConsultationDmitry />
     </div>
