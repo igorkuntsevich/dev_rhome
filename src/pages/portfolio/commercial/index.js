@@ -31,6 +31,32 @@ const PortfolioCommercial = () => (
         </div>
       </div>
       <div className={styles.portfolio_content}>
+      <PortfolioItem
+          url="/portfolio/commercial/ofis-kazahstan"
+          title="Офис в Казахстане"
+          metr="100"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../../images/portfolio/ofis-kazahstan/00_ofis-kazahstan.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/commercial/hotel-uzbekistan"
+          title="Отель в Узбекистане"
+          metr="400"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../../images/portfolio/hotel-uzbekistan/00_hotel-uzbekistan.jpg"
+              alt=""
+            />
+          }
+        />
         <PortfolioItem
           url="/portfolio/commercial/ofis-bryussel"
           title="Офис в Брюсселе"

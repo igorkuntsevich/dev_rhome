@@ -111,6 +111,33 @@ const ServicesApart = () => (
         <h2 className={styles.services_portfolio_title}>Наши работы</h2>
         <div className={PortfolioItemStyles.portfolio_content}>
         <PortfolioItem
+          url="/portfolio/apartment/apartment-depo"
+          title="Современная квартира в Депо"
+          metr="122"
+          building="7 месяцев"
+          budget={PortfolioItemStyles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../images/portfolio/apartment-depo/00_apartment-depo.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/apartment/apartamenty-keln"
+          title="Апартаменты Кельн"
+          metr="96"
+          building="6 месяцев"
+          budget={PortfolioItemStyles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../images/portfolio/apartamenty-keln/00_apartamenty-keln.jpg"
+              alt=""
+            />
+          }
+        />
+        
+        <PortfolioItem
           url="/portfolio/apartment/zhk-farforovyj"
           title="ЖК&nbsp;Фарфоровый"
           metr="85"
@@ -184,32 +211,6 @@ const ServicesApart = () => (
           image={
             <StaticImage
               src="../../images/portfolio/kvartira-dvuhurovnevaya/00_kvartira-dvuhurovnevaya.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/interer-bryussel-sovremennyj"
-          title="Современный интерьер в Брюсселе"
-          metr="98"
-          building="6 месяцев"
-          budget={PortfolioItemStyles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../../images/portfolio/interer-bryussel-sovremennyj/00_interer-bryussel-sovremennyj.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/kvartira-prestigino"
-          title="Квартира в ЖК «Престижино»"
-          metr="96"
-          building="7 месяцев"
-          budget={PortfolioItemStyles.portfolio_item_cost1}
-          image={
-            <StaticImage
-              src="../../images/portfolio/kvartira-prestigino/00_kvartira-prestigino.jpg"
               alt=""
             />
           }

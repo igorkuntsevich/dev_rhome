@@ -32,6 +32,32 @@ const Portfolio = () => (
         </div>
       </div>
       <div className={styles.portfolio_content}>
+      <PortfolioItem
+          url="/portfolio/apartment/apartment-depo"
+          title="Современная квартира в Депо"
+          metr="122"
+          building="7 месяцев"
+          budget={styles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../images/portfolio/apartment-depo/00_apartment-depo.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/apartment/apartamenty-keln"
+          title="Апартаменты Кельн"
+          metr="96"
+          building="6 месяцев"
+          budget={styles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../images/portfolio/apartamenty-keln/00_apartamenty-keln.jpg"
+              alt=""
+            />
+          }
+        />
         <PortfolioItem
           url="/portfolio/house/dom-ptich"
           title="Дом в&nbsp;поселке Птичь"
@@ -132,6 +158,32 @@ const Portfolio = () => (
           image={
             <StaticImage
               src="../../images/portfolio/dom-leskovka/00_dom-leskovka.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/commercial/ofis-kazahstan"
+          title="Офис в Казахстане"
+          metr="100"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../images/portfolio/ofis-kazahstan/00_ofis-kazahstan.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/commercial/hotel-uzbekistan"
+          title="Отель в Узбекистане"
+          metr="400"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../images/portfolio/hotel-uzbekistan/00_hotel-uzbekistan.jpg"
               alt=""
             />
           }

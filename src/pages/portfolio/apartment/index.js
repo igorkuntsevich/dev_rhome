@@ -31,7 +31,33 @@ const PortfolioApartment = () => (
         </div>
       </div>
       <div className={styles.portfolio_content}>
+      <PortfolioItem
+          url="/portfolio/apartment/apartment-depo"
+          title="Современная квартира в Депо"
+          metr="122"
+          building="7 месяцев"
+          budget={styles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../../images/portfolio/apartment-depo/00_apartment-depo.jpg"
+              alt=""
+            />
+          }
+        />
         <PortfolioItem
+          url="/portfolio/apartment/apartamenty-keln"
+          title="Апартаменты Кельн"
+          metr="96"
+          building="6 месяцев"
+          budget={styles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../../../images/portfolio/apartamenty-keln/00_apartamenty-keln.jpg"
+              alt=""
+            />
+          }
+        />
+      <PortfolioItem
           url="/portfolio/apartment/zhk-farforovyj"
           title="ЖК&nbsp;Фарфоровый"
           metr="85"

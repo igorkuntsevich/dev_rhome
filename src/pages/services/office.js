@@ -81,6 +81,32 @@ const ServicesOffice = () => (
       <div className={styles.services_portfolio}>
         <h2 className={styles.services_portfolio_title}>Наши работы</h2>
         <div className={PortfolioItemStyles.portfolio_content}>
+        <PortfolioItem
+          url="/portfolio/commercial/ofis-kazahstan"
+          title="Офис в Казахстане"
+          metr="100"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../images/portfolio/ofis-kazahstan/00_ofis-kazahstan.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/commercial/hotel-uzbekistan"
+          title="Отель в Узбекистане"
+          metr="400"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../images/portfolio/hotel-uzbekistan/00_hotel-uzbekistan.jpg"
+              alt=""
+            />
+          }
+        />
           <PortfolioItem
             url="/portfolio/commercial/ofis-bryussel"
             title="Офис в Брюсселе"
@@ -134,19 +160,6 @@ const ServicesOffice = () => (
             }
           />
           <PortfolioItem
-            url="/portfolio/commercial/spa-krym"
-            title="SPA в Крыму"
-            metr="94"
-            building="4 месяца"
-            budget={PortfolioItemStyles.portfolio_item_cost2}
-            image={
-              <StaticImage
-                src="../../images/portfolio/spa-krym/00_spa-krym.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
             url="/portfolio/commercial/azs-rechitsa"
             title="Дизайн интерьера АЗС в Речице"
             metr="80"
@@ -168,19 +181,6 @@ const ServicesOffice = () => (
             image={
               <StaticImage
                 src="../../images/portfolio/launzh-bar/00_launzh-bar.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
-            url="/portfolio/commercial/interer-gostinitsy"
-            title="Интерьер гостиницы"
-            metr="450"
-            building=""
-            budget=""
-            image={
-              <StaticImage
-                src="../../images/portfolio/interer-gostinitsy/00_interer-gostinitsy.jpg"
                 alt=""
               />
             }

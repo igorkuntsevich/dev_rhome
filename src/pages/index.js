@@ -60,6 +60,33 @@ const IndexPage = () => (
       <div className={styles.index_portfolio}>
         <h2 className={styles.index_portfolio_title}>Последние проекты</h2>
         <div className={PortfolioItemStyles.portfolio_content}>
+        <PortfolioItem
+          url="/portfolio/apartment/apartment-depo"
+          title="Современная квартира в Депо"
+          metr="122"
+          building="7 месяцев"
+          budget={PortfolioItemStyles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../images/portfolio/apartment-depo/00_apartment-depo.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
+          url="/portfolio/apartment/apartamenty-keln"
+          title="Апартаменты Кельн"
+          metr="96"
+          building="6 месяцев"
+          budget={PortfolioItemStyles.portfolio_item_cost2}
+          image={
+            <StaticImage
+              src="../images/portfolio/apartamenty-keln/00_apartamenty-keln.jpg"
+              alt=""
+            />
+          }
+        />
+          
           <PortfolioItem
             url="/portfolio/house/dom-ptich"
             title="Дом в&nbsp;поселке Птичь"
@@ -100,19 +127,6 @@ const IndexPage = () => (
             }
           />
           <PortfolioItem
-            url="/portfolio/facade/dom-podmoskove"
-            title="Дом в&nbsp;Подмосковье"
-            metr="350"
-            building=""
-            budget={PortfolioItemStyles.portfolio_item_cost2}
-            image={
-              <StaticImage
-                src="../images/portfolio/dom-podmoskove/00_dom-podmoskove.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
             url="/portfolio/house/barnhaus-gorani"
             title="Горани Барнхаус"
             metr="250"
@@ -147,19 +161,6 @@ const IndexPage = () => (
             image={
               <StaticImage
                 src="../images/portfolio/dom-leskovka/00_dom-leskovka.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
-            url="/portfolio/house/interior-borovlyany"
-            title="Интерьер дома в Боровлянах"
-            metr="255"
-            building="16 месяцев"
-            budget={PortfolioItemStyles.portfolio_item_cost2}
-            image={
-              <StaticImage
-                src="../images/portfolio/interior-borovlyany/00_interior-borovlyany.jpg"
                 alt=""
               />
             }
