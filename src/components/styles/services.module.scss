@@ -8,7 +8,9 @@ $mobile: 768px;
   height: 41.7vw;
   padding: 3.3vw 2.5vw;
   margin-bottom: 4.1vw;
+  max-height: 793px;
   @media screen and (min-width: $fullscreen) {
+    padding: 50px 38px;
     margin-bottom: 62px;
   }
   @media screen and (max-width: $mobile) {
@@ -55,8 +57,8 @@ $mobile: 768px;
   color: #FFFFFF;
   position: relative;
   @media screen and (min-width: $fullscreen) {
-    // font-size: 53px;
-    // line-height: 64px;
+    font-size: 53px;
+    line-height: 64px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 10.1vw;

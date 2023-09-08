@@ -28,8 +28,10 @@ export const ReviewBerezovayaRoshchaSpecial = () => {
             <p className={styles.reviews_item_body_text_p}>Еще нам сделали реконструкцию недостроенной террасы. Получилось замечательно: красиво и&nbsp;функционально! Мы&nbsp;постоянно собираемся там семьей и&nbsp;с&nbsp;друзьями! Все сделано на&nbsp;10&nbsp;баллов!</p>
             <p className={styles.reviews_item_body_text_p}>Большое спасибо!</p>
           </div>
-          <button onClick={toggleProcessList} className={styles.reviews_item_body_button} style={hide}>Показать полностью</button>
-          <Link to="/portfolio/house/dom-berezovaya-roshha" className={styles.reviews_item_body_right_link_mob}>Посмотреть проект</Link>
+          <div className={styles.reviews_item_body_buttons}>
+            <button onClick={toggleProcessList} className={styles.reviews_item_body_button} style={hide}>Показать полностью</button>
+            <Link to="/about/reviews" className={styles.reviews_item_body_link}>Посмотреть отзывы</Link>
+          </div>
         </div>
         <div className={styles.reviews_item_body_right}>
           <div className={styles.reviews_item_body_images}>

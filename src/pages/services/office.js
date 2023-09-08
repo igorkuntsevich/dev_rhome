@@ -196,7 +196,7 @@ const ServicesOffice = () => (
 
     <div className="wrapper">
       <div className="line"></div>
-      <div className={styles.services__lefttitle_righttext}>
+      <div className={styles.services__lefttitle_righttext + " " + styles.services__lefttitle_righttext__bigmargin}>
         <h2 className={styles.services__lefttitle_righttext__title}>Состав дизайн проекта</h2>
         <div className={styles.services__lefttitle_righttext__text}>
           <div className={styles.services__lefttitle_righttext__wrap}>

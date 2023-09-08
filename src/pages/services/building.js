@@ -87,7 +87,7 @@ const ServicesBuilding = () => (
       </div>
       <ServicesInterests />
       <Fancybox>
-        <div className={styles.services_gallery}>
+        <div className={styles.services_gallery + " " + "services_gallery"}>
           <SimpleBar forceVisible="y" autoHide={false}>
             <div className={styles.services_gallery_flex}>
               <div className={styles.services_gallery_grid1}>
