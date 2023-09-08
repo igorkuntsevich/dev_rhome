@@ -8,6 +8,7 @@ $mobile: 768px;
   position: relative;
   overflow: hidden;
   margin-bottom: 3.8vw;
+  max-height: 793px;
   @media screen and (min-width: $fullscreen) {
     margin-bottom: 58px;
   }
@@ -17,9 +18,9 @@ $mobile: 768px;
 }
 .cost_intro_left {
   width: 51%;
-  padding: 4.5vw 2.3vw 4.2vw;
+  padding: 6.1vw 2.3vw 4.2vw;
   @media screen and (min-width: $fullscreen) {
-    padding: 68px 35px 64px;
+    padding: 93px 35px 64px;
   }
   @media screen and (max-width: $mobile) {
     width: 100%;
@@ -31,6 +32,9 @@ $mobile: 768px;
   @media screen and (max-width: $mobile) {
     display: none;
   }
+}
+.cost_intro_right_video {
+  display: flex;
 }
 .cost_intro_title {
   font-size: 3.5vw;
@@ -57,6 +61,9 @@ $mobile: 768px;
   padding: 4.2vw 3vw 3.9vw 1.5vw;
   @media screen and (min-width: $fullscreen) {
     padding: 64px 46px 59px 23px;
+  }
+  @media screen and (min-width: $bigfullscreen) {
+    padding: 64px 96px 59px 23px;
   }
   @media screen and (max-width: $mobile) {
     flex-direction: column-reverse;
@@ -421,19 +428,146 @@ $mobile: 768px;
     margin-bottom: 2.4vw;
   }
 }
-// .cost_work {
-//   @media screen and (min-width: $fullscreen) {
+.cost_result {
+  display: flex;
+  background-color: #2D2B2C;
+  border-radius: 30px 0 0 30px;
+  max-width: 1317px;
+  @media screen and (min-width: $fullscreen) {
 
-//   }
-//   @media screen and (max-width: $mobile) {
+  }
+  @media screen and (max-width: $mobile) {
     
-//   }
-// }
-// .cost_work {
-//   @media screen and (min-width: $fullscreen) {
+  }
+}
+.cost_result_left {
+  display: flex;
+  flex-direction: column;
+  padding: 4vw 2.6vw 3.7vw 2.4vw;
+  width: 53%;
+  @media screen and (min-width: $fullscreen) {
 
-//   }
-//   @media screen and (max-width: $mobile) {
+  }
+  @media screen and (max-width: $mobile) {
     
-//   }
-// }
+  }
+}
+.cost_result_text {
+  border: 1px solid #6D6D6D;
+  border-radius: 30px;
+  padding: 3.4vw 3.4vw 3.9vw 1.9vw;
+  margin-bottom: 2.4vw;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+    
+  }
+}
+.cost_result_text_title {
+  font-size: 1.8vw;
+  line-height: 2.3vw;
+  color: #FFFFFF;
+  margin-bottom: 1.6vw;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+    
+  }
+}
+.cost_result_text_p {
+  font-size: 3vw;
+  line-height: 3vw;
+  font-weight: 500;
+  color: #FFFFFF;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+    
+  }
+}
+.cost_result_text_span {
+  font-size: 1.25vw;
+  line-height: 1.7vw;
+  color: #8C8C8C;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+    
+  }
+}
+.cost_result_contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vw;
+  @media screen and (min-width: $fullscreen) {
+  }
+  @media screen and (max-width: $mobile) {
+  }
+}
+.cost_result_contact {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $fullscreen) {
+  }
+  @media screen and (max-width: $mobile) {
+  }
+}
+.cost_result_contact_item {
+  font-size: 1.8vw;
+  line-height: 2.8vw;
+  color: #FFFFFF;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 27px;
+    line-height: 43px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 6.3vw;
+  }
+}
+.cost_result_social {
+  display: flex;
+  gap: 1.1vw;
+  @media screen and (min-width: $fullscreen) {
+    gap: 17px;
+  }
+  @media screen and (max-width: $mobile) {
+    gap: 3.5vw;
+  }
+}
+.cost_result_social_item {
+  width: 4vw;
+  height: 4vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (min-width: $fullscreen) {
+    width: 61px;
+    height: 61px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 8.55vw;
+    height: 8.55vw;
+  }
+}
+.cost_result_social_telegram {
+  background-image: url(../../svg/telegram.svg);
+}
+.cost_result_social_viber {
+  background-image: url(../../svg/viber.svg);
+}
+.cost_result_social_wp {
+  background-image: url(../../svg/whatsapp.svg);
+}
+.cost_result_image {
+  width: 47%;
+  @media screen and (min-width: $fullscreen) {
+
+  }
+  @media screen and (max-width: $mobile) {
+    
+  }
+}

@@ -9,6 +9,7 @@ import * as styles from "../components/styles/cost.module.scss"
 
 import { HowWeWork } from "../subitems/how-we-work/hww"
 
+import video from "../video/cost.mp4"
 import { FooterConsultationDmitry } from "../subitems/footer-consultation-dmitry"
 
 import { Faq } from "../subitems/faq/cost"
@@ -40,11 +41,11 @@ const Cost = () => (
           </div>
         </div>
         <div className={styles.cost_intro_right}>
-          <StaticImage
-            src="../images/cost/cost_intro.jpg"
-            loading="eager"
-            alt=""
-          />
+          <div className={styles.cost_intro_right_video}>
+            <video width="100%" height="auto" muted={true} playsInline={true} autoPlay={true} loop={true} type="video/mp4">
+              <source src={video} type="video/mp4"/>
+            </video>
+          </div>
         </div>
       </div>
       <div className="line"></div>
@@ -103,6 +104,29 @@ const Cost = () => (
       </div>
       <FooterConsultationDmitry />
     </div>
+    {/* <div className={styles.cost_result}>
+      <div className={styles.cost_result_left}>
+        <div className={styles.cost_result_text}>
+          <p className={styles.cost_result_text_title}>Стоимость вашего дизайн-проекта:</p>
+          <p className={styles.cost_result_text_p}>990 у.е. &asymp; 2900&nbsp;р.</p>
+          <span className={styles.cost_result_text_span}>Расчёты осуществляются в&nbsp;белорусских рублях по&nbsp;курсу НБ&nbsp;РБ&nbsp;в&nbsp;день оплаты. Цены в&nbsp;долларах указаны для иностранных граждан. Цены на&nbsp;сайте не&nbsp;являются публичной офертой, а&nbsp;носят только рекламный характер.</span>
+        </div>
+        <div className={styles.cost_result_contacts}>
+          <div className={styles.cost_result_contact}>
+            <a href="/" className={styles.cost_result_contact_item}>+375 (29) 674-83-90</a>
+            <a href="/" className={styles.cost_result_contact_item}>rhomeby@gmail.com</a>
+          </div>
+          <div className={styles.cost_result_social}>
+            <a href="/" className={styles.cost_result_social_item + " " + styles.cost_result_social_telegram}></a>
+            <a href="/" className={styles.cost_result_social_item + " " + styles.cost_result_social_viber}></a>
+            <a href="/" className={styles.cost_result_social_item + " " + styles.cost_result_social_wp}></a>
+          </div>
+        </div>
+      </div>
+      <div className={styles.cost_result_image}>
+      
+      </div>
+    </div> */}
   </Layout>
 )
 

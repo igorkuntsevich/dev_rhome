@@ -29,7 +29,7 @@ const ApartamentyKeln = () => {
                 architector="Илья Горовец, Светлана Рожкова"
                 manager="Дмитрий Разумейчик"
                 data="2023"
-                metr="81"
+                metr="96"
                 building="6 месяцев"
                 budget={styles.project_intro_item_cost2}
               />
