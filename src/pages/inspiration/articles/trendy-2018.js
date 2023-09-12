@@ -14,11 +14,11 @@ import * as styles from "../../../components/styles/about/inspiration.module.scs
 
 
 
-const Minimalizm = () => (
+const Trendy2018 = () => (
   <Layout>
     <Seo 
-      title={"Минимализм - RHOME"} description={"Рассмотрим особенности стиля и как его применять в интерьере"}
-      location={"https://rhome.by/articles/minimalizm"}
+      title={"Что актуально в дизайне интерьера в 2018 - RHOME"} description={"Разберем какие цвета будут актуальные и новый тренд гармонии с природой"}
+      location={"https://rhome.by/articles/trendy-2018"}
       image={""}
     />
     <div className={styles.article}>
@@ -27,15 +27,15 @@ const Minimalizm = () => (
           <div className={styles.articles_intro_breadcrumbs}>
             <BreadcrumbsInspirationArticles />
           </div>
-          <h1 className={styles.articles_intro_title}>Минимализм</h1>
+          <h1 className={styles.articles_intro_title}>Тренды 2018: что актуально в дизайне интерьера в этом году</h1>
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/10_minimalizm.jpg"
+            src="../../../images/inspiration/articles/trendy-2018/09_trendy-2018.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img}
           />
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/00_minimalizm.jpg"
+            src="../../../images/inspiration/articles/trendy-2018/00_trendy-2018.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img_mob}
@@ -286,4 +286,4 @@ const Minimalizm = () => (
   </Layout>
 )
 
-export default Minimalizm
+export default Trendy2018

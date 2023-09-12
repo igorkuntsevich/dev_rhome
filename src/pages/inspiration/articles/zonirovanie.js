@@ -14,11 +14,11 @@ import * as styles from "../../../components/styles/about/inspiration.module.scs
 
 
 
-const Minimalizm = () => (
+const Zonirovanie = () => (
   <Layout>
     <Seo 
-      title={"Минимализм - RHOME"} description={"Рассмотрим особенности стиля и как его применять в интерьере"}
-      location={"https://rhome.by/articles/minimalizm"}
+      title={"Зонирование пространства в интерьере - RHOME"} description={"Вместе с дизайнерами студии RHome сравним популярные методы"}
+      location={"https://rhome.by/articles/zonirovanie"}
       image={""}
     />
     <div className={styles.article}>
@@ -27,15 +27,15 @@ const Minimalizm = () => (
           <div className={styles.articles_intro_breadcrumbs}>
             <BreadcrumbsInspirationArticles />
           </div>
-          <h1 className={styles.articles_intro_title}>Минимализм</h1>
+          <h1 className={styles.articles_intro_title}>Зонирование пространства в интерьере: 5 самых популярных приемов</h1>
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/10_minimalizm.jpg"
+            src="../../../images/inspiration/articles/zonirovanie/06_zonirovanie.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img}
           />
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/00_minimalizm.jpg"
+            src="../../../images/inspiration/articles/zonirovanie/00_zonirovanie.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img_mob}
@@ -286,4 +286,4 @@ const Minimalizm = () => (
   </Layout>
 )
 
-export default Minimalizm
+export default Zonirovanie

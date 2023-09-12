@@ -14,11 +14,11 @@ import * as styles from "../../../components/styles/about/inspiration.module.scs
 
 
 
-const Minimalizm = () => (
+const AvtonomnyeDoma = () => (
   <Layout>
     <Seo 
-      title={"Минимализм - RHOME"} description={"Рассмотрим особенности стиля и как его применять в интерьере"}
-      location={"https://rhome.by/articles/minimalizm"}
+      title={"Лучшие автономные дома мира от архитекторов - RHOME"} description={"Собрали коллекцию автономных домов со всего света"}
+      location={"https://rhome.by/articles/avtonomnye-doma"}
       image={""}
     />
     <div className={styles.article}>
@@ -27,15 +27,15 @@ const Minimalizm = () => (
           <div className={styles.articles_intro_breadcrumbs}>
             <BreadcrumbsInspirationArticles />
           </div>
-          <h1 className={styles.articles_intro_title}>Минимализм</h1>
+          <h1 className={styles.articles_intro_title}>Лучшие автономные дома мира</h1>
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/10_minimalizm.jpg"
+            src="../../../images/inspiration/articles/avtonomnye-doma/09_avtonomnye-doma.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img}
           />
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/00_minimalizm.jpg"
+            src="../../../images/inspiration/articles/avtonomnye-doma/00_avtonomnye-doma.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img_mob}
@@ -286,4 +286,4 @@ const Minimalizm = () => (
   </Layout>
 )
 
-export default Minimalizm
+export default AvtonomnyeDoma

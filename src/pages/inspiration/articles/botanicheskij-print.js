@@ -14,11 +14,11 @@ import * as styles from "../../../components/styles/about/inspiration.module.scs
 
 
 
-const Minimalizm = () => (
+const BotanicheskijPrint = () => (
   <Layout>
     <Seo 
-      title={"Минимализм - RHOME"} description={"Рассмотрим особенности стиля и как его применять в интерьере"}
-      location={"https://rhome.by/articles/minimalizm"}
+      title={"Ботанический принт в интерьере: как использовать - RHOME"} description={"Цветочные принты — это не то что осталось в прошлом."}
+      location={"https://rhome.by/articles/botanicheskij-print"}
       image={""}
     />
     <div className={styles.article}>
@@ -27,15 +27,15 @@ const Minimalizm = () => (
           <div className={styles.articles_intro_breadcrumbs}>
             <BreadcrumbsInspirationArticles />
           </div>
-          <h1 className={styles.articles_intro_title}>Минимализм</h1>
+          <h1 className={styles.articles_intro_title}>Ботанический принт в интерьере: как использовать</h1>
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/10_minimalizm.jpg"
+            src="../../../images/inspiration/articles/botanicheskij-print/08_botanicheskij-print.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img}
           />
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/00_minimalizm.jpg"
+            src="../../../images/inspiration/articles/botanicheskij-print/00_botanicheskij-print.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img_mob}
@@ -286,4 +286,4 @@ const Minimalizm = () => (
   </Layout>
 )
 
-export default Minimalizm
+export default BotanicheskijPrint

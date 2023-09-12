@@ -14,11 +14,11 @@ import * as styles from "../../../components/styles/about/inspiration.module.scs
 
 
 
-const Minimalizm = () => (
+const MebeliIkea = () => (
   <Layout>
     <Seo 
-      title={"Минимализм - RHOME"} description={"Рассмотрим особенности стиля и как его применять в интерьере"}
-      location={"https://rhome.by/articles/minimalizm"}
+      title={"Пять ключевых предметов мебели IKEA от дизайн студии Rhome"} description={"В связи с трагической новостью о смерти основателя популярной шведской мебельной компании IKEA Ингвара Кампрада, мы решили вспомнить пять наиболее важных предметов мебели"}
+      location={"https://rhome.by/articles/mebeli-ikea"}
       image={""}
     />
     <div className={styles.article}>
@@ -27,15 +27,15 @@ const Minimalizm = () => (
           <div className={styles.articles_intro_breadcrumbs}>
             <BreadcrumbsInspirationArticles />
           </div>
-          <h1 className={styles.articles_intro_title}>Минимализм</h1>
+          <h1 className={styles.articles_intro_title}>Пять ключевых предметов мебели IKEA, не теряющих свою актуальность</h1>
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/10_minimalizm.jpg"
+            src="../../../images/inspiration/articles/mebeli-ikea/06_mebeli-ikea.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img}
           />
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/00_minimalizm.jpg"
+            src="../../../images/inspiration/articles/mebeli-ikea/00_mebeli-ikea.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img_mob}
@@ -286,4 +286,4 @@ const Minimalizm = () => (
   </Layout>
 )
 
-export default Minimalizm
+export default MebeliIkea

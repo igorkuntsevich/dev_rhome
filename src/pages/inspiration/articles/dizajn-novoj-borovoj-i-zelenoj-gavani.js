@@ -14,11 +14,11 @@ import * as styles from "../../../components/styles/about/inspiration.module.scs
 
 
 
-const Minimalizm = () => (
+const DizajnNovojBorovoj = () => (
   <Layout>
     <Seo 
-      title={"Минимализм - RHOME"} description={"Рассмотрим особенности стиля и как его применять в интерьере"}
-      location={"https://rhome.by/articles/minimalizm"}
+      title={"Дизайн интерьера квартир в Новой Боровой, Пирсе и Зеленой Гавани - RHOME"} description={"Студия Rhome собрала кейсы из популярных ЖК в Минске"}
+      location={"https://rhome.by/articles/dizajn-novoj-borovoj-i-zelenoj-gavani"}
       image={""}
     />
     <div className={styles.article}>
@@ -27,15 +27,15 @@ const Minimalizm = () => (
           <div className={styles.articles_intro_breadcrumbs}>
             <BreadcrumbsInspirationArticles />
           </div>
-          <h1 className={styles.articles_intro_title}>Минимализм</h1>
+          <h1 className={styles.articles_intro_title}>Дизайн интерьера квартир в Новой Боровой, Пирсе и Зеленой Гавани</h1>
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/10_minimalizm.jpg"
+            src="../../../images/inspiration/articles/dizajn-novoj-borovoj-i-zelenoj-gavani/11_dizajn-novoj-borovoj-i-zelenoj-gavani.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img}
           />
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/00_minimalizm.jpg"
+            src="../../../images/inspiration/articles/dizajn-novoj-borovoj-i-zelenoj-gavani/00_dizajn-novoj-borovoj-i-zelenoj-gavani.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img_mob}
@@ -286,4 +286,4 @@ const Minimalizm = () => (
   </Layout>
 )
 
-export default Minimalizm
+export default DizajnNovojBorovoj

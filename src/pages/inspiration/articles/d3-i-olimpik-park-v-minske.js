@@ -14,11 +14,11 @@ import * as styles from "../../../components/styles/about/inspiration.module.scs
 
 
 
-const Minimalizm = () => (
+const D3Olimpik = () => (
   <Layout>
     <Seo 
-      title={"Минимализм - RHOME"} description={"Рассмотрим особенности стиля и как его применять в интерьере"}
-      location={"https://rhome.by/articles/minimalizm"}
+      title={"Дизайн-проекты интерьера квартир в ЖК D3 и Олимпик Парк - RHOME"} description={"ТОП 5 успешно реализованных дизайн-проектов квартир в жилых кварталах D3 и Олимпик парк в микрорайоне Лебяжий в Минске от студии дизайна интерьера RHome."}
+      location={"https://rhome.by/articles/d3-i-olimpik-park-v-minske"}
       image={""}
     />
     <div className={styles.article}>
@@ -27,15 +27,15 @@ const Minimalizm = () => (
           <div className={styles.articles_intro_breadcrumbs}>
             <BreadcrumbsInspirationArticles />
           </div>
-          <h1 className={styles.articles_intro_title}>Минимализм</h1>
+          <h1 className={styles.articles_intro_title}>5 дизайн-проектов интерьера квартир в ЖК D3 и Олимпик Парк</h1>
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/10_minimalizm.jpg"
+            src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/10_d3-i-olimpik-park-v-minske.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img}
           />
           <StaticImage
-            src="../../../images/inspiration/articles/minimalizm/00_minimalizm.jpg"
+            src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/00_d3-i-olimpik-park-v-minske.jpg"
             loading="eager"
             alt=""
             className={styles.articles_intro_img_mob}
@@ -286,4 +286,4 @@ const Minimalizm = () => (
   </Layout>
 )
 
-export default Minimalizm
+export default D3Olimpik
