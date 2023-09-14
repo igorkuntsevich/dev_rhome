@@ -7,8 +7,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import { PortfolioItem } from "../../../subitems/portfolio"
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
 import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
-import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
+import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
 
@@ -112,7 +112,7 @@ const Modern = () => (
         <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
           <p className={styles.articles__p}>В минимализме есть место не только природным, но и полученным промышленным путем современным высокотехнологичным материалам, но тут крайне важно их качество, безопасность и экологичность. Вопреки расхожему мнению, минималистичный интерьер далеко не бюджетный и требует исключительно качественных, недешевых материалов.</p>
         </div>
-        <div className={styles.project__bigmargin}>
+        <div className={styles.articles__bigmargin}>
               <ProjectConsultationSvetlana
                 text="Интересный прием в отделке стен — вставки панелей из натурального или искусственного материала, например, нержавеющей стали, полированного и фактурного дерева, камня с природными текстурами. Выглядит современно и нескучно."
               />
@@ -150,7 +150,7 @@ const Modern = () => (
           className={styles.articles__one_image + " " + styles.articles__bigmargin}
         />
         </div>
-        <div className={styles.project__bigmargin}>
+        <div className={styles.articles__bigmargin}>
               <ProjectConsultationSvetlana
                 text="Чтобы усилить декоративный эффект от искусственного света, в минимализме активно используются отражающие (глянцевые) поверхности мебели, стекло и даже глянцевые наливные полы."
               />
@@ -200,7 +200,7 @@ const Modern = () => (
         <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
           <p className={styles.articles__p}>Конечно же, полностью отказываться от аксессуаров и других интересных деталей не стоит. Правильно подобранный декор может качественно дополнить интерьер, стать частью продуманного и красивого пространства. Главное – не переборщить. Например, вместо картины в шикарной раме лучше подобрать простой современный постер.</p>
         </div>
-        <div className={styles.project__bigmargin}>
+        <div className={styles.articles__bigmargin}>
               <ProjectConsultationSvetlana
                 text="Минимализм предпочитает крупные формы в декоре: выбирая вазы и скульптуры, выбирайте размеры L, XL. А при выборе искусства предпочтение лучше отдать крупным фигурам вместо мелкого коллажа."
               />

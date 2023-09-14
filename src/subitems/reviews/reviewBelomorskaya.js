@@ -3,11 +3,11 @@ import * as styles from "./review.module.scss"
 import { StaticImage } from "gatsby-plugin-image"
 
 export const ReviewBelomorskaya = () => {
-  const [openProcessList , setOpenProcessList] = useState(false);
-  const toggleProcessList =()=>{
-    setOpenProcessList(!openProcessList);
+  const [openReviewList , setOpenReviewList] = useState(false);
+  const toggleReviewList =()=>{
+    setOpenReviewList(!openReviewList);
   };
-  const hide = openProcessList? {display:"none"}:{};
+  const hide = openReviewList? {display:"none"}:{};
   return (
     <div>
       <div className={styles.reviews_item_head}>
@@ -18,16 +18,16 @@ export const ReviewBelomorskaya = () => {
       </div>
       <div className={styles.reviews_item_body}>
         <div className={styles.reviews_item_body_text}>
-          <div className={styles.reviews_item_body_text_wrap + " " + styles.reviews_item_body_text_wrap1 + " " + (openProcessList? `${styles.open}` : "")}>
+          <div className={styles.reviews_item_body_text_wrap + " " + styles.reviews_item_body_text_wrap1 + " " + (openReviewList? `${styles.open}` : "")}>
             <p className={styles.reviews_item_body_text_p}>&mdash;&nbsp;Наше сотрудничество с&nbsp;RHOME началось года 2&nbsp;назад, когда мы&nbsp;занимались поиском студии для создания дизайн проекта нашей квартиры. После обстоятельной беседы с&nbsp;директором Сергеем Рассеко мы&nbsp;остановили свой выбор именно на&nbsp;дизайн-студии RHOME.</p>
             <p className={styles.reviews_item_body_text_p}>Уже после первого общения сложилось впечатление, что команда работает проффесионально, слажено и&nbsp;ориентироана на&nbsp;удовлетворение пожеланий клиента. Так и&nbsp;оказалось. Мы&nbsp;получили не&nbsp;только визуализации будущего интерьера, но&nbsp;и&nbsp;подробную комплектацию с&nbsp;ценами на&nbsp;все материалы и&nbsp;мебель.</p>
           </div>
-          <div className={styles.reviews_item_body_text_hidden + " " + (openProcessList? `${styles.open}` : "")}>
+          <div className={styles.reviews_item_body_text_hidden + " " + (openReviewList? `${styles.open}` : "")}>
             <p className={styles.reviews_item_body_text_p}>Строиться решили тоже вместе с&nbsp;RHOME. Студия работает только со&nbsp;своими строителями, так что не&nbsp;было опасений, что дизайн-проект будет испорчен реализацией, как это часто бывает. Мы&nbsp;также заказали услугу авторский надзор, чтобы реальность соответствовала ожиданиям.</p>
             <p className={styles.reviews_item_body_text_p}>Авторский надзор вел Дмитрий Разумейчик. Нам было очень комфортно с&nbsp;ним работать на&nbsp;этапе разработки дизайн-проекта, так что мы&nbsp;с&nbsp;удовольствием продолжили наше сотрудничество и&nbsp;на&nbsp;этапе реализации. Сейчас ремонт в&nbsp;квартире завершается, доделываем последние детали. Мы&nbsp;очень довольна тем, как все получилось!</p>
             <p className={styles.reviews_item_body_text_p}>Большое спасибо Дмитрию и&nbsp;всей команде за&nbsp;чуткость и&nbsp;профессионализм!</p>
           </div>
-          <button onClick={toggleProcessList} className={styles.reviews_item_body_button} style={hide}>Показать полностью</button>
+          <button onClick={toggleReviewList} className={styles.reviews_item_body_button} style={hide}>Показать полностью</button>
         </div>
         <div className={styles.reviews_item_body_right}>
           <div className={styles.reviews_item_body_images}>
