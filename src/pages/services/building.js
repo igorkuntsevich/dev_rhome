@@ -1,15 +1,13 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../../components/styles/services.module.scss"
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
-import Fancybox from "../../components/fancybox.js";
+import { BuildingGallery } from "../../subitems/building-gallery"
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
 import { ServicesInterests } from "../../subitems/services-cost/services-interests"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
-
 
 
 
@@ -86,188 +84,7 @@ const ServicesBuilding = () => (
         <p className={styles.services_schedule_text}>Предоставляем графики работ, оплат и&nbsp;поставок материалов. Графики нужны для того, чтобы отладить и&nbsp;сделать прозрачными все процессы. Вы&nbsp;заранее будете знать, когда и&nbsp;кем будут выполняться работы и&nbsp;когда нужно вносить оплату. Кроме того, раннее планирование позволяет избежать простоев и&nbsp;сократить время строительных работ.</p>
       </div>
       <ServicesInterests />
-      <Fancybox>
-        <div className={styles.services_gallery + " " + "services_gallery"}>
-          <SimpleBar forceVisible="y" autoHide={false}>
-            <div className={styles.services_gallery_flex}>
-              <div className={styles.services_gallery_grid1}>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_3.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_2.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_11.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_5.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_9.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_10.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_17.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a><a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_14.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_19.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-              </div>
-              <div className={styles.services_gallery_grid2}>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_4.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_8.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_1.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_15.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_12.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_7.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_16.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_18.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_13.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-                <a href="https://rhome.by/images/inspiration/photos/apartamenty-manhetten/01_apartamenty-manhetten.jpg"
-                  data-fancybox="gallery">
-                  <StaticImage
-                    src="../../images/services/building/building_6.jpg"
-                    alt=""
-                    loading="eager"
-                    className={styles.services_gallery_img}
-                  />
-                </a>
-              </div>
-            </div>
-          </SimpleBar>
-        </div>
-      </Fancybox>
+      <BuildingGallery />
       <div className="line"></div>
       <div className={styles.services__lefttitle_righttext}>
         <h2 className={styles.services__lefttitle_righttext__title}>Инженер по&nbsp;качеству на&nbsp;проекте</h2>
