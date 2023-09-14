@@ -667,3 +667,13 @@ $mobile: 768px;
     margin-bottom: 7vw;
   }
 }
+
+.articles_video {
+  height: 53.7vw;
+  @media screen and (min-width: $bigfullscreen) {
+    height: 1040px;
+  }
+  @media screen and (max-width: $mobile) {
+    height: 52vw;
+  }
+}
