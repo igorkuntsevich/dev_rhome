@@ -4,10 +4,8 @@ import Seo from "../../../components/seo"
 // import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import { PortfolioItem } from "../../../subitems/portfolio"
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
 import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
-import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
@@ -44,91 +42,22 @@ const BotanicheskijPrint = () => (
 
 
         <div className={styles.articles_intro_text}>
-          <p className={styles.articles_intro_p}>В рамках гида по стилям от студии R-home (предыдущие статьи можно посмотреть здесь ) продолжаем знакомить вас с самыми популярными стилями в дизайне интерьеров. На очереди — минимализм — четкий, функциональный и выверенный до миллиметра. Это стиль для тех, кто устал от сложных форм и готов отказаться от всего лишнего, оставив только самое необходимое для жизни.</p>
+          <p className={styles.articles_intro_p}>В одной из наших прошлых статей о главных интерьерных трендах этого года мы уже рассказывали о популярности ботанических принтов в современных городских квартирах. В этой статье мы рассмотрим самые удачные идеи использования ботанического принта в доме и наглядно покажем, как грамотно вписать такой яркий рисунок в свой интерьер, чтобы наверняка превратить его в тропический рай.</p>
         </div>
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
           <h2 className={styles.articles__lefttitle_righttext__title}>История</h2>
           <div>
-          <p className={styles.articles__p}>Сам термин происходит от латинского слова minimus, что значит «наименьший». Пожалуй, это слово и есть отражение сути всей стилистики минимализма — отрицание избыточности. Элементов должно быть как можно меньше, а свободного места как можно больше. Соответственно, самый важный этап в создании подобного интерьера — грамотная организация пространства, формирование объема помещения при минимальном декоре.</p>
-            <p className={styles.articles__p}>Мода на минималистичные интерьеры появилась в Америке еще в середине 1960-х, но прообразы этого стиля можно встретить еще раньше – в конструктивизме и традиционной японской культуре. Благодаря техническому прогрессу произошла переоценка существующих традиций оформления интерьеров и строительства, стали использоваться в основном натуральные промышленные материалы, простые геометрические формы и нейтральные цвета. Сегодня этот стиль многие считают дизайном будущего, когда отпадет необходимость в лишнем декорировании, ведь человеку очень важно дома прежде всего отдыхать и проводить время с близкими, а не любоваться милыми безделушками, которые только отвлекают от сути и предназначения интерьера.</p>
+          <p className={styles.articles__p}>Яркие тропические мотивы и сдержанные ботанические узоры, кажется, не собираются покидать стены и элементы декора и в следующем году. И это неудивительно: насыщенный зеленый цвет и всевозможные растительные принты делают интерьер свежим, легким и по-настоящему летним независимо от времени года за окном.</p>
+            <p className={styles.articles__p}>В последнее время растительные узоры часто мелькали на самых масштабных всемирных выставках. Принты с банановыми и пальмовыми листьями сейчас, пожалуй, самые модные, причем, они могут быть где угодно: на обоях, в обивке мебели, в декоре и даже на одежде. Такие ботанические рисунки можно считать своеобразной современной интерпретацией цветочных, только они более графичные и не такие женственные. К тому же такой ботанический тренд отлично вписывается в самые разные стили, будь то скандинавский, бохо, эклектика или ретро.</p>
           </div>
         </div>
 
 
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/01_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Со временем минимализм как стиль в интерьере занял особое место, и это прежде всего заслуга немецкой и голландской школ дизайна. Немцы привнесли в него такие принципы, как лаконичные формы и цвета, функциональность и комфорт. Голландцы же пропагандировали свой цвет для каждой плоскости и прямоугольные формы. По сей день азбукой минимализма считается работа немецкого дизайнера Дитера Рамса «Принципы хорошего дизайна». Согласно его версии, хороший дизайн связан с инновациями, эстетичен, экологичен, функционален и продуман. Но самое главное — он содержит как можно меньше дизайна, то есть ненужных деталей и декора.</p>
-        </div>
-
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/02_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Очень важно понимать, что минимализм — это не просто стиль в интерьере, это, скорее, философия жизни, которая предлагает отказаться от многих привычных нашему менталитету вещей и наполнить свой дом только самым необходимым. Что еще несет в себе минимализм и как оформить свое жилище в этом стиле грамотно и нескучно – объясняем и показываем на примерах, а практические советы дизайнеров студии R-home помогут понять, подойдет ли такой интерьер для жизни именно вам.</p>
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>В целом, если говорить об основных чертах стиля, можно выделить 4 базовых идеи минимализма:</h2>
-          <div>
-            <ul>
-              <li className={styles.articles__li}>чистота пространства;</li>
-              <li className={styles.articles__li}>натуральная гамма;</li>
-              <li className={styles.articles__li}>инновационные фактуры;</li>
-              <li className={styles.articles__li}>функциональная мебель.</li>
-            </ul>
-          </div>
-        </div>
-
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Материалы</h2>
-          <div>
-          <p className={styles.articles__p}>Минимализм тяготеет к аскетичности, но не к дешевизне. Поэтому здесь предполагается активное использование в первую очередь качественных натуральных материалов, таких как стекло, зеркало, камень, дерево, полированный цемент. При этом поверхности должны быть хорошо обработаны, возможно, покрыты лаком для придания глянцевого эффекта.</p>
-            <p className={styles.articles__p}>Минималистичные интерьеры требуют просторных и открытых помещений. В этом смысле зеркала — идеальный материал для визуального расширения небольшого пространства. В качестве напольного покрытия в минимализме приветствуется использование широкоформатных плит, которые придают комнате бесшовный внешний вид. В отделке стен желательно использовать краску или однотонные текстурные обои, можно c мелким несложным принтом.</p>
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/03_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>В минимализме есть место не только природным, но и полученным промышленным путем современным высокотехнологичным материалам, но тут крайне важно их качество, безопасность и экологичность. Вопреки расхожему мнению, минималистичный интерьер далеко не бюджетный и требует исключительно качественных, недешевых материалов.</p>
-        </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Интересный прием в отделке стен — вставки панелей из натурального или искусственного материала, например, нержавеющей стали, полированного и фактурного дерева, камня с природными текстурами. Выглядит современно и нескучно."
-              />
-        </div>
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Цветовая палитра</h2>
-          <div>
-          <p className={styles.articles__p}>В интерьере обычно не используют больше одного-двух цветов, чаще всего это оттенки одной гаммы. Такая монохромность многим может показаться скучной и холодной. Чтобы избежать этого эффекта, в рамках одного цвета лучше использовать разные, но не очень активные текстуры. Чередуйте матовое с глянцевым, шероховатое с абсолютно гладким. И вы удивитесь, насколько выразительным и ярким может стать монохромный интерьер.</p>
-            <p className={styles.articles__p}>Большинство дизайнеров для создания минималистичного интерьера советуют придерживаться натуральной гаммы: белый, черный, бежевый, серый, цвет натурального дерева, оттенки охры и хаки. Однако, если такая палитра кажется вам слишком скучной, можно обратиться к мексиканскому варианту минимализма и выкрасить все помещение (стены, пол и потолок) яркой цветной штукатуркой.</p>
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/04_minimalizm.jpg"
+          src="../../../images/inspiration/articles/botanicheskij-print/01_botanicheskij-print.jpg"
           alt=""
           className={styles.articles__one_image}
         />
@@ -136,47 +65,55 @@ const BotanicheskijPrint = () => (
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Свет</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Обои</h2>
           <div>
-          <p className={styles.articles__p}>Освещению отводится едва ли не самая главная роль в оформлении минималистичного интерьера. Основная часть света должна поступать из окон. Окна обязательно должны быть большими, ведь их основная функция — насыщать пространство воздухом и соединять жилье с внешним миром, делая окружающую действительность частью интерьера. Отсюда главное правило: забудьте о шторах и портьерах, в минималистичных интерьерах они неуместны. Но если все же хочется как-то оформить окна и защитить себя от солнечных лучей, лучше использовать горизонтальные жалюзи или роллеты.</p>
-          <p className={styles.articles__p}>Искусственный свет в минимализме часто используется как декор. Тут речь идет не о светильниках самих по себе (они должны быть простыми и геометричными), а об освещении разного спектра, которому под силу скорректировать и преобразить интерьер. При необходимости создать рабочую атмосферу используют яркий дневной свет. Для проведения вечеринок и приема гостей – более мягкие расслабляющие источники. Разнообразная подсветка и направляемый технический свет – все это весомый элемент декорирования в минимализме.</p>
+          <p className={styles.articles__p}>Годом рождения тропического принта считается 1940 год, когда американский дизайнер Дороти Драйпер впервые использовала рисунок с банановыми листьями Brazilliance Wallpaper для печати на обоях. С тех пор прошло не одно десятилетие, а этот принт все еще вдохновляет дизайнеров и художников по всему миру на создание все новых и новых коллекций с тропическими мотивами. Ведущие производители обоев предлагают нам разместить на своих стенах пальмы, папоротники, банановые листья и заросли джунглей. Обои с разнообразной зеленью в технике горячего тиснения – главный тренд 2018 года. Причем чаще всего эта экзотическая флора выступает крупным планом. Конечно, такие варианты очень броские, поэтому не стоит ими злоупотреблять: в этом случае обои лучше клеить на одну акцентную стену, чтобы они не начали вас раздражать уже через неделю.</p>
+          
           </div>
         </div>
 
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/05_minimalizm.jpg"
+          src="../../../images/inspiration/articles/botanicheskij-print/02_botanicheskij-print.jpg"
           alt=""
           className={styles.articles__one_image + " " + styles.articles__bigmargin}
         />
         </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Чтобы усилить декоративный эффект от искусственного света, в минимализме активно используются отражающие (глянцевые) поверхности мебели, стекло и даже глянцевые наливные полы."
-              />
+
+        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
+          <p className={styles.articles__p}>Если вы не сторонник ярких стен и кардинальных способов преображения пространства, можно купить белые обои со спокойным растительным узором. Зеленый цвет бодрит и благотворно влияет на нервную систему, к тому же сдержанный растительный узор будет отлично смотреться как в современном интерьере, так и в классическом. Популярные дизайнеры интерьеров сейчас активно предлагают использовать ботанический принт не только в гостиной, но также в спальне, и даже в ванной комнате. Обратите внимание, насколько роскошно смотрятся глубокие зелёные оттенки в паре с натуральным деревом, латунью и позолоченными деталями.</p>
         </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/botanicheskij-print/03_botanicheskij-print.jpg"
+          alt=""
+          className={styles.articles__one_image}
+        />
+        </div>
+
+
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Мебель</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Текстиль</h2>
           <div>
-          <p className={styles.articles__p}>Основная задача минимализма — создать интерьер с ощущением незагруженного пространства. Отсюда и главный принцип выбора мебели: ее должно быть немного, она должна быть функциональной и лаконичной. Дизайнеры при проектировании минималистичных интерьеров часто используют принцип 20-80, где мебель в помещении занимает 20%, а остальная часть остается свободной.</p>
-
+          <p className={styles.articles__p}>Домашний текстиль – еще один отличный способ включить ботанические принты в свой интерьер. Шторы, декоративные подушки, покрывала, коврики — любая деталь будет изысканно смотреться в такой расцветке и идеально поддержит тренд ботаники в оформлении дома. Таким образом вы получите нужный акцент, не перегрузив слишком интерьер.</p>
+            <p className={styles.articles__p}>Очень удачно изображения растений будут смотреться на постельном белье. К пестрым подушкам с принтами лучше добавлять однотонные простыни и пододеяльники или наоборот. Так получится свежая и яркая спальня, которая не будет утомлять владельца многообразием цветов.</p>
           </div>
         </div>
+
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/06_minimalizm.jpg"
+          src="../../../images/inspiration/articles/botanicheskij-print/04_botanicheskij-print.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Чтобы поддержать чистоту стиля, обязательно заранее тщательно продумать системы хранения. Для этих целей лучше использовать встроенные конструкции. Шкафы, вмонтированные в стену, – удачное решение. В целом, мобильная мебель, которую легко спрятать, в приоритете. Мягкая мебель имеет строгую геометрию форм, она лишена декора и витиеватостей, а самой важной характеристикой любого предмета является его функциональность. Обязательный must-have – металлические каркасы, тонкие прямые ножки, лаконичная дизайнерская мебель, прямоугольные и квадратные конструкции.</p>
-        </div>
+
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/09_minimalizm.gif"
+          src="../../../images/inspiration/articles/botanicheskij-print/05_botanicheskij-print.jpg"
           alt=""
           className={styles.articles__one_image}
         />
@@ -184,69 +121,55 @@ const BotanicheskijPrint = () => (
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Декор</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Картины и постеры</h2>
           <div>
-          <p className={styles.articles__p}>Как уже отмечалось, аксессуаров в минималистичном интерьере должно быть минимум. Здесь нет места милым безделушкам, редко используемым предметам и приятных глазу мелочей. Все, что присутствует в помещении, функционально и выполняет свое предназначение.</p>
-
+          <p className={styles.articles__p}>Если не хотите радикально менять интерьер, начните с малого – картин и постеров на стенах. Например, в живописи есть отдельное направление – ботаническая иллюстрация, когда художник изображает растения очень детально. Такие иллюстрации можно найти на блошиных рынках, в старых книгах по ботанике, в магазинах декора для дома и в коллекциях современных художников. При желании уникальную картину с растительными мотивами можно нарисовать и самостоятельно. Если не умеете рисовать – не беда: сделайте отпечаток с живых цветов и листьев либо засушите гербарий, как в школьные времена.</p>
+            <p className={styles.articles__p}>Постеры и плакаты с изображениями различных видов растений способны органично вписаться практически в любой интерьер. Повесив на стену картинки с ботаническими принтами вы не только стильно оформите стены, но и привнесете в свою комнату частицу естественной природной гармонии.</p>
           </div>
         </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/07_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Конечно же, полностью отказываться от аксессуаров и других интересных деталей не стоит. Правильно подобранный декор может качественно дополнить интерьер, стать частью продуманного и красивого пространства. Главное – не переборщить. Например, вместо картины в шикарной раме лучше подобрать простой современный постер.</p>
-        </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Минимализм предпочитает крупные формы в декоре: выбирая вазы и скульптуры, выбирайте размеры L, XL. А при выборе искусства предпочтение лучше отдать крупным фигурам вместо мелкого коллажа."
-              />
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Кому подойдет интерьер в стиле минимализм</h2>
-          <div>
-          <p className={styles.articles__p}>Минимализм – это течение для современных деловых людей, предпочитающих во всем и везде порядок. Здесь неуместен хаос, поэтому этот стиль больше всего подходит людям педантичным, скрупулезным. Минимализм подходит личностям рациональным, в какой-то степени перфекционистам, с легкостью готовым отказаться от многих привычных, комфортных, но бесполезных в жизни вещей в пользу чистого сбалансированного пространства.</p>
 
-          </div>
-        </div>
+
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/08_minimalizm.jpg"
+          src="../../../images/inspiration/articles/botanicheskij-print/06_botanicheskij-print.jpg"
           alt=""
           className={styles.articles__one_image}
         />
         </div>
+
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h3 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Посмотреть примеры интерьеров в стиле минимализм от студии дизайна R-home можно тут:</h3>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Живые растения</h2>
+          <div>
+          <p className={styles.articles__p}>Конечно, оживить интерьер и усилить эффект популярных ботанических принтов помогут их натуральные сородичи – живые растения. Комнатные цветы не только визуально освежают и украшают жилище, они также очищают воздух в вашем доме, обогащают его кислородом.</p>
+            <p className={styles.articles__p}>При оформлении комнаты живыми растениями стоит учитывать некоторые правила. Например, крупнолистные растения будут лучше смотреться в просторных незахламленных помещениях, а вот растения с невзрачными листьями лучше собирать в группу. Особенно волшебно смотрятся подвесные горшки и кашпо, которые в советские времена так любили развешивать в квартирах наши бабушки, а сейчас необыкновенно популярны в Европе.</p>
+          </div>
         </div>
 
 
-        <div className={styles.articles__project}>
-          <StaticImage
-            src="../../../images/portfolio/dom-terassa/04_dom-terassa.jpg"
-            loading="eager"
-            alt=""
-            className={styles.articles__one_image}
-          />
-        <PortfolioItem
-          url="/portfolio/facade/dom-terassa/"
-          title="Дом с открытой террасой"
-          metr="450"
-          building=""
-          budget=""
-          image={
-            <StaticImage
-              src="../../../images/portfolio/dom-terassa/00_dom-terassa.jpg"
-              alt=""
-            />
-          }
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/botanicheskij-print/07_botanicheskij-print.jpg"
+          alt=""
+          className={styles.articles__one_image}
         />
         </div>
+
+
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h3 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Как использовать тропический принт в интерьере</h3>
+        </div>
+
+        <div className={styles.articles_video + " " + styles.articles__bigmargin}>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/s95NviMTpME?si=wRmHW7qFS_43Xll5" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
+          <p className={styles.articles__p}>Как видите, создать вечнозеленый интерьер можно различными способами. Живые растения и разнообразные ботанические принты – отличный способ добавить в свою жизнь больше цвета и свежести. В нашей стране, где большую часть года холодно и пасмурно, использование такого яркого принта в интерьере может стать реальным спасением от усталости и недостатка света. Главное: не бойтесь экспериментировать!</p>
+        </div>
+
 
       </div>
     </div>

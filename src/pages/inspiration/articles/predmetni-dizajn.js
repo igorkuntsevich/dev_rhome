@@ -7,7 +7,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import { PortfolioItem } from "../../../subitems/portfolio"
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
 import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
-import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
@@ -44,204 +43,214 @@ const PredmetniDizajn = () => (
 
 
         <div className={styles.articles_intro_text}>
-          <p className={styles.articles_intro_p}>В рамках гида по стилям от студии R-home (предыдущие статьи можно посмотреть здесь ) продолжаем знакомить вас с самыми популярными стилями в дизайне интерьеров. На очереди — минимализм — четкий, функциональный и выверенный до миллиметра. Это стиль для тех, кто устал от сложных форм и готов отказаться от всего лишнего, оставив только самое необходимое для жизни.</p>
-        </div>
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>История</h2>
-          <div>
-          <p className={styles.articles__p}>Сам термин происходит от латинского слова minimus, что значит «наименьший». Пожалуй, это слово и есть отражение сути всей стилистики минимализма — отрицание избыточности. Элементов должно быть как можно меньше, а свободного места как можно больше. Соответственно, самый важный этап в создании подобного интерьера — грамотная организация пространства, формирование объема помещения при минимальном декоре.</p>
-            <p className={styles.articles__p}>Мода на минималистичные интерьеры появилась в Америке еще в середине 1960-х, но прообразы этого стиля можно встретить еще раньше – в конструктивизме и традиционной японской культуре. Благодаря техническому прогрессу произошла переоценка существующих традиций оформления интерьеров и строительства, стали использоваться в основном натуральные промышленные материалы, простые геометрические формы и нейтральные цвета. Сегодня этот стиль многие считают дизайном будущего, когда отпадет необходимость в лишнем декорировании, ведь человеку очень важно дома прежде всего отдыхать и проводить время с близкими, а не любоваться милыми безделушками, которые только отвлекают от сути и предназначения интерьера.</p>
-          </div>
-        </div>
-
-
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/01_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Со временем минимализм как стиль в интерьере занял особое место, и это прежде всего заслуга немецкой и голландской школ дизайна. Немцы привнесли в него такие принципы, как лаконичные формы и цвета, функциональность и комфорт. Голландцы же пропагандировали свой цвет для каждой плоскости и прямоугольные формы. По сей день азбукой минимализма считается работа немецкого дизайнера Дитера Рамса «Принципы хорошего дизайна». Согласно его версии, хороший дизайн связан с инновациями, эстетичен, экологичен, функционален и продуман. Но самое главное — он содержит как можно меньше дизайна, то есть ненужных деталей и декора.</p>
-        </div>
-
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/02_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Очень важно понимать, что минимализм — это не просто стиль в интерьере, это, скорее, философия жизни, которая предлагает отказаться от многих привычных нашему менталитету вещей и наполнить свой дом только самым необходимым. Что еще несет в себе минимализм и как оформить свое жилище в этом стиле грамотно и нескучно – объясняем и показываем на примерах, а практические советы дизайнеров студии R-home помогут понять, подойдет ли такой интерьер для жизни именно вам.</p>
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>В целом, если говорить об основных чертах стиля, можно выделить 4 базовых идеи минимализма:</h2>
-          <div>
-            <ul>
-              <li className={styles.articles__li}>чистота пространства;</li>
-              <li className={styles.articles__li}>натуральная гамма;</li>
-              <li className={styles.articles__li}>инновационные фактуры;</li>
-              <li className={styles.articles__li}>функциональная мебель.</li>
-            </ul>
-          </div>
+          <p className={styles.articles_intro_p}>Каждый год на различных выставках именитые дизайнеры представляют новые и все более оригинальные предметы интерьера. Большинство из них популярны здесь и сейчас и, скорее всего, выйдут из моды через пару лет. Впрочем, есть в мире предметного дизайна и свои иконы стиля, которые с честью пережили испытание временем и не утратили своей актуальности и по сей день. В этой статье мы расскажем о 8 самых популярных предметах интерьера, ставших классикой, которые вы, вероятно, не раз видели в кино, на страницах интерьерных журналов и, конечно, в проектах студии R-home.</p>
         </div>
 
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Материалы</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Кресло Grand Confort</h2>
           <div>
-          <p className={styles.articles__p}>Минимализм тяготеет к аскетичности, но не к дешевизне. Поэтому здесь предполагается активное использование в первую очередь качественных натуральных материалов, таких как стекло, зеркало, камень, дерево, полированный цемент. При этом поверхности должны быть хорошо обработаны, возможно, покрыты лаком для придания глянцевого эффекта.</p>
-            <p className={styles.articles__p}>Минималистичные интерьеры требуют просторных и открытых помещений. В этом смысле зеркала — идеальный материал для визуального расширения небольшого пространства. В качестве напольного покрытия в минимализме приветствуется использование широкоформатных плит, которые придают комнате бесшовный внешний вид. В отделке стен желательно использовать краску или однотонные текстурные обои, можно c мелким несложным принтом.</p>
+          <p className={styles.articles__p}>Трудно поверить, но впервые это кресло было представлено в Париже в 1929 году, однако даже спустя почти 90 лет оно все еще выглядит современно и актуально. Создателями данного предмета мебели считаются сразу несколько именитых дизайнеров и архитекторов: Ле Корбюзье, Пьер Жаннере и Шарлотта Перьен. Так как изначально кресло предназначалось для одного из проектов, над которым работал уже известный в то время Ле Корбюзье, то в историю эта модель вошла именно под его авторством.</p>
+          <p className={styles.articles__p}>Grand Confort LC2 Club Chair (так звучит полное название модели) выполнено из гнутых стальных трубок и матовой черной кожи и идеально подходит для интерьеров в стиле лофт. Однако в последние годы появились разноцветные вариации этого кресла, что сделало модель еще более универсальной.</p>
           </div>
         </div>
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/03_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>В минимализме есть место не только природным, но и полученным промышленным путем современным высокотехнологичным материалам, но тут крайне важно их качество, безопасность и экологичность. Вопреки расхожему мнению, минималистичный интерьер далеко не бюджетный и требует исключительно качественных, недешевых материалов.</p>
-        </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Интересный прием в отделке стен — вставки панелей из натурального или искусственного материала, например, нержавеющей стали, полированного и фактурного дерева, камня с природными текстурами. Выглядит современно и нескучно."
-              />
-        </div>
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Цветовая палитра</h2>
-          <div>
-          <p className={styles.articles__p}>В интерьере обычно не используют больше одного-двух цветов, чаще всего это оттенки одной гаммы. Такая монохромность многим может показаться скучной и холодной. Чтобы избежать этого эффекта, в рамках одного цвета лучше использовать разные, но не очень активные текстуры. Чередуйте матовое с глянцевым, шероховатое с абсолютно гладким. И вы удивитесь, насколько выразительным и ярким может стать монохромный интерьер.</p>
-            <p className={styles.articles__p}>Большинство дизайнеров для создания минималистичного интерьера советуют придерживаться натуральной гаммы: белый, черный, бежевый, серый, цвет натурального дерева, оттенки охры и хаки. Однако, если такая палитра кажется вам слишком скучной, можно обратиться к мексиканскому варианту минимализма и выкрасить все помещение (стены, пол и потолок) яркой цветной штукатуркой.</p>
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/04_minimalizm.jpg"
+          src="../../../images/inspiration/articles/predmetni-dizajn/03_predmetni-dizajn.jpg"
           alt=""
           className={styles.articles__one_image}
         />
         </div>
 
+
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Свет</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Торшер Arco Flos</h2>
           <div>
-          <p className={styles.articles__p}>Освещению отводится едва ли не самая главная роль в оформлении минималистичного интерьера. Основная часть света должна поступать из окон. Окна обязательно должны быть большими, ведь их основная функция — насыщать пространство воздухом и соединять жилье с внешним миром, делая окружающую действительность частью интерьера. Отсюда главное правило: забудьте о шторах и портьерах, в минималистичных интерьерах они неуместны. Но если все же хочется как-то оформить окна и защитить себя от солнечных лучей, лучше использовать горизонтальные жалюзи или роллеты.</p>
-          <p className={styles.articles__p}>Искусственный свет в минимализме часто используется как декор. Тут речь идет не о светильниках самих по себе (они должны быть простыми и геометричными), а об освещении разного спектра, которому под силу скорректировать и преобразить интерьер. При необходимости создать рабочую атмосферу используют яркий дневной свет. Для проведения вечеринок и приема гостей – более мягкие расслабляющие источники. Разнообразная подсветка и направляемый технический свет – все это весомый элемент декорирования в минимализме.</p>
+          <p className={styles.articles__p}>Несомненно, вы не раз видели этот необычный светильник на страницах журналов, в фильмах и современных интерьерах. Этот знаменитый торшер в 1962 году специально для бренда Flos создал известный итальянский дизайнер Акилле Кастильони, который заметил, что выход под люстру в его столовой находится в центре потолка, а вот сам обеденный стол располагается в стороне, поэтому осветить его сложно. В итоге Кастильони подарил миру безупречный напольный светильник, который с легкостью может заменить потолочный.</p>
+          <p className={styles.articles__p}>Arco Flos — это беспроигрышное решение для гостиной, столовой и зоны отдыха. Стальная дуга торшера состоит из подвижных элементов, благодаря чему можно легко регулировать ее длину, высоту и направление света, а стильный утяжелитель из белого каррарского мрамора отлично впишется практически в любой интерьер. И, кстати, за пятьдесят шесть лет своего существования дизайн Arco не поменялся ни на йоту.</p>
           </div>
         </div>
-
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/05_minimalizm.jpg"
+          src="../../../images/inspiration/articles/predmetni-dizajn/08_predmetni-dizajn.jpg"
           alt=""
           className={styles.articles__one_image + " " + styles.articles__bigmargin}
         />
         </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Чтобы усилить декоративный эффект от искусственного света, в минимализме активно используются отражающие (глянцевые) поверхности мебели, стекло и даже глянцевые наливные полы."
-              />
-        </div>
 
-        <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Мебель</h2>
-          <div>
-          <p className={styles.articles__p}>Основная задача минимализма — создать интерьер с ощущением незагруженного пространства. Отсюда и главный принцип выбора мебели: ее должно быть немного, она должна быть функциональной и лаконичной. Дизайнеры при проектировании минималистичных интерьеров часто используют принцип 20-80, где мебель в помещении занимает 20%, а остальная часть остается свободной.</p>
-
-          </div>
+        <p className={styles.articles__p}>Посмотреть торшер Arco Flos в интерьере можно в проекте студии R-home Квартира на ул. Сторожевская.</p>
         </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/06_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Чтобы поддержать чистоту стиля, обязательно заранее тщательно продумать системы хранения. Для этих целей лучше использовать встроенные конструкции. Шкафы, вмонтированные в стену, – удачное решение. В целом, мобильная мебель, которую легко спрятать, в приоритете. Мягкая мебель имеет строгую геометрию форм, она лишена декора и витиеватостей, а самой важной характеристикой любого предмета является его функциональность. Обязательный must-have – металлические каркасы, тонкие прямые ножки, лаконичная дизайнерская мебель, прямоугольные и квадратные конструкции.</p>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/09_minimalizm.gif"
-          alt=""
-          className={styles.articles__one_image}
-        />
-        </div>
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Декор</h2>
-          <div>
-          <p className={styles.articles__p}>Как уже отмечалось, аксессуаров в минималистичном интерьере должно быть минимум. Здесь нет места милым безделушкам, редко используемым предметам и приятных глазу мелочей. Все, что присутствует в помещении, функционально и выполняет свое предназначение.</p>
-
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/07_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Конечно же, полностью отказываться от аксессуаров и других интересных деталей не стоит. Правильно подобранный декор может качественно дополнить интерьер, стать частью продуманного и красивого пространства. Главное – не переборщить. Например, вместо картины в шикарной раме лучше подобрать простой современный постер.</p>
-        </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Минимализм предпочитает крупные формы в декоре: выбирая вазы и скульптуры, выбирайте размеры L, XL. А при выборе искусства предпочтение лучше отдать крупным фигурам вместо мелкого коллажа."
-              />
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Кому подойдет интерьер в стиле минимализм</h2>
-          <div>
-          <p className={styles.articles__p}>Минимализм – это течение для современных деловых людей, предпочитающих во всем и везде порядок. Здесь неуместен хаос, поэтому этот стиль больше всего подходит людям педантичным, скрупулезным. Минимализм подходит личностям рациональным, в какой-то степени перфекционистам, с легкостью готовым отказаться от многих привычных, комфортных, но бесполезных в жизни вещей в пользу чистого сбалансированного пространства.</p>
-
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/08_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image}
-        />
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h3 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Посмотреть примеры интерьеров в стиле минимализм от студии дизайна R-home можно тут:</h3>
-        </div>
-
 
         <div className={styles.articles__project}>
           <StaticImage
-            src="../../../images/portfolio/dom-terassa/04_dom-terassa.jpg"
+            src="../../../images/portfolio/kvartira-storozhevskaya/03_kvartira-storozhevskaya.jpg"
             loading="eager"
             alt=""
             className={styles.articles__one_image}
           />
         <PortfolioItem
-          url="/portfolio/facade/dom-terassa/"
-          title="Дом с открытой террасой"
+          url="/portfolio/apartment/kvartira-storozhevskaya/"
+          title="Квартира на ул. Сторожевская"
+          metr="270"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../../images/portfolio/kvartira-storozhevskaya/00_kvartira-storozhevskaya.jpg"
+              alt=""
+            />
+          }
+        />
+        </div>
+
+
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Стул Louis Ghost</h2>
+          <div>
+          <p className={styles.articles__p}>Стул Louis Ghost (или «Призрак Людовика») — результат творческого союза популярного современного дизайнера Филиппа Старка и итальянской мебельной фабрики Kartell. Впервые он был продемонстрирован публике в 2002 году и представлял собой современную версию классического кресла короля Луи XVI, выполненного из прозрачного пластика. Этот уникальный объект соединяет в себе элементы классицизма и инновационный актуальный дизайн и потому одинаково уместно смотрится как в классических интерьерах, так и в современных.</p>
+          <p className={styles.articles__p}>Стул изготовлен из прочного пластика и, несмотря на свою визуальную хрупкость, выдерживает вес больше 100 килограмм. Он не отвлекает на себя внимание, полностью сливается с интерьером и не загромождает пространство. Louis Ghost на данный момент, пожалуй, самый тиражируемый объект из дизайнерских предметов мебели благодаря своей универсальности и сравнительно небольшой цене.</p>
+          </div>
+        </div>
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/predmetni-dizajn/05_predmetni-dizajn.jpg"
+          alt=""
+          className={styles.articles__one_image}
+        />
+        </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Кресло Egg Chair</h2>
+          <div>
+          <p className={styles.articles__p}>В 1958 году датский архитектор и дизайнер Арне Якобсен работал над проектом Radisson Blu Royal Hotel в Копенгагене. Специально для этого отеля он создал кресло, похожее на скорлупу яйца, которое впоследствии стало одним из самых легендарных его творений.</p>
+          <p className={styles.articles__p}>Egg Chair — функциональное и комфортное кресло в стиле модерн в свое время произвело настоящий фурор среди ценителей дизайнерской мебели, однако не потеряло своей актуальности до сих пор. Оригинальная конструкция кресла не только эффектно выглядит, но и обладает звукоизоляционным эффектом, позволяет по-настоящему расслабиться, почувствовать себя в уединении, словно в «скорлупе».</p>
+          </div>
+        </div>
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/predmetni-dizajn/02_predmetni-dizajn.jpg"
+          alt=""
+          className={styles.articles__one_image}
+        />
+        </div>
+
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Светильник Artichoke</h2>
+          <div>
+          <p className={styles.articles__p}>Настоящая классика предметного дизайна — светильник Artichoke, разработанный в 1958 году специально для ресторана Langelinie Pavillonen в Копенгагене. Его автор, датский дизайнер Поуль Хеннингсен, вдохновился причудливой формой растения артишок и придумал необычную конструкцию светильника, которая на протяжении вот уже 60 лет остается без изменений.</p>
+          <p className={styles.articles__p}>Artichoke состоит из двенадцати стальных обручей, на которых расположены 72 медных листа в шахматном порядке. Такая конструкция обеспечивает равномерное освещение и позволяет не слепить глаза ярким светом. Выпускает этот светильник датская фабрика Louis Poulsen в трех цветах (медь, нержавеющая сталь, белый) и в четырех разных размерах (от 48 до 84 см в диаметре). Однако имейте в виду: люстра Artichoke весит от 25 кг и для ее удержания необходим очень крепкий потолочный крюк.</p>
+          </div>
+        </div>
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/predmetni-dizajn/07_predmetni-dizajn.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__lefttitle_righttext}>
+        <p className={styles.articles__p}>Посмотреть светильник Artichoke в интерьере можно в проекте студии R-home Интерьер дома в Гомеле.</p>
+        </div>
+
+        <div className={styles.articles__project}>
+          <StaticImage
+            src="../../../images/portfolio/interer-gomel/15_interer-gomel.jpg"
+            loading="eager"
+            alt=""
+            className={styles.articles__one_image}
+          />
+        <PortfolioItem
+          url="/portfolio/house/interer-gomel/"
+          title="Интерьер дома в Гомеле"
           metr="450"
           building=""
           budget=""
           image={
             <StaticImage
-              src="../../../images/portfolio/dom-terassa/00_dom-terassa.jpg"
+              src="../../../images/portfolio/interer-gomel/00_interer-gomel.jpg"
+              alt=""
+            />
+          }
+        />
+        </div>
+
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Кресло Barcelona</h2>
+          <div>
+          <p className={styles.articles__p}>Это легендарное кресло было спроектировано в 1929 году специально для Международной выставки искусств в Барселоне архитектором-модернистом Людвигом Мисван дер Роэ. Выставку посетили и король Алфонсо VIII с королевой Викторией Евгенией, которые обратили свое внимание на этот необычный для того времени предмет интерьера, после чего кресло Barcelona пресса тут же окрестила «примером дизайна, достойного королей».</p>
+          <p className={styles.articles__p}>Серийно производить кресло начали в 1953 году, и очень быстро эта модель завоевала статус чуть ли не главного атрибута жизни успешного человека. Строгость линий наряду с естественным изяществом и удобством сделали кресло Barcelona украшением каждого второго современного интерьера, символизируя о высоком вкусе и статусе владельца.</p>
+          </div>
+        </div>
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/predmetni-dizajn/01_predmetni-dizajn.jpg"
+          alt=""
+          className={styles.articles__one_image}
+        />
+        </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Стол Tulip</h2>
+          <div>
+          <p className={styles.articles__p}>Tulip — это еще один образец вневременной классики, который впервые был представлен общественности в далеком 1940 году американским дизайнером финского происхождения Ээро Саариненом. Этот необычный обеденный стол стал результатом экспериментов дизайнера со стеклопластиком, а форма его была вдохновлена каплей вязкой жидкости, медленно падающей и растекающейся по полу. В 1940-х идея мебели на одной ножке была поистине революционной, а футуристичный дизайн быстро сделал его любимцем не одного поколения дизайнеров.</p>
+          <p className={styles.articles__p}>Сейчас Tulip представлен в нескольких вариациях — от компактного придиванного столика до большого обеденного — и имеет множество модификаций столешницы и цветовых решений. Такой стол вполне может стать ярким акцентом в помещении и гармонично вписаться как в классический, так и современный интерьер.</p>
+          </div>
+        </div>
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/predmetni-dizajn/04_predmetni-dizajn.jpg"
+          alt=""
+          className={styles.articles__one_image}
+        />
+        </div>
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Стул Wishbone</h2>
+          <div>
+          <p className={styles.articles__p}>В 1949 году Ханс Вегнер, один из главных модернистов скандинавского дизайна, разработал для датской фабрики Carl Hansen & Søn оригинальный стул, который в итоге стал одним из самых выдающихся творений дизайнера. Спинка этого стула напоминает вилочковую кость курицы, которую по традиции ломают «на счастье», отсюда и название — Wishbone.</p>
+          <p className={styles.articles__p}>Благодаря элегантным тонким ножкам и перекладинам из гнутого дерева стул весит совсем немного, а эргономичная спинка обеспечивает надежную поддержку позвоночника сидящего. В целом дизайн отличается лаконичностью и преобладанием простых, чистых линий. Модель была запущена в массовое производство в 1950 году и бесперебойно выпускается и по сей день, а палитра стульев регулярно пополняется новыми цветами и оттенками, что делает стул Wishbone универсальным и подходящим для любого стиля.</p>
+          </div>
+        </div>
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/predmetni-dizajn/06_predmetni-dizajn.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__lefttitle_righttext}>
+        <p className={styles.articles__p}>Посмотреть стул Wishbone в интерьере можно в проекте студии R-home Современная квартира с нотками скандинавского стиля.</p>
+        </div>
+
+        <div className={styles.articles__project}>
+          <StaticImage
+            src="../../../images/portfolio/kvartira-skandinavsk/03_kvartira-skandinavsk.jpg"
+            loading="eager"
+            alt=""
+            className={styles.articles__one_image}
+          />
+        <PortfolioItem
+          url="/portfolio/apartment/kvartira-skandinavsk/"
+          title="Современная квартира с нотками скандинавского стиля"
+          metr="113"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../../images/portfolio/kvartira-skandinavsk/00_kvartira-skandinavsk.jpg"
               alt=""
             />
           }

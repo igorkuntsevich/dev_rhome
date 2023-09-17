@@ -8,6 +8,7 @@ import { PortfolioItem } from "../../../subitems/portfolio"
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
 import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
 import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
+import { ProjectConsultationAlexey } from '../../../subitems/project/consultation/project-consultation-alexey'
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
@@ -44,91 +45,176 @@ const SkandinavskijStil = () => (
 
 
         <div className={styles.articles_intro_text}>
-          <p className={styles.articles_intro_p}>В рамках гида по стилям от студии R-home (предыдущие статьи можно посмотреть здесь ) продолжаем знакомить вас с самыми популярными стилями в дизайне интерьеров. На очереди — минимализм — четкий, функциональный и выверенный до миллиметра. Это стиль для тех, кто устал от сложных форм и готов отказаться от всего лишнего, оставив только самое необходимое для жизни.</p>
-        </div>
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>История</h2>
-          <div>
-          <p className={styles.articles__p}>Сам термин происходит от латинского слова minimus, что значит «наименьший». Пожалуй, это слово и есть отражение сути всей стилистики минимализма — отрицание избыточности. Элементов должно быть как можно меньше, а свободного места как можно больше. Соответственно, самый важный этап в создании подобного интерьера — грамотная организация пространства, формирование объема помещения при минимальном декоре.</p>
-            <p className={styles.articles__p}>Мода на минималистичные интерьеры появилась в Америке еще в середине 1960-х, но прообразы этого стиля можно встретить еще раньше – в конструктивизме и традиционной японской культуре. Благодаря техническому прогрессу произошла переоценка существующих традиций оформления интерьеров и строительства, стали использоваться в основном натуральные промышленные материалы, простые геометрические формы и нейтральные цвета. Сегодня этот стиль многие считают дизайном будущего, когда отпадет необходимость в лишнем декорировании, ведь человеку очень важно дома прежде всего отдыхать и проводить время с близкими, а не любоваться милыми безделушками, которые только отвлекают от сути и предназначения интерьера.</p>
-          </div>
-        </div>
-
-
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/01_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Со временем минимализм как стиль в интерьере занял особое место, и это прежде всего заслуга немецкой и голландской школ дизайна. Немцы привнесли в него такие принципы, как лаконичные формы и цвета, функциональность и комфорт. Голландцы же пропагандировали свой цвет для каждой плоскости и прямоугольные формы. По сей день азбукой минимализма считается работа немецкого дизайнера Дитера Рамса «Принципы хорошего дизайна». Согласно его версии, хороший дизайн связан с инновациями, эстетичен, экологичен, функционален и продуман. Но самое главное — он содержит как можно меньше дизайна, то есть ненужных деталей и декора.</p>
+          <p className={styles.articles_intro_p}>Интерьер в скандинавском стиле на протяжении последних лет пользуется исключительной популярностью у наших соотечественников, что неудивительно, ведь функциональность, простота и естественность стиля скандинавских стран притягивает внимание еще и своей доступностью в плане бюджета и дизайнерских решений.</p>
         </div>
 
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/02_minimalizm.jpg"
+          src="../../../images/inspiration/articles/skandinavskij-stil/01_skandinavskij-stil.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Очень важно понимать, что минимализм — это не просто стиль в интерьере, это, скорее, философия жизни, которая предлагает отказаться от многих привычных нашему менталитету вещей и наполнить свой дом только самым необходимым. Что еще несет в себе минимализм и как оформить свое жилище в этом стиле грамотно и нескучно – объясняем и показываем на примерах, а практические советы дизайнеров студии R-home помогут понять, подойдет ли такой интерьер для жизни именно вам.</p>
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>В целом, если говорить об основных чертах стиля, можно выделить 4 базовых идеи минимализма:</h2>
-          <div>
-            <ul>
-              <li className={styles.articles__li}>чистота пространства;</li>
-              <li className={styles.articles__li}>натуральная гамма;</li>
-              <li className={styles.articles__li}>инновационные фактуры;</li>
-              <li className={styles.articles__li}>функциональная мебель.</li>
-            </ul>
-          </div>
         </div>
 
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Материалы</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Мода на скандинавский образ жизни</h2>
           <div>
-          <p className={styles.articles__p}>Минимализм тяготеет к аскетичности, но не к дешевизне. Поэтому здесь предполагается активное использование в первую очередь качественных натуральных материалов, таких как стекло, зеркало, камень, дерево, полированный цемент. При этом поверхности должны быть хорошо обработаны, возможно, покрыты лаком для придания глянцевого эффекта.</p>
-            <p className={styles.articles__p}>Минималистичные интерьеры требуют просторных и открытых помещений. В этом смысле зеркала — идеальный материал для визуального расширения небольшого пространства. В качестве напольного покрытия в минимализме приветствуется использование широкоформатных плит, которые придают комнате бесшовный внешний вид. В отделке стен желательно использовать краску или однотонные текстурные обои, можно c мелким несложным принтом.</p>
+          <p className={styles.articles__p}>Необычайно популярный сегодня, он пришел к нам из Северной Европы, где достаточно суровый климат, затяжные зимы и недостаток солнечного света, и потому отлично подошел и для наших широт. Мода на скандинавский образ жизни со временем только растет, а сам стиль постепенно трансформируется. Особый всплеск интереса к северным интерьерам случился благодаря широкому распространению книги Майка Викинга «Hugge. Секрет датского счастья» и самого понятия hugge как такового. </p>
+            <p className={styles.articles__p}>Эта философия основывалась на принципах создания максимального уюта в доме, где каждая деталь интерьера продумана до мелочей и поддерживает атмосферу умиротворения и спокойствия. Постепенно идея уюта по-датски сменилась шведской концепцией lagom — более рациональной и прагматичной. Основная идея этой философии заключается в умении сохранять равновесие, жить в гармонии с окружающей средой, избегать чрезмерности и не перегружать свою жизнь лишними деталями.</p>
           </div>
         </div>
+
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/03_minimalizm.jpg"
+          src="../../../images/inspiration/articles/skandinavskij-stil/02_skandinavskij-stil.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
+          <p className={styles.articles__p}>Безусловно, как у любого другого, у скандинавского стиля есть свои правила, особенности, плюсы и минусы, о которых вы узнаете из этой статьи, а практические советы дизайнеров студии R-home помогут понять, подойдет ли такой интерьер для жизни именно вам.</p>
+        </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Свет в скандинавском интерьере</h2>
+          <div>
+          <p className={styles.articles__p}>Скандинавский стиль сформировался под влиянием северного сурового климата, где основная задача – обеспечение помещения максимальным количеством естественного света. Именно поэтому окна в скандинавских квартирах обычно крупногабаритные, а шторы либо отсутствуют вовсе, либо выполнены из легких, полупрозрачных тканей.</p>
+            <p className={styles.articles__p}>К сожалению, несмотря на схожесть климата, наши застройщики не часто балуют владельцев квартир большими окнами. Конечно, расширить оконный проем можно, но это очень сложный и недешевый процесс, гораздо проще позаботиться заранее о грамотном искусственном освещении.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/skandinavskij-stil/03_skandinavskij-stil.jpg"
           alt=""
           className={styles.articles__one_image + " " + styles.articles__bigmargin}
         />
         </div>
 
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>В минимализме есть место не только природным, но и полученным промышленным путем современным высокотехнологичным материалам, но тут крайне важно их качество, безопасность и экологичность. Вопреки расхожему мнению, минималистичный интерьер далеко не бюджетный и требует исключительно качественных, недешевых материалов.</p>
-        </div>
         <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Интересный прием в отделке стен — вставки панелей из натурального или искусственного материала, например, нержавеющей стали, полированного и фактурного дерева, камня с природными текстурами. Выглядит современно и нескучно."
+              <ProjectConsultationAlexey
+                text="Скандинавский интерьер любит сложные световые схемы, которые сочетают в себе разноуровневое освещение и использование различных видов осветительных приборов: от светодиодной подсветки и спотов до разнообразных торшеров и настольных ламп."
+              />
+        </div>
+
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Цвет в скандинавском интерьере</h2>
+          <div>
+          <p className={styles.articles__p}>Активное использование белого цвета в отделке также обусловлено стремлением сделать помещение более светлым и просторным. Светлые стены и потолок обеспечивают максимальное распространение света в доме – солнечные лучи отражаются от белоснежных поверхностей и распространяются по всей площади квартиры. Чтобы солнце отражалось еще лучше, поверхности могут быть не только светлыми, но и глянцевыми.</p>
+            <p className={styles.articles__p}>Яркие цвета в большинстве случаев используют исключительно в качестве небольших декоративных элементов, а изначально теплые оттенки – коричневый, красный, песочный – в скандинавском интерьере транслируются обычно в максимально холодных тонах.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/skandinavskij-stil/04_skandinavskij-stil.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__bigmargin}>
+              <ProjectConsultationAlexey
+                text="Конечно, цветовая гамма скандинавского стиля не ограничивается только белым. Чтобы квартира не превратилась в больницу, дозированно добавляйте в интерьер зеленые, бежевые, темно-синие, вишневые, серые тона и черные контрасты."
               />
         </div>
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Цветовая палитра</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Материалы в скандинавском интерьере</h2>
           <div>
-          <p className={styles.articles__p}>В интерьере обычно не используют больше одного-двух цветов, чаще всего это оттенки одной гаммы. Такая монохромность многим может показаться скучной и холодной. Чтобы избежать этого эффекта, в рамках одного цвета лучше использовать разные, но не очень активные текстуры. Чередуйте матовое с глянцевым, шероховатое с абсолютно гладким. И вы удивитесь, насколько выразительным и ярким может стать монохромный интерьер.</p>
-            <p className={styles.articles__p}>Большинство дизайнеров для создания минималистичного интерьера советуют придерживаться натуральной гаммы: белый, черный, бежевый, серый, цвет натурального дерева, оттенки охры и хаки. Однако, если такая палитра кажется вам слишком скучной, можно обратиться к мексиканскому варианту минимализма и выкрасить все помещение (стены, пол и потолок) яркой цветной штукатуркой.</p>
+          <p className={styles.articles__p}>Скандинавский стиль характеризуется использованием преимущественно натуральных материалов – дерево для отделки и мебели, керамика и камень для облицовки поверхностей, мех, хлопок и лен для декоративной драпировки.</p>
+            <p className={styles.articles__p}>Дерево – безоговорочный фаворит в скандинавском интерьере. Оно приветствуется везде: на полу, на стенах и даже на потолке. Натуральная древесина (сосна, бук, ясень), покрытая лаком или окрашенная в белый цвет, станет лучшим выбором в качестве напольного покрытия. Но если вы все-таки решитесь использовать искусственные аналоги природных материалов, помните: они должны идеально имитировать натуральное сырье.</p>
           </div>
         </div>
+
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/04_minimalizm.jpg"
+          src="../../../images/inspiration/articles/skandinavskij-stil/05_skandinavskij-stil.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__bigmargin}>
+              <ProjectConsultationSvetlana
+                text="Так как скандинавский интерьер всегда стремится к естественности и простоте, приветствуется минимальная обработка дерева. В качестве напольных покрытий чаще всего используется не ламинат, а простой дощатый пол из светлых пород дерева или структурированный паркет с неброским рисунком."
+              />
+        </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Мебель в скандинавском интерьере</h2>
+          <div>
+          <p className={styles.articles__p}>Универсальная, эргономичная, удобная – вот основные черты мебели в скандинавском стиле. Никаких громоздких шкафов, сложных футуристических форм и вычурных элементов. Мебель в скандинавском интерьере исключительно проста и функциональна, иногда с налетом ретро. Это лаконичные диваны-трансформеры, практичные открытые стеллажи, стильные журнальные столики, минималистичные модульные конструкции и нередко культовые предметы от популярных скандинавских дизайнеров.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/skandinavskij-stil/06_skandinavskij-stil.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
+          <p className={styles.articles__p}>Так как мы говорим о стиле, который пришел к нам с севера, неудивительно, что в нем достаточно часто встречается такой элемент, как камин: электрический, газовый или самый настоящий дровяной. В целом, даже декоративный каминный портал будет вполне уместен в скандинавской стилистике и придаст помещению ощущение тепла и уюта.</p>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/skandinavskij-stil/07_skandinavskij-stil.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__bigmargin}>
+              <ProjectConsultationSvetlana
+                text="Наполняя интерьер мебелью, помните, что минималистски ориентированный скандинавский стиль не терпит нагромождения, поэтому чем меньше пространство квартиры или дома, тем проще должна быть обстановка и тем меньше в ней должно быть мебели."
+              />
+        </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Аксессуары в скандинавском интерьере</h2>
+          <div>
+          <p className={styles.articles__p}>Гармония, простота, функциональность как основные черты скандинавского стиля делают его комфортным для самых разных людей, а чтобы интерьер стал особенным, самобытным и приобрел свой индивидуальный почерк, стоит вспомнить об аксессуарах. Сделать помещение неповторимым помогут необычные стеклянные вазы, вешалки, зеркала, дизайнерские светильники, оригинальные картины и постеры, а также разнообразные живые растения в вязаных кашпо. Причем декоративные элементы из масс-маркета в данном случае одинаково классно сочетаются как с «бабушкиным» антиквариатом, так и с штучными арт-объектами.</p>
+          <p className={styles.articles__p}>Декор по-скандинавски очень сдержанный и не терпит перенасыщения различными аксессуарами, он призван в первую очередь привнести уют и гармонию в дом, а не бросаться в глаза. Главным инструментом декорирования тут является текстиль – мягкие пледы, длинноворсовые ковры, льняные шторы, яркие подушки – интересные детали, которые делают интерьер по-настоящему уникальным.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/skandinavskij-stil/08_skandinavskij-stil.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__bigmargin}>
+              <ProjectConsultationSvetlana
+                text="Излюбленный прием при создании скандинавского стиля — расставлять элементы декора прямо на полу, избавляя стены от полок. Это позволяет визуально вытянуть помещение и увеличить высоту потолка."
+              />
+        </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Кому подойдет скандинавский интерьер</h2>
+          <div>
+          <p className={styles.articles__p}>Скандинавский стиль идеально подходит тем, кто ценит в первую очередь уют и тепло домашнего очага, кто не любит пафоса и вычурности, для кого функциональность и простота является главным критерием комфорта. К тому же этот стиль отлично впишется в помещение любых размеров, будь то огромный дом с панорамными окнами посреди леса или небольшая хрущевка в спальном районе.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/skandinavskij-stil/09_skandinavskij-stil.jpg"
           alt=""
           className={styles.articles__one_image}
         />
@@ -136,117 +222,53 @@ const SkandinavskijStil = () => (
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Свет</h2>
-          <div>
-          <p className={styles.articles__p}>Освещению отводится едва ли не самая главная роль в оформлении минималистичного интерьера. Основная часть света должна поступать из окон. Окна обязательно должны быть большими, ведь их основная функция — насыщать пространство воздухом и соединять жилье с внешним миром, делая окружающую действительность частью интерьера. Отсюда главное правило: забудьте о шторах и портьерах, в минималистичных интерьерах они неуместны. Но если все же хочется как-то оформить окна и защитить себя от солнечных лучей, лучше использовать горизонтальные жалюзи или роллеты.</p>
-          <p className={styles.articles__p}>Искусственный свет в минимализме часто используется как декор. Тут речь идет не о светильниках самих по себе (они должны быть простыми и геометричными), а об освещении разного спектра, которому под силу скорректировать и преобразить интерьер. При необходимости создать рабочую атмосферу используют яркий дневной свет. Для проведения вечеринок и приема гостей – более мягкие расслабляющие источники. Разнообразная подсветка и направляемый технический свет – все это весомый элемент декорирования в минимализме.</p>
-          </div>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Посмотреть примеры интерьеров с элементами скандинавского стиля от студии дизайна R-home можно тут:</h2>
         </div>
-
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/05_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Чтобы усилить декоративный эффект от искусственного света, в минимализме активно используются отражающие (глянцевые) поверхности мебели, стекло и даже глянцевые наливные полы."
-              />
-        </div>
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Мебель</h2>
-          <div>
-          <p className={styles.articles__p}>Основная задача минимализма — создать интерьер с ощущением незагруженного пространства. Отсюда и главный принцип выбора мебели: ее должно быть немного, она должна быть функциональной и лаконичной. Дизайнеры при проектировании минималистичных интерьеров часто используют принцип 20-80, где мебель в помещении занимает 20%, а остальная часть остается свободной.</p>
-
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/06_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Чтобы поддержать чистоту стиля, обязательно заранее тщательно продумать системы хранения. Для этих целей лучше использовать встроенные конструкции. Шкафы, вмонтированные в стену, – удачное решение. В целом, мобильная мебель, которую легко спрятать, в приоритете. Мягкая мебель имеет строгую геометрию форм, она лишена декора и витиеватостей, а самой важной характеристикой любого предмета является его функциональность. Обязательный must-have – металлические каркасы, тонкие прямые ножки, лаконичная дизайнерская мебель, прямоугольные и квадратные конструкции.</p>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/09_minimalizm.gif"
-          alt=""
-          className={styles.articles__one_image}
-        />
-        </div>
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Декор</h2>
-          <div>
-          <p className={styles.articles__p}>Как уже отмечалось, аксессуаров в минималистичном интерьере должно быть минимум. Здесь нет места милым безделушкам, редко используемым предметам и приятных глазу мелочей. Все, что присутствует в помещении, функционально и выполняет свое предназначение.</p>
-
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/07_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Конечно же, полностью отказываться от аксессуаров и других интересных деталей не стоит. Правильно подобранный декор может качественно дополнить интерьер, стать частью продуманного и красивого пространства. Главное – не переборщить. Например, вместо картины в шикарной раме лучше подобрать простой современный постер.</p>
-        </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Минимализм предпочитает крупные формы в декоре: выбирая вазы и скульптуры, выбирайте размеры L, XL. А при выборе искусства предпочтение лучше отдать крупным фигурам вместо мелкого коллажа."
-              />
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Кому подойдет интерьер в стиле минимализм</h2>
-          <div>
-          <p className={styles.articles__p}>Минимализм – это течение для современных деловых людей, предпочитающих во всем и везде порядок. Здесь неуместен хаос, поэтому этот стиль больше всего подходит людям педантичным, скрупулезным. Минимализм подходит личностям рациональным, в какой-то степени перфекционистам, с легкостью готовым отказаться от многих привычных, комфортных, но бесполезных в жизни вещей в пользу чистого сбалансированного пространства.</p>
-
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/08_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image}
-        />
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h3 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Посмотреть примеры интерьеров в стиле минимализм от студии дизайна R-home можно тут:</h3>
-        </div>
-
 
         <div className={styles.articles__project}>
           <StaticImage
-            src="../../../images/portfolio/dom-terassa/04_dom-terassa.jpg"
+            src="../../../images/portfolio/kvartira-skandinavsk/03_kvartira-skandinavsk.jpg"
             loading="eager"
             alt=""
             className={styles.articles__one_image}
           />
         <PortfolioItem
-          url="/portfolio/facade/dom-terassa/"
-          title="Дом с открытой террасой"
-          metr="450"
+          url="/portfolio/apartment/kvartira-skandinavsk/"
+          title="Современная квартира с нотками скандинавского стиля"
+          metr="113"
           building=""
           budget=""
           image={
             <StaticImage
-              src="../../../images/portfolio/dom-terassa/00_dom-terassa.jpg"
+              src="../../../images/portfolio/kvartira-skandinavsk/00_kvartira-skandinavsk.jpg"
               alt=""
             />
           }
         />
         </div>
+
+        <div className={styles.articles__project}>
+          <StaticImage
+            src="../../../images/portfolio/malesuada-fames/03_malesuada-fames.jpg"
+            loading="eager"
+            alt=""
+            className={styles.articles__one_image}
+          />
+        <PortfolioItem
+          url="/portfolio/house/malesuada-fames/"
+          title="Дом в скандинавском стиле"
+          metr="600"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../../images/portfolio/malesuada-fames/00_malesuada-fames.jpg"
+              alt=""
+            />
+          }
+        />
+        </div>
+
 
       </div>
     </div>

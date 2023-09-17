@@ -200,7 +200,7 @@ const Articles = () => (
           chapter="Технологии"
         />
         <InspirationArticle
-          url="/inspiration/articles/endentsii-oboev/"
+          url="/inspiration/articles/tendentsii-oboev/"
           backgroundColor="#CFD6D6"
           title="Модные тенденции обоев 2018 года"
           chapter="Тенденции"

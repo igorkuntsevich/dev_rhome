@@ -4,10 +4,8 @@ import Seo from "../../../components/seo"
 // import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import { PortfolioItem } from "../../../subitems/portfolio"
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
 import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
-import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
 
@@ -44,91 +42,38 @@ const ModnyeTsveta = () => (
 
 
         <div className={styles.articles_intro_text}>
-          <p className={styles.articles_intro_p}>В рамках гида по стилям от студии R-home (предыдущие статьи можно посмотреть здесь ) продолжаем знакомить вас с самыми популярными стилями в дизайне интерьеров. На очереди — минимализм — четкий, функциональный и выверенный до миллиметра. Это стиль для тех, кто устал от сложных форм и готов отказаться от всего лишнего, оставив только самое необходимое для жизни.</p>
+          <p className={styles.articles_intro_p}>Американский институт цвета Pantone как самый признанный авторитет в области цветовых схем на протяжении многих лет задает тренды не только в интерьере, но и в одежде, макияже, графическом дизайне и множестве других областей жизни.</p>
         </div>
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>История</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Pantone 2018</h2>
           <div>
-          <p className={styles.articles__p}>Сам термин происходит от латинского слова minimus, что значит «наименьший». Пожалуй, это слово и есть отражение сути всей стилистики минимализма — отрицание избыточности. Элементов должно быть как можно меньше, а свободного места как можно больше. Соответственно, самый важный этап в создании подобного интерьера — грамотная организация пространства, формирование объема помещения при минимальном декоре.</p>
-            <p className={styles.articles__p}>Мода на минималистичные интерьеры появилась в Америке еще в середине 1960-х, но прообразы этого стиля можно встретить еще раньше – в конструктивизме и традиционной японской культуре. Благодаря техническому прогрессу произошла переоценка существующих традиций оформления интерьеров и строительства, стали использоваться в основном натуральные промышленные материалы, простые геометрические формы и нейтральные цвета. Сегодня этот стиль многие считают дизайном будущего, когда отпадет необходимость в лишнем декорировании, ведь человеку очень важно дома прежде всего отдыхать и проводить время с близкими, а не любоваться милыми безделушками, которые только отвлекают от сути и предназначения интерьера.</p>
+          <p className={styles.articles__p}>Дважды в год Pantone выбирает десять самых модных цветов сезона, а в декабре объявляет главный цвет следующего года. В 2018 им стал Ultra Violet. Как отмечают дизайнеры, это непростой, доминирующий цвет, который носит скорее богемный характер и приятен далеко не каждому глазу. Помимо ультрафиолета есть еще несколько не менее трендовых цветов, которые при правильном использовании отлично впишутся в интерьер вашего дома. Рассказываем, как с ними грамотно обращаться.</p>
           </div>
         </div>
 
 
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/01_minimalizm.jpg"
+          src="../../../images/inspiration/articles/modnye-tsveta/01_modnye-tsveta.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
 
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Со временем минимализм как стиль в интерьере занял особое место, и это прежде всего заслуга немецкой и голландской школ дизайна. Немцы привнесли в него такие принципы, как лаконичные формы и цвета, функциональность и комфорт. Голландцы же пропагандировали свой цвет для каждой плоскости и прямоугольные формы. По сей день азбукой минимализма считается работа немецкого дизайнера Дитера Рамса «Принципы хорошего дизайна». Согласно его версии, хороший дизайн связан с инновациями, эстетичен, экологичен, функционален и продуман. Но самое главное — он содержит как можно меньше дизайна, то есть ненужных деталей и декора.</p>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>17-1558 Grenadine</h2>
+          <div>
+          <p className={styles.articles__p}>Гренадин, или насыщенный красный, чаще всего в интерьере применяется как акцентный. Этот цвет очень активный и может оказывать возбуждающее воздействие на организм человека, и потому его стоит использовать очень дозированно. Конечно, стена, выкрашенная в этот сочный цвет, будет выглядеть очень смело и стильно, однако, сначала вы должны оценить, насколько комфортно вам будет находиться в таком помещении. Гренадин идеально подходит для акцентирующих деталей: декора, стульев, кресел, текстиля. В этом случае он должен составлять не более 10 % от всего цветового решения. Добавьте к нему спокойный белый, мягкий коричневый или теплый, чуть приглушенный серый и получите яркий и нескучный интерьер.</p>
+          </div>
         </div>
 
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/02_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Очень важно понимать, что минимализм — это не просто стиль в интерьере, это, скорее, философия жизни, которая предлагает отказаться от многих привычных нашему менталитету вещей и наполнить свой дом только самым необходимым. Что еще несет в себе минимализм и как оформить свое жилище в этом стиле грамотно и нескучно – объясняем и показываем на примерах, а практические советы дизайнеров студии R-home помогут понять, подойдет ли такой интерьер для жизни именно вам.</p>
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>В целом, если говорить об основных чертах стиля, можно выделить 4 базовых идеи минимализма:</h2>
-          <div>
-            <ul>
-              <li className={styles.articles__li}>чистота пространства;</li>
-              <li className={styles.articles__li}>натуральная гамма;</li>
-              <li className={styles.articles__li}>инновационные фактуры;</li>
-              <li className={styles.articles__li}>функциональная мебель.</li>
-            </ul>
-          </div>
-        </div>
-
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Материалы</h2>
-          <div>
-          <p className={styles.articles__p}>Минимализм тяготеет к аскетичности, но не к дешевизне. Поэтому здесь предполагается активное использование в первую очередь качественных натуральных материалов, таких как стекло, зеркало, камень, дерево, полированный цемент. При этом поверхности должны быть хорошо обработаны, возможно, покрыты лаком для придания глянцевого эффекта.</p>
-            <p className={styles.articles__p}>Минималистичные интерьеры требуют просторных и открытых помещений. В этом смысле зеркала — идеальный материал для визуального расширения небольшого пространства. В качестве напольного покрытия в минимализме приветствуется использование широкоформатных плит, которые придают комнате бесшовный внешний вид. В отделке стен желательно использовать краску или однотонные текстурные обои, можно c мелким несложным принтом.</p>
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/03_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>В минимализме есть место не только природным, но и полученным промышленным путем современным высокотехнологичным материалам, но тут крайне важно их качество, безопасность и экологичность. Вопреки расхожему мнению, минималистичный интерьер далеко не бюджетный и требует исключительно качественных, недешевых материалов.</p>
-        </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Интересный прием в отделке стен — вставки панелей из натурального или искусственного материала, например, нержавеющей стали, полированного и фактурного дерева, камня с природными текстурами. Выглядит современно и нескучно."
-              />
-        </div>
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Цветовая палитра</h2>
-          <div>
-          <p className={styles.articles__p}>В интерьере обычно не используют больше одного-двух цветов, чаще всего это оттенки одной гаммы. Такая монохромность многим может показаться скучной и холодной. Чтобы избежать этого эффекта, в рамках одного цвета лучше использовать разные, но не очень активные текстуры. Чередуйте матовое с глянцевым, шероховатое с абсолютно гладким. И вы удивитесь, насколько выразительным и ярким может стать монохромный интерьер.</p>
-            <p className={styles.articles__p}>Большинство дизайнеров для создания минималистичного интерьера советуют придерживаться натуральной гаммы: белый, черный, бежевый, серый, цвет натурального дерева, оттенки охры и хаки. Однако, если такая палитра кажется вам слишком скучной, можно обратиться к мексиканскому варианту минимализма и выкрасить все помещение (стены, пол и потолок) яркой цветной штукатуркой.</p>
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/04_minimalizm.jpg"
+          src="../../../images/inspiration/articles/modnye-tsveta/02_modnye-tsveta.jpg"
           alt=""
           className={styles.articles__one_image}
         />
@@ -136,47 +81,15 @@ const ModnyeTsveta = () => (
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Свет</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>13-2808 Ballet Slipper</h2>
           <div>
-          <p className={styles.articles__p}>Освещению отводится едва ли не самая главная роль в оформлении минималистичного интерьера. Основная часть света должна поступать из окон. Окна обязательно должны быть большими, ведь их основная функция — насыщать пространство воздухом и соединять жилье с внешним миром, делая окружающую действительность частью интерьера. Отсюда главное правило: забудьте о шторах и портьерах, в минималистичных интерьерах они неуместны. Но если все же хочется как-то оформить окна и защитить себя от солнечных лучей, лучше использовать горизонтальные жалюзи или роллеты.</p>
-          <p className={styles.articles__p}>Искусственный свет в минимализме часто используется как декор. Тут речь идет не о светильниках самих по себе (они должны быть простыми и геометричными), а об освещении разного спектра, которому под силу скорректировать и преобразить интерьер. При необходимости создать рабочую атмосферу используют яркий дневной свет. Для проведения вечеринок и приема гостей – более мягкие расслабляющие источники. Разнообразная подсветка и направляемый технический свет – все это весомый элемент декорирования в минимализме.</p>
+          <p className={styles.articles__p}>Этот нежный оттенок розового не имеет ничего общего с тем кричащим цветом, который часто ассоциируется с Барби и безвкусицей. Не слишком яркий, не «кукольный», и не давящий на сознание, Ballet Slipper может стать как стильным акцентом в интерьере в виде мебели или аксессуаров, так и прекрасной базой для дизайна целой комнаты. Этот цвет часто используют исключительно для детских, и напрасно — ведь он может создать гармонию в любом пространстве. Такой бледно-розовый оттенок легко наполнит помещение воздухом и теплом, которого так не хватает в наших широтах.</p>
           </div>
         </div>
 
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/05_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Чтобы усилить декоративный эффект от искусственного света, в минимализме активно используются отражающие (глянцевые) поверхности мебели, стекло и даже глянцевые наливные полы."
-              />
-        </div>
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Мебель</h2>
-          <div>
-          <p className={styles.articles__p}>Основная задача минимализма — создать интерьер с ощущением незагруженного пространства. Отсюда и главный принцип выбора мебели: ее должно быть немного, она должна быть функциональной и лаконичной. Дизайнеры при проектировании минималистичных интерьеров часто используют принцип 20-80, где мебель в помещении занимает 20%, а остальная часть остается свободной.</p>
-
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/06_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Чтобы поддержать чистоту стиля, обязательно заранее тщательно продумать системы хранения. Для этих целей лучше использовать встроенные конструкции. Шкафы, вмонтированные в стену, – удачное решение. В целом, мобильная мебель, которую легко спрятать, в приоритете. Мягкая мебель имеет строгую геометрию форм, она лишена декора и витиеватостей, а самой важной характеристикой любого предмета является его функциональность. Обязательный must-have – металлические каркасы, тонкие прямые ножки, лаконичная дизайнерская мебель, прямоугольные и квадратные конструкции.</p>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/09_minimalizm.gif"
+          src="../../../images/inspiration/articles/modnye-tsveta/03_modnye-tsveta.jpg"
           alt=""
           className={styles.articles__one_image}
         />
@@ -184,69 +97,96 @@ const ModnyeTsveta = () => (
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Декор</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>17-4402 Neutral Gray</h2>
           <div>
-          <p className={styles.articles__p}>Как уже отмечалось, аксессуаров в минималистичном интерьере должно быть минимум. Здесь нет места милым безделушкам, редко используемым предметам и приятных глазу мелочей. Все, что присутствует в помещении, функционально и выполняет свое предназначение.</p>
-
+          <p className={styles.articles__p}>Серый — прекрасный выбор для использования в интерьере, он отлично сочетается практически со всеми цветами и подходит для любого стиля. Оттенок Neutral Gray ассоциируется со стабильностью, спокойствием и некоторой строгостью. Он может стать отличным фоном и ультрамодного современного интерьера (при наличии ярких дополнительных деталей), и элегантного классического, и сдержанного минималистичного. Как любят говорить дизайнеры: «серый — новый бежевый» — так что смело используйте его в качестве нейтральной базы для любого своего эксперимента.</p>
           </div>
         </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/07_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Конечно же, полностью отказываться от аксессуаров и других интересных деталей не стоит. Правильно подобранный декор может качественно дополнить интерьер, стать частью продуманного и красивого пространства. Главное – не переборщить. Например, вместо картины в шикарной раме лучше подобрать простой современный постер.</p>
-        </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Минимализм предпочитает крупные формы в декоре: выбирая вазы и скульптуры, выбирайте размеры L, XL. А при выборе искусства предпочтение лучше отдать крупным фигурам вместо мелкого коллажа."
-              />
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Кому подойдет интерьер в стиле минимализм</h2>
-          <div>
-          <p className={styles.articles__p}>Минимализм – это течение для современных деловых людей, предпочитающих во всем и везде порядок. Здесь неуместен хаос, поэтому этот стиль больше всего подходит людям педантичным, скрупулезным. Минимализм подходит личностям рациональным, в какой-то степени перфекционистам, с легкостью готовым отказаться от многих привычных, комфортных, но бесполезных в жизни вещей в пользу чистого сбалансированного пространства.</p>
 
-          </div>
-        </div>
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/08_minimalizm.jpg"
+          src="../../../images/inspiration/articles/modnye-tsveta/04_modnye-tsveta.jpg"
           alt=""
           className={styles.articles__one_image}
         />
         </div>
+
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h3 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Посмотреть примеры интерьеров в стиле минимализм от студии дизайна R-home можно тут:</h3>
+          <h2 className={styles.articles__lefttitle_righttext__title}>19-1725 Tawny Port</h2>
+          <div>
+          <p className={styles.articles__p}>Свое название цвет получил от сорта портвейна, который меняет оттенок с винного на рыжевато-коричневый после нескольких лет выдержки в бочке. В интерьере Tawny Port смотрится очень выигрышно и ассоциируется с утонченностью и роскошью. Этот сложный оттенок бордового с баклажановым подтоном будет стильно смотреться как в монохромном варианте, так и в качестве акцентного. Он отлично сочетается с темно-зеленым, нежно-розовым, перламутровым и кремовым. И, конечно, Tawny Port в благородном бархатном исполнении — must have нескольких последних сезонов.</p>
+          </div>
         </div>
 
-
-        <div className={styles.articles__project}>
-          <StaticImage
-            src="../../../images/portfolio/dom-terassa/04_dom-terassa.jpg"
-            loading="eager"
-            alt=""
-            className={styles.articles__one_image}
-          />
-        <PortfolioItem
-          url="/portfolio/facade/dom-terassa/"
-          title="Дом с открытой террасой"
-          metr="450"
-          building=""
-          budget=""
-          image={
-            <StaticImage
-              src="../../../images/portfolio/dom-terassa/00_dom-terassa.jpg"
-              alt=""
-            />
-          }
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/modnye-tsveta/05_modnye-tsveta.jpg"
+          alt=""
+          className={styles.articles__one_image}
         />
         </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>16-1341 Butterum</h2>
+          <div>
+          <p className={styles.articles__p}>Butterum (масляный ром) — уютный, согревающий оттенок, который ассоциируется с осенью и спокойствием. Тенденция к использованию натуральных цветов никогда не выйдет из моды, и потому дизайнеры интерьеров уже несколько сезонов подряд с радостью вводят все оттенки бежевого в свои проекты. Butterum имеет легкий красновато-коричневый подтон, который гармонирует с любыми материалами и отлично раскрывает цвета, с которыми он соседствует. По-настоящему теплый, универсальный цвет, который придаст любому пространству атмосферу домашнего уюта.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/modnye-tsveta/06_modnye-tsveta.jpg"
+          alt=""
+          className={styles.articles__one_image}
+        />
+        </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>19-4029 Navy Peony</h2>
+          <div>
+          <p className={styles.articles__p}>Navy Peony (или темно-синий пион) стал ключевым цветом в этом сезоне. Несмотря на то, что синий относится к холодной палитре, при грамотном использовании в интерьере он может выглядеть и как нейтральная база, и как яркий акцент. Спокойный и изящный, Navy Peony отлично уживается практически с любыми цветами, а в сочетании с другими оттенками своей палитры придает любому помещению благородный шарм. Традиционно темно-синие оттенки используются в декоре и обивке мебели из благородных пород дерева. Однако не стоит забывать, что этот цвет может делать пространство визуально меньше, поэтому важно соблюдать баланс.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/modnye-tsveta/07_modnye-tsveta.jpg"
+          alt=""
+          className={styles.articles__one_image}
+        />
+        </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>19-4524 Shaded Spruce</h2>
+          <div>
+          <p className={styles.articles__p}>Shaded Spruce (затененная ель) — оттенок спокойствия и умиротворения, который прекрасно подходит для любой комнаты, потому что вызывает у человека только положительные эмоции. Именно так, по мнению экспертов Pantone, выглядит спокойствие и тишина затененного леса. В интерьере этот цвет чаще всего можно встретить в обивке мебели, мягких изголовий кроватей и текстиле. При этом он отлично уживается с другими популярными цветами. Сочетать его рекомендуется с коричневым, синим, серым, белым и чёрным. Shaded Spruce настолько вдохновляет дизайнеров, что те не боятся использовать его и для монохромных ансамблей.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/modnye-tsveta/08_modnye-tsveta.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
+          <p className={styles.articles__p}>Как видите, вариантов актуальных цветовых решений масса. Главное определиться с тем, что нравится именно вам. А если вы все же растеряетесь во всем многообразии цветов, добро пожаловать в студию дизайна R-home! Наши специалисты подберут для вашей квартиры, дома или офиса гармоничные оттенки и цветовые сочетания, которые будут радовать вас и подчеркнут индивидуальность интерьера.</p>
+        </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Модные цвета Pantone в интерьере</h2>
+        </div>
+        <div className={styles.articles_video + " " + styles.articles__bigmargin}>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HRZ374-TT8I?si=hgiL94tzupBbMb60" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
 
       </div>
     </div>

@@ -7,9 +7,10 @@ import { StaticImage } from "gatsby-plugin-image"
 import { PortfolioItem } from "../../../subitems/portfolio"
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
 import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
-import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
+import { ProjectConsultationSergey } from "../../../subitems/project/consultation/project-consultation-sergey"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
+
 
 
 
@@ -44,209 +45,238 @@ const D3Olimpik = () => (
 
 
         <div className={styles.articles_intro_text}>
-          <p className={styles.articles_intro_p}>В рамках гида по стилям от студии R-home (предыдущие статьи можно посмотреть здесь ) продолжаем знакомить вас с самыми популярными стилями в дизайне интерьеров. На очереди — минимализм — четкий, функциональный и выверенный до миллиметра. Это стиль для тех, кто устал от сложных форм и готов отказаться от всего лишнего, оставив только самое необходимое для жизни.</p>
+          <p className={styles.articles_intro_p}>Несколько недавних проектов дизайн-студии RHome — дизайн интерьера квартир в жилых комплексах D3 и Олимпик Парк. И хотя для каждой клиента мы создаем уникальный дизайн-проект, наличие опыта работы в этих домах имеет преимущества.</p>
         </div>
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>История</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Наладили контакт с товариществом собственников</h2>
           <div>
-          <p className={styles.articles__p}>Сам термин происходит от латинского слова minimus, что значит «наименьший». Пожалуй, это слово и есть отражение сути всей стилистики минимализма — отрицание избыточности. Элементов должно быть как можно меньше, а свободного места как можно больше. Соответственно, самый важный этап в создании подобного интерьера — грамотная организация пространства, формирование объема помещения при минимальном декоре.</p>
-            <p className={styles.articles__p}>Мода на минималистичные интерьеры появилась в Америке еще в середине 1960-х, но прообразы этого стиля можно встретить еще раньше – в конструктивизме и традиционной японской культуре. Благодаря техническому прогрессу произошла переоценка существующих традиций оформления интерьеров и строительства, стали использоваться в основном натуральные промышленные материалы, простые геометрические формы и нейтральные цвета. Сегодня этот стиль многие считают дизайном будущего, когда отпадет необходимость в лишнем декорировании, ведь человеку очень важно дома прежде всего отдыхать и проводить время с близкими, а не любоваться милыми безделушками, которые только отвлекают от сути и предназначения интерьера.</p>
+          <p className={styles.articles__p}>Жилые комплексы D3 и “Олимпик Парк” – “закрытые” дома, поэтому во время ремонта строителям и подрядчикам сложно попадать в дом в отсутствие собственника квартиры – нужно согласовывать с председателем ТС. Мы берем урегулирование этих вопросов на себя! Поскольку мы уже знакомы с товариществом собственников, с этим не возникнет сложностей. Все разрешения получим максимально быстро.</p>
           </div>
-        </div>
-
-
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/01_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Со временем минимализм как стиль в интерьере занял особое место, и это прежде всего заслуга немецкой и голландской школ дизайна. Немцы привнесли в него такие принципы, как лаконичные формы и цвета, функциональность и комфорт. Голландцы же пропагандировали свой цвет для каждой плоскости и прямоугольные формы. По сей день азбукой минимализма считается работа немецкого дизайнера Дитера Рамса «Принципы хорошего дизайна». Согласно его версии, хороший дизайн связан с инновациями, эстетичен, экологичен, функционален и продуман. Но самое главное — он содержит как можно меньше дизайна, то есть ненужных деталей и декора.</p>
-        </div>
-
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/02_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Очень важно понимать, что минимализм — это не просто стиль в интерьере, это, скорее, философия жизни, которая предлагает отказаться от многих привычных нашему менталитету вещей и наполнить свой дом только самым необходимым. Что еще несет в себе минимализм и как оформить свое жилище в этом стиле грамотно и нескучно – объясняем и показываем на примерах, а практические советы дизайнеров студии R-home помогут понять, подойдет ли такой интерьер для жизни именно вам.</p>
         </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>В целом, если говорить об основных чертах стиля, можно выделить 4 базовых идеи минимализма:</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Работаем с документацией, полученной от застройщика</h2>
           <div>
-            <ul>
-              <li className={styles.articles__li}>чистота пространства;</li>
-              <li className={styles.articles__li}>натуральная гамма;</li>
-              <li className={styles.articles__li}>инновационные фактуры;</li>
-              <li className={styles.articles__li}>функциональная мебель.</li>
-            </ul>
+          <p className={styles.articles__p}>В каждой квартире есть технические ограничения, определяющие, где можно делать ванную и кухню, какие зоны жилые, а какие – нет. В техпаспорте зачастую эта информация отсутствует, и эти нюансы выясняются уже в процессе работы. Мы работаем с технической документацией застройщика ЖК D3 и Олимпик Парк, полученной через юриста. Мы изначально опираемся на максимально полную информацию, и учитываем все ограничения при создании дизайн-проекта квартиры.</p>
           </div>
         </div>
-
-
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Материалы</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Поможем принять квартиру</h2>
           <div>
-          <p className={styles.articles__p}>Минимализм тяготеет к аскетичности, но не к дешевизне. Поэтому здесь предполагается активное использование в первую очередь качественных натуральных материалов, таких как стекло, зеркало, камень, дерево, полированный цемент. При этом поверхности должны быть хорошо обработаны, возможно, покрыты лаком для придания глянцевого эффекта.</p>
-            <p className={styles.articles__p}>Минималистичные интерьеры требуют просторных и открытых помещений. В этом смысле зеркала — идеальный материал для визуального расширения небольшого пространства. В качестве напольного покрытия в минимализме приветствуется использование широкоформатных плит, которые придают комнате бесшовный внешний вид. В отделке стен желательно использовать краску или однотонные текстурные обои, можно c мелким несложным принтом.</p>
+          <p className={styles.articles__p}>Раньше мы уже работали с квартирами в ЖК D3 и Олимпик Парк, поэтому знаем, чему нужно уделить особое внимание. На этапе сдачи квартиры в эксплуатацию проверим окна, стены, отопление, стяжку пола. Некоторые проблемы должен решать застройщик, однако заявить о них нужно при приеме квартиры. Наше включение на раннем этапе поможет вам существенно сэкономить, если обнаружатся конструктивные недочеты.</p>
           </div>
         </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/03_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Нашли оптимальные решения</h2>
+          <div>
+          <p className={styles.articles__p}>Знание конструктивных особенностей планировок квартир упрощает процесс разработки дизайна интерьера. Это значит, что мы сможем предложить лучшее планировочное решение, ведь мы уже рассмотрели разные варианты и остановились на лучших.</p>
+          </div>
         </div>
 
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>В минимализме есть место не только природным, но и полученным промышленным путем современным высокотехнологичным материалам, но тут крайне важно их качество, безопасность и экологичность. Вопреки расхожему мнению, минималистичный интерьер далеко не бюджетный и требует исключительно качественных, недешевых материалов.</p>
+
+        <div className={styles.articles__greyblock}>
+          <div className={styles.articles__greyblock_wrap}>
+            <h2 className={styles.articles__greyblock_title}>Мы уже решали эти задачи. С нами вы не потратите на них время.</h2>
+            <div className={styles.articles__greyblock_text}>
+              <p className={styles.articles__p}>Мы нашли решения некоторых сложных задач в ЖК D3 и Олимпик Парк. Эти вещи могут показаться довольно специфическими, но именно с этими сложностями сталкиваются большинство жильцов этих ЖК.</p>
+            </div>
+          </div>
         </div>
+
+
+
+
         <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Интересный прием в отделке стен — вставки панелей из натурального или искусственного материала, например, нержавеющей стали, полированного и фактурного дерева, камня с природными текстурами. Выглядит современно и нескучно."
+              <ProjectConsultationSergey
+                text="За последний год дизайнеры RHome разработали более 10 нетиповых проектов интерьера для ЖК D3 и Олимпик Парк. Наши специалисты досконально изучили эти комплексы, знают все тонкости работы с ними, что позволяет улучшить и ускорить процесс создания дизайн-проекта и ремонта квартиры. Представляем 5 из них."
               />
         </div>
 
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Цветовая палитра</h2>
-          <div>
-          <p className={styles.articles__p}>В интерьере обычно не используют больше одного-двух цветов, чаще всего это оттенки одной гаммы. Такая монохромность многим может показаться скучной и холодной. Чтобы избежать этого эффекта, в рамках одного цвета лучше использовать разные, но не очень активные текстуры. Чередуйте матовое с глянцевым, шероховатое с абсолютно гладким. И вы удивитесь, насколько выразительным и ярким может стать монохромный интерьер.</p>
-            <p className={styles.articles__p}>Большинство дизайнеров для создания минималистичного интерьера советуют придерживаться натуральной гаммы: белый, черный, бежевый, серый, цвет натурального дерева, оттенки охры и хаки. Однако, если такая палитра кажется вам слишком скучной, можно обратиться к мексиканскому варианту минимализма и выкрасить все помещение (стены, пол и потолок) яркой цветной штукатуркой.</p>
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/04_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image}
-        />
-        </div>
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Свет</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Знаем, как обойти запрет размещения внешнего блока кондиционера на фасаде</h2>
           <div>
-          <p className={styles.articles__p}>Освещению отводится едва ли не самая главная роль в оформлении минималистичного интерьера. Основная часть света должна поступать из окон. Окна обязательно должны быть большими, ведь их основная функция — насыщать пространство воздухом и соединять жилье с внешним миром, делая окружающую действительность частью интерьера. Отсюда главное правило: забудьте о шторах и портьерах, в минималистичных интерьерах они неуместны. Но если все же хочется как-то оформить окна и защитить себя от солнечных лучей, лучше использовать горизонтальные жалюзи или роллеты.</p>
-          <p className={styles.articles__p}>Искусственный свет в минимализме часто используется как декор. Тут речь идет не о светильниках самих по себе (они должны быть простыми и геометричными), а об освещении разного спектра, которому под силу скорректировать и преобразить интерьер. При необходимости создать рабочую атмосферу используют яркий дневной свет. Для проведения вечеринок и приема гостей – более мягкие расслабляющие источники. Разнообразная подсветка и направляемый технический свет – все это весомый элемент декорирования в минимализме.</p>
+          <p className={styles.articles__p}>По законодательству РБ блоки кондиционеров нельзя размещать на фасадах – они должны находиться на лоджии. Мы нашли компромиссное решение – делаем врезку блока. Так он не виден снаружи и функционирует исправно.</p>
+          </div>
+        </div>
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Делаем теплый балкон при холодном профиле</h2>
+          <div>
+          <p className={styles.articles__p}>В новых ЖК система остекления – металлический холодный профиль цельными вертикальными рейками от первого до последнего этажа. По правилам менять внешний вид фасада нельзя. Мы знаем, как сделать тёплый балкон или лоджию так, чтобы визуально фасад не изменился.</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Cветлый интерьер квартиры в ЖК D3</h2>
+          <div>
+          <p className={styles.articles__p}>Частое пожелание — совместить современную эстетику с природными материалами и эстетикой. Для интерьера квартиры в жилом комплексе D3 это очень логичное сочетание, ведь он находится на окраине города рядом с живописными водоемами — водохранилищем Дрозды и прудом Лебяжий. Мы вдохновлялись природными сочетаниями, выбирая цветовую гамму интерьера: предпочтение отдали приглушенным древесным и песчаным оттенкам. Текстуры дерева и камня подчеркивают связь с природными мотивами, а дизайн мебели и четкие линии, использованные в интерьере — отражение городского духа.</p>
           </div>
         </div>
 
         <div className={styles.articles__one_image_link}>
         <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/05_minimalizm.jpg"
+          src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/06_d3-i-olimpik-park-v-minske.jpg"
           alt=""
           className={styles.articles__one_image + " " + styles.articles__bigmargin}
         />
         </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Чтобы усилить декоративный эффект от искусственного света, в минимализме активно используются отражающие (глянцевые) поверхности мебели, стекло и даже глянцевые наливные полы."
-              />
+
+        <div className={styles.articles__two_inline}>
+                <StaticImage
+                  src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/03_d3-i-olimpik-park-v-minske.jpg"
+                  alt=""
+                  className={styles.articles__one_image}
+                />
+                <StaticImage
+                  src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/11_d3-i-olimpik-park-v-minske.jpg"
+                  alt=""
+                  className={styles.articles__one_image}
+                />
         </div>
+
 
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Мебель</h2>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Неоклассический дизайн интерьера в ЖК D3</h2>
           <div>
-          <p className={styles.articles__p}>Основная задача минимализма — создать интерьер с ощущением незагруженного пространства. Отсюда и главный принцип выбора мебели: ее должно быть немного, она должна быть функциональной и лаконичной. Дизайнеры при проектировании минималистичных интерьеров часто используют принцип 20-80, где мебель в помещении занимает 20%, а остальная часть остается свободной.</p>
-
+          <p className={styles.articles__p}>Еще одно частое пожелание — «легкая» классика. Речь идет о неоклассических интерьерах, где строгость классических форм и линий миксуется с современными дизайнерскими приемами и яркими аксессуарами. Такой интерьер более требовательный, но в тоже время очень вдохновляющий — это стиль одновременно сдержанный и праздничный. Мы не стремились перегружать квартиру в жилом комплексе D3 классическими элементами, например, дизайн кухни в этом проекте минималистичный и современный.</p>
           </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/06_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Чтобы поддержать чистоту стиля, обязательно заранее тщательно продумать системы хранения. Для этих целей лучше использовать встроенные конструкции. Шкафы, вмонтированные в стену, – удачное решение. В целом, мобильная мебель, которую легко спрятать, в приоритете. Мягкая мебель имеет строгую геометрию форм, она лишена декора и витиеватостей, а самой важной характеристикой любого предмета является его функциональность. Обязательный must-have – металлические каркасы, тонкие прямые ножки, лаконичная дизайнерская мебель, прямоугольные и квадратные конструкции.</p>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/09_minimalizm.gif"
-          alt=""
-          className={styles.articles__one_image}
-        />
-        </div>
-
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Декор</h2>
-          <div>
-          <p className={styles.articles__p}>Как уже отмечалось, аксессуаров в минималистичном интерьере должно быть минимум. Здесь нет места милым безделушкам, редко используемым предметам и приятных глазу мелочей. Все, что присутствует в помещении, функционально и выполняет свое предназначение.</p>
-
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/07_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
-        </div>
-        <div className={styles.articles__text_center900 + " " + styles.articles__bigmargin}>
-          <p className={styles.articles__p}>Конечно же, полностью отказываться от аксессуаров и других интересных деталей не стоит. Правильно подобранный декор может качественно дополнить интерьер, стать частью продуманного и красивого пространства. Главное – не переборщить. Например, вместо картины в шикарной раме лучше подобрать простой современный постер.</p>
-        </div>
-        <div className={styles.articles__bigmargin}>
-              <ProjectConsultationSvetlana
-                text="Минимализм предпочитает крупные формы в декоре: выбирая вазы и скульптуры, выбирайте размеры L, XL. А при выборе искусства предпочтение лучше отдать крупным фигурам вместо мелкого коллажа."
-              />
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h2 className={styles.articles__lefttitle_righttext__title}>Кому подойдет интерьер в стиле минимализм</h2>
-          <div>
-          <p className={styles.articles__p}>Минимализм – это течение для современных деловых людей, предпочитающих во всем и везде порядок. Здесь неуместен хаос, поэтому этот стиль больше всего подходит людям педантичным, скрупулезным. Минимализм подходит личностям рациональным, в какой-то степени перфекционистам, с легкостью готовым отказаться от многих привычных, комфортных, но бесполезных в жизни вещей в пользу чистого сбалансированного пространства.</p>
-
-          </div>
-        </div>
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/minimalizm/08_minimalizm.jpg"
-          alt=""
-          className={styles.articles__one_image}
-        />
-        </div>
-        <div className="line"></div>
-        <div className={styles.articles__lefttitle_righttext}>
-          <h3 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Посмотреть примеры интерьеров в стиле минимализм от студии дизайна R-home можно тут:</h3>
         </div>
 
 
         <div className={styles.articles__project}>
           <StaticImage
-            src="../../../images/portfolio/dom-terassa/04_dom-terassa.jpg"
+            src="../../../images/portfolio/neoklassika-d3/03_neoklassika-d3.jpg"
             loading="eager"
             alt=""
             className={styles.articles__one_image}
           />
         <PortfolioItem
-          url="/portfolio/facade/dom-terassa/"
-          title="Дом с открытой террасой"
-          metr="450"
+          url="/portfolio/apartment/neoklassika-d3/"
+          title="Неоклассика в ЖК D3"
+          metr="80"
           building=""
           budget=""
           image={
             <StaticImage
-              src="../../../images/portfolio/dom-terassa/00_dom-terassa.jpg"
+              src="../../../images/portfolio/neoklassika-d3/00_neoklassika-d3.jpg"
               alt=""
             />
           }
         />
         </div>
+
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title}>Дизайн четырехкомнатной квартиры в ЖК D3</h2>
+          <div>
+          <p className={styles.articles__p}>Это современная городская квартира, напоминающей по атмосфере уютные испанские виллы. Изначально квартира была со свободной планировкой — перегородки отделяли только санузлы. Эти перегородки мы тоже подвинули, немного увеличив площадь санузлов за счет коридоров. В планировке квартиры в ЖК D3 мы учли основные требования заказчиков: просторная и удобная гостиная со столовой для приема гостей и раздельные спальни с гардеробными для хозяев квартиры. Природные оттенки, лаконичные формы, функциональная мебель — на это мы обращали внимание при создании дизайн-проекта для этой квартиры.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/07_d3-i-olimpik-park-v-minske.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__project}>
+          <StaticImage
+            src="../../../images/portfolio/kvartira-dlya-dvoih/05_kvartira-dlya-dvoih.jpg"
+            loading="eager"
+            alt=""
+            className={styles.articles__one_image}
+          />
+        <PortfolioItem
+          url="/portfolio/apartment/kvartira-dlya-dvoih/"
+          title="Квартира в ЖК «D3»"
+          metr="109"
+          building=""
+          budget=""
+          image={
+            <StaticImage
+              src="../../../images/portfolio/kvartira-dlya-dvoih/00_kvartira-dlya-dvoih.jpg"
+              alt=""
+            />
+          }
+        />
+        </div>
+
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Дизайн-проект квартиры в ЖК Олимпик Парк</h2>
+          <div>
+          <p className={styles.articles__p}>Владельцам этой квартиры в жилом комплексе Олимпик Парк нравятся современные, немного сдержанные интерьеры, не перегруженные деталями. Основное требование по планировке квартиры — продумать большую уютную гостиную и мастер-спальню с отдельной гардеробной. В цветовой гамме интерьера мы отдали предпочтение глубоким сложным цветам и оттенкам натурального дерева. Благодаря использованию визуально близких текстур объединенное пространство гостиной, кухни и прихожей смотрится как одно целое.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/08_d3-i-olimpik-park-v-minske.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__two_inline}>
+                <StaticImage
+                  src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/04_d3-i-olimpik-park-v-minske.jpg"
+                  alt=""
+                  className={styles.articles__one_image}
+                />
+                <StaticImage
+                  src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/12_d3-i-olimpik-park-v-minske.jpg"
+                  alt=""
+                  className={styles.articles__one_image}
+                />
+        </div>
+
+        <div className="line"></div>
+        <div className={styles.articles__lefttitle_righttext}>
+          <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Мужская квартира в ЖК D3</h2>
+          <div>
+          <p className={styles.articles__p}>Дизайн-проект этой квартиры мы создавали для отца с сыном. Часто при словах «мужской интерьер» воображение рисует темные холодные оттенки и массивную мебель, но эта квартира просторная и светлая. Хара́ктерность интерьера здесь проявляется в строгости линий. Нам было важно продумать планировку так, чтобы не «погасить» большое количество солнечного света, проникающего сквозь панорамные окна. У хозяина квартиры есть свои любимые картины, поэтому задачей дизайнера стало интегрировать их в интерьер, объединив фривольность мазков с четкими архитектурными формами.</p>
+          </div>
+        </div>
+
+        <div className={styles.articles__one_image_link}>
+        <StaticImage
+          src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/09_d3-i-olimpik-park-v-minske.jpg"
+          alt=""
+          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+        />
+        </div>
+
+        <div className={styles.articles__two_inline}>
+                <StaticImage
+                  src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/05_d3-i-olimpik-park-v-minske.jpg"
+                  alt=""
+                  className={styles.articles__one_image}
+                />
+                <StaticImage
+                  src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/13_d3-i-olimpik-park-v-minske.jpg"
+                  alt=""
+                  className={styles.articles__one_image}
+                />
+        </div>
+
 
       </div>
     </div>
