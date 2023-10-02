@@ -17,7 +17,7 @@ export const ServicesCost = ( { title } ) => {
       </div>
       <div className={styles.services_cost_text}>
         <p className={styles.services_cost_text_p}>Воспользуйтесь простым калькулятором, чтобы узнать стоимость своего дизайн-проекта.</p>
-        <Link to="/" className={styles.services_cost_link}>Рассчитать стоимость</Link>
+        <Link to="/cost" className={styles.services_cost_link}>Рассчитать стоимость</Link>
       </div>
       <p ref={ref} className={styles.services_cost_ref}></p>
     </div>

@@ -17,7 +17,7 @@ export const ReviewBelomorskayaSpecial = () => {
           </div>
         <p className={styles.reviews_item_head_data + " " + styles.reviews_item_head_data_special}>14.01.2020</p>
       </div>
-      <div className={styles.reviews_item_body}>
+      <div className={styles.reviews_item_body + " " + styles.reviews_item_special}>
         <div className={styles.reviews_item_body_text}>
           <div className={styles.reviews_item_body_text_wrap + " " + styles.reviews_item_body_text_wrap1 + " " + (openReviewList? `${styles.open}` : "")}>
             <p className={styles.reviews_item_body_text_p}>&mdash;&nbsp;Наше сотрудничество с&nbsp;RHOME началось года 2&nbsp;назад, когда мы&nbsp;занимались поиском студии для создания дизайн проекта нашей квартиры. После обстоятельной беседы с&nbsp;директором Сергеем Рассеко мы&nbsp;остановили свой выбор именно на&nbsp;дизайн-студии RHOME.</p>

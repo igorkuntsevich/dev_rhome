@@ -2,11 +2,13 @@ import * as React from "react"
 import * as styles from "./project-consultation.module.scss"
 import { StaticImage } from "gatsby-plugin-image"
 import { useInView } from "react-intersection-observer"
+import { Modal } from "../../modal-step2"
 
 export const ProjectConsultationSergey = ({ text }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
+  const [isModal, setModal] = React.useState(false);
   return (
     <div className={styles.project_cons + " " + styles.project_cons_sergey}>
       <div className={styles.project_cons_bcg}>
@@ -14,9 +16,13 @@ export const ProjectConsultationSergey = ({ text }) => {
           <div className={styles.project_cons_text1}>
             <p className={styles.project_cons_text_p}>&mdash;&nbsp;{text}</p>
           </div>
-          <button className={styles.project_cons_button}>Заказать консультацию</button>
+          <button onClick={() => setModal(true)} className={styles.project_cons_button}>Заказать консультацию</button>
         </div>
       </div>
+      <Modal
+        isVisible={isModal}
+        onClose={() => setModal(false)}
+      />
       <div className={styles.project_cons_person}>
         <StaticImage
           src="../../../images/personal/project_cons_sergey.jpg"

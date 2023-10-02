@@ -1,16 +1,12 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-// import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../../components/styles/services.module.scss"
-
-
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
+import { BuildingOtherServices } from "../../subitems/other-services/building"
+import { SupervisionOtherServices } from "../../subitems/other-services/supervision"
+import { FacadeOtherServices } from "../../subitems/other-services/facade"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
-
-
-
 
 
 
@@ -24,15 +20,6 @@ const ServicesApproval = () => (
       image={""}
     />
     <div className="wrapper">
-      {/* <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      /> */}
       <div className={styles.services_intro + " " + styles.services_intro_approval}>
         <BreadcrumbsServices />
         <h1 className={styles.services_intro_title}>Согласование перепланировки</h1>
@@ -44,7 +31,7 @@ const ServicesApproval = () => (
     <div className="wrapper">
       <div className="line"></div>
       <div className={styles.services__lefttitle_righttext + " " + styles.services__lefttitle_righttext__bigmargin}>
-        <h2 className={styles.services__lefttitle_righttext__title}>Наши специалисты помогут вам во&nbsp;всех необходимых процедурах:</h2>
+        <h2 className={styles.services__lefttitle_righttext__title}>Наши специалисты помогут вам в&nbsp;следующих вопросах:</h2>
         <div className={styles.services__lefttitle_righttext__text}>
           <ul>
             <li className={styles.services__lefttitle_righttext__text_li}>Реконструкция (раздел, присоединение, слияние и&nbsp;т.п.) объектов недвижимости.</li>
@@ -59,6 +46,14 @@ const ServicesApproval = () => (
             <li className={styles.services__lefttitle_righttext__text_li}>Регистрация изменений в&nbsp;правоустанавливающих документах (техпаспорт, свидетельство о&nbsp;регистрации).</li>
             <li className={styles.services__lefttitle_righttext__text_li}>Получение всех необходимых разрешений, согласований и&nbsp;других необходимых процедур.</li>
           </ul>
+        </div>
+      </div>
+      <div className={styles.other_services}>
+        <h2 className={styles.other_services_title}>Дополнительные услуги</h2>
+        <div className={styles.other_services_items}>
+          <BuildingOtherServices />
+          <SupervisionOtherServices />
+          <FacadeOtherServices />
         </div>
       </div>
       <FooterConsultationDmitry />

@@ -34,6 +34,9 @@ $mobile: 768px;
   }
 }
 .remote_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 63%;
   padding: 4.3vw 10vw 3.7vw 2.6vw;
   @media screen and (min-width: $fullscreen) {
@@ -96,9 +99,12 @@ $mobile: 768px;
   }
 }
 .remove_right_speak {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
   border: 1px solid #626262;
   border-radius: 30px;
-  padding: 1.8vw 4.4vw;
+  padding: 1.8vw 2.7vw 1.8vw 4.4vw;
   position: relative;
   max-width: 47.5vw;
   &::before {
@@ -114,8 +120,9 @@ $mobile: 768px;
     background-size: contain;
   }
   @media screen and (min-width: $fullscreen) {
-    padding: 27px 67px;
+    padding: 27px 41px 27px 67px;
     max-width: 800px;
+    gap: 9px;
     &::before {
       width: 22px;
       height: 33px;
@@ -127,6 +134,9 @@ $mobile: 768px;
     padding: 0;
     max-width: 35.7vw;
     margin-top: 46.6vw;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1vw;
     &::before {
       width: 9.8vw;
       height: 15.7vw;
@@ -159,7 +169,43 @@ $mobile: 768px;
     line-height: 3.9vw;
   }
 }
-.remove_right_speak_span {
-  color: #FFFFFF;
-  font-weight: 500;
+.remove_right_speak_flags {
+  display: flex;
+  gap: 0.6vw;
+  @media screen and (min-width: $fullscreen) {
+    gap: 9px;
+  }
+  @media screen and (max-width: $mobile) {
+    gap: 1.4vw;
+  }
+}
+.remove_right_speak_flag1 {
+  width: 2vw;
+  height: 1.5vw;
+  background-image: url(../../images/flag_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (min-width: $fullscreen) {
+    width: 30px;
+    height: 23px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 4.1vw;
+    height: 3.1vw;
+  }
+}
+.remove_right_speak_flag2 {
+  width: 2vw;
+  height: 1.5vw;
+  background-image: url(../../images/flag_2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (min-width: $fullscreen) {
+    width: 30px;
+    height: 23px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 4.1vw;
+    height: 3.1vw;
+  }
 }

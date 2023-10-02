@@ -180,7 +180,7 @@ header {
   }
   .header_sticky_logo_img {
     display: block;
-    width: 9.8vw;
+    width: 11vw;
   }
   @media screen and (min-width: $fullscreen) {
     .header_logo_link {
@@ -196,7 +196,7 @@ header {
       }
     }
     .header_sticky_logo_img {
-      width: 149px;
+      width: 167px;
     }
   }
   @media screen and (max-width: $mobile) {
@@ -222,13 +222,15 @@ header {
 .header_logo_link {
   display: flex;
   align-items: center;
-  width: 13.2vw;
+  width: 15.8vw;
   height: 5vw;
+  height: 4.7vw;
   position: relative;
   z-index: 2;
   @media screen and (min-width: $fullscreen) {
-    width: 182px;
+    width: 240px;
     height: 69px;
+    height: 71px;
   }
   @media screen and (max-width: $mobile) {
     width: 35.9vw;
@@ -308,6 +310,16 @@ header {
   @media screen and (min-width: $fullscreen) {
     .header_subnav_ul {
       width: 304px;
+    }
+  }
+}
+.header_subnav_about {
+  .header_subnav_ul {
+    width: 12vw;
+  }
+  @media screen and (min-width: $fullscreen) {
+    .header_subnav_ul {
+      width: 182px;
     }
   }
 }
@@ -496,18 +508,10 @@ main {
   @media screen and (min-width: $fullscreen) {
     min-height: calc(100vh - 348px);
   }
-
   @media screen and (max-width: $mobile) {
     min-height: calc(100vh - 176.3vw);
   }
 }
-// .footer {
-
-//   @media screen and (max-width: $mobile) {
-//   }
-// }
-
-
 .footer {
   background: linear-gradient(180deg, #3E393B 0%, #231F20 100%);
   border-radius: 30px;
@@ -524,7 +528,6 @@ main {
 }
 .footer_grid {
   display: grid;
-  grid-template-columns: 70.2vw 21.5vw;
   grid-template-columns: auto 21.5vw;
   grid-gap: 1.6vw;
   grid-template-rows: 1fr;
@@ -532,7 +535,6 @@ main {
   justify-content: space-between;
 
   @media screen and (min-width: $fullscreen) {
-    grid-template-columns: 70.2vw 327px;
     grid-template-columns: auto 327px;
     margin-bottom: 27px;
   }
@@ -542,10 +544,7 @@ main {
 }
 .footer_flex_left {
   display: flex;
-  gap: 3.4vw;
   gap: 5%;
-  @media screen and (min-width: $fullscreen) {
-  }
   @media screen and (max-width: $mobile) {
     flex-direction: column;
   }
@@ -554,7 +553,6 @@ main {
 .footer_flex {
   display: flex;
   flex-direction: column;
-  width: 37.6vw;
   width: 54%;
   @media screen and (min-width: $fullscreen) {
     width: 571px;
@@ -620,13 +618,7 @@ main {
   }
 }
 .footer_text {
-  width: 29.2vw;
   width: 38%;
-  @media screen and (min-width: $fullscreen) {
-    // margin-left: 27px;
-    // margin-left: auto;
-
-  }
   @media screen and (max-width: $mobile) {
     width: 100%;
     margin-bottom: 6.5vw;
@@ -1399,4 +1391,21 @@ main {
   .vacancy_faq_item_text {
     display: block;
   }
+}
+@keyframes tabsSelected {
+  0% {
+    background-color: transparent;
+    border: 1px solid #767676 !important;
+    color: #FFFFFF;
+  }
+  100% {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #000000;
+  }
+}
+.react-tabs__tab--selected {
+  border: 1px solid #FFFFFF !important;
+  border-radius: 20px !important;
+  animation: tabsSelected 0.5s ease;
 }

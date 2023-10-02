@@ -1,10 +1,7 @@
 import * as React from "react"
 import * as styles from "./decision.module.scss"
+import ScrollContainer from 'react-indiana-drag-scroll'
 import ConsultationBlock from "./index.js"
-
-
-import SimpleBar from 'simplebar-react';
-import 'simplebar-react/dist/simplebar.min.css';
 
 
 export const DecisionFacade = () => {
@@ -18,7 +15,7 @@ export const DecisionFacade = () => {
       </div>
       <ConsultationBlock />
       <div className={styles.services_decision_simplebar}>
-        <SimpleBar forceVisible="y" autoHide={false}>
+        <ScrollContainer className="scroll-container">
           <div className={styles.services_decision_items}>
             <div className={styles.services_decision_item + " " + styles.services_decision_item2}>
               <p className={styles.services_decision_item_title}>Дизайн фасада</p>
@@ -37,7 +34,7 @@ export const DecisionFacade = () => {
               <p className={styles.services_decision_item_p}>Предложим решение по&nbsp;ландшафту. Подберем растения, проведем работы по&nbsp;благоустройству.</p>
             </div>
           </div>
-        </SimpleBar>
+        </ScrollContainer>
       </div>
     </div>
   )

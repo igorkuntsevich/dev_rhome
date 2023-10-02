@@ -12,7 +12,7 @@ export const ReviewSilvanoSpecial = () => {
           </div>
         <p className={styles.reviews_item_head_data + " " + styles.reviews_item_head_data_special}>17.09.2019</p>
       </div>
-      <div className={styles.reviews_item_body}>
+      <div className={styles.reviews_item_body + " " + styles.reviews_item_special}>
         <div className={styles.reviews_item_body_text}>
           <div className={styles.reviews_item_body_text_wrap}>
             <p className={styles.reviews_item_body_text_p}>ООО &laquo;Сильвано Фешн&raquo; выражает благодарность дизайн-студии &laquo;RHOME&raquo; за&nbsp;выполненную работу по&nbsp;проектированию дизайна интерьера нашего офиса.</p>

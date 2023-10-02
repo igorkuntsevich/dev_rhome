@@ -1,26 +1,23 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { Video } from "../../subitems/video-intro/index"
 import mainVideo from "../../video/apart.mp4"
 import mainVideoMobile from "../../video/apart_1.mp4"
 import * as styles from "../../components/styles/services.module.scss"
-
-import { DecisionApart } from "../../subitems/decision/decisionApart"
-import { StagesApart } from "../../subitems/services-stages/stagesApart"
 import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
-
-
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
+import { StagesApart } from "../../subitems/services-stages/stagesApart"
+import { DecisionApart } from "../../subitems/decision/decisionApart"
 import { PhotoCollage } from "../../subitems/photocollage"
 import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
 import { ServicesCost } from "../../subitems/services-cost"
 import { HowWeWork } from "../../subitems/how-we-work/hww"
 import { RemoteWork } from "../../subitems/remote-work/index"
 import { DesignProektDecision } from "../../subitems/dp-decision/index"
+import { SostavDP } from "../../subitems/sostav-dp"
 
 import { ReviewBorovlianiSpecial } from "../../subitems/reviews/special/reviewBorovliani"
 import * as reviewStyles from "../../subitems/reviews/review.module.scss"
@@ -44,15 +41,6 @@ const ServicesApart = () => (
       image={""}
     />
     <div className="wrapper">
-      {/* <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      /> */}
       <div className={styles.services_intro}>
         <Video mobileSrc={mainVideoMobile} desktopSrc={mainVideo} />
         <BreadcrumbsServices />
@@ -97,7 +85,7 @@ const ServicesApart = () => (
 
     <div className="wrapper">
       <div className={styles.services_zndp}>
-        <h2 className={styles.services_zndp_title}>Зачем нужен дизайн проект?</h2>
+        <h2 className={styles.services_zndp_title}>Зачем нужен дизайн-проект?</h2>
         <div className={styles.services_zndp_text}>
           <p className={styles.services_zndp_text_p}>Задача дизайн-проекта интерьера квартиры&nbsp;&mdash; ответить на&nbsp;всевозможные вопросы прораба и&nbsp;строителей, которые будут реализовывать проект. Тщательно подготовленный дизайн-проект оптимизирует ремонт, позволяя избежать лишних трат и&nbsp;простоев в&nbsp;работе.</p>
           <p className={styles.services_zndp_text_p}>При создании интерьера вашей квартиры мы разрабатываем подробный дизайн-проект. В&nbsp;него входят все необходимые документы для проведения ремонта: от&nbsp;общей концепции интерьера до детализированных технических чертежей.</p>
@@ -223,23 +211,7 @@ const ServicesApart = () => (
       <StagesApart />
       <HowWeWork />
       <div className="line"></div>
-      <div className={styles.services__lefttitle_righttext + " " + styles.services__lefttitle_righttext__bigmargin}>
-        <h2 className={styles.services__lefttitle_righttext__title}>Состав дизайн проекта</h2>
-        <div className={styles.services__lefttitle_righttext__text}>
-          <div className={styles.services__lefttitle_righttext__wrap}>
-            <span className={styles.services__lefttitle_righttext__text_span}>Готовый дизайн-проект&nbsp;&mdash; это инструкция по&nbsp;проведению ремонта, поэтому его можно отдать на&nbsp;реализацию прорабу или руководить командой строителей самостоятельно. По&nbsp;окончании работ по&nbsp;созданию дизайн-проекта вы&nbsp;получите пакет документов&nbsp;&mdash; гид по&nbsp;вашему будущему интерьеру.</span>
-          </div>
-          <p className={styles.services__lefttitle_righttext__text_title}>Документ включает в себя:</p>
-          <ul>
-            <li className={styles.services__lefttitle_righttext__text_li}>Несколько вариантов планировки</li>
-            <li className={styles.services__lefttitle_righttext__text_li}>4-6 ракурсов 3D-визуализации каждой комнаты</li>
-            <li className={styles.services__lefttitle_righttext__text_li}>25&nbsp;листов чертежей, подробно иллюстрирующих все технические моменты: от&nbsp;электрики до&nbsp;развёртки стен</li>
-            <li className={styles.services__lefttitle_righttext__text_li}>Полный перечень материалов, которые понадобятся для ремонтных работ</li>
-            <li className={styles.services__lefttitle_righttext__text_li}>Расчет бюджета проекта</li>
-            <li className={styles.services__lefttitle_righttext__text_li}>Смету на&nbsp;ремонтно-отделочные работы</li>
-          </ul>
-        </div>
-      </div>
+      <SostavDP />
       <DesignProektDecision />
       <RemoteWork />
       <div className={reviewStyles.review}>

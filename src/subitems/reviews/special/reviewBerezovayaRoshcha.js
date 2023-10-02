@@ -17,7 +17,7 @@ export const ReviewBerezovayaRoshchaSpecial = () => {
           </div>
         <p className={styles.reviews_item_head_data + " " + styles.reviews_item_head_data_special}>23.08.2019</p>
       </div>
-      <div className={styles.reviews_item_body}>
+      <div className={styles.reviews_item_body + " " + styles.reviews_item_special}>
         <div className={styles.reviews_item_body_text}>
           <div className={styles.reviews_item_body_text_wrap + " " + styles.reviews_item_body_text_wrap6 + " " + (openReviewList? `${styles.open}` : "")}>
             <p className={styles.reviews_item_body_text_p}>&mdash;&nbsp;Мы&nbsp;очень довольны сотрудничеством с&nbsp;RHOME! Вы&nbsp;действительно смогли создать ландшафтный дизайн, который вписался в&nbsp;местность и&nbsp;гармонирует с&nbsp;домом. А&nbsp;дом у&nbsp;нас необычный!</p>

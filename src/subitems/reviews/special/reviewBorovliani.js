@@ -17,7 +17,7 @@ export const ReviewBorovlianiSpecial = () => {
           </div>
         <p className={styles.reviews_item_head_data + " " + styles.reviews_item_head_data_special}>14.04.2018</p>
       </div>
-      <div className={styles.reviews_item_body}>
+      <div className={styles.reviews_item_body + " " + styles.reviews_item_special}>
         <div className={styles.reviews_item_body_text}>
           <div className={styles.reviews_item_body_text_wrap + " " + styles.reviews_item_body_text_wrap4 + " " + (openReviewList? `${styles.open}` : "")}>
             <p className={styles.reviews_item_body_text_p}>&mdash;&nbsp;Над нашим проектом работал дизайнер Лев, но&nbsp;лично с&nbsp;ним мы&nbsp;общались мало (только во&nbsp;время презентации), вся коммуникация в&nbsp;основном велась с&nbsp;менеджером проекта Дмитрием. Нам очень понравилась предложенная идея и&nbsp;сам дизайн. Но, к&nbsp;сожалению, в&nbsp;процессе реализации проекта были обнаружены некоторые недочеты: к&nbsp;примеру, в&nbsp;дизайн-проекте не&nbsp;учли высоту окон на&nbsp;кухне, и&nbsp;предложенный карниз просто не&nbsp;подходил по&nbsp;размерам. Также были нюансы с&nbsp;кондиционером&nbsp;&mdash; установить внешний блок как задумано в&nbsp;проекте было практически нереально, пришлось искать альтернативу. К&nbsp;сожалению, с&nbsp;бригадой, которую предложила студия, мы&nbsp;не&nbsp;сошлись в&nbsp;финансовых вопросах, поэтому сам ремонт мы&nbsp;решили делать с&nbsp;другой бригадой.</p>

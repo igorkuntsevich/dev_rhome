@@ -126,12 +126,12 @@ const D3Olimpik = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/06_d3-i-olimpik-park-v-minske.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
+          <StaticImage
+            src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/06_d3-i-olimpik-park-v-minske.jpg"
+            alt=""
+            className={styles.articles__one_image}
+          />
         </div>
 
         <div className={styles.articles__two_inline}>
@@ -188,12 +188,12 @@ const D3Olimpik = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
-        <StaticImage
-          src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/07_d3-i-olimpik-park-v-minske.jpg"
-          alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
-        />
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
+          <StaticImage
+            src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/07_d3-i-olimpik-park-v-minske.jpg"
+            alt=""
+            className={styles.articles__one_image}
+          />
         </div>
 
         <div className={styles.articles__project}>
@@ -227,11 +227,11 @@ const D3Olimpik = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
         <StaticImage
           src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/08_d3-i-olimpik-park-v-minske.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
 
@@ -256,11 +256,11 @@ const D3Olimpik = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
         <StaticImage
           src="../../../images/inspiration/articles/d3-i-olimpik-park-v-minske/09_d3-i-olimpik-park-v-minske.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
 

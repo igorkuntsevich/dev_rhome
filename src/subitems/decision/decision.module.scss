@@ -90,11 +90,11 @@ $mobile: 768px;
   background-image: url(../../images/services/remont_cons_dmitry.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2.8vw 1.5vw 1.8vw 2vw;
+  padding: 4.6vw 1.5vw 1.8vw 2vw;
   position: relative;
   overflow: hidden;
   @media screen and (min-width: $fullscreen) {
-    padding: 42px 23px 27px 30px;
+    padding: 70px 23px 27px 30px;
   }
   @media screen and (max-width: $mobile) {
     padding: 5.6vw 3.1vw 6.5vw;
@@ -106,18 +106,18 @@ $mobile: 768px;
   }
 }
 .services_decision_cons_status {
-  font-size: 1.6vw;
-  line-height: 1.9vw;
+  font-size: 1.25vw;
+  line-height: 1.5vw;
   text-align: right;
   color: #FFFFFF;
   margin-left: auto;
   max-width: 19.1vw;
-  margin-bottom: 2.5vw;
+  margin-bottom: 1.6vw;
   @media screen and (min-width: $fullscreen) {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 19px;
+    line-height: 23px;
     max-width: 290px;
-    margin-bottom: 38px;
+    margin-bottom: 24px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 3.4vw;
@@ -156,10 +156,6 @@ $mobile: 768px;
   }
 }
 .services_decision_cons_text {
-
-  @media screen and (min-width: $fullscreen) {
-
-  }
   @media screen and (max-width: $mobile) {
     background: rgba(0, 0, 0, 0.8);
     border: 1px solid #6B6B6B;
@@ -201,6 +197,11 @@ $mobile: 768px;
   width: 100%;
   padding: 1.2vw;
   cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #252525;
+    transition: all 0.5s ease;
+  }
   @media screen and (min-width: $fullscreen) {
     font-size: 23px;
     line-height: 26px;

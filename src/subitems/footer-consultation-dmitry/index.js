@@ -3,7 +3,7 @@ import * as styles from "./footer-consultation.module.scss"
 import { useInView } from "react-intersection-observer"
 
 export const FooterConsultationDmitry = () => {
-  const { ref, inView  } = useInView({
+  const { ref, inView } = useInView({
     triggerOnce: true,
   });
   return (
@@ -17,13 +17,13 @@ export const FooterConsultationDmitry = () => {
       <div className={styles.consultation_right}>
         <div className={styles.consultation_contacts}>
           <div className={styles.consultation_contact}>
-            <a href="/" className={styles.consultation_contact_item}>+375 (29) 674-83-90</a>
-            <a href="/" className={styles.consultation_contact_item}>rhomeby@gmail.com</a>
+            <a href="tel:+375296748390" className={styles.consultation_contact_item}>+375 (29) 674-83-90</a>
+            <a href="mailto:rhomeby@gmail.com" className={styles.consultation_contact_item}>rhomeby@gmail.com</a>
           </div>
           <div className={styles.consultation_social}>
-            <a href="/" className={styles.consultation_social_item + " " + styles.consultation_social_telegram}></a>
-            <a href="/" className={styles.consultation_social_item + " " + styles.consultation_social_viber}></a>
-            <a href="/" className={styles.consultation_social_item + " " + styles.consultation_social_wp}></a>
+            <a href="tg://resolve?domain=drazumeichyk" className={styles.consultation_social_item + " " + styles.consultation_social_telegram}></a>
+            <a href="viber://chat?number=+375296748390" className={styles.consultation_social_item + " " + styles.consultation_social_viber}></a>
+            <a href="whatsapp://send?phone=+375296748390" className={styles.consultation_social_item + " " + styles.consultation_social_wp}></a>
           </div>
         </div>
         <div className={styles.consultation_form_block}>
@@ -34,7 +34,7 @@ export const FooterConsultationDmitry = () => {
             </div>
             <button className={styles.consultation_button}>Заказать звонок</button>
           </div>
-          <p className={styles.consultation_form_text}>Вы&nbsp;можете оставить свой номер телефона, и&nbsp;мы&nbsp;перезвоним в&nbsp;рабочее время</p>
+          <p className={styles.consultation_form_text}>Оставьте свой номер телефона, и&nbsp;мы&nbsp;перезвоним в&nbsp;рабочее время</p>
         </div>
       </div>
     </div>

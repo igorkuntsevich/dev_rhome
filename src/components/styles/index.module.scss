@@ -55,23 +55,17 @@ $mobile: 768px;
   }
 }
 .index_intro_text_p {
-  font-size: 3.1vw;
-  line-height: 3.5vw;
+  font-size: 2.8vw;
+  line-height: 3.2vw;
   margin-bottom: 1.1vw;
-  width: 78.8vw;
-  br {
-    display: none;
-  }
+  width: 70vw;
   @media screen and (min-width: $fullscreen) {
-    font-size: 47px;
-    line-height: 53px;
+    font-size: 43px;
+    line-height: 49px;
     margin-bottom: 17px;
-    max-width: 1250px;
+    max-width: 1065px;
   }
   @media screen and (max-width: $mobile) {
-    br {
-      display: block;
-    }
     font-size: 5.8vw;
     line-height: 7.7vw;
     margin-bottom: 7.7vw;

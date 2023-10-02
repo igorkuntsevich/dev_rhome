@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import * as styles from "./decision.module.scss"
 
-import SimpleBar from 'simplebar-react';
-import 'simplebar-react/dist/simplebar.min.css';
+
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 
 export const DesignProektDecision = () => {
@@ -15,7 +15,7 @@ export const DesignProektDecision = () => {
       <div className={styles.decision_head + " " + (openDecisionList? `${styles.open}` : "")} onClick={toggleDecisionList}>
         <h2 className={styles.decision_head_title}>Решения, которые гарантирует дизайн‑проект</h2>
       </div>
-      <SimpleBar forceVisible="y" autoHide={false}>
+      <ScrollContainer className="scroll-container">
         <div className={styles.decision_body + " " + (openDecisionList? `${styles.open}` : "")}>
           <div className={styles.decision_body_item}>
             <h3 className={styles.decision_body_item_title}>Художественное оформление</h3>
@@ -66,7 +66,7 @@ export const DesignProektDecision = () => {
             <p className={styles.decision_body_item_p}>Калькулирует стоимость ремонта, по&nbsp;пунктам расписывает траты. Специалист вычисляет сумму на&nbsp;основе актуальных цен.</p>
           </div>
         </div>
-      </SimpleBar>
+      </ScrollContainer>
     </div>
   )
 }

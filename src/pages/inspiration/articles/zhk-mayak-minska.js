@@ -74,11 +74,11 @@ const ZhkMyak = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
         <StaticImage
           src="../../../images/inspiration/articles/zhk-mayak-minska/06_zhk-mayak-minska.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
 
@@ -116,11 +116,11 @@ const ZhkMyak = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
         <StaticImage
           src="../../../images/inspiration/articles/zhk-mayak-minska/04_zhk-mayak-minska.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
 
@@ -154,11 +154,11 @@ const ZhkMyak = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
         <StaticImage
           src="../../../images/inspiration/articles/zhk-mayak-minska/05_zhk-mayak-minska.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
 

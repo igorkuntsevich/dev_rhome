@@ -1,20 +1,22 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../../components/styles/services.module.scss"
-import { DecisionFacade } from "../../subitems/decision/decisionFacade"
-import { StagesFacade } from "../../subitems/services-stages/stagesFacade"
 import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
+import { StagesFacade } from "../../subitems/services-stages/stagesFacade"
+import { DecisionFacade } from "../../subitems/decision/decisionFacade"
 import { PhotoCollage } from "../../subitems/photocollage"
 import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
 import { ServicesFacadeCost } from "../../subitems/services-cost/services-facade-cost"
 import { RemoteWork } from "../../subitems/remote-work/index"
 import { ReviewBerezovayaRoshchaSpecial } from "../../subitems/reviews/special/reviewBerezovayaRoshcha"
 import * as reviewStyles from "../../subitems/reviews/review.module.scss"
+import { BuildingOtherServices } from "../../subitems/other-services/building"
+import { ApprovalOtherServices } from "../../subitems/other-services/approval"
+import { SupervisionOtherServices } from "../../subitems/other-services/supervision"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 
 import { Faq } from "../../subitems/faq/office"
@@ -35,8 +37,8 @@ const ServicesFasad = () => (
         <h1 className={styles.services_intro_title}>Оформление фасадов</h1>
       </div>
       <div className={styles.services_intro_text + " " + styles.services_intro_facade_text}>
-        <p className={styles.services_intro_text_p}>Первое впечатление от&nbsp;дома всегда зависит от&nbsp;его внешнего вида. Фасад дома делают не&nbsp;только для себя&nbsp;&mdash; это вклад в&nbsp;красоту всей улицы или даже города. Мы&nbsp;создаем дизайн фасадов и&nbsp;занимаемся реконструкцией.</p>
-        <span className={styles.services_intro_text_span}>Мы&nbsp;поможем вам сделать экстерьер дома визуально привлекательным, а&nbsp;также придумаем, как пристроить крыльцо, гараж, террасу, сохранив стилистическую целостность дома.</span>
+        <p className={styles.services_intro_text_p}>Первое впечатление от&nbsp;дома всегда зависит от&nbsp;его внешнего вида. Фасад дома делают не&nbsp;только для себя&nbsp;&mdash; это вклад в&nbsp;красоту всей улицы<br />или даже города.</p>
+        <span className={styles.services_intro_text_span}>Мы&nbsp;создаем дизайн фасадов и&nbsp;занимаемся реконструкцией. Мы&nbsp;поможем вам сделать экстерьер дома визуально привлекательным, а&nbsp;также придумаем, как пристроить крыльцо, гараж, террасу, сохранив стилистическую целостность дома.</span>
       </div>
     </div>
     <div className={collageStyles.photocollage_services}>
@@ -184,18 +186,19 @@ const ServicesFasad = () => (
       <StagesFacade />
     </div>
     <div className="wrapper">
-      {/* <div className={styles.services_zndp}>
-        <h2 className={styles.services_zndp_title}>Зачем нужен дизайн проект?</h2>
-        <div className={styles.services_zndp_text}>
-          <p className={styles.services_zndp_text_p}>Задача дизайн-проекта интерьера квартиры&nbsp;&mdash; ответить на&nbsp;всевозможные вопросы прораба и&nbsp;строителей, которые будут реализовывать проект. Тщательно подготовленный дизайн-проект оптимизирует ремонт, позволяя избежать лишних трат и&nbsp;простоев в&nbsp;работе.</p>
-          <p className={styles.services_zndp_text_p}>При создании интерьера вашей квартиры мы разрабатываем подробный дизайн-проект. В&nbsp;него входят все необходимые документы для проведения ремонта: от&nbsp;общей концепции интерьера до детализированных технических чертежей.</p>
-        </div>
-      </div> */}
       <RemoteWork />
       <div className={reviewStyles.review}>
         <h2 className={reviewStyles.review_title}>Отзывы о нашей <br />работе</h2>
         <div className={reviewStyles.review_items}>
           <ReviewBerezovayaRoshchaSpecial />
+        </div>
+      </div>
+      <div className={styles.other_services}>
+        <h2 className={styles.other_services_title}>Дополнительные услуги</h2>
+        <div className={styles.other_services_items}>
+          <BuildingOtherServices />
+          <ApprovalOtherServices />
+          <SupervisionOtherServices />
         </div>
       </div>
       <div className="line"></div>

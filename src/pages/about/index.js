@@ -34,7 +34,7 @@ const About = () => (
         />
       </div>
       <div className={styles.about_intro_text + " " + styles.about_intro_index_text}>
-        <p className={styles.about_intro_text_p}>RHome&nbsp;&mdash; это архитектурное проектирование, дизайн интерьера жилых и&nbsp;коммерческих объектов, дизайн ландшафта и&nbsp;реконструкция<br />объектов.</p>
+        <p className={styles.about_intro_text_p}>RHome&nbsp;&mdash; это архитектурное проектирование, дизайн интерьера жилых и коммерческих объектов, дизайн ландшафта и&nbsp;реконструкция<br />объектов.</p>
         <span className={styles.about_intro_text_span}>Студия дизайна RHome основана в&nbsp;2008 году в&nbsp;Минске. Мы&nbsp;любим современный европейский дизайн и&nbsp;постоянно учимся, чтобы понимать тренды, узнавать о&nbsp;новых материалах, технологиях и&nbsp;объектах предметного дизайна.</span>
       </div>
       <div className={styles.about_intro_numbers}>
@@ -87,7 +87,7 @@ const About = () => (
         <div className={styles.about_schedule_links}>
           <Link to="/portfolio" className={styles.about_schedule_link}>Портфолио</Link>
           <Link to="/inspiration" className={styles.about_schedule_link}>Вдохновение</Link>
-          <Link to="/reviews" className={styles.about_schedule_link}>Отзывы</Link>
+          <Link to="/about/reviews" className={styles.about_schedule_link}>Отзывы</Link>
         </div>
       </div>
       <div className={styles.about_personal}>
@@ -118,7 +118,7 @@ const About = () => (
             <div className={styles.about_personal_image + " " + styles.about_personal_image_alexey}></div>
             <div className={styles.about_personal_text}>
               <p className={styles.about_personal_text_head_p}>Алексей Сергеев</p>
-              <p className={styles.about_personal_text_p}>Арт-директор, автор и&nbsp;куратор более 200 проектов дизайна интерьеров и&nbsp;архитектурного проектирования, от&nbsp;квартир и&nbsp;домов до&nbsp;крупных торговых центов (гостиничный комплекс &laquo;Мариотт&raquo;, ТЦ&nbsp;&laquo;Палаццо&raquo; и&nbsp;пр.). Образование: Окончил БНТУ, по&nbsp;специальности архитектор</p>
+              <p className={styles.about_personal_text_p}>Арт-директор, автор и&nbsp;куратор более 200 проектов дизайна интерьеров и&nbsp;архитектурного проектирования, от&nbsp;квартир и&nbsp;домов до&nbsp;крупных торговых центов (гостиничный комплекс &laquo;Мариотт&raquo;, ТЦ&nbsp;&laquo;Палаццо&raquo; и&nbsp;пр.). Образование: Окончил БНТУ</p>
             </div>
             <div className={styles.about_personal_quote + " " + styles.about_personal_quote3}>
               <p className={styles.about_personal_quote_p}>Мне хочется, чтобы после нас осталась среда, которая охарактеризует нашу эпоху. Наибольшее удовлетворение и&nbsp;вдохновение получаю от&nbsp;современной архитектуры и&nbsp;дизайна.</p>

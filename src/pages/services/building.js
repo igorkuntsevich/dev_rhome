@@ -2,16 +2,14 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import * as styles from "../../components/styles/services.module.scss"
-import SimpleBar from 'simplebar-react';
-import 'simplebar-react/dist/simplebar.min.css';
-import { BuildingGallery } from "../../subitems/building-gallery"
+import { BuildingGallery } from "../../subitems/gallery/building-gallery"
+import { TermTabs } from "../../subitems/building-tabs"
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
 import { ServicesInterests } from "../../subitems/services-cost/services-interests"
+import { ApprovalOtherServices } from "../../subitems/other-services/approval"
+import { SupervisionOtherServices } from "../../subitems/other-services/supervision"
+import { FacadeOtherServices } from "../../subitems/other-services/facade"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
-
-
-
-
 
 const ServicesBuilding = () => (
   <Layout>
@@ -44,65 +42,29 @@ const ServicesBuilding = () => (
           </div>
         </div>
       </div>
-      <div className={styles.services_term}>
-        <h2 className={styles.services_term_title}>Сроки и&nbsp;виды работ</h2>
-        <p className={styles.services_term_text}>Выберите из&nbsp;примеров то&nbsp;что наиболее похоже на&nbsp;ваш проект</p>
-        <div className={styles.services_term_wrap}>
-          <SimpleBar forceVisible="y" autoHide={false}>
-            <div className={styles.services_term_head}>
-              <p className={styles.services_term_head_item}>50-80м<sup>2</sup></p>
-              <p className={styles.services_term_head_item + " " + styles.active}>80-100м<sup>2</sup></p>
-              <p className={styles.services_term_head_item}>100-150м<sup>2</sup></p>
-              <p className={styles.services_term_head_item}>150-200м<sup>2</sup></p>
-              <p className={styles.services_term_head_item}>200-250м<sup>2</sup></p>
-            </div>
-          </SimpleBar>
-        </div>
-        <div className={styles.services_term_body}>
-          <div>
-            <p className={styles.services_term_body_item_title}>5 месяцев <span className={styles.services_term_body_item_title_span}>(ориентировочные сроки)</span></p>
-            <div className={styles.services_term_line}></div>
-            <div className={styles.services_term_body_grid}>
-              <div>
-                <p className={styles.services_term_body_grid_item_title}>Подготовительные работы</p>
-                <p className={styles.services_term_body_grid_item_p}>Проводим демонтаж старых и&nbsp;монтаж новых перегородок, заливаем стяжку, делаем электромонтажные и&nbsp;сантехнические работы, монтируем гипсокартонные конструкции и&nbsp;штукатурим.</p>
-              </div>
-              <div>
-                <p className={styles.services_term_body_grid_item_title}>Малярные работы и&nbsp;облицовка плиткой</p>
-                <p className={styles.services_term_body_grid_item_p}>Подготавливаем стены под покраску, обои, декоративную штукатурку, укладываем плитку и&nbsp;красим потолки.</p>
-              </div>
-              <div>
-                <p className={styles.services_term_body_grid_item_title}>Финишная отделка</p>
-                <p className={styles.services_term_body_grid_item_p}>Укладываем паркет и&nbsp;монтируем плинтуса, устанавливаем сантехнику и&nbsp;электрику (розетки, выключатели и&nbsp;светильники), клеим обои.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <TermTabs />
       <div className={styles.services_schedule}>
         <h3 className={styles.services_schedule_title}>Графики работ, оплат и&nbsp;поставок</h3>
         <p className={styles.services_schedule_text}>Предоставляем графики работ, оплат и&nbsp;поставок материалов. Графики нужны для того, чтобы отладить и&nbsp;сделать прозрачными все процессы. Вы&nbsp;заранее будете знать, когда и&nbsp;кем будут выполняться работы и&nbsp;когда нужно вносить оплату. Кроме того, раннее планирование позволяет избежать простоев и&nbsp;сократить время строительных работ.</p>
       </div>
-      <ServicesInterests />
       <BuildingGallery />
+      <ServicesInterests />
       <div className="line"></div>
       <div className={styles.services__lefttitle_righttext}>
         <h2 className={styles.services__lefttitle_righttext__title}>Инженер по&nbsp;качеству на&nbsp;проекте</h2>
         <div className={styles.services__lefttitle_righttext__text}>
           <div>
             <p className={styles.services__lefttitle_righttext__text_span}>Каждая стадия строительства принимается аттестованным инженером. Его задача&nbsp;&mdash; проверять, чтобы все было выполнены в&nbsp;соответствии с&nbsp;технологическими нормами. Это позволяет перейти к&nbsp;новому этапу работ, убедившись, что не&nbsp;было допущено никаких ошибок. Контроль инженера по&nbsp;качеству экономит время и&nbsp;помогает избежать переделок по&nbsp;завершении ремонта.</p>
-            <p className={styles.services__lefttitle_righttext__text_span}>Наши подрядчики имеют сертификаты, мы&nbsp;официально проводим оплаты и&nbsp;даем гарантию качества.</p>
+            <p className={styles.services__lefttitle_righttext__text_span}>Наши подрядчики имеют сертификаты, мы&nbsp;официально проводим оплаты и&nbsp;даем гарантию качества. У&nbsp;нас есть все официальные документы на&nbsp;любые виды строительных работ от&nbsp;заливки фундамента до&nbsp;укладки кровли. Работаем с&nbsp;объектами разных масштабов от&nbsp;квартир до&nbsp;торговых центров. Гарантируем качество строительных работ, ведь мы&nbsp;работаем с&nbsp;аттестованными специалистами. Наши подрядчики имеют сертификаты. Официально проводим оплаты и&nbsp;даем гарантию 5&nbsp;лет.</p>
           </div>
         </div>
       </div>
-      <div className="line"></div>
-      <div className={styles.services__lefttitle_righttext + " " + styles.services__lefttitle_righttext__bigmargin}>
-        <h2 className={styles.services__lefttitle_righttext__title}>Официальные документы</h2>
-        <div className={styles.services__lefttitle_righttext__text}>
-          <div>
-            <p className={styles.services__lefttitle_righttext__text_span}>У&nbsp;нас есть все официальные документы на&nbsp;любые виды строительных работ от&nbsp;заливки фундамента до&nbsp;укладки кровли. Работаем с&nbsp;объектами разных масштабов от&nbsp;квартир до&nbsp;торговых центров. Гарантируем качество строительных работ, ведь мы&nbsp;работаем с&nbsp;аттестованными специалистами.</p>
-            <p className={styles.services__lefttitle_righttext__text_span}>Наши подрядчики имеют сертификаты. Официально проводим оплаты и&nbsp;даем гарантию 5&nbsp;лет.</p>
-          </div>
+      <div className={styles.other_services}>
+        <h2 className={styles.other_services_title}>Дополнительные услуги</h2>
+        <div className={styles.other_services_items}>
+          <ApprovalOtherServices />
+          <SupervisionOtherServices />
+          <FacadeOtherServices />
         </div>
       </div>
       <FooterConsultationDmitry />

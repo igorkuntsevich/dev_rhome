@@ -108,16 +108,16 @@ $mobile: 768px;
   }
 }
 .project_cons_person_status {
-  font-size: 1.6vw;
-  line-height: 1.9vw;
+  font-size: 1.25vw;
+  line-height: 1.5vw;
   text-align: right;
   color: #FFFFFF;
   position: absolute;
   top: 2.8vw;
   right: 1.9vw;
   @media screen and (min-width: $fullscreen) {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 19px;
+    line-height: 23px;
     top: 42px;
     right: 29px;
   }
@@ -208,10 +208,15 @@ $mobile: 768px;
   border: none;
   outline: none;
   border-radius: 8px; 
-  background-color: #3C3B37;
+  background-color: #000000;
   color: #FFFFFF;
   padding: 1.2vw 3vw;
+  transition: all 0.5s ease;
   cursor: pointer;
+  &:hover {
+    background-color: #252525;
+    transition: all 0.5s ease;
+  }
   @media screen and (min-width: $fullscreen) {
     font-size: 22px;
     line-height: 26px;

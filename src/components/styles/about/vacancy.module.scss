@@ -83,15 +83,15 @@ $mobile: 768px;
   }
 }
 .vacancy_intro_text_p {
-  font-size: 3.1vw;
-  line-height: 3.5vw;
+  font-size: 2.8vw;
+  line-height: 3.2vw;
   margin-bottom: 1.1vw;
-  width: 78.8vw;
+  width: 70vw;
   @media screen and (min-width: $fullscreen) {
-    font-size: 47px;
-    line-height: 53px;
+    font-size: 43px;
+    line-height: 49px;
     margin-bottom: 17px;
-    max-width: 1200px;
+    max-width: 1064px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 5.8vw;
@@ -105,12 +105,12 @@ $mobile: 768px;
   display: inline-block;
   font-size: 1.5vw;
   line-height: 2.1vw;
-  max-width: 51vw;
+  max-width: 47.7vw;
   margin-left: 36.4vw;
   @media screen and (min-width: $fullscreen) {
     font-size: 23px;
     line-height: 32px;
-    max-width: 1000px;
+    max-width: 850px;
     margin-left: 553px;
   }
   @media screen and (max-width: $mobile) {

@@ -89,7 +89,7 @@ $mobile: 768px;
 }
 .consultation_image_status {
   font-size: 1.25vw;
-  line-height: 1.8vw;
+  line-height: 1.5vw;
   text-align: right;
   color: #FFFFFF;
   max-width: 14vw;
@@ -101,7 +101,7 @@ $mobile: 768px;
   }
   @media screen and (min-width: $fullscreen) {
     font-size: 19px;
-    line-height: 27px;
+    line-height: 23px;
     max-width: 213px;
   }
   @media screen and (max-width: $mobile) {
@@ -188,13 +188,13 @@ $mobile: 768px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2.6vw;
+  gap: 2.5vw;
   margin-top: 3vw;
   border-radius: 30px;
   background-color: #393939;
   padding: 3vw 2.5vw 2.4vw 1.7vw;
   @media screen and (min-width: $fullscreen) {
-    gap: 40px;
+    gap: 38px;
     margin-top: 46px;
     padding: 46px 38px 36px 26px;
   }
@@ -210,10 +210,10 @@ $mobile: 768px;
 .consultation_form {
   display: flex;
   flex-direction: column;
-  gap: 2.6vw;
+  gap: 1.1vw;
   width: 20vw;
   @media screen and (min-width: $fullscreen) {
-    gap: 40px;
+    gap: 17px;
     width: 304px;
   }
   @media screen and (max-width: $mobile) {
@@ -275,9 +275,15 @@ $mobile: 768px;
   text-align: center;
   color: #FFFFFF;
   padding: 1.2vw 3.3vw;
-  background-color: #2C2C2C;
+  background-color: #000000;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #252525;
+    transition: all 0.5s ease;
+  }
   @media screen and (min-width: $fullscreen) {
     font-size: 22px;
     line-height: 26px;
@@ -292,14 +298,17 @@ $mobile: 768px;
   }
 }
 .consultation_form_text {
-  font-size: 1.5vw;
-  line-height: 1.7vw;
+  font-size: 1.2vw;
+  line-height: 1.6vw;
   color: #FFFFFF;
   width: 16.1vw;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
   @media screen and (min-width: $fullscreen) {
-    font-size: 23px;
-    line-height: 26px;
-    max-width: 350px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 237px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 3.4vw;

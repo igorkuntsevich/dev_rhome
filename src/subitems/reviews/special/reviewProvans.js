@@ -17,7 +17,7 @@ export const ReviewProvansSpecial = () => {
           </div>
         <p className={styles.reviews_item_head_data + " " + styles.reviews_item_head_data_special}>16.01.2020</p>
       </div>
-      <div className={styles.reviews_item_body}>
+      <div className={styles.reviews_item_body + " " + styles.reviews_item_special}>
         <div className={styles.reviews_item_body_text}>
           <div className={styles.reviews_item_body_text_wrap + " " + (openReviewList? `${styles.open}` : "")}>
             <p className={styles.reviews_item_body_text_p}>&mdash;&nbsp;Студию, которая разработала&nbsp;бы дизайн-проект для моего дома, я&nbsp;искала в&nbsp;интернете. Оставила запросы примерно в&nbsp;5&nbsp;студий и&nbsp;стала ждать. RHOME очень быстро отреагировали на&nbsp;мой запрос: уже через полчаса мне перезвонил Сергей Рассеко, чтобы обсудить мой проект. По&nbsp;этому разговору мне он&nbsp;показался приятным и&nbsp;адекватным человеком, ответил на&nbsp;все мои вопросы. Уже после этого разговора я&nbsp;на&nbsp;90% определилась, что буду работать с&nbsp;RHOME.</p>

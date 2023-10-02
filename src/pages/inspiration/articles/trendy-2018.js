@@ -118,16 +118,16 @@ const Trendy2018 = () => (
         <StaticImage
           src="../../../images/inspiration/articles/trendy-2018/05_trendy-2018.jpg"
           alt=""
-          className={styles.articles__one_imagen}
+          className={styles.articles__one_image}
         />
         </div>
- 
+
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
           <h2 className={styles.articles__lefttitle_righttext__title}>Фактурные стены</h2>
           <div>
           <p className={styles.articles__p}>Еще одна распространенная тенденция в дизайне квартир — усложнение внутренней архитектуры стен дополнительными элементами. Обои и декоративная штукатурка уступают место дорогой тканевой обивке. Также на пике популярности остаются разнообразные стеновые панели, особенно из ценных пород дерева. Их фактурная поверхность напоминает о близости к природе и создает в помещении дополнительную тепло- и звукоизоляцию.</p>
-         
+
           </div>
         </div>
 

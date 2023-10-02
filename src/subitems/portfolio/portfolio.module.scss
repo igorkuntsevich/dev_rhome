@@ -27,13 +27,12 @@ $mobile: 768px;
     &::after {
       height: 18.1vw;
     }
+    &:hover::after {
+      display: none;
+    }
   }
 }
 .portfolio_item_text {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // height: 100%;
   position: absolute;
   top: 1.9vw;
   left: 1vw;
@@ -45,8 +44,8 @@ $mobile: 768px;
   @media screen and (max-width: $mobile) {
     top: 3.8vw;
     left: 1.7vw;
+    width: 87%;
   }
-
 }
 .portfolio_item_title {
   font-size: 1.3vw;
@@ -65,20 +64,17 @@ $mobile: 768px;
     font-size: 3.4vw;
     line-height: 3.9vw;
     margin-bottom: 0.5vw;
-    max-width: 92%;
+    max-width: 100%;
   }
 }
 .portfolio_item_caption {
   display: flex;
   flex-wrap: wrap;
   max-width: 21.4vw;
-  // gap: 2.4vw;
   @media screen and (min-width: $fullscreen) {
-    // gap: 36px;
     max-width: 325px;
   }
   @media screen and (max-width: $mobile) {
-    // gap: 11.1vw;
     max-width: 100%;
   }
 }

@@ -199,6 +199,7 @@ $mobile: 768px;
   }
 }
 .project__one_image_link {
+  display: block;
   width: 100%;
   margin-bottom: 1.7vw;
   @media screen and (min-width: $fullscreen) {

@@ -63,21 +63,21 @@ const Header = () => {
                     to="/services/apartment" 
                     className="header_subnav_a"
                     activeClassName="header_subnav_a_active"
-                  >Дизайн проект квартиры</Link>
+                  >Дизайн-проект квартиры</Link>
                 </li>
                 <li>
                   <Link 
                     to="/services/house" 
                     className="header_subnav_a"
                     activeClassName="header_subnav_a_active"
-                  >Дизайн проект дома</Link>
+                  >Дизайн-проект дома</Link>
                 </li>
                 <li>
                   <Link 
                     to="/services/office" 
                     className="header_subnav_a"
                     activeClassName="header_subnav_a_active"
-                  >Дизайн проект офисы</Link>
+                  >Дизайн-проект офисы</Link>
                 </li>
                 <p className="header_subnav_mb"></p>
                 <li>
@@ -130,7 +130,14 @@ const Header = () => {
                 className="header_nav_li header_nav_li_arrow"
                 activeClassName="header_nav_li_active"
               >О&nbsp;студии</Link>
-                <ul className="header_subnav_ul">
+                <ul className="header_subnav_ul header_subnav_ul_wide">
+                  <li>
+                    <Link 
+                      to="/about/process" 
+                      className="header_subnav_a"
+                      activeClassName="header_subnav_a_active"
+                    >Процесс работы</Link>
+                  </li>
                   <li>
                     <Link 
                       to="/about/vacancy" 
@@ -217,19 +224,19 @@ const Header = () => {
                   <Link
                     to="/services/apartment"
                     className="header_mobile_nav_li"
-                  >Дизайн проект квартиры</Link>
+                  >Дизайн-проект квартиры</Link>
                 </li>
                 <li>
                   <Link
                     to="/services/house"
                     className="header_mobile_nav_li"
-                  >Дизайн проект дома</Link>
+                  >Дизайн-проект дома</Link>
                 </li>
                 <li>
                   <Link
                     to="/services/office"
                     className="header_mobile_nav_li"
-                  >Дизайн проект офиса</Link>
+                  >Дизайн-проект офиса</Link>
                 </li>
               </ul>
             </div>
@@ -239,6 +246,12 @@ const Header = () => {
                 className="header_mobile_nav_title"
               >О&nbsp;студии</Link>
               <ul className="header_mobile_nav">
+                <li>
+                  <Link
+                    to="/about/process"
+                    className="header_mobile_nav_li"
+                  >Процесс работы</Link>
+                </li>
                 <li>
                   <Link
                     to="/about/vacancy"

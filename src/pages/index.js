@@ -39,7 +39,7 @@ const IndexPage = () => (
         <h1 className={styles.index_intro_title}><span>Дизайн интерьера</span><span>Архитектура</span><span>Строительство</span></h1>
       </div>
       <div className={styles.index_intro_text}>
-        <p className={styles.index_intro_text_p}>На&nbsp;рынке СНГ мы&nbsp;работаем более 15&nbsp;лет и&nbsp;выполнили более 320 проектов с&nbsp;абсолютно разными бюджетами. <br /> Наши основные услуги:</p>
+        <p className={styles.index_intro_text_p}>На&nbsp;рынке СНГ мы&nbsp;работаем более 15&nbsp;лет и&nbsp;выполнили более 320 проектов с&nbsp;абсолютно разными бюджетами.</p>
       </div>
       <div className={styles.index_services_grid}>
         <Link to="/services/apartment" className={styles.index_services__item + " " + styles.index_services__item1}>
@@ -90,7 +90,7 @@ const IndexPage = () => (
           <PortfolioItem
             url="/portfolio/house/dom-ptich"
             title="Дом в&nbsp;поселке Птичь"
-            metr=""
+            metr="260"
             building="18 месяцев"
             budget={PortfolioItemStyles.portfolio_item_cost2}
             image={
@@ -140,7 +140,7 @@ const IndexPage = () => (
             }
           />
           <PortfolioItem
-            url="/portfolio/house/selskij-dom"
+            url="/portfolio/facade/selskij-dom"
             title="Сельский дом"
             metr="500"
             building=""

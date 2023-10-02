@@ -12,9 +12,9 @@ const Footer = () => (
               <p className="footer_address_p">Мы&nbsp;работаем в&nbsp;будни с&nbsp;9&nbsp;до&nbsp;20,&nbsp;в&nbsp;субботу с&nbsp;10&nbsp;до&nbsp;16</p>
             </div>
             <div className="footer_phones">
-              <a href="/" className="footer_phone">+375 (29) 674-83-90</a>
-              <a href="/" className="footer_phone">+375 (17) 360-60-75</a>
-              <a href="/" className="footer_phone">rhomeby@gmail.com</a>
+              <a href="tel:+375296748390" className="footer_phone">+375 (29) 674-83-90</a>
+              <a href="tel:+375173606075" className="footer_phone">+375 (17) 360-60-75</a>
+              <a href="mailto:rhomeby@gmail.com" className="footer_phone">rhomeby@gmail.com</a>
             </div>
           </div>
           <div className="footer_text">
@@ -34,7 +34,7 @@ const Footer = () => (
         <p className="footer_copyright_p">&copy;&nbsp;2008&nbsp;&mdash; {new Date().getFullYear()}, Rhome.by</p>
         <div className="footer_developer">
           <p className="footer_developer_p">Разработка сайта&nbsp;&mdash;</p>
-          <a href="/" className="footer_developer_link">Yellowpine</a>
+          <a href="https://yellowpine.site/" className="footer_developer_link">Yellowpine</a>
         </div>
       </div>
     </footer>

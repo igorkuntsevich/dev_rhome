@@ -1,22 +1,22 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { Video } from "../../subitems/video-intro/index"
 import mainVideo from "../../video/office.mp4"
 import mainVideoMobile from "../../video/office_1.mp4"
 import * as styles from "../../components/styles/services.module.scss"
-import { DecisionOffice } from "../../subitems/decision/decisionOffice"
-import { StagesOffice } from "../../subitems/services-stages/stagesOffice"
 import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
+import { StagesOffice } from "../../subitems/services-stages/stagesOffice"
+import { DecisionOffice } from "../../subitems/decision/decisionOffice"
 import { PhotoCollage } from "../../subitems/photocollage"
 import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
 import { ServicesCost } from "../../subitems/services-cost"
 import { RemoteWork } from "../../subitems/remote-work/index"
 import { DesignProektDecision } from "../../subitems/dp-decision/index"
+import { SostavDP } from "../../subitems/sostav-dp"
 import { ReviewSilvanoSpecial } from "../../subitems/reviews/special/reviewSilvano"
 import * as reviewStyles from "../../subitems/reviews/review.module.scss"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
@@ -41,7 +41,7 @@ const ServicesOffice = () => (
       </div>
       <div className={styles.services_intro_text + " " + styles.services_intro_office_text}>
         <p className={styles.services_intro_text_p}>Разработаем дизайн-проект любых коммерческих помещений, который будет соответствовать вашему корпоративному стилю.</p>
-        <span className={styles.services_intro_text_span}>Наши дизайн проекты соответствуют законодательству с&nbsp;учетом повышенных требований к&nbsp;уровню пожарной безопасности, санитарным и&nbsp;экологическим нормам.</span>
+        <span className={styles.services_intro_text_span}>Наши дизайн-проекты соответствуют законодательству с&nbsp;учетом повышенных требований к&nbsp;уровню пожарной безопасности, санитарным и&nbsp;экологическим нормам.</span>
       </div>
     </div>
     <div className={collageStyles.photocollage_services}>
@@ -151,7 +151,7 @@ const ServicesOffice = () => (
             title="Офис логистической компании"
             metr="152"
             building=""
-            budget=""
+            budget={PortfolioItemStyles.portfolio_item_cost1}
             image={
               <StaticImage
                 src="../../images/portfolio/ofis-logisticheskoj-kompanii/00_ofis-logisticheskoj-kompanii.jpg"
@@ -192,27 +192,9 @@ const ServicesOffice = () => (
       />
       <StagesOffice />
     </div>
-
-
     <div className="wrapper">
       <div className="line"></div>
-      <div className={styles.services__lefttitle_righttext + " " + styles.services__lefttitle_righttext__bigmargin}>
-        <h2 className={styles.services__lefttitle_righttext__title}>Состав дизайн проекта</h2>
-        <div className={styles.services__lefttitle_righttext__text}>
-          <div className={styles.services__lefttitle_righttext__wrap}>
-            <span className={styles.services__lefttitle_righttext__text_span}>Готовый дизайн-проект&nbsp;&mdash; это инструкция по&nbsp;проведению ремонта, поэтому его можно отдать на&nbsp;реализацию прорабу или руководить командой строителей самостоятельно. По&nbsp;окончании работ по&nbsp;созданию дизайн-проекта вы&nbsp;получите пакет документов&nbsp;&mdash; гид по&nbsp;вашему будущему интерьеру.</span>
-          </div>
-          <p className={styles.services__lefttitle_righttext__text_title}>Документ включает в себя:</p>
-          <ul>
-            <li className={styles.services__lefttitle_righttext__text_li}>Несколько вариантов планировки</li>
-            <li className={styles.services__lefttitle_righttext__text_li}>4-6 ракурсов 3D-визуализации каждой комнаты</li>
-            <li className={styles.services__lefttitle_righttext__text_li}>25&nbsp;листов чертежей, подробно иллюстрирующих все технические моменты: от&nbsp;электрики до&nbsp;развёртки стен</li>
-            <li className={styles.services__lefttitle_righttext__text_li}>Полный перечень материалов, которые понадобятся для ремонтных работ</li>
-            <li className={styles.services__lefttitle_righttext__text_li}>Расчет бюджета проекта</li>
-            <li className={styles.services__lefttitle_righttext__text_li}>Смету на&nbsp;ремонтно-отделочные работы</li>
-          </ul>
-        </div>
-      </div>
+      <SostavDP />
       <DesignProektDecision />
       <RemoteWork />
       <div className={reviewStyles.review}>

@@ -28,7 +28,11 @@ export const RemoteWork = () => {
           <p className={styles.remote_right_text_p}>Для этого совершенно не&nbsp;обязательно встречаться лично. Все переговоры перенесем в&nbsp;Skype, Viber, Telegram, WhatsApp или любое другое удобное для вас приложение.</p>
         </div>
         <div className={styles.remove_right_speak}>
-          <p className={styles.remove_right_speak_p} ref={ref}>Свободно разговариваем на <span className={styles.remove_right_speak_span}>русском, английском</span></p>
+          <p className={styles.remove_right_speak_p} ref={ref}>Свободно разговариваем на</p>
+          <div className={styles.remove_right_speak_flags}>
+            <div className={styles.remove_right_speak_flag1}></div>
+            <div className={styles.remove_right_speak_flag2}></div>
+          </div>
         </div>
       </div>
     </div>

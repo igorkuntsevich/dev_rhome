@@ -77,7 +77,7 @@ const DizajnNovojBorovoj = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
+        <div className={styles.articles__one_image_link + " " + styles.articles__narrow_block}>
         <StaticImage
           src="../../../images/inspiration/articles/dizajn-novoj-borovoj-i-zelenoj-gavani/09_dizajn-novoj-borovoj-i-zelenoj-gavani.jpg"
           alt=""
@@ -115,11 +115,11 @@ const DizajnNovojBorovoj = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
         <StaticImage
           src="../../../images/inspiration/articles/dizajn-novoj-borovoj-i-zelenoj-gavani/07_dizajn-novoj-borovoj-i-zelenoj-gavani.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
 
@@ -145,11 +145,11 @@ const DizajnNovojBorovoj = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
         <StaticImage
           src="../../../images/inspiration/articles/dizajn-novoj-borovoj-i-zelenoj-gavani/01_dizajn-novoj-borovoj-i-zelenoj-gavani.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
 
@@ -177,11 +177,11 @@ const DizajnNovojBorovoj = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
         <StaticImage
           src="../../../images/inspiration/articles/dizajn-novoj-borovoj-i-zelenoj-gavani/10_dizajn-novoj-borovoj-i-zelenoj-gavani.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
 
@@ -208,11 +208,11 @@ const DizajnNovojBorovoj = () => (
           </div>
         </div>
 
-        <div className={styles.articles__one_image_link}>
+        <div className={styles.articles__one_image_link + " " + styles.articles__bigmargin + " " + styles.articles__narrow_block}>
         <StaticImage
           src="../../../images/inspiration/articles/dizajn-novoj-borovoj-i-zelenoj-gavani/08_dizajn-novoj-borovoj-i-zelenoj-gavani.jpg"
           alt=""
-          className={styles.articles__one_image + " " + styles.articles__bigmargin}
+          className={styles.articles__one_image}
         />
         </div>
 

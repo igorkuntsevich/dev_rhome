@@ -60,9 +60,6 @@ $mobile: 768px;
   br {
     display: block;
   }
-  .about_intro_text_span {
-    max-width: 55.7vw;
-  }
   @media screen and (max-width: $mobile) {
     .about_intro_text_p {
       max-width: 100%;
@@ -75,15 +72,15 @@ $mobile: 768px;
   }
 }
 .about_intro_text_p {
-  font-size: 3.1vw;
-  line-height: 3.5vw;
+  font-size: 2.8vw;
+  line-height: 3.2vw;
   margin-bottom: 1.1vw;
-  width: 78.8vw;
+  width: 75.8vw;
   @media screen and (min-width: $fullscreen) {
-    font-size: 47px;
-    line-height: 53px;
+    font-size: 43px;
+    line-height: 49px;
     margin-bottom: 17px;
-    max-width: 1700px;
+    max-width: 1150px;
   }
   @media screen and (max-width: $mobile) {
     br {
@@ -104,7 +101,7 @@ $mobile: 768px;
   @media screen and (min-width: $fullscreen) {
     font-size: 23px;
     line-height: 32px;
-    max-width: 725px;
+    max-width: 900px;
     margin-left: 553px;
   }
   @media screen and (max-width: $mobile) {
@@ -499,11 +496,11 @@ $mobile: 768px;
   }
 }
 .about_personal_text_p {
-  font-size: 1vw;
+  font-size: 0.9vw;
   line-height: 1.2vw;
   color: #FFFFFF;
   @media screen and (min-width: $fullscreen) {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 18px;
     max-width: 450px;
   }
@@ -517,12 +514,6 @@ $mobile: 768px;
   border-radius: 0 30px 30px 30px;
   border: 1px solid #6B6B6B;
   background-color: rgba(0, 0, 0, 0.7);
-  @media screen and (min-width: $fullscreen) {
-
-  }
-  @media screen and (max-width: $mobile) {
-    
-  }
 }
 .about_personal_quote1 {
   bottom: 5.1vw;
@@ -602,6 +593,7 @@ $mobile: 768px;
 .about_personal_quote_p {
   font-size: 1vw;
   line-height: 1.25vw;
+  font-style: italic;
   color: #FFFFFF;
   margin-bottom: 0.3vw;
   &:last-child {

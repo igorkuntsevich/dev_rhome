@@ -135,9 +135,15 @@ $mobile: 768px;
   text-align: center;
   color: #FFFFFF;
   padding: 1.2vw 3.3vw;
-  background-color: #2C2C2C;
+  background-color: #000000;
   border-radius: 8px;
   margin-top: 1.8vw;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #2f2f2f;
+    transition: all 0.5s ease;
+  }
   @media screen and (min-width: $fullscreen) {
     font-size: 22px;
     line-height: 26px;
@@ -174,10 +180,10 @@ $mobile: 768px;
   background-image: url(../../images/services/services_cost_sergey.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 2.15vw;
+  padding-top: 2.6vw;
   padding-right: 1.8vw;
   @media screen and (min-width: $fullscreen) {
-    padding-top: 33px;
+    padding-top: 39px;
     padding-right: 27px;
   }
   @media screen and (max-width: $mobile) {
@@ -189,16 +195,16 @@ $mobile: 768px;
   }
 }
 .services_cost_image_status {
-  font-size: 1.6vw;
-  line-height: 1.9vw;
+  font-size: 1.25vw;
+  line-height: 1.5vw;
   text-align: right;
   color: #FFFFFF;
   max-width: 14vw;
   margin-left: auto;
   margin-bottom: 2.4vw;
   @media screen and (min-width: $fullscreen) {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 19px;
+    line-height: 23px;
     max-width: 213px;
     margin-bottom: 36px;
   }
@@ -324,11 +330,11 @@ $mobile: 768px;
   background-image: url(../../images/services/remont_cons_dmitry.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 2.15vw;
+  padding-top: 2.6vw;
   padding-right: 1.8vw;
   position: relative;
   @media screen and (min-width: $fullscreen) {
-    padding-top: 33px;
+    padding-top: 39px;
     padding-right: 27px;
   }
   @media screen and (max-width: $mobile) {
@@ -341,21 +347,20 @@ $mobile: 768px;
 }
 .services_interests_image_status {
   font-size: 1.25vw;
-  line-height: 1.8vw;
+  line-height: 1.5vw;
   text-align: right;
   color: #FFFFFF;
   max-width: 14vw;
   margin-left: auto;
   @media screen and (min-width: $fullscreen) {
     font-size: 19px;
-    line-height: 27px;
+    line-height: 23px;
     max-width: 213px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 3.4vw;
     line-height: 3.9vw;
     max-width: 38vw;
-    // margin-bottom: 12.1vw;
   }
 }
 .services_interests_image_text {

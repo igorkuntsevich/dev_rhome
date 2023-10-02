@@ -8,22 +8,24 @@ $mobile: 768px;
   position: relative;
   overflow: hidden;
   margin-bottom: 3.8vw;
-  height: 793px;
   @media screen and (min-width: $fullscreen) {
     margin-bottom: 58px;
+    height: 770px;
   }
   @media screen and (max-width: $mobile) {
-    // margin-bottom: 8.45vw;
+    height: auto;
   }
 }
 .cost_intro_left {
   width: 51%;
+  height: 50.2vw;
   padding: 6.1vw 2.3vw 4.2vw;
   @media screen and (min-width: $fullscreen) {
     padding: 93px 35px 64px;
   }
   @media screen and (max-width: $mobile) {
     width: 100%;
+    height: auto;
     padding: 10.4vw 5.5vw 11.8vw;
   }
 }
@@ -45,6 +47,9 @@ $mobile: 768px;
     font-size: 53px;
     line-height: 64px;
     margin-bottom: 67px;
+    br {
+      display: none;
+    }
   }
   @media screen and (max-width: $mobile) {
     font-size: 8.2vw;
@@ -54,21 +59,20 @@ $mobile: 768px;
 }
 .cost_intro_form_block {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 2vw;
   background-color: #393939;
   border-radius: 30px;
-  padding: 4.2vw 3vw 3.9vw 1.5vw;
+  padding: 4.2vw 2vw 3.9vw 1.5vw;
   @media screen and (min-width: $fullscreen) {
-    padding: 64px 46px 59px 23px;
-  }
-  @media screen and (min-width: $bigfullscreen) {
-    padding: 64px 96px 59px 23px;
+    padding: 64px 30px 59px 23px;
+    gap: 30px;
   }
   @media screen and (max-width: $mobile) {
     flex-direction: column-reverse;
     background-color: transparent;
     padding: 0;
+    align-items: flex-start;
   }
 }
 .cost_intro_form {
@@ -142,6 +146,12 @@ $mobile: 768px;
   background-color: #000000;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #252525;
+    transition: all 0.5s ease;
+  }
   @media screen and (min-width: $fullscreen) {
     font-size: 22px;
     line-height: 26px;
@@ -159,17 +169,21 @@ $mobile: 768px;
   font-size: 1.25vw;
   line-height: 1.7vw;
   color: #FFFFFF;
-  width: 17.5vw;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
   @media screen and (min-width: $fullscreen) {
     font-size: 19px;
     line-height: 26px;
-    max-width: 350px;
   }
   @media screen and (max-width: $mobile) {
     font-size: 4.3vw;
     line-height: 5.8vw;
-    width: 100%;
+    margin: 0;
     margin-bottom: 8vw;
+    br {
+      display: none;
+    }
   }
 }
 .cost_design_proekt {

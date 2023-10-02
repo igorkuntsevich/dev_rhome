@@ -1,9 +1,7 @@
 import * as React from "react"
 import * as styles from "./stages.module.scss"
 
-import SimpleBar from 'simplebar-react';
-import 'simplebar-react/dist/simplebar.min.css';
-
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 export const StagesHouse = () => {
   return (
@@ -12,7 +10,7 @@ export const StagesHouse = () => {
         <h2 className={styles.services_stages_text_title}>Этапы работы над дизайн-проектом</h2>
         <p className={styles.services_stages_text_p}>На&nbsp;примере дома 250 м<sup>2</sup>. Подробно о&nbsp;процессе работы</p>
       </div>
-      <SimpleBar forceVisible="y" autoHide={false}>
+      <ScrollContainer className="scroll-container">
         <div className={styles.services_stages_grid}>
           <div className={styles.services_stages_item_title}>
             <p className={styles.services_stages_item_title_p}>Этап 1</p>
@@ -69,7 +67,7 @@ export const StagesHouse = () => {
             </li>
           </ul>
         </div>
-      </SimpleBar>
+      </ScrollContainer>
     </div>
   )
 }
