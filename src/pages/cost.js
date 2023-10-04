@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 import video from "../video/cost.mp4"
 
 import * as styles from "../components/styles/cost.module.scss"
-import { Modal } from "../subitems/modal"
+import { Modal } from "../subitems/steps"
 import { HowWeWork } from "../subitems/how-we-work/hww"
 
 import { FooterConsultationDmitry } from "../subitems/footer-consultation-dmitry"

@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { ContactsGallery } from "../subitems/gallery/contacts-gallery"
-import { Modal } from "../subitems/modal-step2"
+import { ModalStepSecond } from "../subitems/steps/step-second"
 import * as styles from "../components/styles/contacts.module.scss"
 
 
@@ -48,7 +48,7 @@ const Contacts = () => {
               </div>
               <button onClick={() => setModal(true)} className={styles.contacts_button}>Заказать звонок</button>
             </div>
-            <Modal
+            <ModalStepSecond
               isVisible={isModal}
               onClose={() => setModal(false)}
             />

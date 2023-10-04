@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from "./project-consultation.module.scss"
 import { StaticImage } from "gatsby-plugin-image"
 import { useInView } from "react-intersection-observer"
-import { Modal } from "../../modal-step2"
+import { ModalStepSecond } from "../../steps/step-second"
 
 export const ProjectConsultationSvetlana = ({ text }) => {
   const [ref, inView] = useInView({
@@ -19,7 +19,7 @@ export const ProjectConsultationSvetlana = ({ text }) => {
           <button onClick={() => setModal(true)} className={styles.project_cons_button}>Заказать консультацию</button>
         </div>
       </div>
-      <Modal
+      <ModalStepSecond
         isVisible={isModal}
         onClose={() => setModal(false)}
       />

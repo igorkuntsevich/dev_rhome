@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as styles from "./decision.module.scss"
 import { useInView } from "react-intersection-observer"
-import { Modal } from "../modal-step2"
+import { ModalStepSecond } from "../steps/step-second"
 
 const ConsultationBlock = () => {
   const [ref, inView] = useInView({
@@ -18,7 +18,7 @@ const ConsultationBlock = () => {
         <button onClick={() => setModal(true)} className={styles.services_decision_cons_button}>Заказать звонок</button>
       </div>
       <p ref={ref} className={styles.services_decision_cons_ref}></p>
-      <Modal
+      <ModalStepSecond
         isVisible={isModal}
         onClose={() => setModal(false)}
       />

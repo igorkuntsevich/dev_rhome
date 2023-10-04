@@ -1,7 +1,16 @@
 $bigfullscreen: 1900px;
 $fullscreen: 1520px;
 $mobile: 768px;
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .modal {
+  background-color: #202020;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -22,10 +31,7 @@ $mobile: 768px;
     opacity: 1;
   }
 }
-.cost_result_wrap {
-  background-color: #202020;
-}
-.modal_sun {
+.modal_bcg_anim {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -53,7 +59,7 @@ $mobile: 768px;
   50%{background-position:100% 97%}
   100%{background-position:0% 4%}
 }
-.cost_result_close {
+.modal_close {
   position: absolute;
   top: 0.6vw;
   right: 1.2vw;
@@ -103,7 +109,7 @@ $mobile: 768px;
     display: none;
   }
 }
-.cost_result_close_mob {
+.modal_close_mob {
   @media screen and (max-width: $mobile) {
     position: absolute;
     width: 5.3vw;
@@ -136,7 +142,7 @@ $mobile: 768px;
     }
   }
 }
-.cost_result {
+.modal_wrap {
   // display: none;
   display: flex;
   background-color: #2D2B2C;
@@ -158,7 +164,7 @@ $mobile: 768px;
     height: 147.8vw;
   }
 }
-.cost_result_left {
+.modal_wrap_left {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,186 +178,7 @@ $mobile: 768px;
     width: 100%;
   }
 }
-.cost_result_left_text {
-  border: 1px solid #6D6D6D;
-  border-radius: 30px;
-  padding: 3.4vw 3.4vw 3.9vw 1.9vw;
-  margin-bottom: 2.4vw;
-  @media screen and (min-width: $fullscreen) {
-    padding: 52px 52px 59px 29px;
-    margin-bottom: 36px;
-  }
-  @media screen and (max-width: $mobile) {
-    padding: 10.9vw 5.6vw 10.1vw;
-    margin-bottom: 6.3vw;
-  }
-}
-.cost_result_text_title {
-  font-size: 1.8vw;
-  line-height: 2.3vw;
-  color: #FFFFFF;
-  margin-bottom: 1.6vw;
-  @media screen and (min-width: $fullscreen) {
-    font-size: 27px;
-    line-height: 35px;
-    margin-bottom: 24px;
-  }
-  @media screen and (max-width: $mobile) {
-    font-size: 5.8vw;
-    line-height: 6.7vw;
-    margin-bottom: 5.1vw;
-    width: 80%;
-  }
-}
-.cost_result_text_p {
-  font-size: 3vw;
-  line-height: 3vw;
-  font-weight: 500;
-  color: #FFFFFF;
-  margin-bottom: 2.8vw;
-  @media screen and (min-width: $fullscreen) {
-    font-size: 46px;
-    line-height: 46px;
-    margin-bottom: 43px;
-  }
-  @media screen and (max-width: $mobile) {
-    font-size: 8.7vw;
-    line-height: 11.1vw;
-    margin-bottom: 5.6vw;
-  }
-}
-.cost_result_text_span {
-  font-size: 1.25vw;
-  line-height: 1.7vw;
-  color: #8C8C8C;
-  @media screen and (min-width: $fullscreen) {
-    font-size: 19px;
-    line-height: 26px;
-  }
-  @media screen and (max-width: $mobile) {
-    font-size: 3.4vw;
-    line-height: 4.3vw;
-  }
-}
-.cost_result_contacts {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1.3vw;
-  @media screen and (min-width: $fullscreen) {
-    gap: 20px;
-  }
-  @media screen and (max-width: $mobile) {
-    flex-direction: column;
-    gap: 3.9vw;
-  }
-}
-.cost_result_contacts_left {
-  display: flex;
-  flex-direction: column;
-  gap: 1.3vw;
-  @media screen and (min-width: $fullscreen) {
-    gap: 20px;
-  }
-  @media screen and (max-width: $mobile) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-}
-.cost_result_contacts_right {
-  display: flex;
-  gap: 1.3vw;
-  @media screen and (min-width: $fullscreen) {
-    gap: 20px;
-  }
-  @media screen and (max-width: $mobile) {
-    width: 100%;
-  }
-}
-.cost_result_contacts_right_button {
-  font-size: 1.45vw;
-  line-height: 1.7vw;
-  text-align: center;
-  color: #FFFFFF;
-  padding: 1.2vw 4.2vw;
-  background-color: #000000;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  &:hover {
-    background-color: #252525;
-    transition: all 0.5s ease;
-  }
-  @media screen and (min-width: $fullscreen) {
-    font-size: 22px;
-    line-height: 26px;
-    padding: 18px 64px;
-  }
-  @media screen and (max-width: $mobile) {
-    font-size: 5.1vw;
-    line-height: 6vw;
-    padding: 4.6vw 3.3vw;
-    width: 100%;
-  }
-}
-.cost_result_contact {
-  display: flex;
-  flex-direction: column;
-  @media screen and (min-width: $fullscreen) {
-  }
-  @media screen and (max-width: $mobile) {
-  }
-}
-.cost_result_contact_item {
-  font-size: 1.8vw;
-  line-height: 2.8vw;
-  color: #FFFFFF;
-  @media screen and (min-width: $fullscreen) {
-    font-size: 27px;
-    line-height: 43px;
-  }
-  @media screen and (max-width: $mobile) {
-    font-size: 4.3vw;
-    line-height: 6.3vw;
-  }
-}
-.cost_result_social {
-  display: flex;
-  gap: 1.1vw;
-  @media screen and (min-width: $fullscreen) {
-    gap: 17px;
-  }
-  @media screen and (max-width: $mobile) {
-    gap: 3.5vw;
-  }
-}
-.cost_result_social_item {
-  width: 4vw;
-  height: 4vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  @media screen and (min-width: $fullscreen) {
-    width: 61px;
-    height: 61px;
-  }
-  @media screen and (max-width: $mobile) {
-    width: 8.55vw;
-    height: 8.55vw;
-  }
-}
-.cost_result_social_telegram {
-  background-image: url(../../svg/telegram.svg);
-}
-.cost_result_social_viber {
-  background-image: url(../../svg/viber.svg);
-}
-.cost_result_social_wp {
-  background-image: url(../../svg/whatsapp.svg);
-}
-.cost_result_image {
+.modal_image {
   background-image: url(../../images/cost/cost-consultation-dmitry.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -361,7 +188,7 @@ $mobile: 768px;
     display: none;
   }
 }
-.cost_result_text {
+.modal_text {
   position: absolute;
   right: 2.2vw;
   bottom: 3vw;
@@ -374,7 +201,7 @@ $mobile: 768px;
     bottom: 4.3vw;
   }
 }
-.cost_result_image_text {
+.modal_image_text {
   font-size: 1.25vw;
   line-height: 1.5vw;
   font-style: italic;
@@ -401,7 +228,7 @@ $mobile: 768px;
     margin-bottom: 2.2vw;
   }
 }
-.cost_result_image_status {
+.modal_image_status {
   font-size: 1.25vw;
   line-height: 1.5vw;
   text-align: right;
@@ -419,7 +246,7 @@ $mobile: 768px;
     max-width: 38vw;
   }
 }
-.cost_result_left_first {
+.step__first {
   &.close {
     display: none;
   }
@@ -427,7 +254,182 @@ $mobile: 768px;
     display: block;
   }
 }
-.cost_result_left_second {
+.step__first_text {
+  border: 1px solid #6D6D6D;
+  border-radius: 30px;
+  padding: 3.4vw 3.4vw 3.9vw 1.9vw;
+  margin-bottom: 2.4vw;
+  @media screen and (min-width: $fullscreen) {
+    padding: 52px 52px 59px 29px;
+    margin-bottom: 36px;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 10.9vw 5.6vw 10.1vw;
+    margin-bottom: 6.3vw;
+  }
+}
+.step__first_text_title {
+  font-size: 1.8vw;
+  line-height: 2.3vw;
+  color: #FFFFFF;
+  margin-bottom: 1.6vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 24px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 5.8vw;
+    line-height: 6.7vw;
+    margin-bottom: 5.1vw;
+    width: 80%;
+  }
+}
+.step__first_text_p {
+  font-size: 3vw;
+  line-height: 3vw;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 2.8vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 43px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 8.7vw;
+    line-height: 11.1vw;
+    margin-bottom: 5.6vw;
+  }
+}
+.step__first_text_span {
+  font-size: 1.25vw;
+  line-height: 1.7vw;
+  color: #8C8C8C;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 19px;
+    line-height: 26px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 3.4vw;
+    line-height: 4.3vw;
+  }
+}
+.step__first_contacts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.3vw;
+  @media screen and (min-width: $fullscreen) {
+    gap: 20px;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+    gap: 3.9vw;
+  }
+}
+.step__first_contacts_left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vw;
+  @media screen and (min-width: $fullscreen) {
+    gap: 20px;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+.step__first_contact {
+  display: flex;
+  flex-direction: column;
+}
+.step__first_contact_item {
+  font-size: 1.8vw;
+  line-height: 2.8vw;
+  color: #FFFFFF;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 27px;
+    line-height: 43px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 6.3vw;
+  }
+}
+.step__first_social {
+  display: flex;
+  gap: 1.1vw;
+  @media screen and (min-width: $fullscreen) {
+    gap: 17px;
+  }
+  @media screen and (max-width: $mobile) {
+    gap: 3.5vw;
+  }
+}
+.step__first_social_item {
+  width: 4vw;
+  height: 4vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (min-width: $fullscreen) {
+    width: 61px;
+    height: 61px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 8.55vw;
+    height: 8.55vw;
+  }
+}
+.step__first_social_telegram {
+  background-image: url(../../svg/telegram.svg);
+}
+.step__first_social_viber {
+  background-image: url(../../svg/viber.svg);
+}
+.step__first_social_wp {
+  background-image: url(../../svg/whatsapp.svg);
+}
+.step__first_contacts_right {
+  display: flex;
+  gap: 1.3vw;
+  @media screen and (min-width: $fullscreen) {
+    gap: 20px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
+}
+.step__first_contacts_right_button {
+  font-size: 1.45vw;
+  line-height: 1.7vw;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 1.2vw 4.2vw;
+  background-color: #000000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #252525;
+    transition: all 0.5s ease;
+  }
+  @media screen and (min-width: $fullscreen) {
+    font-size: 22px;
+    line-height: 26px;
+    padding: 18px 64px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 5.1vw;
+    line-height: 6vw;
+    padding: 4.6vw 3.3vw;
+    width: 100%;
+  }
+}
+.step__second {
   display: none;
   &.open {
     display: flex;
@@ -438,7 +440,7 @@ $mobile: 768px;
     display: none;
   }
 }
-.cost_result_form_block {
+.step__second_form_block {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -459,13 +461,13 @@ $mobile: 768px;
     background-color: transparent;
   }
 }
-.cost_result_form {
+.step__second_form {
   display: flex;
   flex-direction: column;
-  gap: 2.6vw;
+  gap: 1.1vw;
   width: 20vw;
   @media screen and (min-width: $fullscreen) {
-    gap: 40px;
+    gap: 17px;
     width: 304px;
   }
   @media screen and (max-width: $mobile) {
@@ -473,15 +475,11 @@ $mobile: 768px;
     width: 100%;
   }
 }
-.cost_result_inputs {
+.step__second_inputs {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: $fullscreen) {
-  }
-  @media screen and (max-width: $mobile) {
-  }
 }
-.cost_result_input {
+.step__second_input {
   font-size: 1.25vw;
   line-height: 1.5vw;
   border: none;
@@ -521,7 +519,7 @@ $mobile: 768px;
     }
   }
 }
-.cost_result_button {
+.step__second_button {
   font-size: 1.45vw;
   line-height: 1.7vw;
   text-align: center;
@@ -549,7 +547,7 @@ $mobile: 768px;
     background-color: #000000;
   }
 }
-.cost_result_form_text {
+.step__second_form_text {
   font-size: 1.3vw;
   line-height: 1.5vw;
   color: #FFFFFF;
@@ -566,5 +564,32 @@ $mobile: 768px;
     font-size: 5.1vw;
     line-height: 6.3vw;
     width: 100%;
+  }
+}
+.step_third {
+  // display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  &.open {
+    display: flex;
+  }
+}
+.step_third_p {
+  font-size: 1.5vw;
+  line-height: 1.8vw;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 24vw;
+  animation: opacity 0.5s;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 23px;
+    line-height: 27px;
+    max-width: 365px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 5.8vw;
+    max-width: 70vw;
   }
 }
