@@ -39,6 +39,7 @@ export const ModalStepSecond = ({ isVisible = false , onClose }) => {
                   <input className={styles.step__second_input} placeholder="Телефон"></input>
                 </div>
                 <button onClick={toggleOpenCall} className={styles.step__second_button}>Заказать звонок</button>
+                <p className="error">Заполните все поля</p>
               </div>  
               <p className={styles.step__second_form_text}>Вы&nbsp;можете оставить свой номер телефона, и&nbsp;мы перезвоним в&nbsp;рабочее время</p>
             </div>

@@ -466,6 +466,7 @@ $mobile: 768px;
   flex-direction: column;
   gap: 1.1vw;
   width: 20vw;
+  position: relative;
   @media screen and (min-width: $fullscreen) {
     gap: 17px;
     width: 304px;

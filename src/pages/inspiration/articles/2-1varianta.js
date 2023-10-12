@@ -17,7 +17,7 @@ const DvaVarianta = () => (
   <Layout>
     <Seo 
       title={"2 варианта 1 ванной - RHOME"} description={"Текстура и расцветки плитки меняют пространство. Мы собрали для вас несколько примеров санузлов, где по дизайн-проекту подходило два варианта плитки."}
-      location={"https://rhome.by/articles/2-1varianta"}
+      location={"https://rhome.by/inspiration/articles/2-1varianta"}
       image={""}
     />
     <div className={styles.article}>

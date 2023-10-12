@@ -2,14 +2,11 @@ import React, { useState } from 'react'
 import * as styles from "./footer-consultation.module.scss"
 import { useInView } from "react-intersection-observer"
 
-// import { Modal } from "../modal-step3"
-
 export const FooterConsultationDmitry = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
 
-  // const [isModal, setModal] = React.useState(false);
 
   const [openOpenCall , setOpenCall] = useState(false);
   const toggleOpenCall =()=>{
@@ -43,15 +40,12 @@ export const FooterConsultationDmitry = () => {
                 <input className={styles.consultation_input} placeholder="Телефон"></input>
               </div>
               <button onClick={toggleOpenCall} className={styles.consultation_button}>Заказать звонок</button>
-              <p className={styles.consultation_form_error}>Заполните все поля</p>
+              <p className="error">Заполните все поля</p>
             </div>
             <p className={styles.consultation_form_text}>Оставьте свой номер телефона, и&nbsp;мы&nbsp;перезвоним в&nbsp;рабочее время</p>
           </div>
+          {/* сюда Заявка отправлена - step3 */}
         </div>
-        {/* <Modal
-          isVisible={isModal}
-          onClose={() => setModal(false)}
-        /> */}
       </div>
     </div>
   )

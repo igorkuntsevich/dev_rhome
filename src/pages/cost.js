@@ -6,7 +6,7 @@ import video from "../video/cost.mp4"
 import * as styles from "../components/styles/cost.module.scss"
 import { Modal } from "../subitems/steps"
 import { HowWeWork } from "../subitems/how-we-work/hww"
-
+import ScrollContainer from 'react-indiana-drag-scroll'
 import { FooterConsultationDmitry } from "../subitems/footer-consultation-dmitry"
 
 import { Faq } from "../subitems/faq/cost"
@@ -19,20 +19,7 @@ import * as faqStyles from "../subitems/faq/faq.module.scss"
 
 
 const Cost = () => {
-  // const [openResultCalculate , setOpenResultCalculate] = useState(false);
-  // const toggleResultCalculate =()=>{
-  //   setOpenResultCalculate(!openResultCalculate);
-  // };
-
   const [isModal, setModal] = React.useState(false);
-
-  // useEffect(()  => {
-  //   document.body.classList.add('bg-black');
-
-  //   return () => {
-  //       document.body.classList.remove('bg-black');
-  //   };
-  // });
   return (
     <Layout>
       <Seo 
@@ -47,10 +34,33 @@ const Cost = () => {
             <div className={styles.cost_intro_form_block}>
               <div className={styles.cost_intro_form}>
                 <div className={styles.cost_intro_inputs}>
-                  <input className={styles.cost_intro_input} placeholder="Квартира"></input>
-                  <input className={styles.cost_intro_input} placeholder="м2"></input>
+                  <div className={styles.cost_intro_dropdown_wrap}> 
+                    <select className={styles.cost_intro_dropdown}>   
+                      <option>Квартира</option>  
+                      <option>Частный дом</option>   
+                      <option>Коммерческий объект</option>
+                    </select> 
+                  </div>
+                  <ScrollContainer className="scroll-container">
+                    <div className={styles.cost_intro_dropdown_mob_wrap}>
+                      <div className={styles.cost_intro_dropdown_mob_item  + " " + styles.cost_intro_dropdown_mob_item_checked}>
+                        <input className={styles.cost_intro_dropdown_mob_input} name="form" type="radio" id="flat" value="flat" />
+                        <label className={styles.cost_intro_dropdown_mob_label} for="flat">Квартира</label>
+                      </div>
+                      <div className={styles.cost_intro_dropdown_mob_item}>
+                        <input className={styles.cost_intro_dropdown_mob_input} name="form" type="radio" id="house" value="house" />
+                        <label className={styles.cost_intro_dropdown_mob_label} for="house">Дом</label>
+                      </div>
+                      <div className={styles.cost_intro_dropdown_mob_item}>
+                        <input className={styles.cost_intro_dropdown_mob_input} name="form" type="radio" id="commercial" value="commercial" />
+                        <label className={styles.cost_intro_dropdown_mob_label} for="commercial">Коммерческий&nbsp;объект</label>
+                      </div>
+                    </div>
+                  </ScrollContainer>
+                  <input className={styles.cost_intro_input} type="number" placeholder="м2" />
                 </div>
                 <button onClick={() => setModal(true)} className={styles.cost_intro_button}>Рассчитать</button>
+                <p className="error">Заполните все поля</p>
               </div>
               <p className={styles.cost_intro_form_text}>Узнайте стоимость, указав<br /> тип объекта и его площадь</p>
             </div>

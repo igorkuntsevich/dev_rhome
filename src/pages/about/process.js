@@ -9,6 +9,7 @@ import videoMob from "../../video/how_we_work_mob.mp4"
 import { ProjectConsultationSergey } from '../../subitems/project/consultation/project-consultation-sergey'
 import { ProjectConsultationAlexey } from '../../subitems/project/consultation/project-consultation-alexey'
 
+import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 import * as styles from "../../components/styles/about/process.module.scss"
 
 
@@ -274,6 +275,7 @@ const About = () => (
           </div>
         </div>
       </div>
+      <FooterConsultationDmitry />
     </div>
   </Layout>
 )

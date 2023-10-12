@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `gatsby-starter-rhome`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
@@ -62,18 +62,6 @@ module.exports = {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
-          // google: [
-          //   {
-          //     family: "Roboto", // 'font-family' property
-          //     variants: ["300", "400", "500"],
-          //     //subsets: ['latin'],
-          //     //text: 'Hello',
-          //     //fontDisplay: 'swap' || 'auto' || 'block' || 'fallback' || 'optional',
-          //     //strategy: 'selfHosted' || 'base64' || 'cdn',
-          //     // Other properties as per https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face (except 'src' & 'font-family') can go here i.e.
-          //     //[cssProperty]: 'value',
-          //   },
-          // ],
           selfHosted: [
             {
               family: "Gilroy",

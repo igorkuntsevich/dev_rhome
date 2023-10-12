@@ -19,7 +19,7 @@ const TrendKuhni = () => (
   <Layout>
     <Seo 
       title={""} description={""}
-      location={"https://rhome.by/articles/gira"}
+      location={"https://rhome.by/inspiration/articles/trend-kuhni"}
       image={""}
     />
     <div className={styles.article}>

@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as styles from "../steps/modal.module.scss"
+import * as styles from "../steps/steps.module.scss"
 
 export const Modal = ({ isVisible = false }) => {
   return !isVisible ? null : (
