@@ -43,7 +43,7 @@ const Header = () => {
     position="fixed";
   }
   return (
-    <header style={{position:position}} className={( getStickyHeader?"header_sticky":"" ) + (navOpen?"header_open":"")}>
+    <header style={{position:position}} className={( getStickyHeader?"header_sticky":"" ) + (navOpen?" header_open":"")}>
       <div className="wrapper">
         <div className="header_desktop">
           <Link to="/" className="header_logo_link">
