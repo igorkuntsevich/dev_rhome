@@ -550,7 +550,7 @@ $mobile: 768px;
   @media screen and (min-width: $bigfullscreen) {
   }
   @media screen and (min-width: $fullscreen) {
-    bottom: 30px;
+    bottom: 45px;
     padding: 23px;
     .about_personal_quote_p {
       max-width: 362px;
@@ -566,19 +566,18 @@ $mobile: 768px;
   }
 }
 .about_personal_quote3 {
-  bottom: 2.7vw;
+  bottom: 4vw;
   right: 1.1vw;
   padding: 1.5vw;
   .about_personal_quote_p {
-    max-width: 21.8vw;
-  }
-  @media screen and (min-width: $bigfullscreen) {
+    max-width: 16vw;
   }
   @media screen and (min-width: $fullscreen) {
-    bottom: 41px;
+    bottom: 61px;
     padding: 23px;
+    right: 3.1vw;
     .about_personal_quote_p {
-      max-width: 331px;
+      max-width: 243px;
     }
   }
   @media screen and (max-width: $mobile) {
