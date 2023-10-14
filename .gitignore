@@ -10,7 +10,7 @@ pids
 *.pid
 *.seed
 *.pid.lock
- 
+ .idea
 
 #Our some images
 src/images/inspiration/photos
