@@ -10,8 +10,15 @@ import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmi
 
 import * as styles from "../../components/styles/about/inspiration.module.scss"
 import { INSPIRATION_CONFIG } from "./config";
+import useSWR from "swr";
+import { fetcher } from "../../api/fetcher";
+import { API } from "../../api/api";
 
-const Inspiration = () => (
+const Inspiration = () => {
+  const { data,  isLoading } = useSWR(API.getAllViews, fetcher)
+  const safetyViewsList = data||[]
+  return(
+
   <Layout>
     <Seo
       title={"Полезные статьи и лучшие интерьеры для вдохновения - RHOME"} description={"Посмотрите проекты, которыми мы вдохновляемся, почитайте полезные советы и идеи по обустройству дома"}
@@ -35,11 +42,13 @@ const Inspiration = () => (
       <div className={styles.inspiration_content}>
         {INSPIRATION_CONFIG.map((item , i)=>{
 
+            const views = safetyViewsList?.[item.url]?.count||1
+            const loadedViews  =isLoading?0 :views
           if(item.type==="photo"){
-            return <InspirationPhoto  {...item} key={i} number={0}/>
+            return <InspirationPhoto  {...item} key={i} number={loadedViews}/>
           }
           if(item.type==="article"){
-            return <InspirationArticle  {...item} key={i} number={0} />
+            return <InspirationArticle  {...item} key={i} number={loadedViews} />
           }else {
             return <Fragment key={i}></Fragment>
           }
@@ -48,6 +57,6 @@ const Inspiration = () => (
       <FooterConsultationDmitry />
     </div>
   </Layout>
-)
+)}
 
 export default Inspiration

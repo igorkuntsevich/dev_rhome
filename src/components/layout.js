@@ -11,6 +11,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.scss"
+import { useEffect } from "react";
+import { axiosWithBase } from "../api/fetcher";
+import { API } from "../api/api";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,7 +25,9 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  useEffect(()=>{
+    axiosWithBase(API.setViewCounter(window?.location?.pathname))
+  },[])
   return (
     <>
       <div className="main_flex">

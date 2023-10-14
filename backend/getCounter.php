@@ -1,4 +1,7 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+
 $file_path = 'counters.json';
 
 // Считываем текущие значения счетчиков
