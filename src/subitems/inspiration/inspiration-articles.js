@@ -2,10 +2,10 @@ import * as React from "react"
 import { Link } from "gatsby"
 import * as styles from "./inspiration.module.scss"
 
-export const InspirationArticle = ( { title, chapter, url, backgroundColor, number }) => {
+export const InspirationArticle = ( { title, chapter, url, backgroundColor, number=0 }) => {
   return (
-    <Link 
-      to={url} 
+    <Link
+      to={url}
       className={styles.inspiration_item + " " + styles.inspiration_item_article}
       style={{"backgroundColor" : `${backgroundColor}`}}>
       <div className={styles.inspiration_item_article_text}>

@@ -2,7 +2,10 @@ import * as React from "react"
 import { Link } from "gatsby"
 import * as styles from "./inspiration.module.scss"
 
-export const InspirationPhoto = ( { title, url, backgroundImageUrl, number }) => {
+export const InspirationPhoto = ( { title, url, backgroundImageUrl, number=0 }) => {
+
+
+
   return (
     <Link
       to={url}
