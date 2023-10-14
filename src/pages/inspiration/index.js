@@ -10,13 +10,9 @@ import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmi
 
 import * as styles from "../../components/styles/about/inspiration.module.scss"
 import { INSPIRATION_CONFIG } from "./config";
-import useSWR from "swr";
-import { fetcher } from "../../api/fetcher";
-import { API } from "../../api/api";
+
 
 const Inspiration = () => {
-  const { data,  isLoading } = useSWR(API.getAllViews, fetcher)
-  const safetyViewsList = data||[]
   return(
 
   <Layout>
@@ -42,13 +38,11 @@ const Inspiration = () => {
       <div className={styles.inspiration_content}>
         {INSPIRATION_CONFIG.map((item , i)=>{
 
-            const views = safetyViewsList?.[item.url]?.count||1
-            const loadedViews  =isLoading?0 :views
           if(item.type==="photo"){
-            return <InspirationPhoto  {...item} key={i} number={loadedViews}/>
+            return <InspirationPhoto  {...item} key={i} />
           }
           if(item.type==="article"){
-            return <InspirationArticle  {...item} key={i} number={loadedViews} />
+            return <InspirationArticle  {...item} key={i}  />
           }else {
             return <Fragment key={i}></Fragment>
           }

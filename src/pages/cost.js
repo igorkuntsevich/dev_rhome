@@ -11,18 +11,36 @@ import { FooterConsultationDmitry } from "../subitems/footer-consultation-dmitry
 
 import { Faq } from "../subitems/faq/cost"
 import * as faqStyles from "../subitems/faq/faq.module.scss"
-
-
-
+import { useState } from "react";
+import { PLACES_LIST } from "../subitems/steps/calculate";
+import useSWR from "swr";
+import { fetcher } from "../api/fetcher";
+import { API } from "../api/api";
 
 
 
 
 const Cost = () => {
   const [isModal, setModal] = React.useState(false);
+  const [placeType , setPlaceType ] =useState(PLACES_LIST.flat);
+ const [spaceValue ,setSpaceValue] =useState("")
+const [isInvalid , setIsInvalid] =useState(false);
+
+ const isEmptyForm =spaceValue<1;
+  const checkActive =(type)=>{
+     return  type===placeType?styles.cost_intro_dropdown_mob_item  +" " + styles.cost_intro_dropdown_mob_item_checked:styles.cost_intro_dropdown_mob_item
+  }
+  const openModalHandler = ()=>{
+      if(isEmptyForm){
+        setIsInvalid(true)
+      }else{
+        setModal(true)
+      }
+
+  }
   return (
     <Layout>
-      <Seo 
+      <Seo
         title={""} description={""}
         location={"https://rhome.by/cost"}
         image={""}
@@ -34,33 +52,32 @@ const Cost = () => {
             <div className={styles.cost_intro_form_block}>
               <div className={styles.cost_intro_form}>
                 <div className={styles.cost_intro_inputs}>
-                  <div className={styles.cost_intro_dropdown_wrap}> 
-                    <select className={styles.cost_intro_dropdown}>   
-                      <option>Квартира</option>  
-                      <option>Частный дом</option>   
+                  <div className={styles.cost_intro_dropdown_wrap}>
+                    <select value={placeType} onChange={(e)=> {
+                      setPlaceType(e.target.value);
+                    }} className={styles.cost_intro_dropdown}>
+                      <option>Квартира</option>
+                      <option>Частный дом</option>
                       <option>Коммерческий объект</option>
-                    </select> 
+                    </select>
                   </div>
                   <ScrollContainer className="scroll-container">
                     <div className={styles.cost_intro_dropdown_mob_wrap}>
-                      <div className={styles.cost_intro_dropdown_mob_item  + " " + styles.cost_intro_dropdown_mob_item_checked}>
-                        <input className={styles.cost_intro_dropdown_mob_input} name="form" type="radio" id="flat" value="flat" />
-                        <label className={styles.cost_intro_dropdown_mob_label} for="flat">Квартира</label>
-                      </div>
-                      <div className={styles.cost_intro_dropdown_mob_item}>
-                        <input className={styles.cost_intro_dropdown_mob_input} name="form" type="radio" id="house" value="house" />
-                        <label className={styles.cost_intro_dropdown_mob_label} for="house">Дом</label>
-                      </div>
-                      <div className={styles.cost_intro_dropdown_mob_item}>
-                        <input className={styles.cost_intro_dropdown_mob_input} name="form" type="radio" id="commercial" value="commercial" />
-                        <label className={styles.cost_intro_dropdown_mob_label} for="commercial">Коммерческий&nbsp;объект</label>
-                      </div>
+                      <button onClick={()=>setPlaceType(PLACES_LIST.flat)} className={checkActive(PLACES_LIST.flat)}>
+                        <span className={styles.cost_intro_dropdown_mob_label}  >Квартира</span>
+                      </button>
+                      <button onClick={()=>setPlaceType(PLACES_LIST.house)} className={checkActive(PLACES_LIST.house)}>
+                        <label className={styles.cost_intro_dropdown_mob_label}  >Дом</label>
+                      </button>
+                      <button onClick={()=>setPlaceType(PLACES_LIST.commercial)} className={checkActive(PLACES_LIST.commercial)}>
+                        <label className={styles.cost_intro_dropdown_mob_label}  >Коммерческий&nbsp;объект</label>
+                      </button>
                     </div>
                   </ScrollContainer>
-                  <input className={styles.cost_intro_input} type="number" placeholder="м2" />
+                  <input className={styles.cost_intro_input} value={spaceValue} onChange={(e)=>{setSpaceValue(e.target.value)}} type="number" placeholder="м2" />
                 </div>
-                <button onClick={() => setModal(true)} className={styles.cost_intro_button}>Рассчитать</button>
-                <p className="error">Заполните все поля</p>
+                <button onClick={openModalHandler} className={styles.cost_intro_button}>Рассчитать</button>
+                <p style={{display:isInvalid&&isEmptyForm?"block":"none"}} className="error">Заполните все поля</p>
               </div>
               <p className={styles.cost_intro_form_text}>Узнайте стоимость, указав<br /> тип объекта и его площадь</p>
             </div>
@@ -74,6 +91,8 @@ const Cost = () => {
           </div>
         </div>
         <Modal
+          type={placeType}
+          metr={spaceValue}
           isVisible={isModal}
           onClose={() => setModal(false)}
         />

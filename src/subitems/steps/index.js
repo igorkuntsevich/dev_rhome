@@ -1,8 +1,17 @@
 import React, { useState } from 'react'
 import * as styles from "./steps.module.scss"
+import { calcPrice } from "./calculate";
+import useSWR from "swr";
+import { API } from "../../api/api";
+import { fetcher } from "../../api/fetcher";
+import { Loader } from "../../components/loader/loader";
 
 
-export const Modal = ({ isVisible = false , onClose }) => {
+export const Modal = ({ isVisible = false , onClose , type,metr  }) => {
+  const {data:currencyUSD} = useSWR(API.usdCurrency , fetcher);
+  const price = calcPrice({  type, METR:metr, dollarRate:currencyUSD?.rate||0 });
+
+  console.log(  );
   const keydownHandler = ({ key }) => {
     switch (key) {
       case 'Escape':
@@ -35,7 +44,7 @@ export const Modal = ({ isVisible = false , onClose }) => {
           <div className={styles.step__first + " " + (openOpenCall? `${styles.close}` : "")}>
             <div className={styles.step__first_text}>
               <p className={styles.step__first_text_title}>Стоимость вашего дизайн-проекта:</p>
-              <p className={styles.step__first_text_p}>990 у.е. &asymp; 2900&nbsp;р.</p>
+              <p className={styles.step__first_text_p}>{price?.sumUSD||<Loader/>} у.е. &asymp;{price?.COST}&nbsp;р.</p>
               <span className={styles.step__first_text_span}>Расчёты осуществляются в&nbsp;белорусских рублях по&nbsp;курсу НБ&nbsp;РБ&nbsp;в&nbsp;день оплаты. Цены в&nbsp;долларах указаны для иностранных граждан. Цены на&nbsp;сайте не&nbsp;являются публичной офертой, а&nbsp;носят только рекламный характер.</span>
             </div>
             <div className={styles.step__first_contacts}>
@@ -65,7 +74,7 @@ export const Modal = ({ isVisible = false , onClose }) => {
                 </div>
                 <button className={styles.step__second_button}>Заказать звонок</button>
                 <p className="error">Заполните все поля</p>
-              </div>  
+              </div>
               <p className={styles.step__second_form_text}>Вы&nbsp;можете оставить свой номер телефона, и&nbsp;мы перезвоним в&nbsp;рабочее время</p>
             </div>
           </div>
