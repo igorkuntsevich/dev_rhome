@@ -1,13 +1,17 @@
 import * as React from "react"
 import * as styles from "./steps.module.scss"
+import { Loader } from "../../components/loader/loader";
+import { MODAL_STEPS } from "../../pages/cost";
 
-export const ModalStepFirst = () => {
+export const ModalStepFirst = ({price , setModalStep}) => {
+
   return (
-    <div className={styles.step__first + " " + (openOpenCall? `${styles.close}` : "")}>
+    <div  >
       <div className={styles.step__first_text}>
         <p className={styles.step__first_text_title}>Стоимость вашего дизайн-проекта:</p>
-        <p className={styles.step__first_text_p}>990 у.е. &asymp; 2900&nbsp;р.</p>
-        <span className={styles.step__first_text_span}>Расчёты осуществляются в&nbsp;белорусских рублях по&nbsp;курсу НБ&nbsp;РБ&nbsp;в&nbsp;день оплаты. Цены в&nbsp;долларах указаны для иностранных граждан. Цены на&nbsp;сайте не&nbsp;являются публичной офертой, а&nbsp;носят только рекламный характер.</span>
+        <p className={styles.step__first_text_p}>{price?.sumUSD || <Loader />} у.е. &asymp;{price?.COST}&nbsp;р.</p>
+        <span
+          className={styles.step__first_text_span}>Расчёты осуществляются в&nbsp;белорусских рублях по&nbsp;курсу НБ&nbsp;РБ&nbsp;в&nbsp;день оплаты. Цены в&nbsp;долларах указаны для иностранных граждан. Цены на&nbsp;сайте не&nbsp;являются публичной офертой, а&nbsp;носят только рекламный характер.</span>
       </div>
       <div className={styles.step__first_contacts}>
         <div className={styles.step__first_contacts_left}>
@@ -16,13 +20,17 @@ export const ModalStepFirst = () => {
             <a href="mailto:rhomeby@gmail.com" className={styles.step__first_contact_item}>rhomeby@gmail.com</a>
           </div>
           <div className={styles.step__first_social}>
-            <a href="tg://resolve?domain=drazumeichyk" className={styles.step__first_social_item + " " + styles.step__first_social_telegram}></a>
-            <a href="viber://chat?number=+375296748390" className={styles.step__first_social_item + " " + styles.step__first_social_viber}></a>
-            <a href="whatsapp://send?phone=+375296748390" className={styles.step__first_social_item + " " + styles.step__first_social_wp}></a>
+            <a href="tg://resolve?domain=drazumeichyk"
+               className={styles.step__first_social_item + " " + styles.step__first_social_telegram}></a>
+            <a href="viber://chat?number=+375296748390"
+               className={styles.step__first_social_item + " " + styles.step__first_social_viber}></a>
+            <a href="whatsapp://send?phone=+375296748390"
+               className={styles.step__first_social_item + " " + styles.step__first_social_wp}></a>
           </div>
         </div>
         <div className={styles.step__first_contacts_right}>
-          <button onClick={toggleOpenCall} className={styles.step__first_contacts_right_button}>Заказать звонок</button>
+          <button onClick={()=>{setModalStep(MODAL_STEPS.contact)}} className={styles.step__first_contacts_right_button}>Заказать звонок
+          </button>
         </div>
       </div>
     </div>

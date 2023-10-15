@@ -246,14 +246,7 @@ $mobile: 768px;
     max-width: 38vw;
   }
 }
-.step__first {
-  &.close {
-    display: none;
-  }
-  &.open {
-    display: block;
-  }
-}
+
 .step__first_text {
   border: 1px solid #6D6D6D;
   border-radius: 30px;
@@ -430,14 +423,10 @@ $mobile: 768px;
   }
 }
 .step__second {
-  display: none;
   &.open {
     display: flex;
     align-items: center;
     animation: appear 300ms;
-  }
-  &.close {
-    display: none;
   }
 }
 .step__second_form_block {
@@ -568,13 +557,10 @@ $mobile: 768px;
   }
 }
 .step_third {
-  // display: flex;
-  display: none;
+   display: flex;
   align-items: center;
   justify-content: center;
-  &.open {
-    display: flex;
-  }
+
 }
 .step_third_p {
   font-size: 1.5vw;

@@ -1,4 +1,5 @@
 import * as React from "react"
+import { ToastContainer } from "react-toastify";
 
 
 const Footer = () => (
@@ -39,7 +40,7 @@ const Footer = () => (
       </div>
     </footer>
   </div>
-  
+
 )
 
 export default Footer

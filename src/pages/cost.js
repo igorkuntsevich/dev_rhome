@@ -13,30 +13,31 @@ import { Faq } from "../subitems/faq/cost"
 import * as faqStyles from "../subitems/faq/faq.module.scss"
 import { useState } from "react";
 import { PLACES_LIST } from "../subitems/steps/calculate";
-import useSWR from "swr";
-import { fetcher } from "../api/fetcher";
-import { API } from "../api/api";
 
-
+export const MODAL_STEPS = {
+  close:0,
+  calculate :1,
+  contact:2,
+  thank:3
+}
 
 
 const Cost = () => {
-  const [isModal, setModal] = React.useState(false);
+  const [modalStep, setModalStep] = React.useState(MODAL_STEPS.close);
   const [placeType , setPlaceType ] =useState(PLACES_LIST.flat);
  const [spaceValue ,setSpaceValue] =useState("")
 const [isInvalid , setIsInvalid] =useState(false);
 
  const isEmptyForm =spaceValue<1;
-  const checkActive =(type)=>{
+  const checkActiveClassName =(type)=>{
      return  type===placeType?styles.cost_intro_dropdown_mob_item  +" " + styles.cost_intro_dropdown_mob_item_checked:styles.cost_intro_dropdown_mob_item
   }
   const openModalHandler = ()=>{
       if(isEmptyForm){
         setIsInvalid(true)
       }else{
-        setModal(true)
+        setModalStep(MODAL_STEPS.calculate)
       }
-
   }
   return (
     <Layout>
@@ -63,13 +64,13 @@ const [isInvalid , setIsInvalid] =useState(false);
                   </div>
                   <ScrollContainer className="scroll-container">
                     <div className={styles.cost_intro_dropdown_mob_wrap}>
-                      <button onClick={()=>setPlaceType(PLACES_LIST.flat)} className={checkActive(PLACES_LIST.flat)}>
+                      <button onClick={()=>setPlaceType(PLACES_LIST.flat)} className={checkActiveClassName(PLACES_LIST.flat)}>
                         <span className={styles.cost_intro_dropdown_mob_label}  >Квартира</span>
                       </button>
-                      <button onClick={()=>setPlaceType(PLACES_LIST.house)} className={checkActive(PLACES_LIST.house)}>
+                      <button onClick={()=>setPlaceType(PLACES_LIST.house)} className={checkActiveClassName(PLACES_LIST.house)}>
                         <label className={styles.cost_intro_dropdown_mob_label}  >Дом</label>
                       </button>
-                      <button onClick={()=>setPlaceType(PLACES_LIST.commercial)} className={checkActive(PLACES_LIST.commercial)}>
+                      <button onClick={()=>setPlaceType(PLACES_LIST.commercial)} className={checkActiveClassName(PLACES_LIST.commercial)}>
                         <label className={styles.cost_intro_dropdown_mob_label}  >Коммерческий&nbsp;объект</label>
                       </button>
                     </div>
@@ -90,12 +91,13 @@ const [isInvalid , setIsInvalid] =useState(false);
             </div>
           </div>
         </div>
-        <Modal
+
+        {modalStep!==MODAL_STEPS.close&&<Modal
           type={placeType}
           metr={spaceValue}
-          isVisible={isModal}
-          onClose={() => setModal(false)}
-        />
+          modalStep={modalStep}
+          setModalStep={setModalStep}
+        />}
         <div className="line"></div>
         <div className={styles.cost_design_proekt}>
           <h2 className={styles.cost_design_proekt_title}>По&nbsp;окончании работ вы&nbsp;получите пакет документов&nbsp;&mdash; гид по&nbsp;вашему будущему интерьеру.</h2>

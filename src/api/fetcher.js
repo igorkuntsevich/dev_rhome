@@ -2,7 +2,8 @@ import axios from "axios";
 
 
 export const axiosWithBase = axios.create({
-  baseURL: 'http://backend.rhome.by/',
+  baseURL: 'https://backend.rhome.by/',
+  // baseURL: 'http://iproject/',
   // Здесь можно указать другие настройки, такие как заголовки и т.д.
 });
 

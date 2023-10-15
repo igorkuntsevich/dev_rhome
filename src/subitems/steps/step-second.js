@@ -1,59 +1,49 @@
 import React, { useState } from 'react'
 import * as styles from "./steps.module.scss"
+import { useForm } from "react-hook-form";
+import { axiosWithBase, fetcher } from "../../api/fetcher";
+import { API } from "../../api/api";
+import { useOpen } from "../../hooks/useOpen";
+import { MODAL_STEPS } from "../../pages/cost";
+import { toast } from "react-toastify";
+import axios from "axios";
 
-export const ModalStepSecond = ({ isVisible = false , onClose }) => {
-  const keydownHandler = ({ key }) => {
-    switch (key) {
-      case 'Escape':
-        onClose();
-        break;
-      default:
-    }
-  };
+export const ModalStepSecond = ( {submitData,setModalStep}) => {
+  const loader = useOpen()
 
-  React.useEffect(() => {
-    document.addEventListener('keydown', keydownHandler);
-    return () => document.removeEventListener('keydown', keydownHandler);
-  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+  const onSubmit   =async (data) =>{
+    loader.onOpen()
+    axiosWithBase.post(API.sendMail,{
+      data , submitData
+    }).then((resp)=>{
+        setModalStep(MODAL_STEPS.thank)
+      }).catch ((e)=>{
+        console.log(e);
+      loader.onClose()
+      toast.error(e.message)
+    })
 
-  const [openOpenCall , setOpenCall] = useState(false);
-  const toggleOpenCall =()=>{
-    setOpenCall(!openOpenCall);
-  };
+  }
 
-
-  return !isVisible ? null : (
-    <div className={styles.modal}>
-      <div className={styles.modal_bcg_anim} onClick={onClose}></div>
-      <div className={styles.modal_close} onClick={onClose}></div>
-      <div className={styles.modal_wrap} onClick={e => e.stopPropagation()}>
-        <div className={styles.modal_close_mob} onClick={onClose}></div>
-        <div className={styles.modal_wrap_left}>
-
-          {/* <div className={styles.step__second + " " + (openOpenCall? `${styles.open}` : "")}> */}
-          <div className={styles.step__second + " " + styles.open}>
-            <div className={styles.step__second_form_block}>
-              <div className={styles.step__second_form}>
-                <div className={styles.step__second_inputs}>
-                  <input className={styles.step__second_input} placeholder="Имя"></input>
-                  <input className={styles.step__second_input} placeholder="Телефон"></input>
-                </div>
-                <button onClick={toggleOpenCall} className={styles.step__second_button}>Заказать звонок</button>
-                <p className="error">Заполните все поля</p>
-              </div>  
-              <p className={styles.step__second_form_text}>Вы&nbsp;можете оставить свой номер телефона, и&nbsp;мы перезвоним в&nbsp;рабочее время</p>
-            </div>
+  return  (
+    <form onSubmit={handleSubmit(onSubmit)} className={styles.step__second}>
+      <div className={styles.step__second_form_block}>
+        <div className={styles.step__second_form}>
+          <div className={styles.step__second_inputs}>
+            <input  className={styles.step__second_input} placeholder="Имя"  {...register("name", { required: true })} />
+            <input className={styles.step__second_input} placeholder="Телефон"  {...register("phone" , { required: true })} />
           </div>
-
-
+          <button className={styles.step__second_button}>Заказать звонок</button>
+           <p style={{display:Object.keys(errors).length?"block":"none"}} className="error">Заполните все поля</p>
         </div>
-        <div className={styles.modal_image}>
-          <div className={styles.modal_text}>
-            <p className={styles.modal_image_text}>&mdash;&nbsp;Подробно расскажу, как строится работа по&nbsp;дизайн-проекту.</p>
-            <p className={styles.modal_image_status}>Дмитрий, руководитель проектов RHome</p>
-          </div>
-        </div>
+        <p className={styles.step__second_form_text}>Вы&nbsp;можете оставить свой номер телефона, и&nbsp;мы
+          перезвоним в&nbsp;рабочее время</p>
       </div>
-    </div>
+    </form>
   );
 };
