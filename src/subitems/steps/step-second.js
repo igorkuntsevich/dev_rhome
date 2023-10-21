@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React  from 'react'
 import * as styles from "./steps.module.scss"
 import { useForm } from "react-hook-form";
 import { axiosWithBase, fetcher } from "../../api/fetcher";
@@ -6,7 +6,7 @@ import { API } from "../../api/api";
 import { useOpen } from "../../hooks/useOpen";
 import { MODAL_STEPS } from "../../pages/cost";
 import { toast } from "react-toastify";
-import axios from "axios";
+
 
 export const ModalStepSecond = ( {submitData,setModalStep}) => {
   const loader = useOpen()
@@ -16,11 +16,24 @@ export const ModalStepSecond = ( {submitData,setModalStep}) => {
     handleSubmit,
     formState: { errors },
   } = useForm()
-  const onSubmit   =async (data) =>{
-    loader.onOpen()
-    axiosWithBase.post(API.sendMail,{
-      data , submitData
-    }).then((resp)=>{
+  const onSubmit   =async (contacts) =>{
+    const subject =submitData?.price?"Расчет стоимости" :"Заявка с сайта"
+  const mailBody = {
+      "Тема":subject ,
+      "Имя":contacts?.name,
+      "Номер телефона":contacts?.phone,
+  }
+  if(submitData?.metr){
+    mailBody["Метраж"]=submitData?.metr
+    mailBody["Цена руб"]=submitData?.price?.COST
+    mailBody["USD"]=submitData?.price?.sumUSD
+    mailBody["Тип обьекта"]=submitData?.type
+  }
+  if(submitData.place){
+    mailBody["форма вызвана с"]=submitData.place
+  }
+
+    axiosWithBase.post(API.sendMail, mailBody).then((resp)=>{
         setModalStep(MODAL_STEPS.thank)
       }).catch ((e)=>{
         console.log(e);

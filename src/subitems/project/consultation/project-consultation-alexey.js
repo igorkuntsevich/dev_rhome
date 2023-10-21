@@ -2,13 +2,15 @@ import * as React from "react"
 import * as styles from "./project-consultation.module.scss"
 import { StaticImage } from "gatsby-plugin-image"
 import { useInView } from "react-intersection-observer"
-import { ModalStepSecond } from "../../steps/step-second"
+
+import { MODAL_STEPS } from "../../../pages/cost";
+import { Modal } from "../../steps";
 
 export const ProjectConsultationAlexey = ({ text }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  const [isModal, setModal] = React.useState(false);
+  const [modalStep, setModalStep] = React.useState(MODAL_STEPS.close);
   return (
     <div className={styles.project_cons + " " + styles.project_cons_alexey}>
       <div className={styles.project_cons_bcg}>
@@ -16,13 +18,13 @@ export const ProjectConsultationAlexey = ({ text }) => {
           <div className={styles.project_cons_text1}>
             <p className={styles.project_cons_text_p}>&mdash;&nbsp;{text}</p>
           </div>
-          <button onClick={() => setModal(true)} className={styles.project_cons_button}>Заказать консультацию</button>
+          <button  onClick={() => setModalStep(MODAL_STEPS.contact)} className={styles.project_cons_button}>Заказать консультацию</button>
         </div>
       </div>
-      <ModalStepSecond
-        isVisible={isModal}
-        onClose={() => setModal(false)}
-      />
+      {modalStep!==MODAL_STEPS.close&&<Modal
+        modalStep={modalStep}
+        setModalStep={setModalStep}
+      />}
       <div className={styles.project_cons_person}>
         <StaticImage
           src="../../../images/personal/project_cons_alexey.jpg"

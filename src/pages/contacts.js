@@ -2,18 +2,20 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { ContactsGallery } from "../subitems/gallery/contacts-gallery"
-import { ModalStepSecond } from "../subitems/steps/step-second"
+
 import * as styles from "../components/styles/contacts.module.scss"
+import { MODAL_STEPS } from "./cost";
+import { Modal } from "../subitems/steps";
 
 
 
 
 
 const Contacts = () => {
-  const [isModal, setModal] = React.useState(false);
+  const [modalStep, setModalStep] = React.useState(MODAL_STEPS.close);
   return (
     <Layout>
-    <Seo 
+    <Seo
       title={""} description={""}
       location={"https://rhome.by/contacts"}
       image={""}
@@ -46,12 +48,12 @@ const Contacts = () => {
                   <a href="whatsapp://send?phone=+375296748390" className={styles.contacts_social_link + " " + styles.contacts_social_wp}></a>
                 </div>
               </div>
-              <button onClick={() => setModal(true)} className={styles.contacts_button}>Заказать звонок</button>
+              <button onClick={() => setModalStep(MODAL_STEPS.contact)} className={styles.contacts_button}>Заказать звонок</button>
             </div>
-            <ModalStepSecond
-              isVisible={isModal}
-              onClose={() => setModal(false)}
-            />
+            {modalStep!==MODAL_STEPS.close&&<Modal
+              modalStep={modalStep}
+              setModalStep={setModalStep}
+            />}
           </div>
         </div>
         <div className={styles.contacts_map}>
