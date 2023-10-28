@@ -9,7 +9,7 @@ import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmi
 
 
 import * as styles from "../../components/styles/about/inspiration.module.scss"
-import { INSPIRATION_CONFIG } from "./config";
+import { INSPIRATION_CONFIG } from "../../config";
 
 
 const Inspiration = () => {

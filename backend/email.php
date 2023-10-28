@@ -24,12 +24,14 @@ $mail->isSMTP();
 $mail->Host = 'mailbe04.hoster.by';
 $mail->SMTPAuth = true;
 $mail->Username = 'postmaster@rhome.by';
-$mail->Password = '*******';
+$mail->Password = 'f~D_crWG88';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
 $mail->setFrom('postmaster@rhome.by', 'rhome.by');
-$mail->addAddress('neonchilkk@gmail.com', 'admin');
+$mail->addAddress(' info.yellowpine@gmail.com', 'admin');
+
+
 $mail->Subject = isset($data['subject']) ? $data['subject'] : 'Call request rhome.by';
 
 
