@@ -17,6 +17,7 @@ export const ModalStepSecond = ( {submitData,setModalStep}) => {
     formState: { errors },
   } = useForm()
   const onSubmit   =async (contacts) =>{
+    loader.onOpen()
     const subject =submitData?.price?"Расчет стоимости" :"Заявка с сайта"
   const mailBody = {
       "Тема":subject ,
@@ -34,6 +35,7 @@ export const ModalStepSecond = ( {submitData,setModalStep}) => {
   }
 
     axiosWithBase.post(API.sendMail, mailBody).then((resp)=>{
+      loader.onClose()
         setModalStep(MODAL_STEPS.thank)
       }).catch ((e)=>{
         console.log(e);
