@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import * as styles from "./decision.module.scss"
 
-
 import ScrollContainer from 'react-indiana-drag-scroll'
 
 

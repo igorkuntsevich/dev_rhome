@@ -8,7 +8,7 @@ import { MODAL_STEPS } from "../../pages/cost";
 import { toast } from "react-toastify";
 
 
-export const ModalStepSecond = ( {submitData,setModalStep}) => {
+export const ModalStepSecond = ({ submitData, setModalStep }) => {
   const loader = useOpen()
 
   const {
@@ -20,7 +20,7 @@ export const ModalStepSecond = ( {submitData,setModalStep}) => {
     loader.onOpen()
     const subject =submitData?.price?"Расчет стоимости" :"Заявка с сайта"
   const mailBody = {
-      "Тема":subject ,
+      "Откуда":subject ,
       "Имя":contacts?.name,
       "Номер телефона":contacts?.phone,
   }
@@ -50,11 +50,11 @@ export const ModalStepSecond = ( {submitData,setModalStep}) => {
       <div className={styles.step__second_form_block}>
         <div className={styles.step__second_form}>
           <div className={styles.step__second_inputs}>
-            <input  className={styles.step__second_input} placeholder="Имя"  {...register("name", { required: true })} />
+            <input className={styles.step__second_input} placeholder="Имя"  {...register("name", { required: true })} />
             <input className={styles.step__second_input} placeholder="Телефон"  {...register("phone" , { required: true })} />
           </div>
           <button className={styles.step__second_button}>Заказать звонок</button>
-           <p style={{display:Object.keys(errors).length?"block":"none"}} className="error">Заполните все поля</p>
+          <p style={{display:Object.keys(errors).length?"block":"none"}} className="error">Заполните все поля</p>
         </div>
         <p className={styles.step__second_form_text}>Вы&nbsp;можете оставить свой номер телефона, и&nbsp;мы
           перезвоним в&nbsp;рабочее время</p>

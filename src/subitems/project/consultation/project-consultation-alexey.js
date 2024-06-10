@@ -11,6 +11,10 @@ export const ProjectConsultationAlexey = ({ text }) => {
     triggerOnce: true,
   });
   const [modalStep, setModalStep] = React.useState(MODAL_STEPS.close);
+  const clickCall = () => {
+    typeof window !== "undefined" && window.ym(62048629,'reachGoal','callback_consultation')
+  };
+
   return (
     <div className={styles.project_cons + " " + styles.project_cons_alexey}>
       <div className={styles.project_cons_bcg}>
@@ -18,7 +22,13 @@ export const ProjectConsultationAlexey = ({ text }) => {
           <div className={styles.project_cons_text1}>
             <p className={styles.project_cons_text_p}>&mdash;&nbsp;{text}</p>
           </div>
-          <button  onClick={() => setModalStep(MODAL_STEPS.contact)} className={styles.project_cons_button}>Заказать консультацию</button>
+          <button
+            onClick={() => {
+              setModalStep(MODAL_STEPS.contact)
+              clickCall();
+            }}
+            className={styles.project_cons_button}
+          >Заказать консультацию</button>
         </div>
       </div>
       {modalStep!==MODAL_STEPS.close&&<Modal

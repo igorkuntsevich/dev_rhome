@@ -1,17 +1,17 @@
-import * as React from "react"
+import React, { useState } from 'react'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import video from "../video/cost.mp4"
-
+import ScrollContainer from 'react-indiana-drag-scroll'
 import * as styles from "../components/styles/cost.module.scss"
 import { Modal } from "../subitems/steps"
 import { HowWeWork } from "../subitems/how-we-work/hww"
-import ScrollContainer from 'react-indiana-drag-scroll'
-import { FooterConsultationDmitry } from "../subitems/footer-consultation-dmitry"
+
 
 import { Faq } from "../subitems/faq/cost"
 import * as faqStyles from "../subitems/faq/faq.module.scss"
-import { useState } from "react";
+import { FooterConsultationDmitry } from "../subitems/footer-consultation-dmitry"
+
 import { PLACES_LIST } from "../subitems/steps/calculate";
 
 export const MODAL_STEPS = {
@@ -24,25 +24,28 @@ export const MODAL_STEPS = {
 
 const Cost = () => {
   const [modalStep, setModalStep] = React.useState(MODAL_STEPS.close);
-  const [placeType , setPlaceType ] =useState(PLACES_LIST.flat);
- const [spaceValue ,setSpaceValue] =useState("")
-const [isInvalid , setIsInvalid] =useState(false);
+  const [placeType , setPlaceType ] = useState(PLACES_LIST.flat);
+  const [spaceValue ,setSpaceValue] = useState("")
+  const [isInvalid , setIsInvalid] = useState(false);
 
- const isEmptyForm =spaceValue<1;
+  const isEmptyForm =spaceValue<1;
   const checkActiveClassName =(type)=>{
-     return  type===placeType?styles.cost_intro_dropdown_mob_item  +" " + styles.cost_intro_dropdown_mob_item_checked:styles.cost_intro_dropdown_mob_item
+    return  type===placeType?styles.cost_intro_dropdown_mob_item  +" " + styles.cost_intro_dropdown_mob_item_checked:styles.cost_intro_dropdown_mob_item
   }
   const openModalHandler = ()=>{
-      if(isEmptyForm){
-        setIsInvalid(true)
-      }else{
-        setModalStep(MODAL_STEPS.calculate)
-      }
+    if(isEmptyForm){
+      setIsInvalid(true)
+    }else{
+      setModalStep(MODAL_STEPS.calculate)
+    }
   }
+  const clickCost = () => {
+    typeof window !== "undefined" && window.ym(62048629,'reachGoal','click_cost')
+  };
   return (
     <Layout>
       <Seo
-        title={""} description={""}
+        title={"Сколько стоит дизайн проект интерьера в Минска? Цена дизайн-проекта"} description={"Цена на дизайн-проект интерьера квартиры или дома зависит от: ✅ общей площади помещения и количество комнат; ✅ дополнительных услуг: ремонт под ключ, авторский надзор, согласование перепланировки и т.д. Поэтому стоимость всегда рассчитывается индивидуально под каждый проект."}
         location={"https://rhome.by/cost"}
         image={""}
       />
@@ -75,9 +78,15 @@ const [isInvalid , setIsInvalid] =useState(false);
                       </button>
                     </div>
                   </ScrollContainer>
-                  <input className={styles.cost_intro_input} value={spaceValue} onChange={(e)=>{setSpaceValue(e.target.value)}} type="number" placeholder="м2" />
+                  <input className={styles.cost_intro_input} value={spaceValue} onChange={(e)=>{setSpaceValue(e.target.value)}} type="number" placeholder="метраж" />
                 </div>
-                <button onClick={openModalHandler} className={styles.cost_intro_button}>Рассчитать</button>
+                <button
+                  onClick={() => {
+                    openModalHandler();
+                    clickCost();
+                  }}
+                  className={styles.cost_intro_button}
+                >Рассчитать</button>
                 <p style={{display:isInvalid&&isEmptyForm?"block":"none"}} className="error">Заполните все поля</p>
               </div>
               <p className={styles.cost_intro_form_text}>Узнайте стоимость, указав<br /> тип объекта и его площадь</p>
@@ -154,32 +163,6 @@ const [isInvalid , setIsInvalid] =useState(false);
         </div>
         <FooterConsultationDmitry />
       </div>
-      {/* <div className={styles.cost_result + " " + (openResultCalculate? `${styles.open}` : "")}>
-        <div className={styles.cost_result_left}>
-          <div className={styles.cost_result_left_text}>
-            <p className={styles.cost_result_text_title}>Стоимость вашего дизайн-проекта:</p>
-            <p className={styles.cost_result_text_p}>990 у.е. &asymp; 2900&nbsp;р.</p>
-            <span className={styles.cost_result_text_span}>Расчёты осуществляются в&nbsp;белорусских рублях по&nbsp;курсу НБ&nbsp;РБ&nbsp;в&nbsp;день оплаты. Цены в&nbsp;долларах указаны для иностранных граждан. Цены на&nbsp;сайте не&nbsp;являются публичной офертой, а&nbsp;носят только рекламный характер.</span>
-          </div>
-          <div className={styles.cost_result_contacts}>
-            <div className={styles.cost_result_contact}>
-              <a href="/" className={styles.cost_result_contact_item}>+375 (29) 674-83-90</a>
-              <a href="/" className={styles.cost_result_contact_item}>rhomeby@gmail.com</a>
-            </div>
-            <div className={styles.cost_result_social}>
-              <a href="/" className={styles.cost_result_social_item + " " + styles.cost_result_social_telegram}></a>
-              <a href="/" className={styles.cost_result_social_item + " " + styles.cost_result_social_viber}></a>
-              <a href="/" className={styles.cost_result_social_item + " " + styles.cost_result_social_wp}></a>
-            </div>
-          </div>
-        </div>
-        <div className={styles.cost_result_image}>
-          <div className={styles.cost_result_text}>
-            <p className={styles.cost_result_image_text}>&mdash;&nbsp;Подробно расскажу, как строится работа по&nbsp;дизайн-проекту.</p>
-            <p className={styles.cost_result_image_status}>Дмитрий, руководитель проектов RHome</p>
-          </div>
-        </div>
-      </div> */}
     </Layout>
   )
 }

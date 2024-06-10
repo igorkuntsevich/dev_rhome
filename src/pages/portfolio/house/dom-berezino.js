@@ -1,19 +1,21 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Fancybox from "../../../components/fancybox.js";
+
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
+import Fancybox from "../../../components/fancybox.js";
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
+
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectTaskSvetlana } from '../../../subitems/project/task/project-task-svetlana'
+import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
+
 
 const HouseBerezino = () => {
   return (
@@ -61,7 +63,7 @@ const HouseBerezino = () => {
             <StaticImage
               src="../../../images/portfolio/dom-berezino/cut/02_cut_dom-berezino.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img2}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
               src="../../../images/portfolio/dom-berezino/cut/03_cut_dom-berezino.jpg"
@@ -71,7 +73,7 @@ const HouseBerezino = () => {
             <StaticImage
               src="../../../images/portfolio/dom-berezino/cut/04_cut_dom-berezino.jpg"
               alt=""
-              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_house_img4}
+              className={collageStyles.photocollage_img + " " + collageStyles.photocollage_img_50}
             />
             <StaticImage
               src="../../../images/portfolio/dom-berezino/cut/05_cut_dom-berezino.jpg"

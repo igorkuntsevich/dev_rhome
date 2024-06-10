@@ -11,25 +11,21 @@ import 'simplebar-react/dist/simplebar.min.css';
 import { PortfolioItem } from "../subitems/portfolio"
 import * as PortfolioItemStyles from "../components/styles/portfolio/portfolio.module.scss"
 
-import * as styles from "../components/styles/index.module.scss"
-// import { PortfolioItems } from "../subitems/portfolio/portfolioItems"
-// import { Footer } from "../components/footer.js"
 import { RemoteWork } from "../subitems/remote-work/index"
+import * as styles from "../components/styles/index.module.scss"
 
-
+import { Faq } from "../subitems/faq/apartment"
+import * as faqStyles from "../subitems/faq/faq.module.scss"
 import { ReviewBelomorskayaSpecial } from "../subitems/reviews/special/reviewBelomorskaya"
 import * as reviewStyles from "../subitems/reviews/review.module.scss"
 
 import { FooterConsultationDmitry } from "../subitems/footer-consultation-dmitry"
 
-import { Faq } from "../subitems/faq/apartment"
-import * as faqStyles from "../subitems/faq/faq.module.scss"
-
 
 const IndexPage = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Студия дизайна интерьера квартир, домов и офисов в Минске"} description={"RHome - студия дизайна интерьера и ремонта под ключ квартир, домов, коммерческой недвижимости в Минске и по всей Беларуси. Более 200 реализованных проектов, 👍 12 лет успешной работы в дизайне. ✅ Полное сопровождение дизайн-проекта от разработки до ремонта."}
       location={"https://rhome.by/"}
       image={""}
     />
@@ -60,33 +56,45 @@ const IndexPage = () => (
       <div className={styles.index_portfolio}>
         <h2 className={styles.index_portfolio_title}>Последние проекты</h2>
         <div className={PortfolioItemStyles.portfolio_content}>
-        <PortfolioItem
-          url="/portfolio/apartment/apartment-depo"
-          title="Современная квартира в Депо"
-          metr="122"
-          building="7 месяцев"
-          budget={PortfolioItemStyles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../images/portfolio/apartment-depo/00_apartment-depo.jpg"
-              alt=""
-            />
-          }
-        />
-        <PortfolioItem
-          url="/portfolio/apartment/apartamenty-keln"
-          title="Апартаменты Кельн"
-          metr="96"
-          building="6 месяцев"
-          budget={PortfolioItemStyles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../images/portfolio/apartamenty-keln/00_apartamenty-keln.jpg"
-              alt=""
-            />
-          }
-        />
-          
+          <PortfolioItem
+            url="/portfolio/house/zhemchuzhnaya"
+            title="Жемчужная-2"
+            metr="296"
+            building="16 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost3}
+            image={
+              <StaticImage
+                src="../images/portfolio/zhemchuzhnaya/00_zhemchuzhnaya.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/apartment/apartment-depo"
+            title="Современная квартира в Депо"
+            metr="122"
+            building="7 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../images/portfolio/apartment-depo/00_apartment-depo.jpg"
+                alt=""
+              />
+            }
+          />
+          <PortfolioItem
+            url="/portfolio/apartment/apartamenty-keln"
+            title="Апартаменты Кельн"
+            metr="96"
+            building="6 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../images/portfolio/apartamenty-keln/00_apartamenty-keln.jpg"
+                alt=""
+              />
+            }
+          />
           <PortfolioItem
             url="/portfolio/house/dom-ptich"
             title="Дом в&nbsp;поселке Птичь"
@@ -117,8 +125,8 @@ const IndexPage = () => (
             url="/portfolio/apartment/zhk-farforovyj"
             title="ЖК&nbsp;Фарфоровый"
             metr="85"
-            building="6 месяцев"
-            budget={PortfolioItemStyles.portfolio_item_cost1}
+            building="12 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost2}
             image={
               <StaticImage
                 src="../images/portfolio/zhk-farforovyj/00_zhk-farforovyj.jpg"
@@ -148,19 +156,6 @@ const IndexPage = () => (
             image={
               <StaticImage
                 src="../images/portfolio/selskij-dom/00_selskij-dom.jpg"
-                alt=""
-              />
-            }
-          />
-          <PortfolioItem
-            url="/portfolio/house/dom-leskovka"
-            title="Дом в Лесковке"
-            metr="220"
-            building="18 месяцев"
-            budget={PortfolioItemStyles.portfolio_item_cost2}
-            image={
-              <StaticImage
-                src="../images/portfolio/dom-leskovka/00_dom-leskovka.jpg"
                 alt=""
               />
             }

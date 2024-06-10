@@ -29,7 +29,7 @@ $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
 $mail->setFrom('postmaster@rhome.by', 'rhome.by');
-$mail->addAddress(' info.yellowpine@gmail.com', 'admin');
+$mail->addAddress('info.yellowpine@gmail.com', 'admin');
 
 
 $mail->Subject = isset($data['subject']) ? $data['subject'] : 'Call request rhome.by';

@@ -1,18 +1,20 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Fancybox from "../../../components/fancybox.js";
+
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
+import Fancybox from "../../../components/fancybox.js";
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import { ProjectPartner } from "../../../subitems/project/project-partner"
+import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
+
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectTaskSvetlana } from '../../../subitems/project/task/project-task-svetlana'
+
 
 const ApartmentDepo = () => {
   return (
@@ -333,7 +335,7 @@ const ApartmentDepo = () => {
                 }
                 text="Салон интерьерных решений" 
               />
-               <ProjectPartnerItem
+              <ProjectPartnerItem
                 image={
                   <StaticImage
                   src="../../../images/partners/gira.jpg"
@@ -342,7 +344,7 @@ const ApartmentDepo = () => {
                 }
                 text="Розетки и выключатели" 
               />
-             <ProjectPartnerItem
+              <ProjectPartnerItem
                 image={
                   <StaticImage
                   src="../../../images/partners/openini.jpg"

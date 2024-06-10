@@ -1,19 +1,21 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Fancybox from "../../../components/fancybox.js";
+
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-house"
+import Fancybox from "../../../components/fancybox.js";
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
+
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectTaskSergey } from '../../../subitems/project/task/project-task-sergey'
+import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
+
 
 const BarnhausGorani = () => {
   return (
@@ -457,7 +459,7 @@ const BarnhausGorani = () => {
             </a>
 
             <div className={styles.project__text_center900 + " " + styles.project__bigmargin}>
-            <p className={styles.project__p}>В качестве технологии строительства выбран принцип цельномонолитной конструкции. Это позволяет не только реализовать проект загородного дома за короткий срок, но и сделать его долговечным. Для кровли выбран износостойкий фальц, а стены утеплены каменной ватой.</p>
+              <p className={styles.project__p}>В качестве технологии строительства выбран принцип цельномонолитной конструкции. Это позволяет не только реализовать проект загородного дома за короткий срок, но и сделать его долговечным. Для кровли выбран износостойкий фальц, а стены утеплены каменной ватой.</p>
               <p className={styles.project__p}>Фасад облицован натуральными материалами: деревом и армированным керамогранитом.  Предусмотрен подъезд со стоянкой и крытым навесом для одного автомобиля. Рядом с домом оборудовано место для костра и смотровой площадкой с живописным видом на озеро.</p>
             </div>
 

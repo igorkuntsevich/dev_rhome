@@ -7,15 +7,12 @@ export const Accordion = ({config}) => {
 
   return (
     <>
-
       {
         config.map((item , i )=>{
           return   <Item   key={i}  text={item.text} title={item.title}/>
         })
       }
     </>
-
-
   )
 }
 

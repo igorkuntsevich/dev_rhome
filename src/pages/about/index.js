@@ -13,7 +13,7 @@ import * as styles from "../../components/styles/about/about.module.scss"
 const About = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"О студии дизайна интерьеров «Rhome»"} description={"Открылась в Минске 25 сентября 2008 года. Основные направления: архитектурное проектирование, дизайн интерьера, ландшафтный дизайн, реализация проектов под ключ. В штате компании работает 17 человек."}
       location={"https://rhome.by/about"}
       image={""}
     />

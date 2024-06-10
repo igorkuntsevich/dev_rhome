@@ -1,13 +1,13 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import { Link } from "gatsby"
-import { PortfolioItem } from "../../subitems/portfolio"
-
-
-import * as styles from "../../components/styles/portfolio/portfolio.module.scss"
-import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 import { StaticImage } from 'gatsby-plugin-image'
+
+import { PortfolioItem } from "../../subitems/portfolio"
+import * as styles from "../../components/styles/portfolio/portfolio.module.scss"
+
+import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 
 const Portfolio = () => (
   <Layout>
@@ -25,14 +25,27 @@ const Portfolio = () => (
           <Link to="/portfolio" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Все проекты
           <div className={styles.animline}></div>
           </Link>
-          <Link to="/portfolio/house" className={styles.portfolio_intro_link}>Дома</Link>
           <Link to="/portfolio/apartment" className={styles.portfolio_intro_link}>Квартиры</Link>
+          <Link to="/portfolio/house" className={styles.portfolio_intro_link}>Дома</Link>
           <Link to="/portfolio/commercial" className={styles.portfolio_intro_link}>Коммерческие объекты</Link>
           <Link to="/portfolio/facade" className={styles.portfolio_intro_link}>Фасады</Link>
         </div>
       </div>
       <div className={styles.portfolio_content}>
-      <PortfolioItem
+        <PortfolioItem
+          url="/portfolio/house/zhemchuzhnaya"
+          title="Жемчужная-2"
+          metr="296"
+          building="16 месяцев"
+          budget={styles.portfolio_item_cost3}
+          image={
+            <StaticImage
+              src="../../images/portfolio/zhemchuzhnaya/00_zhemchuzhnaya.jpg"
+              alt=""
+            />
+          }
+        />
+        <PortfolioItem
           url="/portfolio/apartment/apartment-depo"
           title="Современная квартира в Депо"
           metr="122"
@@ -88,8 +101,8 @@ const Portfolio = () => (
           url="/portfolio/apartment/zhk-farforovyj"
           title="ЖК&nbsp;Фарфоровый"
           metr="85"
-          building="6 месяцев"
-          budget={styles.portfolio_item_cost1}
+          building="12 месяцев"
+          budget={styles.portfolio_item_cost2}
           image={
             <StaticImage
               src="../../images/portfolio/zhk-farforovyj/00_zhk-farforovyj.jpg"
@@ -554,7 +567,7 @@ const Portfolio = () => (
         />
         <PortfolioItem
           url="/portfolio/apartment/kvartira-promenad"
-          title="Квартира в ЖК “Променад”"
+          title="Квартира в ЖК «Променад»"
           metr="122"
           building="8 месяцев"
           budget={styles.portfolio_item_cost2}

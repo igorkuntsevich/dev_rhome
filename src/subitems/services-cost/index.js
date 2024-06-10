@@ -3,8 +3,8 @@ import * as styles from "./services-cost.module.scss"
 import { useInView } from "react-intersection-observer"
 
 import { Link } from "gatsby"
-import { MODAL_STEPS } from "../../pages/cost";
-import { Modal } from "../steps";
+// import { MODAL_STEPS } from "../../pages/cost";
+// import { Modal } from "../steps";
 
 export const ServicesCost = ( { title } ) => {
   const [ref, inView] = useInView({

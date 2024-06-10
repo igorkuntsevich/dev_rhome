@@ -1,12 +1,13 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
 import { Link } from "gatsby"
-import { PortfolioItem } from "../../../subitems/portfolio"
-
-import * as styles from "../../../components/styles/portfolio/portfolio.module.scss"
-import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { StaticImage } from 'gatsby-plugin-image'
+
+import { PortfolioItem } from "../../../subitems/portfolio"
+import * as styles from "../../../components/styles/portfolio/portfolio.module.scss"
+
+import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
 const PortfolioCommercial = () => (
   <Layout>
@@ -22,10 +23,10 @@ const PortfolioCommercial = () => (
         </div>
         <div className={styles.portfolio_intro_list}>
           <Link to="/portfolio" className={styles.portfolio_intro_link}>Все проекты</Link>
-          <Link to="/portfolio/house" className={styles.portfolio_intro_link}>Дома</Link>
           <Link to="/portfolio/apartment" className={styles.portfolio_intro_link}>Квартиры</Link>
+          <Link to="/portfolio/house" className={styles.portfolio_intro_link}>Дома</Link>
           <Link to="/portfolio/commercial" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Коммерческие объекты
-          <div className={styles.animline}></div>
+            <div className={styles.animline}></div>
           </Link>
           <Link to="/portfolio/facade" className={styles.portfolio_intro_link}>Фасады</Link>
         </div>

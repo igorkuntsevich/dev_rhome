@@ -5,27 +5,31 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Video } from "../../subitems/video-intro/index"
 import mainVideo from "../../video/apart.mp4"
 import mainVideoMobile from "../../video/apart_1.mp4"
-import * as styles from "../../components/styles/services.module.scss"
+
 import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
 import { StagesApart } from "../../subitems/services-stages/stagesApart"
-import { DecisionApart } from "../../subitems/decision/decisionApart"
-import { PhotoCollage } from "../../subitems/photocollage"
-import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
-import { ServicesCost } from "../../subitems/services-cost"
-import { HowWeWork } from "../../subitems/how-we-work/hww"
 import { RemoteWork } from "../../subitems/remote-work/index"
-import { DesignProektDecision } from "../../subitems/dp-decision/index"
-import { SostavDP } from "../../subitems/sostav-dp"
-
 import { ReviewBorovlianiSpecial } from "../../subitems/reviews/special/reviewBorovliani"
 import * as reviewStyles from "../../subitems/reviews/review.module.scss"
-
-import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
-
+import { PhotoCollage } from "../../subitems/photocollage"
+import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
 import { Faq } from "../../subitems/faq/apartment"
 import * as faqStyles from "../../subitems/faq/faq.module.scss"
+import { HowWeWork } from "../../subitems/how-we-work/hww"
+import { SostavDP } from "../../subitems/sostav-dp"
+
+
+import * as styles from "../../components/styles/services.module.scss"
+import { DesignProjectBlock } from "../../subitems/design-project"
+import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
+import { DesignProektDecision } from "../../subitems/dp-decision/index"
+import { DecisionApart } from "../../subitems/decision/decisionApart"
+import { ServicesCost } from "../../subitems/services-cost"
+
+
+
 
 
 
@@ -36,7 +40,7 @@ import * as faqStyles from "../../subitems/faq/faq.module.scss"
 const ServicesApart = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Дизайн-проекты интерьера квартир и ремонт под ключ в Минске. Студия RHome"} description={"Студия RHome предоставляет услуги по дизайну интерьера и ремонту квартир в Минске и по всей Беларуси уже 12 лет. 👍 В нашем портфолио более 200 успешно реализованных проектов различной сложности."}
       location={"https://rhome.by/services/apartment"}
       image={""}
     />
@@ -82,20 +86,11 @@ const ServicesApart = () => (
         />
       </PhotoCollage>
     </div>
-
     <div className="wrapper">
-      <div className={styles.services_zndp}>
-        <h2 className={styles.services_zndp_title}>Зачем нужен дизайн-проект?</h2>
-        <div className={styles.services_zndp_text}>
-          <p className={styles.services_zndp_text_p}>Задача дизайн-проекта интерьера квартиры&nbsp;&mdash; ответить на&nbsp;всевозможные вопросы прораба и&nbsp;строителей, которые будут реализовывать проект. Тщательно подготовленный дизайн-проект оптимизирует ремонт, позволяя избежать лишних трат и&nbsp;простоев в&nbsp;работе.</p>
-          <p className={styles.services_zndp_text_p}>При создании интерьера вашей квартиры мы разрабатываем подробный дизайн-проект. В&nbsp;него входят все необходимые документы для проведения ремонта: от&nbsp;общей концепции интерьера до детализированных технических чертежей.</p>
-        </div>
-      </div>
-    </div>
-    <div className="wrapper">
+      <DesignProjectBlock />
       <div className="line"></div>
       <DecisionApart />
-      <div className={styles.services_portfolio}>
+      <div>
         <h2 className={styles.services_portfolio_title}>Наши работы</h2>
         <div className={PortfolioItemStyles.portfolio_content}>
         <PortfolioItem
@@ -124,13 +119,12 @@ const ServicesApart = () => (
             />
           }
         />
-        
         <PortfolioItem
           url="/portfolio/apartment/zhk-farforovyj"
           title="ЖК&nbsp;Фарфоровый"
           metr="85"
-          building="6 месяцев"
-          budget={PortfolioItemStyles.portfolio_item_cost1}
+          building="12 месяцев"
+          budget={PortfolioItemStyles.portfolio_item_cost2}
           image={
             <StaticImage
               src="../../images/portfolio/zhk-farforovyj/00_zhk-farforovyj.jpg"
@@ -224,7 +218,7 @@ const ServicesApart = () => (
       <div className={faqStyles.faq}>
         <h2 className={faqStyles.faq_title}>Часто задаваемые<br />вопросы</h2>
         <div className={faqStyles.faq_items}>
-          <Faq/>
+          <Faq />
         </div>
       </div>
       <FooterConsultationDmitry />

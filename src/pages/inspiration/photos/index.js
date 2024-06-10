@@ -1,12 +1,13 @@
-import React from 'react'
+import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
 import { BreadcrumbsAbout } from "../../../subitems/breadcrumbs/about"
 import { InspirationPhoto } from "../../../subitems/inspiration/inspiration-photos"
-import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
+import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
+
 
 const Photos = () => (
 <Layout>

@@ -1,20 +1,22 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import * as styles from "../../components/styles/services.module.scss"
-import { BuildingGallery } from "../../subitems/gallery/building-gallery"
-import { TermTabs } from "../../subitems/building-tabs"
+
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
-import { ServicesInterests } from "../../subitems/services-cost/services-interests"
 import { ApprovalOtherServices } from "../../subitems/other-services/approval"
 import { SupervisionOtherServices } from "../../subitems/other-services/supervision"
 import { FacadeOtherServices } from "../../subitems/other-services/facade"
+import { BuildingGallery } from "../../subitems/gallery/building-gallery"
+import { ServicesInterests } from "../../subitems/services-cost/services-interests"
+import { TermTabs } from "../../subitems/building-tabs"
+import * as styles from "../../components/styles/services.module.scss"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
+
 
 const ServicesBuilding = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Дизайн интерьера офиса в Минске и Беларуси под ключ. Студия дизайна RHome"} description={"Успешно создаем и реализуем дизайн-проекты коммерческих зданий и офисов по всей Беларуси уже более 12 лет. ✅  Полное сопровождение проекта от замера до ввода в эксплуатацию. 👷 Собственная команда профессиональных строителей и мастеров ремонтных работ."}
       location={"https://rhome.by/services/building"}
       image={""}
     />

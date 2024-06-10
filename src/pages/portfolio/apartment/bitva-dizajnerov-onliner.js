@@ -1,17 +1,19 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Fancybox from "../../../components/fancybox.js";
+
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
+import Fancybox from "../../../components/fancybox.js";
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { ProjectConsultationSergey } from '../../../subitems/project/consultation/project-consultation-sergey'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
+
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey'
+import { ProjectConsultationSergey } from '../../../subitems/project/consultation/project-consultation-sergey'
+
 
 const BitvaDizajnerovonliner = () => {
   return (
@@ -271,7 +273,6 @@ const BitvaDizajnerovonliner = () => {
               </a>
             </div>
             <div className={styles.project__text_center900 + " " + styles.project__bigmargin}>
-           
             <p className={styles.project__p}>Ну вот уже хорошо, но осталось добавить акценты цвета и элементы того времени. Морковное кресло и изголовье кровати добавят настроение, картины — цветовые акценты, шторы и декоративные подушки свяжут элементы интерьера, а «бобинный» магнитофон добавит немного юмора. Еще раз критично оцениваем дизайн-проект квартиры и понимаем: у нас еще есть место для мобильного рабочего места! Откидной стол, складной стул с креплением на стене, меловая доска для записей.
 Теперь все готово.</p>
             </div>

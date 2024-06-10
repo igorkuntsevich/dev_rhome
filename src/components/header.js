@@ -38,7 +38,7 @@ const Header = () => {
       window.removeEventListener('scroll', stickyHeader);
     }
   }, [ ])
-  let position = getStickyHeader?"sticky":"relative" ;
+  let position = getStickyHeader?"fixed":"absolute" ;
   if (navOpen ){
     position="fixed";
   }
@@ -63,21 +63,21 @@ const Header = () => {
                     to="/services/apartment" 
                     className="header_subnav_a"
                     activeClassName="header_subnav_a_active"
-                  >Дизайн-проект квартиры</Link>
+                  >Дизайн квартиры</Link>
                 </li>
                 <li>
                   <Link 
                     to="/services/house" 
                     className="header_subnav_a"
                     activeClassName="header_subnav_a_active"
-                  >Дизайн-проект дома</Link>
+                  >Дизайн дома</Link>
                 </li>
                 <li>
                   <Link 
                     to="/services/office" 
                     className="header_subnav_a"
                     activeClassName="header_subnav_a_active"
-                  >Дизайн-проект офисы</Link>
+                  >Дизайн офисы</Link>
                 </li>
                 <p className="header_subnav_mb"></p>
                 <li>
@@ -209,38 +209,13 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <div className="header_mobile_flex">
+            <div className="header_mobile_flex header_mobile_flex_long">
               <Link
                 to="/cost"
-                className="header_mobile_nav_title header_mobile_nav_title_cost"
-              >Стоимость</Link>
-            </div>
-            <div className="header_mobile_flex">
-              <p
                 className="header_mobile_nav_title"
-              >Услуги</p>
-              <ul className="header_mobile_nav">
-                <li>
-                  <Link
-                    to="/services/apartment"
-                    className="header_mobile_nav_li"
-                  >Дизайн-проект квартиры</Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services/house"
-                    className="header_mobile_nav_li"
-                  >Дизайн-проект дома</Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services/office"
-                    className="header_mobile_nav_li"
-                  >Дизайн-проект офиса</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="header_mobile_flex header_mobile_flex_long">
+              >Стоимость</Link>
+            {/* </div>
+            <div className="header_mobile_flex"> */}
               <Link
                 to="/about"
                 className="header_mobile_nav_title"
@@ -279,7 +254,28 @@ const Header = () => {
               </ul>
             </div>
             <div className="header_mobile_flex">
+              <p
+                className="header_mobile_nav_title"
+              >Услуги</p>
               <ul className="header_mobile_nav">
+                <li>
+                  <Link
+                    to="/services/apartment"
+                    className="header_mobile_nav_li"
+                  >Дизайн квартиры</Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/house"
+                    className="header_mobile_nav_li"
+                  >Дизайн дома</Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/office"
+                    className="header_mobile_nav_li"
+                  >Дизайн офиса</Link>
+                </li>
                 <li>
                   <Link
                     to="/services/building"
@@ -306,6 +302,11 @@ const Header = () => {
                 </li>
               </ul>
             </div>
+            {/* <div className="header_mobile_flex">
+              <ul className="header_mobile_nav">
+                
+              </ul>
+            </div> */}
           </div>
         </div>
       </div>

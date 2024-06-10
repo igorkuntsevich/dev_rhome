@@ -1,62 +1,97 @@
 <?php
-// Путь к папке PHPMailer-master
-require 'PHPMailer-master/src/PHPMailer.php';
-require 'PHPMailer-master/src/SMTP.php';
-require 'PHPMailer-master/src/Exception.php';
+$filename = 'currency.json';
+$message = '';
+$currentRate = 0;
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
-
-// Включение всех ошибок
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
-
-if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-    exit();
+if (file_exists($filename)) {
+    $jsonContent = json_decode(file_get_contents($filename), true);
+    $currentRate = isset($jsonContent['rate']) ? $jsonContent['rate'] : 0;
 }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $password = $_POST['password'];
+    $rate = $_POST['rate'];
 
-$json_data = file_get_contents('php://input');
-$data = json_decode($json_data, true);
-
-if (json_last_error() !== JSON_ERROR_NONE) {
-    echo 'Invalid JSON';
-    exit;
-}
-
-$mail = new PHPMailer(true);
-
-try {
-    $mail->isSMTP();
-    $mail->SMTPDebug = 2;
-    $mail->Host = 'mailbe05.hoster.by';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'postmaster@cdekk.by';
-    $mail->Password = 'qie4zeYgh1!';
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    $mail->Port = 465;
-
-    $mail->setFrom('postmaster@cdekk.by', 'cdekk.by');
-    $mail->addAddress('viktormoskalev07@gmail.com', 'admin');
-
-    $mail->Subject = isset($data['subject']) ? $data['subject'] : 'Call request rhome.by';
-
-    $htmlBody = "<h1>Эмейл с rhome.by</h1><ol>";
-    foreach ($data as $key => $value) {
-        $htmlBody .= "<li><b>$key</b>: $value</li>";
+    if ($password === '123454321') {
+        file_put_contents($filename, json_encode(['rate' => $rate]));
+        $message = "Курс валюты успешно обновлен.";
+        $currentRate = $rate;
+    } else {
+        $message = "Неверный пароль.";
     }
-    $htmlBody .= "</ol>";
-
-    $mail->isHTML(true);
-    $mail->Body = $htmlBody;
-
-    $mail->send();
-    echo 'Message has been sent';
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Установка курса валюты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        label {
+            min-width:120px;
+            display:inline-block;
+            font-weight: bold;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+        .info {
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Введите курс доллара</h1>
+
+    <div class="info">Текущий курс: <?php echo $currentRate; ?></div>
+
+    <form method="POST">
+        <div style="margin:10px 0">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div>
+            <label for="rate">Курс доллара:</label>
+            <input type="text" id="rate" name="rate">
+        </div>
+        <div>
+            <button type="submit">Сохранить</button>
+        </div>
+    </form>
+
+    <?php
+    if ($message) {
+        echo "<div class='info'>$message</div>";
+    }
+    ?>
+</div>
+
+</body>
+</html>

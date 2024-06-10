@@ -9,6 +9,7 @@ import * as styles from "../../components/styles/services.module.scss"
 import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
+import { DesignProjectBlock } from "../../subitems/design-project"
 import { StagesOffice } from "../../subitems/services-stages/stagesOffice"
 import { DecisionOffice } from "../../subitems/decision/decisionOffice"
 import { PhotoCollage } from "../../subitems/photocollage"
@@ -17,19 +18,18 @@ import { ServicesCost } from "../../subitems/services-cost"
 import { RemoteWork } from "../../subitems/remote-work/index"
 import { DesignProektDecision } from "../../subitems/dp-decision/index"
 import { SostavDP } from "../../subitems/sostav-dp"
+import { Faq } from "../../subitems/faq/office"
+import * as faqStyles from "../../subitems/faq/faq.module.scss"
 import { ReviewSilvanoSpecial } from "../../subitems/reviews/special/reviewSilvano"
 import * as reviewStyles from "../../subitems/reviews/review.module.scss"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
-
-import { Faq } from "../../subitems/faq/office"
-import * as faqStyles from "../../subitems/faq/faq.module.scss"
 
 
 
 const ServicesOffice = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Дизайн фасада и экстерьера домов, коттеджей в Минске и Беларуси. Студия RHome"} description={"Оформление фасада, ландшафтный дизайн 🌳, проектирование МАФ и другие услуги по благоустройству экстерьера и участка вашего дома. 👍 12 лет успешной работы в сфере дизайна, сильная команда, большое портфолио реализованных проектов."}
       location={"https://rhome.by/services/office"}
       image={""}
     />
@@ -76,6 +76,7 @@ const ServicesOffice = () => (
       </PhotoCollage>
     </div>
     <div className="wrapper">
+      <DesignProjectBlock />
       <div className="line"></div>
       <DecisionOffice />
       <div className={styles.services_portfolio}>

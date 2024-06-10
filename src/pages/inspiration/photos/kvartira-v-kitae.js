@@ -1,13 +1,13 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
-import Fancybox from "../../../components/fancybox.js";
 import { BreadcrumbsInspirationPhotos } from "../../../subitems/breadcrumbs/inspiration_photos"
-import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
-
+import Fancybox from "../../../components/fancybox.js";
 
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
+import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
+
 
 const KvartiraVkitae = () => (
   <Layout>

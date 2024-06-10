@@ -1,21 +1,19 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import * as styles from "../../components/styles/services.module.scss"
+
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
 import { BuildingOtherServices } from "../../subitems/other-services/building"
 import { SupervisionOtherServices } from "../../subitems/other-services/supervision"
 import { FacadeOtherServices } from "../../subitems/other-services/facade"
+import * as styles from "../../components/styles/services.module.scss"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
-
-
-
 
 
 const ServicesApproval = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Согласование перепланировки квартиры, дизайн-проекта в Минске. Студия RHome"} description={"Юридическая поддержка, оформление и регистрация всех необходимых документов, полное согласование перепланировки квартиры. 👍 12 лет успешной реализации перепланировок и дизайн-проектов квартир в Минске и других городах Беларуси"}
       location={"https://rhome.by/services/approval"}
       image={""}
     />

@@ -1,15 +1,13 @@
 import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
 import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
-import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
-
+import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
 
 
@@ -69,9 +67,6 @@ const ArticleGira = () => (
             <p className={styles.articles__p}>&mdash;&nbsp;Слаботочные розетки нужны для передачи слаботочных информационных сигналов: телевизионных, сетевых, акустических и&nbsp;т.&nbsp;д. Обычные розетки на&nbsp;220&nbsp;V тут не&nbsp;годятся. В&nbsp;зависимости от&nbsp;типа передаваемого сигнала, слаботочные розетки оснащаются нужными разъемами: TV, TV-SAT, RJ-45, HDMI, VGA и&nbsp;другими. К&nbsp;розетке подключается слаботочный кабель, который можно соединить с&nbsp;соответствующим устройством: телевизором, проигрывателем, компьютером, телефоном. Слаботочными могут быть и&nbsp;USB-розетки. Их&nbsp;используют для доступа к&nbsp;серверу или передаче информации от&nbsp;носителя к&nbsp;проектору, компьютеру. Наиболее актуальны слаботочные розетки для офисов.</p>
           </div>
         </div>
-
-
-
         <div className="line"></div>
         <div className={styles.articles__mirror}>
           <div>

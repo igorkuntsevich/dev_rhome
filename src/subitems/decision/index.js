@@ -10,6 +10,9 @@ const ConsultationBlock = () => {
     triggerOnce: true,
   });
   const [modalStep, setModalStep] = React.useState(MODAL_STEPS.close);
+  const clickCall = () => {
+    typeof window !== "undefined" && window.ym(62048629,'reachGoal','callback_services')
+  };
   return (
     <div className={styles.services_decision_cons}>
       <p className={styles.services_decision_cons_status}>Дмитрий, руководитель проектов RHome</p>
@@ -17,7 +20,13 @@ const ConsultationBlock = () => {
         <div className={styles.services_decision_cons_text + " " + (inView? `${styles.active}` : "")}>
           <p className={styles.services_decision_cons_p}>&mdash;&nbsp;Оставьте заявку на консультацию, чтобы обсудить вашу задачу. Я&nbsp;перезвоню в&nbsp;рабочее время.</p>
         </div>
-        <button onClick={() => setModalStep(MODAL_STEPS.contact)} className={styles.services_decision_cons_button}>Заказать звонок</button>
+        <button
+          onClick={() => {
+            setModalStep(MODAL_STEPS.contact)
+            clickCall();
+          }}
+          className={styles.services_decision_cons_button}
+        >Заказать звонок</button>
       </div>
       <p ref={ref} className={styles.services_decision_cons_ref}></p>
       {modalStep!==MODAL_STEPS.close&&<Modal

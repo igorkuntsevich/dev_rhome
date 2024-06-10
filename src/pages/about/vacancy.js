@@ -18,7 +18,7 @@ import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmi
 const Vacancy = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Работа в дизайн-студии RHome"} description={"Вакансии, условия работы и виды сотрудничества"}
       location={"https://rhome.by/about/vacancy"}
       image={""}
     />
@@ -54,7 +54,7 @@ const Vacancy = () => (
         />
       </div>
       <div className={styles.vacancy_formats}>
-        <h2 className={styles.vacancy_formats_title}>В&nbsp;настоящее время, мы&nbsp;можем предложить два формата работы:</h2>
+        <h2 className={styles.vacancy_formats_title}>В&nbsp;настоящее время, мы&nbsp;можем предложить формат работы:</h2>
         <div className={styles.vacancy_formats_items}>
           <div className={styles.vacancy_formats_item}>
             <div className={styles.vacancy_formats_item_text}>
@@ -68,7 +68,7 @@ const Vacancy = () => (
               className={styles.vacancy_formats_img}
             />
           </div>
-          <div className={styles.vacancy_formats_item}>
+          {/* <div className={styles.vacancy_formats_item}>
             <div className={styles.vacancy_formats_item_text}>
               <h3 className={styles.vacancy_formats_item_title}>Удаленная работа</h3>
               <p className={styles.vacancy_formats_item_p}>Мы&nbsp;работаем с&nbsp;ИП и&nbsp;самозанятыми по&nbsp;четко отлаженной системе взаимодействия. В&nbsp;таком формате мы&nbsp;работаем уже более 3х&nbsp;лет, поэтому вам будет легко встроиться. Сотрудничество может быть, как на&nbsp;постоянной основе, так и&nbsp;проектное.</p>
@@ -79,7 +79,7 @@ const Vacancy = () => (
               alt=""
               className={styles.vacancy_formats_img}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.vacancy_relax}>

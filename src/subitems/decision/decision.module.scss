@@ -41,6 +41,7 @@ $mobile: 768px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     grid-gap: 8.7vw;
+    margin-bottom: 27.8vw;
     &.services_decision_house {
       grid-template-rows: inherit;
       .services_decision_cons {
@@ -86,23 +87,38 @@ $mobile: 768px;
   }
 }
 .services_decision_cons {
+  display: flex;
+  flex-direction: column;
   border-radius: 0px 30px 30px 0px;
   background-image: url(../../images/services/remont_cons_dmitry.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4.6vw 1.5vw 1.8vw 2vw;
   position: relative;
+  height: 100%;
   overflow: hidden;
   @media screen and (min-width: $fullscreen) {
     padding: 70px 23px 27px 30px;
   }
   @media screen and (max-width: $mobile) {
     padding: 5.6vw 3.1vw 6.5vw;
-    display: flex;
     flex-direction: column-reverse;
     position: relative;
-    margin-bottom: 27.8vw;
+    // margin-bottom: 27.8vw;
     overflow: initial;
+  }
+}
+.services_decision_cons_zndp {
+  background-image: url(../../images/services/remont_cons_dmitry_zndp.jpg);
+  justify-content: flex-end;
+  padding-bottom: 3.1vw;
+  @media screen and (min-width: $fullscreen) {
+    padding-bottom: 47px;
+  }
+  @media screen and (max-width: $mobile) {
+    background-image: url(../../images/services/remont_cons_dmitry.jpg);
+    padding-bottom: 6.5vw;
+    margin-bottom: 19vw;
   }
 }
 .services_decision_cons_status {
@@ -337,5 +353,98 @@ $mobile: 768px;
     font-size: 3.4vw;
     line-height: 4.3vw;
     max-width: 100%;
+  }
+}
+.zndp_decision {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #DBDBDB;
+  border-radius: 0 30px 30px 0;
+  @media screen and (max-width: $mobile) {
+    border: 0;
+    flex-direction: column;
+    gap: 9vw;
+    margin-top: 10vw;
+  }
+}
+.zndp_decision_text {
+  padding: 4vw 2.6vw;
+  width: 50%;
+  @media screen and (min-width: $fullscreen) {
+    padding: 61px 40px;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    padding: 0;
+  }
+}
+.zndp_decision_text_title {
+  font-size: 2.8vw;
+  line-height: 3.1vw;
+  margin-bottom: 1.9vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 43px;
+    line-height: 47px;
+    margin-bottom: 29px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 6.7vw;
+    line-height: 7.5vw;
+    margin-bottom: 8.2vw;
+  }
+}
+.zndp_decision_text_items {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1.2vw;
+  @media screen and (min-width: $fullscreen) {
+    grid-gap: 18px;
+  }
+  @media screen and (max-width: $mobile) {
+    grid-gap: 6vw;
+  }
+}
+.zndp_decision_text_p {
+  display: flex;
+  align-items: center;
+  font-size: 1.7vw;
+  line-height: 2vw;
+  background-repeat: no-repeat;
+  background-size: 6.45vw;
+  background-position: left center;
+  padding-left: 9.2vw;
+  max-width: 35vw;
+  height: 7vw;
+  @media screen and (min-width: $fullscreen) {
+    font-size: 26px;
+    line-height: 30px;
+    background-size: 98px;
+    padding-left: 140px;
+    max-width: 532px;
+    height: 106px;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 4.3vw;
+    line-height: 5.3vw;
+    background-size: 20.3vw;
+    padding-left: 25.4vw;
+    max-width: 100%;
+    height: 20.5vw;
+  }
+}
+.zndp_decision_text_p1 {
+  background-image: url(../../svg/zndp_icon1.svg);
+}
+.zndp_decision_text_p2 {
+  background-image: url(../../svg/zndp_icon2.svg);
+}
+.zndp_decision_text_p3 {
+  background-image: url(../../svg/zndp_icon3.svg);
+}
+.zndp_decision_right {
+  width: 50%;
+  @media screen and (max-width: $mobile) {
+    width: 100%;
   }
 }

@@ -1,12 +1,14 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
 import { Link } from "gatsby"
-import { PortfolioItem } from "../../../subitems/portfolio"
-
-import * as styles from "../../../components/styles/portfolio/portfolio.module.scss"
-import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { StaticImage } from 'gatsby-plugin-image'
+
+import { PortfolioItem } from "../../../subitems/portfolio"
+import * as styles from "../../../components/styles/portfolio/portfolio.module.scss"
+
+import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
+
 
 const PortfolioApartment = () => (
   <Layout>
@@ -22,10 +24,10 @@ const PortfolioApartment = () => (
         </div>
         <div className={styles.portfolio_intro_list}>
           <Link to="/portfolio" className={styles.portfolio_intro_link}>Все проекты</Link>
-          <Link to="/portfolio/house" className={styles.portfolio_intro_link}>Дома</Link>
           <Link to="/portfolio/apartment" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Квартиры
-          <div className={styles.animline}></div>
+            <div className={styles.animline}></div>
           </Link>
+          <Link to="/portfolio/house" className={styles.portfolio_intro_link}>Дома</Link>
           <Link to="/portfolio/commercial" className={styles.portfolio_intro_link}>Коммерческие объекты</Link>
           <Link to="/portfolio/facade" className={styles.portfolio_intro_link}>Фасады</Link>
         </div>
@@ -61,8 +63,8 @@ const PortfolioApartment = () => (
           url="/portfolio/apartment/zhk-farforovyj"
           title="ЖК&nbsp;Фарфоровый"
           metr="85"
-          building="6 месяцев"
-          budget={styles.portfolio_item_cost1}
+          building="12 месяцев"
+          budget={styles.portfolio_item_cost2}
           image={
             <StaticImage
               src="../../../images/portfolio/zhk-farforovyj/00_zhk-farforovyj.jpg"
@@ -176,7 +178,7 @@ const PortfolioApartment = () => (
         />
         <PortfolioItem
           url="/portfolio/apartment/kvartira-promenad"
-          title="Квартира в ЖК “Променад”"
+          title="Квартира в ЖК «Променад»"
           metr="122"
           building="8 месяцев"
           budget={styles.portfolio_item_cost2}

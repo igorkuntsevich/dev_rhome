@@ -9,6 +9,7 @@ import * as styles from "../../components/styles/services.module.scss"
 import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
+import { DesignProjectBlock } from "../../subitems/design-project"
 import { StagesHouse } from "../../subitems/services-stages/stagesHouse"
 import { DecisionHouse } from "../../subitems/decision/decisionHouse"
 import { PhotoCollage } from "../../subitems/photocollage"
@@ -17,19 +18,18 @@ import { ServicesCost } from "../../subitems/services-cost"
 import { RemoteWork } from "../../subitems/remote-work/index"
 import { DesignProektDecision } from "../../subitems/dp-decision/index"
 import { SostavDP } from "../../subitems/sostav-dp"
+import { Faq } from "../../subitems/faq/house"
+import * as faqStyles from "../../subitems/faq/faq.module.scss"
 import { ReviewProvansSpecial } from "../../subitems/reviews/special/reviewProvans"
 import * as reviewStyles from "../../subitems/reviews/review.module.scss"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
-
-import { Faq } from "../../subitems/faq/house"
-import * as faqStyles from "../../subitems/faq/faq.module.scss"
 
 
 
 const ServicesHouse = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Дизайн-проекты интерьера домов в Минске и Беларуси. Студия дизайна RHome"} description={"Дизайн интерьера домов под ключ: от разработки дизайн-проекта до сопровождения ремонта. 12 лет профессионального опыта в дизайне интерьера. 👍 Более 200 успешно выполненных проектов различной сложности."}
       location={"https://rhome.by/services/house"}
       image={""}
     />
@@ -76,11 +76,25 @@ const ServicesHouse = () => (
       </PhotoCollage>
     </div>
     <div className="wrapper">
+      <DesignProjectBlock />
       <div className="line"></div>
       <DecisionHouse />
       <div className={styles.services_portfolio}>
         <h2 className={styles.services_portfolio_title}>Наши работы</h2>
         <div className={PortfolioItemStyles.portfolio_content}>
+          <PortfolioItem
+            url="/portfolio/house/zhemchuzhnaya"
+            title="Жемчужная-2"
+            metr="296"
+            building="16 месяцев"
+            budget={PortfolioItemStyles.portfolio_item_cost3}
+            image={
+              <StaticImage
+                src="../../images/portfolio/zhemchuzhnaya/00_zhemchuzhnaya.jpg"
+                alt=""
+              />
+            }
+          />
           <PortfolioItem
             url="/portfolio/house/dom-ptich"
             title="Дом в&nbsp;поселке Птичь"
@@ -160,27 +174,14 @@ const ServicesHouse = () => (
             }
           />
           <PortfolioItem
-          url="/portfolio/house/interer-zelenoja-gavan"
-          title="Черничный проезд"
-          metr="189"
-          building=""
-          budget=""
-          image={
-            <StaticImage
-              src="../../images/portfolio/interer-zelenoja-gavan/00_interer-zelenoja-gavan.jpg"
-              alt=""
-            />
-          }
-        />
-          <PortfolioItem
-            url="/portfolio/house/monohrom-zelenaya-gavan"
-            title="Монохромный интерьер дома в Зеленой Гавани"
-            metr="182"
+            url="/portfolio/house/interer-zelenoja-gavan"
+            title="Черничный проезд"
+            metr="189"
             building=""
-            budget={PortfolioItemStyles.portfolio_item_cost2}
+            budget=""
             image={
               <StaticImage
-                src="../../images/portfolio/monohrom-zelenaya-gavan/00_monohrom-zelenaya-gavan.jpg"
+                src="../../images/portfolio/interer-zelenoja-gavan/00_interer-zelenoja-gavan.jpg"
                 alt=""
               />
             }

@@ -111,7 +111,7 @@ $mobile: 768px;
     gap: 60px;
   }
   @media screen and (max-width: $mobile) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 .contacts_text1 {
@@ -172,6 +172,9 @@ $mobile: 768px;
   }
   @media screen and (max-width: $mobile) {
     width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8vw;
   }
 }
 .contacts_flex_small {
@@ -179,7 +182,6 @@ $mobile: 768px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 6vw;
   }
 }
 .contacts_link {

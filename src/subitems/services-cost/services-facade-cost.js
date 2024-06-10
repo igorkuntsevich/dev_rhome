@@ -14,7 +14,7 @@ export const ServicesFacadeCost = ( { title }) => {
         <p className={styles.services_cost_image_text + " " + (inView? `${styles.active}` : "")}>&mdash;&nbsp;Мы&nbsp;работаем официально, по&nbsp;договору, с&nbsp;прозрачным ценообразованием.</p>
       </div>
       <div className={styles.services_cost_text}>
-        <p className={styles.services_cost_price}>990 у.е. = 2900&nbsp;р.</p>
+        <p className={styles.services_cost_price}>990 у.е. &asymp; 3200&nbsp;р.</p>
         <p className={styles.services_cost_text_p}>На&nbsp;стоимость дизайна фасада дома влияют размер объекта, детализация прорисовки и&nbsp;сроки.</p>
       </div>
       <p ref={ref} className={styles.services_cost_ref}></p>

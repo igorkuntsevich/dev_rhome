@@ -1,24 +1,19 @@
 import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
-import * as styles from "../../components/styles/services.module.scss"
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
+
 import { BuildingOtherServices } from "../../subitems/other-services/building"
 import { ApprovalOtherServices } from "../../subitems/other-services/approval"
 import { FacadeOtherServices } from "../../subitems/other-services/facade"
+import * as styles from "../../components/styles/services.module.scss"
 import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
-
-
-
-
-
-
 
 
 const ServicesSupervision = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Авторский надзор, контроль ремонтных работ и строителей. Студия RHome в Минске"} description={"Берем на себя все хлопоты по организации ремонта: составление смет, поиск надежных поставщиков материалов, закупка, контроль и согласование хода выполнения ремонтных работ на всех этапах реализации дизайн-проекта."}
       location={"https://rhome.by/services/supervision"}
       image={""}
     />
@@ -31,7 +26,6 @@ const ServicesSupervision = () => (
         <p className={styles.services_intro_text_p}>Услуга гарантирует, что реализованный<br />проект будет в точности соответствовать согласованному плану.</p>
         <span className={styles.services_intro_text_span}>Архитектор берёт на себя ответственность за результат<br />стройки и каждый этап процесса.</span>
       </div>
-
     </div>
     <div className="wrapper">
       <div className="line"></div>

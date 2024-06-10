@@ -5,11 +5,11 @@ import Seo from "../../components/seo"
 import { BreadcrumbsAbout } from "../../subitems/breadcrumbs/about"
 import { InspirationArticle } from "../../subitems/inspiration/inspiration-articles"
 import { InspirationPhoto } from "../../subitems/inspiration/inspiration-photos"
-import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 
 
 import * as styles from "../../components/styles/about/inspiration.module.scss"
 import { INSPIRATION_CONFIG } from "../../config";
+import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 
 
 const Inspiration = () => {
@@ -29,7 +29,7 @@ const Inspiration = () => {
         </div>
         <div className={styles.inspiration_intro_list}>
           <Link to="/inspiration" className={styles.inspiration_intro_link} activeClassName={styles.inspiration_intro_active_link}>Все сразу
-          <div className={styles.animline}></div>
+            <div className={styles.animline}></div>
           </Link>
           <Link to="/inspiration/articles" className={styles.inspiration_intro_link}>Статьи</Link>
           <Link to="/inspiration/photos" className={styles.inspiration_intro_link}>Фотографии</Link>
@@ -37,7 +37,6 @@ const Inspiration = () => {
       </div>
       <div className={styles.inspiration_content}>
         {INSPIRATION_CONFIG.map((item , i)=>{
-
           if(item.type==="photo"){
             return <InspirationPhoto  {...item} key={i} />
           }

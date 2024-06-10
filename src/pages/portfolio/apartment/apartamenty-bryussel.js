@@ -1,15 +1,17 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Fancybox from "../../../components/fancybox.js";
+
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
+import Fancybox from "../../../components/fancybox.js";
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { ProjectConsultationSergey } from '../../../subitems/project/consultation/project-consultation-sergey'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
+
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey'
+import { ProjectConsultationSergey } from '../../../subitems/project/consultation/project-consultation-sergey'
+
 
 const ApartamentyBryussel = () => {
   return (

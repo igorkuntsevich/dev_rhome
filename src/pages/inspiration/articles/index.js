@@ -2,12 +2,15 @@ import React from 'react'
 import { Link } from "gatsby"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
+
 import { BreadcrumbsAbout } from "../../../subitems/breadcrumbs/about"
 import { InspirationArticlePage } from "../../../subitems/inspiration/inspiration-articles-page"
+
+import * as styles from "../../../components/styles/about/inspiration.module.scss"
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
 
-import * as styles from "../../../components/styles/about/inspiration.module.scss"
+
 
 const Articles = () => (
   <Layout>
@@ -31,6 +34,12 @@ const Articles = () => (
         </div>
       </div>
       <div className={styles.inspiration_content}>
+        <InspirationArticlePage
+          url="/inspiration/articles/istanbul/"
+          backgroundImageUrl="https://rhome.by/images/inspiration/articles/istanbul/00_istanbul.jpg"
+          title="Архитектурный тур в Стамбул команды Rhome"
+          chapter="Интересное"
+        />
         <InspirationArticlePage
           url="/inspiration/articles/trend-kuhni/"
           backgroundImageUrl="https://rhome.by/images/inspiration/articles/trend-kuhni/00_trend-kuhni.jpg"

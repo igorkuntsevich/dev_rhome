@@ -1,17 +1,19 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Fancybox from "../../../components/fancybox.js";
+
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
+import Fancybox from "../../../components/fancybox.js";
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { ProjectConsultationSergey } from '../../../subitems/project/consultation/project-consultation-sergey'
 import { ProjectPartner } from "../../../subitems/project/project-partner"
 import { ProjectPartnerItem } from '../../../subitems/project/project-partner-item'
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
+
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
-import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey';
+import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey'
+import { ProjectConsultationSergey } from '../../../subitems/project/consultation/project-consultation-sergey'
+
 
 const StalinkaNezavisimosti = () => {
   return (
@@ -60,7 +62,6 @@ const StalinkaNezavisimosti = () => {
                 <p className={styles.project__p}>Мы оставили максимум традиционного декора сталинок: лепнины и розеток на потолках. Они оригинальные. Двери и паркет пришлось заменить. Чтобы сохранить аутентичность в дизайне интерьера квартиры, мы выбрали максимально похожие на те, что были здесь изначально. Хотя сейчас существует тренд на двери-невидимки, здесь мы поставили их портальные с наличниками. Новый паркет — французская елка, то есть тот же узор, что был здесь изначально.</p>
               </div>
             </div>
-
             <a href="https://rhome.by/images/portfolio/stalinka-nezavisimosti/02_stalinka-nezavisimosti.webp"
               data-fancybox="gallery"
               className={styles.project__one_image_link + " " + styles.project__bigmargin + " " + styles.project__narrow_block}
@@ -214,8 +215,6 @@ const StalinkaNezavisimosti = () => {
                 />
               </a>
             </div>
-
-
             <ProjectConsultationSergey
                 text="Создавая дизайн интерьера в доме с историей, стоит искать вдохновения в той эпохе, а не пытаться сделать оторванный от исторического контекста интерьер. Тогда ваши вкусы и идеи вступят во взаимодействие с характером дома, а из этого может получиться невероятный результат."
             />
@@ -308,8 +307,6 @@ const StalinkaNezavisimosti = () => {
                 />
               </a>
             </div>
-
-
           </div>
         </div>
         <div className="wrapper">

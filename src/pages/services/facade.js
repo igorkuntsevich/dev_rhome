@@ -2,32 +2,34 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
-import * as styles from "../../components/styles/services.module.scss"
+
 import { PortfolioItem } from "../../subitems/portfolio"
 import * as PortfolioItemStyles from "../../components/styles/portfolio/portfolio.module.scss"
 import { BreadcrumbsServices } from "../../subitems/breadcrumbs/services"
 import { StagesFacade } from "../../subitems/services-stages/stagesFacade"
-import { DecisionFacade } from "../../subitems/decision/decisionFacade"
-import { PhotoCollage } from "../../subitems/photocollage"
-import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
-import { ServicesFacadeCost } from "../../subitems/services-cost/services-facade-cost"
 import { RemoteWork } from "../../subitems/remote-work/index"
 import { ReviewBerezovayaRoshchaSpecial } from "../../subitems/reviews/special/reviewBerezovayaRoshcha"
 import * as reviewStyles from "../../subitems/reviews/review.module.scss"
-import { BuildingOtherServices } from "../../subitems/other-services/building"
 import { ApprovalOtherServices } from "../../subitems/other-services/approval"
+import { BuildingOtherServices } from "../../subitems/other-services/building"
 import { SupervisionOtherServices } from "../../subitems/other-services/supervision"
-import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
-
+import { PhotoCollage } from "../../subitems/photocollage"
+import * as collageStyles from "../../subitems/photocollage/photocollage.module.scss"
 import { Faq } from "../../subitems/faq/office"
 import * as faqStyles from "../../subitems/faq/faq.module.scss"
+
+
+import * as styles from "../../components/styles/services.module.scss"
+import { ServicesFacadeCost } from "../../subitems/services-cost/services-facade-cost"
+import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
+import { DecisionFacade } from "../../subitems/decision/decisionFacade"
 
 
 
 const ServicesFasad = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Ремонт квартиры, дома, коттеджа под ключ в Минске и Беларуси. Студия RHome"} description={"Собственная команда профессиональных аттестованных строителей. Четкое соблюдение сроков каждого из этапов строительных и ремонтных работ, обязательное составление смет, закупка строительных материалов."}
       location={"https://rhome.by/services/facade"}
       image={""}
     />
@@ -99,7 +101,6 @@ const ServicesFasad = () => (
               />
             }
           />
-
           <PortfolioItem
             url="/portfolio/facade/dom-staroeselo"
             title="Дом в Старом селе"
@@ -126,19 +127,19 @@ const ServicesFasad = () => (
               />
             }
           />
-        <PortfolioItem
-          url="/portfolio/facade/selskij-dom"
-          title="Сельский дом"
-          metr="500"
-          building=""
-          budget=""
-          image={
-            <StaticImage
-              src="../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
-              alt=""
-            />
-          }
-        />
+          <PortfolioItem
+            url="/portfolio/facade/selskij-dom"
+            title="Сельский дом"
+            metr="500"
+            building=""
+            budget=""
+            image={
+              <StaticImage
+                src="../../images/portfolio/selskij-dom/00_selskij-dom.jpg"
+                alt=""
+              />
+            }
+          />
           <PortfolioItem
             url="/portfolio/facade/fasad-borovlyany"
             title="Фасад дома в Боровлянах"
@@ -165,19 +166,19 @@ const ServicesFasad = () => (
               />
             }
           />
-        <PortfolioItem
-          url="/portfolio/facade/fasad-zelenaya-gavan"
-          title="Зеленая гавань"
-          metr="180"
-          building=""
-          budget={PortfolioItemStyles.portfolio_item_cost2}
-          image={
-            <StaticImage
-              src="../../images/portfolio/fasad-zelenaya-gavan/00_fasad-zelenaya-gavan.jpg"
-              alt=""
-            />
-          }
-        />
+          <PortfolioItem
+            url="/portfolio/facade/fasad-zelenaya-gavan"
+            title="Зеленая гавань"
+            metr="180"
+            building=""
+            budget={PortfolioItemStyles.portfolio_item_cost2}
+            image={
+              <StaticImage
+                src="../../images/portfolio/fasad-zelenaya-gavan/00_fasad-zelenaya-gavan.jpg"
+                alt=""
+              />
+            }
+          />
         </div>
       </div>
       <ServicesFacadeCost

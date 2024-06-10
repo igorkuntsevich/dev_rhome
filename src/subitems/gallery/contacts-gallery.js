@@ -1,8 +1,8 @@
 import * as React from "react"
-import * as styles from "../../components/styles/contacts.module.scss"
 import { StaticImage } from "gatsby-plugin-image"
 import Fancybox from "../../components/fancybox.js";
 
+import * as styles from "../../components/styles/contacts.module.scss"
 import ScrollContainer from 'react-indiana-drag-scroll'
 
 

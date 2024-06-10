@@ -75,7 +75,9 @@ $mobile: 768px;
     gap: 52px;
   }
   @media screen and (max-width: $mobile) {
-    gap: 7.4vw;
+    gap: initial;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 2vw;
   }
 }
@@ -340,6 +342,15 @@ $mobile: 768px;
     font-size: 3.4vw;
     line-height: 5.1vw;
     margin-bottom: 2.4vw;
+  }
+}
+.articles__p_lonely {
+  max-width: 62vw;
+  @media screen and (min-width: $fullscreen) {
+    max-width: 940px;
+  }
+  @media screen and (max-width: $mobile) {
+    max-width: 100%;
   }
 }
 .articles__li {

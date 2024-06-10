@@ -9,14 +9,14 @@ import videoMob from "../../video/how_we_work_mob.mp4"
 import { ProjectConsultationSergey } from '../../subitems/project/consultation/project-consultation-sergey'
 import { ProjectConsultationAlexey } from '../../subitems/project/consultation/project-consultation-alexey'
 
-import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 import * as styles from "../../components/styles/about/process.module.scss"
+import { FooterConsultationDmitry } from "../../subitems/footer-consultation-dmitry"
 
 
 const About = () => (
   <Layout>
     <Seo 
-      title={""} description={""}
+      title={"Как строится работа с нами | Дизайн студия «Rhome.by»"} description={"Рассказываем по какому сценарию будет проходит работа с нами и чего от нее ждать."}
       location={"https://rhome.by/about/process"}
       image={""}
     />

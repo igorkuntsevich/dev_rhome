@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import * as styles from "./inspiration.module.scss"
-import { useGetPageViews } from "../../hooks/useGetPageViews";
 import { Loader } from "../../components/loader/loader";
+import { useGetPageViews } from "../../hooks/useGetPageViews";
 
 export const InspirationArticlePage = ( { title, chapter, url, backgroundImageUrl   }) => {
   const loadedViews=   useGetPageViews(url)

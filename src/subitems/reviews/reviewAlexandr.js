@@ -10,7 +10,7 @@ export const ReviewAlexandr = () => {
   return (
     <div>
       <div className={styles.reviews_item_head}>
-        <div className={styles.reviews_item_head_text + " " + styles.reviews_item_head_person1}>
+        <div className={styles.reviews_item_head_text}>
           <p className={styles.reviews_item_head_name}>Александр</p>
           </div>
         <p className={styles.reviews_item_head_data}>10.05.2018</p>

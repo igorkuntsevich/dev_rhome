@@ -1,16 +1,14 @@
 import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import { PortfolioItem } from "../../../subitems/portfolio"
 import { BreadcrumbsInspirationArticles } from "../../../subitems/breadcrumbs/inpiration_articles"
 import { InspirationArticle } from "../../../subitems/inspiration/inspiration-articles"
-import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
 import * as styles from "../../../components/styles/about/inspiration.module.scss"
-
+import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 
 
 
@@ -41,11 +39,8 @@ const DizajnOdnokomnatnoj = () => (
             className={styles.articles_intro_img_mob}
           />
         </div>
-
-
         <div className={styles.articles_intro_text}>
-          <p className={styles.articles_intro_p}>Однушка – более популярный выбор для покупки, чем кажется. Их часто покупают в качестве первой квартиры для себя или для сдачи. В обоих вариантах ремонт стремятся сделать как можно быстрее. Но цена быстрого ремонта – невероятно тщательно продуманный интерьер и спланированный ход работ.
-В этой статье мы расскажем, как из минимальной площади выжать максимум!</p>
+          <p className={styles.articles_intro_p}>Однушка – более популярный выбор для покупки, чем кажется. Их часто покупают в качестве первой квартиры для себя или для сдачи. В обоих вариантах ремонт стремятся сделать как можно быстрее. Но цена быстрого ремонта – невероятно тщательно продуманный интерьер и спланированный ход работ. В этой статье мы расскажем, как из минимальной площади выжать максимум!</p>
         </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
@@ -68,18 +63,17 @@ const DizajnOdnokomnatnoj = () => (
           </div>
         </div>
         <div className={styles.articles__two_inline}>
-                <StaticImage
-                  src="../../../images/inspiration/articles/dizajn-odnokomnatnoj-kvartiry/10_dizajn-odnokomnatnoj-kvartiry.jpg"
-                  alt=""
-                  className={styles.articles__one_image}
-                />
-                <StaticImage
-                  src="../../../images/inspiration/articles/dizajn-odnokomnatnoj-kvartiry/08_dizajn-odnokomnatnoj-kvartiry.jpg"
-                  alt=""
-                  className={styles.articles__one_image}
-                />
-            </div>
-
+          <StaticImage
+            src="../../../images/inspiration/articles/dizajn-odnokomnatnoj-kvartiry/10_dizajn-odnokomnatnoj-kvartiry.jpg"
+            alt=""
+            className={styles.articles__one_image}
+          />
+          <StaticImage
+            src="../../../images/inspiration/articles/dizajn-odnokomnatnoj-kvartiry/08_dizajn-odnokomnatnoj-kvartiry.jpg"
+            alt=""
+            className={styles.articles__one_image}
+          />
+        </div>
         <div className="line"></div>
         <div className={styles.articles__lefttitle_righttext}>
           <h2 className={styles.articles__lefttitle_righttext__title}>Особое оформление потолка и пола: использование разных цветов и разноуровневого рельефа</h2>
@@ -230,9 +224,9 @@ const DizajnOdnokomnatnoj = () => (
           <h2 className={styles.articles__lefttitle_righttext__title + " " + styles.articles__lefttitle_righttext__title_long}>Что такое квартира-студия и чем она отличается от однокомнатной квартиры?</h2>
           <div>
             <p className={styles.articles__p}>Люди часто путаются, в чем отличие однушки и квартиры-студии. Главное отличие – отсутствие перегородок между жилой комнатой и кухней. Изначально проекты студийных квартиры предполагают обособление только санузла. Последующее разделение происходит уже позже – с помощью перегородок и других приемов, о которых мы рассказывали ранее. Дизайн однокомнатной квартиры разрабатывается с учетом того, что кухня – это отдельное помещение, которое может выполнять либо функции только кухни-столовой, либо также выступать кабинетом или даже миниатюрной гостиной, если метраж позволяет. В этом случае отдельная жилая комната остается приватной зоной хозяев. Дизайн квартиры студии – это работа с пространством, в котором все зоны находятся в одном помещении.
-Из существенных отличий дизайн интерьера однокомнатной квартиры и студии – площадь квартиры-студии обычно чуть меньше и порой не достигает и 30 кв. м.
-Правда, сейчас квартиры все чаще продаются со свободной планировкой, поэтому квартира-студия может быть и очень просторной.</p>
-<p className={styles.articles__p}>В этой статье мы рассказали о том, какие приемы можно использовать, чтобы максимально эффективно и удобно использовать пространство в условиях, когда метраж небольшой. Однако, наши дизайнеры также тщательно продумывают интерьерные решения для квартир с любым количеством комнат, ведь грамотное зонирование и работа с освещением, текстурами и оптимальным использованием пространства для организации хранения важны в любом доме.</p>
+            Из существенных отличий дизайн интерьера однокомнатной квартиры и студии – площадь квартиры-студии обычно чуть меньше и порой не достигает и 30 кв. м.
+            Правда, сейчас квартиры все чаще продаются со свободной планировкой, поэтому квартира-студия может быть и очень просторной.</p>
+            <p className={styles.articles__p}>В этой статье мы рассказали о том, какие приемы можно использовать, чтобы максимально эффективно и удобно использовать пространство в условиях, когда метраж небольшой. Однако, наши дизайнеры также тщательно продумывают интерьерные решения для квартир с любым количеством комнат, ведь грамотное зонирование и работа с освещением, текстурами и оптимальным использованием пространства для организации хранения важны в любом доме.</p>
           </div>
         </div>
 

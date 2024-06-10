@@ -32,7 +32,7 @@ module.exports = {
         defaults: {
           formats: [`auto`, `webp`],
           placeholder: `blurred`,
-          quality: 90,
+          quality: 89,
           breakpoints: [500, 1200, 1800],
           backgroundColor: `transparent`,
           tracedSVGOptions: {},
@@ -112,6 +112,29 @@ module.exports = {
         },
       },
     },
-  
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-N7KKZ36",
+        includeInDevelopment: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-yandex-metrika`,
+      options: {
+        trackingId: 62048629,
+        webvisor: true,
+        trackHash: true,
+        afterBody: true,
+        defer: false,
+      },
+    },
+    // {
+    //   resolve: `gatsby-plugin-page-creator`,
+    //   options: {
+    //     path: `${__dirname}/src/indexes/pages`,
+    //     ignore: [`blog.(js|ts)?(x)`],
+    //   },
+    // },
   ],
 }

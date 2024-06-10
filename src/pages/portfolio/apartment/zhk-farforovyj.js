@@ -1,16 +1,18 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Fancybox from "../../../components/fancybox.js";
+
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-apart"
+import Fancybox from "../../../components/fancybox.js";
 import { ProjectIntro } from "../../../subitems/project/project-intro"
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
+
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { ProjectTaskSergey2 } from '../../../subitems/project/task/project-task-sergey2'
+
 
 const ZhkFarforovyj = () => {
   return (
@@ -32,8 +34,8 @@ const ZhkFarforovyj = () => {
                 manager="Дмитрий Разумейчик"
                 data="октябрь 2022"
                 metr="85"
-                building="6 месяцев"
-                budget={styles.project_intro_item_cost1}
+                building="12 месяцев"
+                budget={styles.project_intro_item_cost2}
               />
               <StaticImage
                 src="../../../images/portfolio/zhk-farforovyj/01_zhk-farforovyj.jpg"
@@ -78,8 +80,8 @@ const ZhkFarforovyj = () => {
           </PhotoCollage>
           <div className="wrapper">
             <ProjectTaskSergey2
-              taskText="Разработать дизайн интерьера в современном стиле."
-              wishText="Очень понравился проект коттеджа в стиле Giovanni Sforza, который делала ваша студия, хотелось бы увидеть в нашей новой квартире нечто подобное. Мы предпочитаем темные интерьеры с мягкой подсветкой, итальянскую мебель и качественные натуральные материалы. По планировке основное пожелание: большая гостиная для посиделок и хозяйская спальня с отдельным санузлом."
+              taskText="Нравятся интерьеры в современном минимализме, практичные и удобные, в светлых тонах + дерево."
+              wishText="Совмещенная кухня-гостиная, много мест хранения, потолки с теневым профилем по всему периметру, различные сценарии освещения, отдельная постирочная комната."
             />
 
             <div className="line"></div>

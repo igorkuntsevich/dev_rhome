@@ -1,17 +1,18 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Fancybox from "../../../components/fancybox.js";
+
 import { BreadcrumbsProject } from "../../../subitems/breadcrumbs/project-facade"
+import Fancybox from "../../../components/fancybox.js";
 import { ProjectIntro } from "../../../subitems/project/project-intro"
-import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
 import { PhotoCollage } from "../../../subitems/photocollage"
 import * as collageStyles from "../../../subitems/photocollage/photocollage.module.scss"
 import * as styles from "../../../components/styles/portfolio/portfolio-item.module.scss"
+
 import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
-import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey';
+import { ProjectTaskAlexey } from '../../../subitems/project/task/project-task-alexey'
+import { ProjectConsultationSvetlana } from '../../../subitems/project/consultation/project-consultation-svetlana'
 
 const DomPodmoskove = () => {
   return (

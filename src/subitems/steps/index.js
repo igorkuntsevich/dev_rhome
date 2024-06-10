@@ -5,17 +5,18 @@ import useSWR from "swr";
 import { API } from "../../api/api";
 import { fetcher } from "../../api/fetcher";
 
-import { ModalStepFirst } from "./step-first";
 import { MODAL_STEPS } from "../../pages/cost";
+import { ModalStepFirst } from "./step-first";
 import { ModalStepSecond } from "./step-second";
 import { ToastContainer } from "react-toastify";
-
 import 'react-toastify/dist/ReactToastify.css';
-export const Modal = ({  type,metr ,modalStep , setModalStep  }) => {
 
-const onClose = ()=>{
-  setModalStep(MODAL_STEPS.close)
-}
+
+export const Modal = ({ type, metr, modalStep, setModalStep }) => {
+
+  const onClose = ()=>{
+    setModalStep(MODAL_STEPS.close)
+  }
   const {data:currencyUSD} = useSWR(API.usdCurrency , fetcher);
   const price = calcPrice({  type, METR:metr, dollarRate:currencyUSD?.rate||0 });
   const submitData = {

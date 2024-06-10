@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 export const SupervisionOtherServices = () => {
   return (
-    <Link to="/services/facade" className={styles.services_item + " " + styles.services_item_supervision}>
+    <Link to="/services/supervision" className={styles.services_item + " " + styles.services_item_supervision}>
       <h2 className={styles.services_title}>Авторский надзор</h2>
       <div>
         <p className={styles.services_p}>Что такое авторский надзор? Авторский надзор&nbsp;&mdash; это контроль качества строительных работ архитектором или проектировщиком дизайн-проекта.</p>

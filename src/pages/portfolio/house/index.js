@@ -1,12 +1,14 @@
-import React from 'react'
+import * as React from "react"
 import Layout from "../../../components/layout"
 import Seo from "../../../components/seo"
 import { Link } from "gatsby"
-import { PortfolioItem } from "../../../subitems/portfolio"
-
-import * as styles from "../../../components/styles/portfolio/portfolio.module.scss"
-import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
 import { StaticImage } from 'gatsby-plugin-image'
+
+import { PortfolioItem } from "../../../subitems/portfolio"
+import * as styles from "../../../components/styles/portfolio/portfolio.module.scss"
+
+import { FooterConsultationDmitry } from "../../../subitems/footer-consultation-dmitry"
+
 
 const PortfolioHouse = () => (
   <Layout>
@@ -22,15 +24,28 @@ const PortfolioHouse = () => (
         </div>
         <div className={styles.portfolio_intro_list}>
           <Link to="/portfolio" className={styles.portfolio_intro_link}>Все проекты</Link>
-          <Link to="/portfolio/house" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Дома
-          <div className={styles.animline}></div>
-          </Link>
           <Link to="/portfolio/apartment" className={styles.portfolio_intro_link}>Квартиры</Link>
+          <Link to="/portfolio/house" className={styles.portfolio_intro_link} activeClassName={styles.portfolio_intro_active_link}>Дома
+            <div className={styles.animline}></div>
+          </Link>
           <Link to="/portfolio/commercial" className={styles.portfolio_intro_link}>Коммерческие объекты</Link>
           <Link to="/portfolio/facade" className={styles.portfolio_intro_link}>Фасады</Link>
         </div>
       </div>
       <div className={styles.portfolio_content}>
+        <PortfolioItem
+          url="/portfolio/house/zhemchuzhnaya"
+          title="Жемчужная-2"
+          metr="296"
+          building="16 месяцев"
+          budget={styles.portfolio_item_cost3}
+          image={
+            <StaticImage
+              src="../../../images/portfolio/zhemchuzhnaya/00_zhemchuzhnaya.jpg"
+              alt=""
+            />
+          }
+        />
         <PortfolioItem
           url="/portfolio/house/dom-ptich"
           title="Дом в&nbsp;поселке Птичь"
